@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: 2srw.aux
+The style file: agu.bst
+Database file #1: biblio.bib
+Repeated entry---line 531 of file biblio.bib
+ : @phdthesis{Einstein1937
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8614 of file biblio.bib
+ : @article{Sayre1965
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9986 of file biblio.bib
+ : @article{Nikora2001a
+ :                     ,
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--missing publisher in Nakagawa1976
+You've used 22 entries,
+            3075 wiz_defined-function locations,
+            1228 strings with 12893 characters,
+and the built_in function-call counts, 17821 in all, are:
+= -- 1889
+> -- 580
+< -- 19
++ -- 305
+- -- 141
+* -- 1142
+:= -- 1658
+add.period$ -- 22
+call.type$ -- 22
+change.case$ -- 110
+chr.to.int$ -- 22
+cite$ -- 67
+duplicate$ -- 1903
+empty$ -- 1100
+format.name$ -- 203
+if$ -- 3588
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 217
+newline$ -- 73
+num.names$ -- 88
+pop$ -- 798
+preamble$ -- 1
+purify$ -- 91
+quote$ -- 0
+skip$ -- 1057
+stack$ -- 0
+substring$ -- 660
+swap$ -- 1508
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 186
+warning$ -- 1
+while$ -- 110
+width$ -- 0
+write$ -- 255
+(There were 3 error messages)

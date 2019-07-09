@@ -1,0 +1,173 @@
+\documentclass[11pt]{article}
+% General document formatting
+\usepackage[margin=0.75in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}         % side-by-side figures 
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{booktabs} % for wrapping tabulars in accord with
+\bibliographystyle{agu}
+\setlength{\droptitle}{-5em}   % This is your set screw
+
+%\usepackage[math]{kurier}
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\newcommand\ol{\overline}        % shortcut to draw overline 
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+\newcommand\El{\mathcal{L}}
+\newcommand\tg{\tilde{g}}
+\newcommand\tG{\tilde{G}}
+\begin{document}
+
+\title{Analytical derivation of three-stage bedload diffusion}
+\author{Kevin Pierce}
+\maketitle
+
+\section{Two-state random walk formalism}
+The formalism of two-state random walks \citep[e.g.][]{Weiss1976,Weiss1994,Masoliver2016,Masoliver2017} provides new traction on the problem of 3-stage diffusion in bedload transport \citep[e.g.][]{Nikora2001a,Nikora2002,Zhang2012,Fan2016}.
+Assuming residence time distributions $\psi_\pm(t)$ in each state with associated survival probabilities $\Psi_\pm(t) = \int_t^\infty dt' \psi_\pm(t')$, probabilities of moving a distance $x$ up to time $t$ within a sojourn $f_\pm(x,t)$, denoting $g_\pm(x,t) =f_\pm(x,t)\psi_\pm(t)$ and $G_\pm(x,t) = f_\pm(x,t)\Psi_\pm(x,t)$, and letting $\omega_\pm(x,t)$ be the probability that a sojourn in state $\pm$ ends at $x,t$ provides
+\be  p_\pm(x,t) = \theta_+ G_\pm(x,t) + \int_0^\infty dx' \int_0^\infty dt' \omega_{\mp}(x',t')G_\pm(x-x',t-t')\ee
+and 
+\be \omega_\pm(x,t) = \theta_\pm g_\pm(x,t) + \int_0^\infty dx' \int_0^\infty dt' \omega_\mp(x',t')g_\pm(x-x',t-t').\label{eq:two}\ee
+Here $\theta_\pm$ are the initial probabilities of being in each state with $\theta_+ + \theta_-=1.$
+The probability of the two-state random walker being at position $x$ at time $t$ is 
+\be p(x,t) = p_-(x,t)+p_+(x,t).\ee
+Denoting the laplace transform with respect to the variable $q$ as $\El_q$ and associating variables $\eta$ and $s$ with $\El_x$ and $\El_t$, 
+taking $\El_x \El_t$ of (\ref{eq:two}) provides a much simpler algebraic problem for the probability $p$:
+
+\be
+\tilde{\omega}_\pm = 
+\frac{[\theta_\pm+ \theta_\mp \tilde{g}_\mp]\tilde{g}_\pm}{1-\tilde{g}_-\tilde{g}_+}
+\ee
+and (c.f. \citet{Masoliver2016} eq. 20)
+\be
+\tilde{p}_\pm = \Big( \theta_\pm + \tilde{\omega}_\mp \Big)\tilde{G}_\pm = \frac{\theta_\pm + \theta_\mp \tilde{g}_\mp}{1- \tilde{g}_-\tilde{g}_+}\tilde{G}_\pm.
+\ee
+Therefore the double transform of the joint PDF reads (c.f. \citet{Masoliver2016} eq. )
+\be
+\tilde{p}(\eta,s) = \frac{\big\{ \theta_- + \theta_+ \tg_+\big\}\tG_- + \big\{\theta_+ + \theta_-\tg_-\big\}\tG_+}{1-\tg_-\tg_+}
+\label{eq:mw}\ee
+This is a direct generalization of the famous Montroll-Weiss formula for a single state continuous-time random walk \citep[e.g.][]{Weiss1994}.
+
+For the evaluation of this formula, a useful fact to take account of is 
+\be \El_t\{ \Psi_\pm(t);s\} = \int_0^\infty dt e^{-st} \int_t^\infty dt' \psi_\pm(t') = \frac{1-\tilde{\psi}(s)}{s}. \ee
+Finally, owing to the definition of the double Laplace transform of $p(x,t)$:
+\be \tilde{p}(\eta,s) = \int_0^\infty dt e^{-st} \int_0^\infty dx e^{-\eta x} p(x,t)\ee
+we see the (double) inverse transform $p(x,t)$ may not be necessary to study the scaling of the variance $\bra x(t)^2 \ket = \int_0^\infty x^2 p(x,t)$ of the bedload tracer cloud since its Laplace transform follows from the second derivative of the double transform of $p$ wrt $\eta$:
+\be \El_t\{ \bra x(t)^2 \ket;s\} = \partial_\eta^2 \tilde{p}(\eta,s)\Big|_{\eta=0}. \label{eq:var}
+\ee
+I hope this allows evaluation of three-stage diffusion.
+More generally, 
+\be \El_t\{\bra x(t)^k\ket;s\} = (-)^k\partial_\eta^k \tilde{p}(\eta,s)\Big|_{\eta=0}.\ee
+
+Actually, it may be easier to work with a cumulant-type expression since unlike \citet{Masoliver2016,Masoliver2017} we consider asymmetric processes where $\bra x(t) \ket \neq 0$ necessarily.
+
+\section{The Einstein theory}
+Taking $g_-(x,t) = \delta(x)k_- e^{-k_-t}$ (rest) and $g_+(x,t) = k_+ e^{-k_+ x}\delta(t) $ (step) reproduces the \citet{Einstein1937} diffusion theory.
+In this case the double transforms are: 
+\be \tilde{g}_-(\eta,s) = \frac{k_-}{k_-+s}\ee
+\be \tilde{g}_+(\eta,s) = \frac{k_+}{k_++\eta}, \ee
+and the survival functions are 
+\be \Psi_-(t) = \int_t^\infty dt' k_-e^{-k_- t'} = e^{-k_- t} \ee
+and 
+\be \Psi_+(t) = \int_t^\infty dt' \delta(t') = 0 ,  \ee
+meaning $G_-(x,t) = \delta(x) e^{-k_- t}$ and $G_+(x,t) = 0,$ providing
+\be \tG_-(\eta,s) = \frac{1}{k_-+s}.\ee
+Taking $\theta_-=1$ and $\theta_+=0$, so the dynamics start at rest, the MW generalization (\ref{eq:mw}) is
+\be \tilde{p}(\eta, s) = \frac{\tG_-}{1-\tg_-\tg_+} = \frac{1}{s + \frac{k_- \eta}{k_+ + \eta }}.\label{eq:mwgen}\ee
+The Laplace transform of the mean is 
+\be \El_t\{\bra x(t) \ket;s\} = \frac{k_-}{s^2 k_+}
+\ee
+so in real space it's $\bra x(t) \ket = k_- t/k_+$ as expected \citep[e.g.][]{Einstein1937, Nakagawa1976}.
+The Laplace transform of the second moment is 
+\be \El \{\bra x(t)^2 \ket; s\} = 2\Big(\frac{k_-}{k_+}\Big)^2 \Big[ \frac{1}{k_-}\frac{1}{s^2} + \frac{1}{s^3}\Big], \ee
+so using the inversion formula 
+\be \El\Big\{\frac{1}{s^{k+1}};s\Big\} = \frac{t^k}{k!}\ee
+implies a second moment $\bra x(t)^2 \ket = (k_-/k_+)^2[2t/k_-+t^2] $
+and a variance exemplifying the normal diffusion of bedload:
+\be \sigma_x^2 = \text{var}\{x(t)\} = \frac{2k_-}{k_+^2}t.\ee
+The diffusivity $D$ is given by the square of the mean step distance $1/k_+$ divided by the mean resting time $1/k_-$:
+\be D_\text{Einstein} = \frac{k_-}{k_+^2}.\ee
+
+Of course, for the Einstein theory a closed form solution of the pdf $p(x,t)$ is possible to obtain \citep[e.g.][]{Einstein1937, Hubbell1964, Daly2006,Daly2019}.
+The first transform in (\ref{eq:mwgen}) inverts easily for \citep[i.e.][1.1.1.2]{Prudnikov1986}
+\be \tilde{p}(\eta,t) = \exp\Big\{-\frac{k_-\eta }{k_+ + \eta} t\Big\}.\ee
+Incidentally this single Laplace transform of $p$ provides the cumulant generating function $c(\eta,t) = \log \tilde{p}(-\eta,t)$ from which the variance follows from a more simple computation: $\sigma_x^2(t) = \partial_\eta^2 c(\eta,t)\big|_{\eta=0}.$
+The second inversion follows from \citet[][2.2.2.8]{Prudnikov1986} noting $\El_x^{-1}\{1\} = \delta(x).$ The result is \citep[e.g.][]{Daly2019}
+\be p(x,t) = e^{-k_- t -k_+ x}\Big\{ \sqrt{\frac{k_- k_+ t}{ x}} I_1\Big( 2\sqrt{k_-k_+ x t}\Big) + \delta(x) \Big\} .\ee
+This exact solution has been the benchmark theory of bedload diffusion for over 100 years. I have only derived it within a more general framework of multi-state random walks \citep[e.g.][]{Weiss1994}.
+
+\section{The Lisle Theory}
+Apart from formulations of \citet{Einstein1937} using different step length and resting time distributions than exponential \citep[e.g.][]{Sayre1965}, the first significant advancement from \citet{Einstein1937} was due to \citet{Lisle1998}. 
+I need to carefully investigate whether \citet{Gordon1972} did it too.
+They imparted a finite duration to bedload motions, rather than considering them instantaneous as Einstein did. In this way, they derived two stages of bedload diffusion.
+This approach is closely related to the so-called persistent diffusion model \citep{Balakrishnan1988,VanDenBroeck1990}, the diffusion of a particle driven by dichotomous Markov noise \citep[e.g.][]{Horsthemke1984,Risken1989,Bena2006}. 
+The mathematics were essentially developed by Takacs (1957).
+
+It is obtained by the choice $g_-(x,t) = \delta(x) k_- e^{-k_- t}$ (rest) and $g_+(x,t) = \delta(x-vt)k_+ e^{-k_+ t} $ (motion).
+Hence motions occur with velocity $v$ for a duration characterized by an exponential distribution with mean $1/k_+$, while rests occur for a duration characterized by an exponential distribution with mean $1/k_-$. For convenience we again assume that all particles start at rest, meaning $\theta_- = 1$ and $\theta_+=0$.
+
+In this case the Laplace transforms are
+\be \tg_-(\eta,s) = \frac{k_-}{k_- + s}, \ee 
+\be \tg_+(\eta,s) = \frac{k_+}{k_+ + \eta v + s }\ee
+
+and
+\be \tG_\pm(\eta,s) = \frac{1}{k_\pm}\tg_\pm(\eta,s).\ee
+
+Plugging these into (\ref{eq:mw}) gives
+\be \tilde{p}(\eta,s) = \frac{k + s + \eta v }{v(k_-+s) \eta  + k s + s^2 },\ee
+where $k = k_- + k_+$. Following \citet{Lisle1998}it seems the best way to go is to invert first over $\eta$.
+This inversion follows using the identities
+\be \El\Big\{\frac{a}{bs+c};s\Big\} = \frac{a}{b}e^{-cx/b}\ee
+and
+\be \El\Big\{\frac{as}{bs+c};s\Big\} = \frac{a}{b}\Big[\delta(x) - \frac{c}{b}e^{-cx/b}\Big],\ee
+and it results in 
+\be \tilde{p}(x,s) = \frac{k(k+s)}{v(k_-+s)^2} \exp\Big[-\frac{s(k+s)}{v(k_-+s)}x\Big] + \frac{1}{k_-+s}\delta(x) .\ee
+There's a need for strong transform calculus knowledge to proceed.
+One necessary property involves the equivalence of shifting $x$ in real space and multiplying by an exponential factor in transform space: 
+\be \El\{f(x+a);s\} = e^{as}\El\{f(x);s\},\ee
+which means $\El^{-1} \{e^{as}\tilde{f}(s);x\} = \El^{-1}\{\tilde{f}(s);x+a\}$.
+Then you need 
+\be \El^{-1}\big\{\frac{1}{s^\nu}\exp(-a/s);t\} = \Big(\frac{t}{a}\Big)^{(\nu-1)/2}I_{\nu-1}\big(2\sqrt{a t}\big) \ee
+from \citet[][2.2.2.1]{Prudnikov1986} to finally obtain 
+\begin{multline}
+p(x,t) = \delta(x) e^{-k_- t} + \frac{k}{v}\exp\Big[-\frac{k_+x }{v} - k_-\Big(t-\frac{x}{v}\Big)\Big]\Theta(t-x/v)\\ 
+ \times \Big\{ I_0\Big(2\sqrt{\frac{k_-k_+x}{v}\big(t-\frac{x}{v}\big)}\Big) \\
+\sqrt{\frac{k_+ v(t-x/v)}{k_-x}}I_1\Big(2\sqrt{\frac{k_-k_+x}{v}\big(t-\frac{x}{v}\big)}\Big) 
+\Big\},
+\end{multline}
+a non-trivial result. A similar result was obtained by \citet{Lisle1998} in context of rain splash transport and it was identified as a generalization of \citet{Einstein1937}. Hopefully, the only difference between these two formulations (mine and Lisle's) is that I started at rest $\theta_0=1$ while they started in motion $\theta_1=1$.
+Interestingly, this result has hardly been followed up. 
+I'll come back to this and study it more deeply later. 
+For future reference, the non-dimensionalization made by Lisle is $\xi = k_+ x /v$ and $\tau = k_-(t-x/v)$ in your notation.
+In this notation the result appears as (for $x\neq0$)
+\be p(x,t) = \frac{k}{v}e^{-\xi-\tau}\Theta(\tau)\Theta(\xi)\Big\{I_0\big(2\sqrt{\xi \tau}\big) +\frac{k_+}{k_-}\sqrt{\frac{\tau}{\xi}}I_1\big(2\sqrt{\xi\tau}\big) \Big\}\ee
+which is close enough to \citet{Lisle1998} to make me reasonably comfortable the only difference is the initial condition.
+Of course, the original intention is the variance of the bedload tracers.
+The easiest crank to turn is to take two derivatives wrt $\eta$ of the double transform $\tilde{p}(\eta,s).$
+
+The first derivative gives 
+\be \El\{\bra x(t) \ket;s\} = vk_- \frac{1}{s^2(s+k)},\ee
+while the second gives 
+\be \El\{\bra x^2(t) \ket ; s\} = 2 v^2 k_- \frac{s+k_-}{s^3(s+k)^2}. \ee
+The necessary Laplace transforms to evaluate the mean and variance are \citep[][2.1.2.33]{Prudnikov1986}:
+\be \El^{-1}\Big\{p^{-2}(s+a)^{-1};x\Big\} = \frac{1}{a^2}(e^{-ax}+ax-1),\ee
+\citep[][2.1.2.49]{Prudnikov1986}
+\be \El^{-1}\Big\{p^{-2}(s+a)^{-2};x\Big\} = \frac{1}{a^3}[ax - 2 + (ax+2)e^{-ax}],\ee
+and 
+\be \El^{-1}\Big\{p^{-3}(s+a)^{-2};x\Big\} = \frac{1}{a^4}\Big[\frac{(ax)^2}{2} - 2ax - (ax+3)e^{-ax} + 3\Big] \ee
+obtained using the previous formula with the differentiation formula to account for the additional factor of $1/p$.
+Using these results, the mean is 
+\be \bra x(t) \ket = \frac{vk_-}{k^2}(kt -1 + e^{-kt}).\ee
+\bibliography{biblio}
+\end{document}
+
+
+

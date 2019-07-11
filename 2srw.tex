@@ -147,8 +147,8 @@ a non-trivial result. A similar result was obtained by \citet{Lisle1998} in cont
 Interestingly, this result has hardly been followed up. 
 I'll come back to this and study it more deeply later. 
 For future reference, the non-dimensionalization made by Lisle is $\xi = k_+ x /v$ and $\tau = k_-(t-x/v)$ in your notation.
-In this notation the result appears as (for $x\neq0$)
-\be p(x,t) = \frac{k}{v}e^{-\xi-\tau}\Theta(\tau)\Theta(\xi)\Big\{I_0\big(2\sqrt{\xi \tau}\big) +\frac{k_+}{k_-}\sqrt{\frac{\tau}{\xi}}I_1\big(2\sqrt{\xi\tau}\big) \Big\}\ee
+In this notation the result appears as
+\be p(\xi,\tau) = \frac{k_+}{v}\delta(\xi)e^{-\tau-k_-\xi/k_+} +  \frac{k}{v}e^{-\xi-\tau}\Theta(\tau)\Theta(\xi)\Big\{I_0\big(2\sqrt{\xi \tau}\big) +\frac{k_+}{k_-}\sqrt{\frac{\tau}{\xi}}I_1\big(2\sqrt{\xi\tau}\big) \Big\}\ee
 which is close enough to \citet{Lisle1998} to make me reasonably comfortable the only difference is the initial condition.
 Of course, the original intention is the variance of the bedload tracers.
 The easiest crank to turn is to take two derivatives wrt $\eta$ of the double transform $\tilde{p}(\eta,s).$
@@ -158,14 +158,70 @@ The first derivative gives
 while the second gives 
 \be \El\{\bra x^2(t) \ket ; s\} = 2 v^2 k_- \frac{s+k_-}{s^3(s+k)^2}. \ee
 The necessary Laplace transforms to evaluate the mean and variance are \citep[][2.1.2.33]{Prudnikov1986}:
-\be \El^{-1}\Big\{p^{-2}(s+a)^{-1};x\Big\} = \frac{1}{a^2}(e^{-ax}+ax-1),\ee
+\be \El^{-1}\Big\{p^{-2}(p+a)^{-1};x\Big\} = \frac{1}{a^2}(e^{-ax}+ax-1),\ee
 \citep[][2.1.2.49]{Prudnikov1986}
-\be \El^{-1}\Big\{p^{-2}(s+a)^{-2};x\Big\} = \frac{1}{a^3}[ax - 2 + (ax+2)e^{-ax}],\ee
+\be \El^{-1}\Big\{p^{-2}(p+a)^{-2};x\Big\} = \frac{1}{a^3}[ax - 2 + (ax+2)e^{-ax}],\ee
 and 
-\be \El^{-1}\Big\{p^{-3}(s+a)^{-2};x\Big\} = \frac{1}{a^4}\Big[\frac{(ax)^2}{2} - 2ax - (ax+3)e^{-ax} + 3\Big] \ee
+\be \El^{-1}\Big\{p^{-3}(p+a)^{-2};x\Big\} = \frac{1}{a^4}\Big[\frac{(ax)^2}{2} - 2ax - (ax+3)e^{-ax} + 3\Big] \ee
 obtained using the previous formula with the differentiation formula to account for the additional factor of $1/p$.
 Using these results, the mean is 
 \be \bra x(t) \ket = \frac{vk_-}{k^2}(kt -1 + e^{-kt}).\ee
+The variance is very difficult to simplify. I need to work on this. Maybe using the non-dimensional variables could help.
+
+Now I'll try using the opposite initial condition (the one chosen by \citet{Lisle1998}): $\theta_+ = 1$ and $\theta_- = 0$.
+In this case
+\be \tilde{p}(\eta,s) = \frac{k+s}{v(k_-+s)\eta + ks + s^2},\ee
+which is somewhat simpler.
+To find the moments, another Laplace transform is required --  \citet[][2.1.2.31]{Prudnikov1986}:
+\be \El^{-1}\Big\{p^{-1}(p+a)^{-1};x\Big\} = \frac{1}{a}(1-e^{-ax}).\ee
+The LT moments are:
+\be \El\{\bra x(t) \ket; s\} = v\frac{k_-+s}{(k+s)s^2},\ee
+and
+\be \El\{\bra x(t)^2\ket;s\} = 2v^2 \frac{(k_-+s)^2}{(k+s)^2s^3}.
+\ee
+
+In this case the mean is
+\be \bra x(t) \ket = v\Big[ \frac{k_-}{k^2}\big(e^{-kt}+kt -1\big) + \frac{k_+}{k^2}\big(1-e^{-kt}\big)\Big].\ee
+This becomes $\bra x(t) \ket \approx vt$ at small times in accord with the idea that no particles have come to rest yet.
+Apart from one term it's the same as the result for the opposite initial condition.
+Another Laplace transform is required to evaluate the second moment.
+This is \citet[][2.1.2.47]{Prudnikov1986}:
+\be \El^{-1}\Big\{p^{-1}(p+a)^{-2};x\Big\} = \frac{1}{a^2}\Big(1 -(1+ax)e^{-ax}\Big).\ee
+Then the second moment is
+\be
+\frac{\bra x(t)^2 \ket}{2v^2} = \frac{k_-^2}{k^4}\Big[\frac{(kt)^2}{2} - 2kt -(kt+3)e^{-kt} + 3 \Big] + \frac{2k_-}{k^3}\Big[kt -2 + (kt +2)e^{-kt} \Big] \\+ \frac{1}{k^2}\Big[ 1 - (1+kt)e^{-kt} \Big].
+\ee
+\section{A generalization: Randomly stopped Lisle process}
+
+Consider the choice $\psi_1(t) = k_1e^{-k_1t}$, $f_1(x,t)=\delta(x)$, $\psi_2(t) = k_2e^{-k_2t}$, and 
+\be f_2(x,t|T) = \delta(x-vt)\Theta(T-t) + \delta(x)\Theta(t-T).\ee
+This describes a \textit{randomly stopped} variant of the Lisle process.
+When $t>T$, the motion state becomes a second rest state: the motion is turned off.
+In this case, $g_1(\eta,s) = \frac{k_1}{k_1+s}$ and $G_1(\eta,s) = g_1(\eta,s)/k_1$ as before, while
+\be g_2(\eta,s|T) = \frac{k_2}{k_2+s}e^{-(k_2+s)T} + \frac{k_2}{k_2 + \eta v + s}\Big(1-e^{-(k_2 + \eta v + s)T}\Big)\ee
+and $G_2(\eta,s|T) = g_2(\eta,s|T)/k_2$.
+You can maybe solve this conditional to $T$ to obtain $p(x,t|T)$.
+Then inputting a distribution for the trapping time $T$, the over-all distribution will be $p(x,t) = \int dT p(x,t|T)f(T)$.
+
+
+\section*{Appendix: Laplace transforms}
+This is just a reference of useful Laplace transforms for these types of studies.
+\be \El^{-1}\Big\{p^{-2}(p+a)^{-1};x\Big\} = \frac{1}{a^2}(e^{-ax}+ax-1),\ee
+\citep[][2.1.2.33]{Prudnikov1986};
+\be \El^{-1}\Big\{p^{-2}(p+a)^{-2};x\Big\} = \frac{1}{a^3}[ax - 2 + (ax+2)e^{-ax}],\ee
+\citep[][2.1.2.49]{Prudnikov1986};
+\be \El^{-1}\Big\{p^{-3}(p+a)^{-2};x\Big\} = \frac{1}{a^4}\Big[\frac{(ax)^2}{2} - 2ax - (ax+3)e^{-ax} + 3\Big], \ee
+derived from the previous result using the differentiation property;
+\be \El^{-1}\Big\{p^{-1}(p+a)^{-2};x\Big\} = \frac{1}{a^2}\Big(1 -(1+ax)e^{-ax}\Big),\ee
+\citep[][2.1.2.47]{Prudnikov1986};
+\be \El^{-1}\Big\{p^{-1}(p+a)^{-1};x\Big\} = \frac{1}{a}(1-e^{-ax}),\ee
+\citep[][2.1.2.31]{Prudnikov1986};
+\be\El^{-1} \{e^{as}\tilde{f}(s);x\} = \El^{-1}\{\tilde{f}(s);x+a\},\ee
+the shifting property;
+\be \El^{-1}\big\{\frac{1}{s^\nu}\exp(-a/s);t\} = \Big(\frac{t}{a}\Big)^{(\nu-1)/2}I_{\nu-1}\big(2\sqrt{a t}\big), \ee
+valid for $\nu>1$ from \citep[][2.1.2.1]{Prudnikov1986};
+\be \El^{-1}\{e^{a/p}-1;x\} = \sqrt{\frac{a}{x}}I_1(2\sqrt{ax}),\ee
+and \citep[][2.1.2.8]{Prudnikov1986}, the $\nu=1$ generalization of the previous result.
 \bibliography{biblio}
 \end{document}
 

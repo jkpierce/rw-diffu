@@ -105,93 +105,105 @@ The second inversion follows from \citet[][2.2.2.8]{Prudnikov1986} noting $\El_x
 This exact solution has been the benchmark theory of bedload diffusion for over 100 years. I have only derived it within a more general framework of multi-state random walks \citep[e.g.][]{Weiss1994}.
 
 \section{The Lisle Theory}
-Apart from formulations of \citet{Einstein1937} using different step length and resting time distributions than exponential \citep[e.g.][]{Sayre1965}, the first significant advancement from \citet{Einstein1937} was due to \citet{Lisle1998}. 
+Apart from formulations of \citet{Einstein1937} using different step length and resting time distributions than exponential \citep[e.g.][]{Sayre1965}, the first significant advancement from \citet{Einstein1937} was due to \citet{Lisle1998}.
 I need to carefully investigate whether \citet{Gordon1972} did it too.
-They imparted a finite duration to bedload motions, rather than considering them instantaneous as Einstein did. In this way, they derived two stages of bedload diffusion.
+They imparted a finite duration to bedload motions instead of considering them instantaneous like Einstein. In this way they derived two stages of bedload diffusion.
 This approach is closely related to the so-called persistent diffusion model \citep{Balakrishnan1988,VanDenBroeck1990}, the diffusion of a particle driven by dichotomous Markov noise \citep[e.g.][]{Horsthemke1984,Risken1989,Bena2006}. 
 The mathematics were essentially developed by Takacs (1957).
 
 It is obtained by the choice $g_-(x,t) = \delta(x) k_- e^{-k_- t}$ (rest) and $g_+(x,t) = \delta(x-vt)k_+ e^{-k_+ t} $ (motion).
-Hence motions occur with velocity $v$ for a duration characterized by an exponential distribution with mean $1/k_+$, while rests occur for a duration characterized by an exponential distribution with mean $1/k_-$. For convenience we again assume that all particles start at rest, meaning $\theta_- = 1$ and $\theta_+=0$.
+Hence motions occur with velocity $v$ for a duration characterized by an exponential distribution with mean $1/k_+$, while rests occur for a duration characterized by an exponential distribution with mean $1/k_-$. 
+We consider each of the extreme initial conditions in turn.
+\subsection{starting at rest}
 
+If the process starts from rest, this means $\theta_- = 1$ and $\theta_+=0$.
 In this case the Laplace transforms are
 \be \tg_-(\eta,s) = \frac{k_-}{k_- + s}, \ee 
 \be \tg_+(\eta,s) = \frac{k_+}{k_+ + \eta v + s }\ee
-
 and
 \be \tG_\pm(\eta,s) = \frac{1}{k_\pm}\tg_\pm(\eta,s).\ee
-
 Plugging these into (\ref{eq:mw}) gives
 \be \tilde{p}(\eta,s) = \frac{k + s + \eta v }{v(k_-+s) \eta  + k s + s^2 },\ee
-where $k = k_- + k_+$. Following \citet{Lisle1998}it seems the best way to go is to invert first over $\eta$.
-This inversion follows using the identities
-\be \El\Big\{\frac{a}{bs+c};s\Big\} = \frac{a}{b}e^{-cx/b}\ee
-and
-\be \El\Big\{\frac{as}{bs+c};s\Big\} = \frac{a}{b}\Big[\delta(x) - \frac{c}{b}e^{-cx/b}\Big],\ee
-and it results in 
+where $k = k_- + k_+$. 
+This inverts to 
 \be \tilde{p}(x,s) = \frac{k(k+s)}{v(k_-+s)^2} \exp\Big[-\frac{s(k+s)}{v(k_-+s)}x\Big] + \frac{1}{k_-+s}\delta(x) .\ee
-There's a need for strong transform calculus knowledge to proceed.
-One necessary property involves the equivalence of shifting $x$ in real space and multiplying by an exponential factor in transform space: 
-\be \El\{f(x+a);s\} = e^{as}\El\{f(x);s\},\ee
-which means $\El^{-1} \{e^{as}\tilde{f}(s);x\} = \El^{-1}\{\tilde{f}(s);x+a\}$.
-Then you need 
-\be \El^{-1}\big\{\frac{1}{s^\nu}\exp(-a/s);t\} = \Big(\frac{t}{a}\Big)^{(\nu-1)/2}I_{\nu-1}\big(2\sqrt{a t}\big) \ee
-from \citet[][2.2.2.1]{Prudnikov1986} to finally obtain 
+Using the property $ \El\{f(x+a);s\} = e^{as}\El\{f(x);s\}$ along with the transform of a modified Bessel function gives
 \begin{multline}
 p(x,t) = \delta(x) e^{-k_- t} + \frac{k}{v}\exp\Big[-\frac{k_+x }{v} - k_-\Big(t-\frac{x}{v}\Big)\Big]\Theta(t-x/v)\\ 
- \times \Big\{ I_0\Big(2\sqrt{\frac{k_-k_+x}{v}\big(t-\frac{x}{v}\big)}\Big) \\
+\times \Big\{ I_0\Big(2\sqrt{\frac{k_-k_+x}{v}\big(t-\frac{x}{v}\big)}\Big) \\
 \sqrt{\frac{k_+ v(t-x/v)}{k_-x}}I_1\Big(2\sqrt{\frac{k_-k_+x}{v}\big(t-\frac{x}{v}\big)}\Big) 
 \Big\},
 \end{multline}
-a non-trivial result. A similar result was obtained by \citet{Lisle1998} in context of rain splash transport and it was identified as a generalization of \citet{Einstein1937}. Hopefully, the only difference between these two formulations (mine and Lisle's) is that I started at rest $\theta_0=1$ while they started in motion $\theta_1=1$.
-Interestingly, this result has hardly been followed up. 
-I'll come back to this and study it more deeply later. 
-For future reference, the non-dimensionalization made by Lisle is $\xi = k_+ x /v$ and $\tau = k_-(t-x/v)$ in your notation.
+a non-trivial result.
+The non-dimensionalization proposed by Lisle is $\xi = k_+ x /v$ and $\tau = k_-(t-x/v)$.
 In this notation the result appears as
 \be p(\xi,\tau) = \frac{k_+}{v}\delta(\xi)e^{-\tau-k_-\xi/k_+} +  \frac{k}{v}e^{-\xi-\tau}\Theta(\tau)\Theta(\xi)\Big\{I_0\big(2\sqrt{\xi \tau}\big) +\frac{k_+}{k_-}\sqrt{\frac{\tau}{\xi}}I_1\big(2\sqrt{\xi\tau}\big) \Big\}\ee
-which is close enough to \citet{Lisle1998} to make me reasonably comfortable the only difference is the initial condition.
-Of course, the original intention is the variance of the bedload tracers.
-The easiest crank to turn is to take two derivatives wrt $\eta$ of the double transform $\tilde{p}(\eta,s).$
 
+\subsubsection{moments having started at rest}
 The first derivative gives 
 \be \El\{\bra x(t) \ket;s\} = vk_- \frac{1}{s^2(s+k)},\ee
 while the second gives 
 \be \El\{\bra x^2(t) \ket ; s\} = 2 v^2 k_- \frac{s+k_-}{s^3(s+k)^2}. \ee
-The necessary Laplace transforms to evaluate the mean and variance are \citep[][2.1.2.33]{Prudnikov1986}:
-\be \El^{-1}\Big\{p^{-2}(p+a)^{-1};x\Big\} = \frac{1}{a^2}(e^{-ax}+ax-1),\ee
-\citep[][2.1.2.49]{Prudnikov1986}
-\be \El^{-1}\Big\{p^{-2}(p+a)^{-2};x\Big\} = \frac{1}{a^3}[ax - 2 + (ax+2)e^{-ax}],\ee
-and 
-\be \El^{-1}\Big\{p^{-3}(p+a)^{-2};x\Big\} = \frac{1}{a^4}\Big[\frac{(ax)^2}{2} - 2ax - (ax+3)e^{-ax} + 3\Big] \ee
-obtained using the previous formula with the differentiation formula to account for the additional factor of $1/p$.
-Using these results, the mean is 
-\be \bra x(t) \ket = \frac{vk_-}{k^2}(kt -1 + e^{-kt}).\ee
-The variance is very difficult to simplify. I need to work on this. Maybe using the non-dimensional variables could help.
+Therefore the mean is easy to obtain as 
+\be \frac{k^2}{vk_-} \bra x \ket = e^{-kt} + kt -1,\ee
+while the second moment is 
+\begin{align}
+ \frac{k^4}{2 v^2 k_-^2} \bra x^2\ket = \frac{(kt)^2}{2} - &2kt - (kt+3)e^{-kt} + 3 \\ 
+ &+ \frac{k}{k_-}\big[kt -2 + (kt+2)e^{-kt}\big]. 
+\end{align}
+Manipulating the mean provides 
+\be \frac{k^4}{2v^2k_-^2}\bra x \ket^2 = \frac{1}{2}e^{-2kt} + \frac{(kt)^2}{2} + \frac{1}{2} -kt + (-1 + kt)e^{-kt}, \ee
+so the variance is 
+\be \frac{k^4}{2v^2k_-^2} \sigma_x^2(t) = -kt -(2kt + 2)e^{-kt} + \frac{5}{2} - \frac{1}{2}e^{-2kt} + \frac{k}{k_-}\big[kt-2 + (kt +2)e^{-kt}\big].\ee
+In this case as well, $t\rightarrow 0$ gives $\sigma_x^2 \propto t^3$.
+This is a non-trivial result. The terms cancel each other in a highly coordinated way.
+This result shows a sharp transition between two diffusion regimes when the mean time in motion is smaller than the mean time at rest.
+When the opposite is true, there are three stages of diffusion with a sub-diffusive intermediate regime.
+Therefore in Einstein's concept of bedload transport where resting periods are longer than motion periods, there should be two diffusion regimes when the distributions are light-tailed.
+
+\subsection{starting in motion}
 
 Now I'll try using the opposite initial condition (the one chosen by \citet{Lisle1998}): $\theta_+ = 1$ and $\theta_- = 0$.
 In this case
-\be \tilde{p}(\eta,s) = \frac{k+s}{v(k_-+s)\eta + ks + s^2},\ee
-which is somewhat simpler.
-To find the moments, another Laplace transform is required --  \citet[][2.1.2.31]{Prudnikov1986}:
-\be \El^{-1}\Big\{p^{-1}(p+a)^{-1};x\Big\} = \frac{1}{a}(1-e^{-ax}).\ee
-The LT moments are:
-\be \El\{\bra x(t) \ket; s\} = v\frac{k_-+s}{(k+s)s^2},\ee
-and
-\be \El\{\bra x(t)^2\ket;s\} = 2v^2 \frac{(k_-+s)^2}{(k+s)^2s^3}.
-\ee
+\be \tilde{p}(\eta,s) = \frac{k+s}{v(k_-+s)\eta + (k+s)s},\ee
+and a first inverse transform gives
+\be p(x,s) = \frac{k+s}{v(k_-+s)} \exp\Big[-\frac{(k+s)s}{v(k_-+s)}x\Big],\ee
+which is the same as the other case but without a delta function term at $x=0$.
+This can be manipulated to 
+\begin{align} p(x,t) &= \El^{-1} \Big\{ \frac{k+s}{v(k_-+s)} \exp\Big[-\frac{(k+s)s}{v(k_-+s)}x\Big] ; t\Big\} \\
+&=  e^{-k_- t}\El^{-1} \Big\{ \frac{k_++s}{vs} \exp\Big[-\frac{(k_++s)(s-k_-)}{vs}x\Big] ; t\Big\} \\
+&= e^{-k_- t -(k_+-k_-)x/v}\El^{-1} \Big\{ \frac{k_++s}{vs} \exp\Big[\frac{k_-k_+}{vs}x - \frac{xs}{v}\Big] ; t\Big\}\\
+&= e^{-k_- t -(k_+-k_-)x/v}\El^{-1} \Big\{ \frac{k_++s}{vs} \exp\Big[\frac{k_-k_+}{vs}x\Big] ; t-x/v\Big\} \\
+&=  e^{-k_- t -(k_+-k_-)x/v} \Big[ \El^{-1}  \Big\{ \frac{k_+}{vs} \exp\Big[\frac{k_-k_+}{vs}x\Big];t-x/v \Big\} + \El^{-1}  \Big\{ \frac{1}{v} \exp\Big[\frac{k_-k_+}{vs}x\Big];t-x/v \Big\} \Big] \\
+&=  e^{-k_- t -(k_+-k_-)x/v} \Big[\frac{k_+}{v} I_0\Big(2\sqrt{\frac{k_-k_+ x}{v}\big(t-\frac{x}{v}\big)}\Big) + \frac{1}{v}\El^{-1}\Big\{  \exp\Big[\frac{k_-k_+}{vs}x\Big] -1;t-x/v \Big\} + \frac{1}{v}\delta(t-x/v) \Big] \\ 
+&=  e^{-k_- t -(k_+-k_-)x/v} \Big[\frac{k_+}{v} I_0\Big(2\sqrt{\frac{k_-k_+ x}{v}\big(t-\frac{x}{v}\big)}\Big) + \frac{1}{v}\sqrt{\frac{k_- k_+ x}{v (t-x/v)}}I_1\Big(2\sqrt{\frac{k_-k_+ x}{v}\big(t-\frac{x}{v}\big)}\Big) + \frac{1}{v}\delta(t-x/v) \Big].
+\end{align}
+A key property here was $e^{-ax}f(x) = \El^{-1}\{f(s+a);x\}$, and those in the appendix.
+This type of math is not easy for me.
+In the non-dimensional variables this becomes
+\be p(\xi,\tau) = e^{-\tau-\xi}\Big[ \frac{k_+}{v} I_0(2\sqrt{\xi\tau}) + \frac{k_-}{v}\sqrt{\frac{\xi}{\tau}}I_1(2\sqrt{\xi\tau}) + \frac{k_-}{v} \delta(\tau)\Big].\ee
+This appears totally aligned with \citet{Lisle1998}.
+\subsubsection{moments having started in motion}
 
 In this case the mean is
-\be \bra x(t) \ket = v\Big[ \frac{k_-}{k^2}\big(e^{-kt}+kt -1\big) + \frac{k_+}{k^2}\big(1-e^{-kt}\big)\Big].\ee
-This becomes $\bra x(t) \ket \approx vt$ at small times in accord with the idea that no particles have come to rest yet.
-Apart from one term it's the same as the result for the opposite initial condition.
-Another Laplace transform is required to evaluate the second moment.
-This is \citet[][2.1.2.47]{Prudnikov1986}:
-\be \El^{-1}\Big\{p^{-1}(p+a)^{-2};x\Big\} = \frac{1}{a^2}\Big(1 -(1+ax)e^{-ax}\Big).\ee
-Then the second moment is
+\be  \frac{k^2}{v}\bra x(t) \ket = k_- kt + k_+(1-e^{-kt}).\ee
+This result seems to make sense and agree with the asymptotic result of \citet{Lisle1998}, especially since it has a constant term associated with starting in motion (so a displacement of order $v/k_+$ is guaranteed).
+The second moment is
 \be
-\frac{\bra x(t)^2 \ket}{2v^2} = \frac{k_-^2}{k^4}\Big[\frac{(kt)^2}{2} - 2kt -(kt+3)e^{-kt} + 3 \Big] + \frac{2k_-}{k^3}\Big[kt -2 + (kt +2)e^{-kt} \Big] \\+ \frac{1}{k^2}\Big[ 1 - (1+kt)e^{-kt} \Big].
+\frac{k^4}{2v^2}\bra x^2 \ket = k_-^2\frac{(kt)^2}{2} + k_-k_+\{2kt -2 + 2e^{-kt}\} + k_+^2\{1-(1+kt)e^{-kt}\}.
 \ee
-\section{A generalization: Randomly stopped Lisle process}
+I checked this result numerically.
+Performing more manipulations on the mean obtains
+\be\frac{k^4}{2v^2} \bra x\ket^2 = k_-^2 \frac{(kt)^2}{2} + k_-k_+\{kt - kte^{-kt}\} +  k_+^2\{\frac{1}{2} - e^{-kt} + \frac{1}{2}e^{-2kt}\}   ,\ee
+so the variance is
+\be \frac{k^4}{2v^2} \sigma_x^2(t) = k_- k_+ \{kt -2 + (2 + kt)e^{-kt}\} + k_+^2\{\frac{1}{2} -kt e^{-kt} - \frac{1}{2}e^{-2kt}\}.\ee
+This variance describes short term ballistic diffusion $\sigma_x^2 \propto t^3$ and long term normal diffusion.
+When the mean motion time is larger than the mean resting time, the cross-over is sharp.
+When the mean motion time is smaller than the mean resting time,
+there is a sub-diffusive cross-over zone.
+So in the zone envisioned by Einstein when motions are relatively short compared to rests, there is sharp cross-over between $t^3$ super-diffusion and normal diffusion.
+ 
+\section{A new generalization: Randomly stopped Lisle process}
 
 Consider the choice $\psi_1(t) = k_1e^{-k_1t}$, $f_1(x,t)=\delta(x)$, $\psi_2(t) = k_2e^{-k_2t}$, and 
 \be f_2(x,t|T) = \delta(x-vt)\Theta(T-t) + \delta(x)\Theta(t-T).\ee
@@ -218,10 +230,15 @@ derived from the previous result using the differentiation property;
 \citep[][2.1.2.31]{Prudnikov1986};
 \be\El^{-1} \{e^{as}\tilde{f}(s);x\} = \El^{-1}\{\tilde{f}(s);x+a\},\ee
 the shifting property;
-\be \El^{-1}\big\{\frac{1}{s^\nu}\exp(-a/s);t\} = \Big(\frac{t}{a}\Big)^{(\nu-1)/2}I_{\nu-1}\big(2\sqrt{a t}\big), \ee
-valid for $\nu>1$ from \citep[][2.1.2.1]{Prudnikov1986};
+\be \El^{-1}\big\{\frac{1}{s^\nu}\exp(a/s);t\} = \Big(\frac{t}{a}\Big)^{(\nu-1)/2}I_{\nu-1}\big(2\sqrt{a t}\big), \ee
+valid for $\nu>1$ from \citep[][2.2.2.1]{Prudnikov1986};
 \be \El^{-1}\{e^{a/p}-1;x\} = \sqrt{\frac{a}{x}}I_1(2\sqrt{ax}),\ee
-and \citep[][2.1.2.8]{Prudnikov1986}, the $\nu=1$ generalization of the previous result.
+and \citep[][2.2.2.8]{Prudnikov1986}.
+All of these Laplace transforms are verified from Wolfram Alpha so I expect no typos.
+Finally,
+\be \El\Big\{\frac{a}{bs+c};s\Big\} = \frac{a}{b}e^{-cx/b}\ee
+and
+\be \El\Big\{\frac{as}{bs+c};s\Big\} = \frac{a}{b}\Big[\delta(x) - \frac{c}{b}e^{-cx/b}\Big].\ee
 \bibliography{biblio}
 \end{document}
 

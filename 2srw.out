@@ -1,4 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Two-state random walk formalism}{}% 1
 \BOOKMARK [1][-]{section.2}{The Einstein theory}{}% 2
 \BOOKMARK [1][-]{section.3}{The Lisle Theory}{}% 3
-\BOOKMARK [1][-]{section.4}{A generalization: Randomly stopped Lisle process}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{starting at rest}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{moments having started at rest}{subsection.3.1}% 5
+\BOOKMARK [2][-]{subsection.3.2}{starting in motion}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.2.1}{moments having started in motion}{subsection.3.2}% 7
+\BOOKMARK [1][-]{section.4}{A new generalization: Randomly stopped Lisle process}{}% 8

@@ -17,45 +17,45 @@ Repeated entry---line 9986 of file biblio.bib
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--missing publisher in Nakagawa1976
-You've used 22 entries,
+You've used 23 entries,
             3075 wiz_defined-function locations,
-            1228 strings with 12893 characters,
-and the built_in function-call counts, 17821 in all, are:
-= -- 1889
-> -- 580
-< -- 19
-+ -- 305
-- -- 141
-* -- 1142
-:= -- 1658
-add.period$ -- 22
-call.type$ -- 22
-change.case$ -- 110
-chr.to.int$ -- 22
-cite$ -- 67
-duplicate$ -- 1903
-empty$ -- 1100
-format.name$ -- 203
-if$ -- 3588
+            1236 strings with 13146 characters,
+and the built_in function-call counts, 19036 in all, are:
+= -- 2046
+> -- 605
+< -- 20
++ -- 323
+- -- 147
+* -- 1211
+:= -- 1750
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 115
+chr.to.int$ -- 23
+cite$ -- 70
+duplicate$ -- 2043
+empty$ -- 1162
+format.name$ -- 214
+if$ -- 3832
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 217
-newline$ -- 73
-num.names$ -- 88
-pop$ -- 798
+missing$ -- 227
+newline$ -- 76
+num.names$ -- 92
+pop$ -- 851
 preamble$ -- 1
-purify$ -- 91
+purify$ -- 95
 quote$ -- 0
-skip$ -- 1057
+skip$ -- 1140
 stack$ -- 0
-substring$ -- 660
-swap$ -- 1508
+substring$ -- 724
+swap$ -- 1639
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 195
 warning$ -- 1
-while$ -- 110
+while$ -- 116
 width$ -- 0
-write$ -- 255
+write$ -- 267
 (There were 3 error messages)

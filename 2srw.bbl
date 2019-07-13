@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -100,6 +100,12 @@ Sayre, W.~W., and D.~W. Hubbell, {Transport and Dispersion of Labeled Bed
 \bibitem[{\textit{{Van Den Broeck}}(1990)}]{VanDenBroeck1990}
 {Van Den Broeck}, C., {Taylor Dispersion Revisited}, \textit{Physica A},
   \textit{168}, 677--696, 1990.
+
+\bibitem[{\textit{Weeks and Swinney}(1998)}]{Weeks1998}
+Weeks, E.~R., and H.~L. Swinney, {Anomalous diffusion resulting from strongly
+  asymmetric random walks}, \textit{Physical Review E - Statistical Physics,
+  Plasmas, Fluids, and Related Interdisciplinary Topics}, \textit{57}(5),
+  4915--4920, \doi{10.1103/PhysRevE.57.4915}, 1998.
 
 \bibitem[{\textit{Weiss}(1976)}]{Weiss1976}
 Weiss, G.~H., {The two-state random walk}, \textit{Journal of Statistical

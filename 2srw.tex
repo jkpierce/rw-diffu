@@ -88,9 +88,7 @@ The Laplace transform of the mean is
 so in real space it's $\bra x(t) \ket = k_- t/k_+$ as expected \citep[e.g.][]{Einstein1937, Nakagawa1976}.
 The Laplace transform of the second moment is 
 \be \El \{\bra x(t)^2 \ket; s\} = 2\Big(\frac{k_-}{k_+}\Big)^2 \Big[ \frac{1}{k_-}\frac{1}{s^2} + \frac{1}{s^3}\Big], \ee
-so using the inversion formula 
-\be \El\Big\{\frac{1}{s^{k+1}};s\Big\} = \frac{t^k}{k!}\ee
-implies a second moment $\bra x(t)^2 \ket = (k_-/k_+)^2[2t/k_-+t^2] $
+implying a second moment $\bra x(t)^2 \ket = (k_-/k_+)^2[2t/k_-+t^2] $
 and a variance exemplifying the normal diffusion of bedload:
 \be \sigma_x^2 = \text{var}\{x(t)\} = \frac{2k_-}{k_+^2}t.\ee
 The diffusivity $D$ is given by the square of the mean step distance $1/k_+$ divided by the mean resting time $1/k_-$:
@@ -145,11 +143,11 @@ The first derivative gives
 while the second gives 
 \be \El\{\bra x^2(t) \ket ; s\} = 2 v^2 k_- \frac{s+k_-}{s^3(s+k)^2}. \ee
 Therefore the mean is easy to obtain as 
-\be \frac{k^2}{vk_-} \bra x \ket = e^{-kt} + kt -1,\ee
+\be \frac{k^2}{vk_-} \bra x \ket = e^{-kt} + kt -1, \label{eq:meanz}\ee
 while the second moment is 
 \begin{align}
  \frac{k^4}{2 v^2 k_-^2} \bra x^2\ket = \frac{(kt)^2}{2} - &2kt - (kt+3)e^{-kt} + 3 \\ 
- &+ \frac{k}{k_-}\big[kt -2 + (kt+2)e^{-kt}\big]. 
+ &+ \frac{k}{k_-}\big[kt -2 + (kt+2)e^{-kt}\big]. \label{eq:2ndmoment}
 \end{align}
 Manipulating the mean provides 
 \be \frac{k^4}{2v^2k_-^2}\bra x \ket^2 = \frac{1}{2}e^{-2kt} + \frac{(kt)^2}{2} + \frac{1}{2} -kt + (-1 + kt)e^{-kt}, \ee
@@ -160,6 +158,40 @@ This is a non-trivial result. The terms cancel each other in a highly coordinate
 This result shows a sharp transition between two diffusion regimes when the mean time in motion is smaller than the mean time at rest.
 When the opposite is true, there are three stages of diffusion with a sub-diffusive intermediate regime.
 Therefore in Einstein's concept of bedload transport where resting periods are longer than motion periods, there should be two diffusion regimes when the distributions are light-tailed.
+
+\subsubsection{asymptotic approach to the moments starting at rest}
+Expanding the Laplace mean in $s$ (around $0$ and at $\infty$) gives
+\be
+\bra \tilde{x}\ket \approx v k_- 
+\begin{cases}
+	\frac{1}{ks^2}, & s \rightarrow 0\\
+	\frac{1}{s^3}, & s \rightarrow \infty
+\end{cases},
+\ee
+so the asymptotic result is 
+\be \bra x \ket = v k_-
+\begin{cases}
+	\frac{t}{k}, & t \rightarrow \infty \\
+	\frac{1}{2} t^2, & t \rightarrow 0,\\
+\end{cases}
+\ee
+which entirely agrees with (\ref{eq:meanz}).
+Manipulating the second moment at $s \rightarrow \infty$ gives
+\be \bra \tilde{x}^2 \ket = 2v^2k_-\frac{s+ k_-}{s^5}(1+kx)^{-2} \ee
+where $x = 1/s \rightarrow 0$.
+This expands to 
+\be \bra \tilde{x}^2 \ket = 2v^2 k_-\frac{s+ k_-}{s^5} \Big( 1 - 2\frac{k}{s} + 3 \frac{k^2}{s^2}+ \dots\Big).\ee
+Dropping all terms of smaller order than $1/s^4$ gives
+\be \bra x^2 \ket \approx \frac{1}{3}v^2 k_- t^3.\ee as $t \rightarrow 0$
+as $t \rightarrow 0$. I find the same scaling from (\ref{eq:2ndmoment}).
+So at $t \rightarrow 0$ the variance is 
+\be \sigma_x^2 \approx \frac{1}{3}v^2 k_- t^3,\ee
+although this feels somewhat tricky since I'm subtracting $O(t^3)$ and $O(t^2)$ and neglecting $O(t^2)$. 
+
+Similarly expanding at $s=0$ gives
+\be \bra \tilde{x}^2 \ket = 2v^2 k_- \frac{s + k_-}{s^3}\Big( k - \frac{2s}{k^3} + \frac{3s^2}{k^4} + \dots \Big) .\ee
+Keeping $1/s^4$ and $1/s^3$ terms, 
+\be \bra \tilde{x}^2 \ket = 2v^2 k_-  .\ee
 
 \subsection{starting in motion}
 
@@ -221,6 +253,8 @@ Assuming the walker starts at rest the double transformed probability is
 
 \section*{Appendix: Laplace transforms}
 This is just a reference of useful Laplace transforms for these types of studies.
+\be \El\Big\{\frac{1}{s^{k+1}};s\Big\} = \frac{t^k}{k!};\ee
+
 \be \El^{-1}\Big\{p^{-2}(p+a)^{-1};x\Big\} = \frac{1}{a^2}(e^{-ax}+ax-1),\ee
 \citep[][2.1.2.33]{Prudnikov1986};
 \be \El^{-1}\Big\{p^{-2}(p+a)^{-2};x\Big\} = \frac{1}{a^3}[ax - 2 + (ax+2)e^{-ax}],\ee
@@ -242,6 +276,23 @@ Finally,
 \be \El\Big\{\frac{a}{bs+c};s\Big\} = \frac{a}{b}e^{-cx/b}\ee
 and
 \be \El\Big\{\frac{as}{bs+c};s\Big\} = \frac{a}{b}\Big[\delta(x) - \frac{c}{b}e^{-cx/b}\Big].\ee
+
+
+\section*{Appendix: Asymptotics of stable laws}
+When a resting time distribution $\psi(t)$ has divergent moments, the behavior of its Laplace transform $\tilde{\psi}(s)$ for $s\rightarrow0$ cannot be analyzed by simply expanding the exponential in its definition for small $s$ as in 
+\be \tilde{\psi}(s) \sim \int_0^\infty \{1-st + (st)^2/2 + \dots \} \psi(t),\ee
+since the moments of $t$ involved in this expression are divergent. 
+Instead, there is a different way (outlined around \citet{Weiss1994} eq 2.95) leveraging the asymptotic form of $\psi(t)$ for $t\rightarrow \infty$:
+\be \psi(t) \sim  A t^{-\alpha-1}.\ee
+Writing (using the normalization property of $\psi(t)$)
+\be \tilde{\psi}(s) = 1 - (1- \tilde{\psi}(s)) = 1 - \int_0^\infty dt (1-e^{-st})\psi(t) \ee
+and setting $\tau = st$ gives
+\be \tilde{\psi}(s) = 1 - \frac{1}{s} \int_0^\infty d\tau (1-e^{-\tau})\psi\big(\frac{\tau}{s}\big).\ee
+Clearly this integral is dominated by the asymptotic behavior of $\psi(t)$:
+\be \tilde{\psi}(s) \sim 1 - B s^\alpha \ee
+This is an important result for analyzing asymptotics of random walks involving power-law pausing time densities.
+The coefficient $B$ is obtained (if necessary) by integrating the asymptotic power law using its coefficients and small-time cutoff.
+Such an argument is essential to the paper of \citet{Weeks1998}. They give $B$ in terms of an incomplete Gamma function, which I could do if I wanted.
 \bibliography{biblio}
 \end{document}
 

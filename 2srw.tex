@@ -160,39 +160,37 @@ When the opposite is true, there are three stages of diffusion with a sub-diffus
 Therefore in Einstein's concept of bedload transport where resting periods are longer than motion periods, there should be two diffusion regimes when the distributions are light-tailed.
 
 \subsubsection{asymptotic approach to the moments starting at rest}
-Expanding the Laplace mean in $s$ (around $0$ and at $\infty$) gives
-\be
-\bra \tilde{x}\ket \approx v k_- 
-\begin{cases}
-	\frac{1}{ks^2}, & s \rightarrow 0\\
-	\frac{1}{s^3}, & s \rightarrow \infty
-\end{cases},
-\ee
-so the asymptotic result is 
-\be \bra x \ket = v k_-
-\begin{cases}
-	\frac{t}{k}, & t \rightarrow \infty \\
-	\frac{1}{2} t^2, & t \rightarrow 0,\\
-\end{cases}
-\ee
-which entirely agrees with (\ref{eq:meanz}).
-Manipulating the second moment at $s \rightarrow \infty$ gives
-\be \bra \tilde{x}^2 \ket = 2v^2k_-\frac{s+ k_-}{s^5}(1+kx)^{-2} \ee
-where $x = 1/s \rightarrow 0$.
-This expands to 
-\be \bra \tilde{x}^2 \ket = 2v^2 k_-\frac{s+ k_-}{s^5} \Big( 1 - 2\frac{k}{s} + 3 \frac{k^2}{s^2}+ \dots\Big).\ee
-Dropping all terms of smaller order than $1/s^4$ gives
-\be \bra x^2 \ket \approx \frac{1}{3}v^2 k_- t^3.\ee as $t \rightarrow 0$
-as $t \rightarrow 0$. I find the same scaling from (\ref{eq:2ndmoment}).
-So at $t \rightarrow 0$ the variance is 
-\be \sigma_x^2 \approx \frac{1}{3}v^2 k_- t^3,\ee
-although this feels somewhat tricky since I'm subtracting $O(t^3)$ and $O(t^2)$ and neglecting $O(t^2)$. 
+For analyzing the $s\rightarrow \infty$ (i.e. $t\rightarrow 0$) limit the required expansions are
+\be (1+kx)^{-1} = 1 - kx + (kx)^2 - (kx)^3 + \dots \ee
+\be (1+kx)^{-2} = 1 - 2kx + 3 (kx)^2 - 4 (kx)^3 + \dots \ee
+for $kx \ll 1$.
+Using these, the moments can be written as
+\be \bra \tilde{x} \ket = vk_- \frac{1}{s^3}\Big(1-\frac{k}{s} + \big(\frac{k}{s}\big)^2 - \big(\frac{k}{s}\big)^3 + \dots \Big) \ee
+\begin{align} \bra \tilde{x}^2 \ket &= 2v^2 k_- \frac{s+k_-}{s^5}\Big(1-2\big(\frac{k}{s}\big) + 3\big(\frac{k}{s}\big)^2 - 4\big(\frac{k}{s}\big)^3 + \dots \Big) \\
+&= 2 v^2 k_- \Big(\frac{1}{s^4}+ \frac{1}{s^5}\big[k_--2k\big] + \frac{1}{s^6}\big[3k^2-2k_-k\big] + \dots\Big)
+\end{align}
+As $s\rightarrow \infty$ only the (1/s) terms to the lowest powers are significant:
+\be \bra x \ket= vk_-\Big( \frac{t^2}{2} -\frac{kt^3}{6} + \dots\Big) \ee
+\be \bra x^2 \ket = 2v^2k_- \Big(\frac{t^3}{3!} + \frac{t^4}{4!}\big[k_--2k\big] + \dots \Big) \ee
+Therefore the diffusion is ballistic at small $t$: 
+\be \sigma_x^2 \approx \frac{1}{3}v^2 k_- t^3 \ee
 
-Similarly expanding at $s=0$ gives
-\be \bra \tilde{x}^2 \ket = 2v^2 k_- \frac{s + k_-}{s^3}\Big( k - \frac{2s}{k^3} + \frac{3s^2}{k^4} + \dots \Big) .\ee
-Keeping $1/s^4$ and $1/s^3$ terms, 
-\be \bra \tilde{x}^2 \ket = 2v^2 k_-  .\ee
 
+In the $s\rightarrow 0$ limit (i.e. $t \rightarrow \infty$) the required expansions are
+\be (s+k)^{-1}  = \frac{1}{k} - \frac{s}{k^2} + \frac{s^2}{k^3} - \frac{s^3}{k^4} + \dots \ee
+\be (s+k)^{-2} = \frac{1}{k^2} - 2\frac{s^1}{k^3} + 3 \frac{s^2}{k^4} - 4 \frac{s^3}{k^5} + \dots \ee
+for $s\ll k$. Then
+\be \bra \tilde{x} \ket = v k_- \frac{1}{s^2}\Big(\frac{1}{k} - \frac{s}{k^2} + \frac{s^2}{k^3} - \frac{s^3}{k^4} + \dots \Big) \ee
+\begin{align} \bra \tilde{x}^2 \ket &= 2v^2 k_- \frac{s+k_-}{s^3}\Big(\frac{1}{k^2} - 2\frac{s^1}{k^3} + 3 \frac{s^2}{k^4} - 4 \frac{s^3}{k^5} + \dots \Big) \\
+&= 2v^2 k_-\Big[ \Big(\frac{1}{k^2} + \frac{-2k_-}{k^3} \Big)\frac{1}{s^2} + \frac{k_-}{k^2} \frac{1}{s^3} + \dots \Big].
+\end{align}
+Inverting the transforms gives
+\be \bra x \ket = v k_- \frac{t}{k}\ee
+\be \bra x^2 \ket = 2v^2 k_- \Big(\frac{k_-}{k^2} \frac{t^2}{2} + \Big[\frac{1}{k^2} - 2\frac{k_-}{k^3}\Big]t + \dots \Big)\ee
+So the diffusion is normal:
+\be \sigma_x^2 = \frac{2v^2k_+k_-^2}{k^3}(\tau_- - \tau_+ )t\ee
+where $\tau_\pm = 1/k_\pm$ are the mean times at rest and in motion.
+Notice $\tau_+ \ll \tau_-$ is Einstein's assumption where the normal diffusion limit makes sense.
 \subsection{starting in motion}
 
 Now I'll try using the opposite initial condition (the one chosen by \citet{Lisle1998}): $\theta_+ = 1$ and $\theta_- = 0$.
@@ -234,7 +232,23 @@ When the mean motion time is larger than the mean resting time, the cross-over i
 When the mean motion time is smaller than the mean resting time,
 there is a sub-diffusive cross-over zone.
 So in the zone envisioned by Einstein when motions are relatively short compared to rests, there is sharp cross-over between $t^3$ super-diffusion and normal diffusion.
- 
+\subsubsection{asymptotic approach to the moments starting in motion}
+The moments are 
+\be \bra \tilde{x} \ket = v \frac{k_- + s}{s^2(k+s)} = v\Big(\frac{k_-}{s^2} + \frac{1}{s}\Big)(k+s)^{-1}\ee
+\be \bra \tilde{x}^2 \ket = 2v^2 \frac{(k_-+s)^2}{s^3(k+s)^2} = 2v^2\Big(\frac{k_-^2}{s^3} + \frac{2k_-}{s^2} + \frac{1}{s}\Big)(k+s)^{-2}\ee
+ Expanding for $t\rightarrow \infty$ obtains 
+ \be \bra \tilde{x} \ket \approx v\Big(\frac{k_-}{s^2} + \frac{1}{s}\Big)\Big[\frac{1}{k} - \frac{s}{k^2} \Big] \approx v\frac{k_-}{ks^2} \ee
+ \begin{align} \bra \tilde{x}^2 \ket  &\approx 2v^2\Big(\frac{k_-^2}{s^3} + \frac{2k_-}{s^2} + \frac{1}{s}\Big)\Big[\frac{1}{k^2} - 2\frac{s^1}{k^3} + 3 \frac{s^2}{k^4} - 4 \frac{s^3}{k^5} + \dots\Big] \\
+ &\approx 2v^2\Big(\frac{k_-^2}{k^2s^3} + \Big[ \frac{2k_-}{k^2} + \frac{-2k_-^2}{k^3}\Big]\frac{1}{s^2}\Big).
+ \end{align}
+ Transforming back, the moments are
+ \be \bra x \ket \sim \frac{vk_-}{k}t, \ee
+ \be \bra x^2 \ket  \sim 2v^2\Big(\frac{k_-^2}{2k^2}t^2+\Big[ \frac{2k_-}{k^2} + \frac{-2k_-^2}{k^3}\Big]t\Big),\ee
+ implying again a normal diffusion at large times:
+ \be \sigma_x^2 = \frac{4v^2k_-k_+}{k^3}t.\ee
+ This result makes more sense than the last one ... 
+$\sigma_x^2$ can't have a difference of $k_-$ and $k_+$ in it.
+ Plus the asymptotic results should match.
 \section{A new generalization: Randomly stopped Lisle process}
 
 Consider the choice $\psi_1(t) = k_1e^{-k_1t}$, $f_1(x,t)=\delta(x)$, $\psi_2(t) = k_2e^{-k_2t}$, and 

@@ -85,7 +85,13 @@ The Laplace transform of the second moment is
 implying a second moment $\bra x^2 \ket = (k_1/k_2)^2[2t/k_1+t^2] $
 and a variance exemplifying the normal diffusion of bedload:
 \be \sigma_x^2 = \frac{2k_1}{k_2^2}t.\ee
-
+This is depicted in figure \ref{fig:einwalk}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth,keepaspectratio]{combo0.png}
+	\caption{Left panel shows the Einstein walk in x-t space while the right panel shows the linear variance. There is a single range of normal diffusion when steps are instantaneous.}
+	\label{fig:einwalk}
+\end{figure}
 Of course, for the Einstein theory a closed form solution of the pdf $p(x,t)$ is possible to obtain \citep[e.g.][]{Einstein1937, Hubbell1964, Daly2006,Daly2019}.
 The first transform in (\ref{eq:mwgen}) inverts easily for 
 \be \tilde{p}(\eta,t) = \exp\Big\{-\frac{k_1\eta }{k_2 + \eta} t\Big\}.\ee
@@ -279,7 +285,7 @@ The two stages of diffusion and their asymptotic behavior are indicated in figur
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth,keepaspectratio]{combo2.png}
-	\caption{Scaling behavior of variance. Left panel shows pure initial conditions while the action-packed right panel shows mixed initial conditions. Mixed initial conditions leads to an emergence of a $\sigma_x^2 \propto t^2$ term. }
+	\caption{Scaling behavior of variance. Left panel shows pure initial conditions while the action-packed right panel shows mixed initial conditions. Mixed initial express a $\sigma_x^2 \propto t^2$ term. }
 	\label{fig:lisledif}
 \end{figure}
 \section{A new generalization: Randomly stopped Lisle process}

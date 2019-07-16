@@ -100,6 +100,16 @@ The second inversion gives \citep[e.g.][]{Daly2019}
 \be p(x,t) = e^{-k_1 t -k_2 x}\Big\{ \sqrt{\frac{k_1 k_2 t}{ x}} I_1\Big( 2\sqrt{k_1k_2 x t}\Big) + \delta(x) \Big\} .\ee
 This exact solution has been the benchmark theory of bedload diffusion for over 100 years. I have only derived it within a more general framework of multi-state random walks \citep[e.g.][]{Weiss1994}.
 
+A final note -- taking the expression for $\tilde{p}(\eta,t)$ and inverting as in \citet{Weiss1994} pg. 247 gives the equation 
+\be [k_1 \partial_x + k_2\partial_t + \partial_x \partial_t] p = 0, \ee
+after some jangling.
+I'm surprised this is not the normal diffusion equation.
+I'm curious if it's correct and if the solution involving $I_1$ solves it.
+Decomposing $p = e^{-k_1 t - k_2 x}\pi$ gives 
+\be \partial_x \partial_t \pi = k_1 k_2\pi.\ee
+Does this provide $\pi \propto \sqrt{\frac{k_1k_2t}{x}}I_1(2\sqrt{k_1k_2xt})$?
+Probably not.
+
 \section{The Lisle Theory}
 Apart from formulations of \citet{Einstein1937} using different step length and resting time distributions than exponential \citep[e.g.][]{Sayre1965}, the first significant advancement from \citet{Einstein1937} was due to \citet{Lisle1998}.
 This type of random walk is depicted in figure \ref{fig:lislewalk}.
@@ -329,8 +339,10 @@ Finally,
 \be \El\Big\{\frac{a}{bs+c};s\Big\} = \frac{a}{b}e^{-cx/b}\label{eq:lap10}\ee
 and
 \be \El\Big\{\frac{as}{bs+c};s\Big\} = \frac{a}{b}\Big[\delta(x) - \frac{c}{b}e^{-cx/b}\Big].\label{eq:lap11}\ee
-
-
+The Laplace transform of a first derivative is 
+\be \El\{f'(t)\} = s\tilde{f}(s)-f(0),\ee
+while a second derivative is 
+\be \El\{f''(t)\} = s^2 \tilde{f}(s) - sf(0) -f'(0).\ee
 \section*{Appendix: Asymptotics of stable laws}
 When a resting time distribution $\psi(t)$ has divergent moments, the behavior of its Laplace transform $\tilde{\psi}(s)$ for $s\rightarrow0$ cannot be analyzed by simply expanding the exponential in its definition for small $s$ as in 
 \be \tilde{\psi}(s) \sim \int_0^\infty \{1-st + (st)^2/2 + \dots \} \psi(t),\ee
@@ -346,6 +358,28 @@ Clearly this integral is dominated by the asymptotic behavior of $\psi(t)$:
 This is an important result for analyzing asymptotics of random walks involving power-law pausing time densities.
 The coefficient $B$ is obtained (if necessary) by integrating the asymptotic power law using its coefficients and small-time cutoff.
 Such an argument is essential to the paper of \citet{Weeks1998}. They give $B$ in terms of an incomplete Gamma function, which I could do if I wanted.
+
+\section*{Appendix: Modified Bessel functions of the first kind}
+A cool property is 
+\be I_n(x) = T_n\Big(\frac{d}{dx}\Big)I_0(x)\ee
+where $T_n$ is a Chebyshev polynomial of the first kind:
+\begin{align}
+T_0(x) &= 1 \\
+T_1(x) &= x \\
+T_2(x) &= 2x^2 -1 \\
+&\vdots
+\end{align}
+This is available at \url{http://mathworld.wolfram.com/ModifiedBesselFunctionoftheFirstKind.html}.
+In particular, 
+\be I_1(x) = I_0'(x).\ee
+The large $x$ expansion ($x\gg | \nu^2-1/4|$) of the modified Bessel function of the first kind is 
+\be I_\nu(x) \approx \frac{e^x}{\sqrt{2\pi x}}\Big(1 + \frac{(1-2\nu)(1+2\nu)}{8x} + \dots \Big)\ee
+while the small $x$ expansion ($0\leq x \leq \sqrt{\nu+1}$) is
+\be I_\nu(x) = \frac{1}{\Gamma(\nu+ 1)}\Big(\frac{x}{2}\Big)^\nu.\ee
+These are from \url{https://pdfs.semanticscholar.org/48dc/ca3cffb78de80ab37b84a992379c2f30bdda.pdf}.
+The recurrence relations are
+\be I_{\nu-1}(x) - I_{\nu+1}(x) = \frac{2\nu}{x}I_\nu(x)\ee
+\be I_{\nu-1}(x) + I_{\nu+1}(x) = 2\frac{d}{dx}I_\nu(x).\ee
 \bibliography{biblio}
 \end{document}
 

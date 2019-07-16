@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 2srw.aux
 The style file: agu.bst
 Database file #1: biblio.bib
@@ -17,45 +17,45 @@ Repeated entry---line 9986 of file biblio.bib
 I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--missing publisher in Nakagawa1976
-You've used 23 entries,
+You've used 24 entries,
             3075 wiz_defined-function locations,
-            1236 strings with 13146 characters,
-and the built_in function-call counts, 19036 in all, are:
-= -- 2046
-> -- 605
+            1246 strings with 13380 characters,
+and the built_in function-call counts, 20196 in all, are:
+= -- 2184
+> -- 643
 < -- 20
-+ -- 323
-- -- 147
-* -- 1211
-:= -- 1750
-add.period$ -- 23
-call.type$ -- 23
-change.case$ -- 115
-chr.to.int$ -- 23
-cite$ -- 70
-duplicate$ -- 2043
-empty$ -- 1162
-format.name$ -- 214
-if$ -- 3832
++ -- 345
+- -- 156
+* -- 1285
+:= -- 1846
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 121
+chr.to.int$ -- 24
+cite$ -- 73
+duplicate$ -- 2169
+empty$ -- 1222
+format.name$ -- 226
+if$ -- 4065
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 227
-newline$ -- 76
-num.names$ -- 92
-pop$ -- 851
+missing$ -- 238
+newline$ -- 79
+num.names$ -- 96
+pop$ -- 892
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 100
 quote$ -- 0
-skip$ -- 1140
+skip$ -- 1225
 stack$ -- 0
-substring$ -- 724
-swap$ -- 1639
+substring$ -- 776
+swap$ -- 1751
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 195
+type$ -- 204
 warning$ -- 1
-while$ -- 116
+while$ -- 122
 width$ -- 0
-write$ -- 267
+write$ -- 279
 (There were 3 error messages)

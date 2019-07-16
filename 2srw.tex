@@ -298,6 +298,21 @@ The two stages of diffusion and their asymptotic behavior are indicated in figur
 	\caption{Scaling behavior of variance. Left panel shows pure initial conditions while the action-packed right panel shows mixed initial conditions. Mixed initial express a $\sigma_x^2 \propto t^2$ term. }
 	\label{fig:lisledif}
 \end{figure}
+
+\section{Heavy-tailed resting time in a two-state walk}
+Set $\psi_1(t) = A_\alpha t^{-\alpha}$ for $t\geq t_\alpha$.
+$A_\alpha = (\alpha-1)t_\alpha^{\alpha-1}$ \citep[e.g.][eq. 12]{Weeks1996}.
+Consider everything else the same as the \citet{Lisle1998} process.
+The laplace transform of $\psi_1(t)$ is
+\be \tilde{\psi}(s) = A_\alpha s^{\alpha-1}\Gamma(1-\alpha,st_\alpha).\ee
+The incomplete gamma function is defined by 
+\be \Gamma(q,x) = \int_x^\infty t^{q-1}e^{-t}dt.\ee
+There's a need to expand this at small arguments.
+Crucially, \citet{Weeks1996} did not use the standard Pareto distribution notation.
+
+\subsection{$t\rightarrow \infty$ expected behavior}
+$\alpha<1/2$ implies subdiffusion. $1/2<\alpha<2$ implies superdiffusion, $\alpha>2$ implies normal diffusion.
+
 \section{A new generalization: Randomly stopped Lisle process}
 
 Consider the choice $\psi_1(t) = k_1e^{-k_1t}$, $f_1(x,t)=\delta(x)$, $\psi_2(t) = k_2e^{-k_2t}$, and 
@@ -310,7 +325,7 @@ and $G_2(\eta,s|T) = g_2(\eta,s|T)/k_2$.
 You can maybe solve this conditional to $T$ to obtain $p(x,t|T)$.
 Then inputting a distribution for the trapping time $T$, the over-all distribution will be $p(x,t) = \int dT p(x,t|T)f(T)$.
 
-Assuming the walker starts at rest the double transformed probability is
+Assuming the walker starts at rest, the double transformed probability is
 \be \tilde{p}(\eta,s) = \ee
 
 

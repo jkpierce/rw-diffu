@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -39,7 +39,7 @@ Fan, N., A.~Singh, M.~Guala, E.~Foufoula-Georgiou, and B.~Wu, {Exploring a
   Isackson}}]{Gordon1972}
 Gordon, R., J.~B. Carmichael, and F.~J. Isackson, {Saltation of Plastic Balls
   in a 'One-Dimensional' Flume}, \textit{Water Resources Research},
-  \textit{8}(2), 444--458, 1972.
+  \textit{8}(2), 444--458, \doi{10.1029/WR008i002p00444}, 1972.
 
 \bibitem[{\textit{Horsthemke and Lefever}(1984)}]{Horsthemke1984}
 Horsthemke, W., and R.~Lefever, \textit{{Noise-Induced Transitions: Theory and
@@ -82,11 +82,6 @@ Nikora, V., J.~Heald, D.~Goring, and I.~McEwan, {Diffusion of saltating
   particles in unidirectional water flow over a rough granular bed},
   \textit{Journal of Physics A: Mathematical and General}, \textit{34}(50),
   \doi{10.1088/0305-4470/34/50/103}, 2001.
-
-\bibitem[{\textit{Prudnikov et~al.}(1986)\textit{Prudnikov, Brychov, and
-  Marichev}}]{Prudnikov1986}
-Prudnikov, A.~P., Y.~A. Brychov, and O.~Marichev, \textit{{Integrals and
-  Series}}, vol.~5, Gordon and Breach, New York, 1986.
 
 \bibitem[{\textit{Risken}(1989)}]{Risken1989}
 Risken, H., \textit{{The Fokker-Planck Equation: Methods of Solution and

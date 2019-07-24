@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -9,21 +9,16 @@
 Einstein, H.~A., {Bed-load transport as a probability problem}, Ph.D. thesis,
   ETH Zurich, 1937.
 
+\bibitem[{\textit{Einstein}(1950)}]{Einstein1950}
+Einstein, H.~A., {The Bed-Load Function for Sediment Transportation in Open
+  Channel Flows}, \textit{Tech. Rep. 1026}, United States Department of
+  Agriculture, Washington, DC, 1950.
+
 \bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
   Sander, and Parlange}}]{Lisle1998}
 Lisle, I.~G., C.~W. Rose, W.~L. Hogarth, P.~B. Hairsine, G.~C. Sander, and
   J.-Y. Parlange, {Stochastic sediment transport in soil erosion},
   \textit{Journal of Hydrology}, \textit{204}, 217--230, 1998.
-
-\bibitem[{\textit{Schmidt et~al.}(2007)\textit{Schmidt, Sagu{\'{e}}s, and
-  Sokolov}}]{Schmidt2007}
-Schmidt, M.~G., F.~Sagu{\'{e}}s, and I.~M. Sokolov, {Mesoscopic description of
-  reactions for anomalous diffusion: A case study}, \textit{Journal of Physics
-  Condensed Matter}, \textit{19}(6), \doi{10.1088/0953-8984/19/6/065118}, 2007.
-
-\bibitem[{\textit{Weiss}(1976)}]{Weiss1976}
-Weiss, G.~H., {The two-state random walk}, \textit{Journal of Statistical
-  Physics}, \textit{15}(2), 157--165, \doi{10.1007/BF01012035}, 1976.
 
 \bibitem[{\textit{Weiss}(1994)}]{Weiss1994}
 Weiss, G.~H., \textit{{Aspects and applications of the random walk}}, North

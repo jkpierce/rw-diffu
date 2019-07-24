@@ -1,5 +1,6 @@
-\BOOKMARK [1][-]{section.1}{Probabilities that a transition just occurred}{}% 1
-\BOOKMARK [1][-]{section.2}{Probabilities away from transition points}{}% 2
-\BOOKMARK [1][-]{section.3}{Propagators}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Einstein propagators}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Lisle propagators}{section.3}% 5
+\BOOKMARK [1][-]{section.1}{Random walk with trapping}{}% 1
+\BOOKMARK [1][-]{section.2}{Lisle propagators}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{distribution function}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{moments from motion}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{the mean}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{the second moment}{subsection.2.2}% 6

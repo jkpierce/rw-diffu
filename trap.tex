@@ -88,34 +88,22 @@ with $k' = k_1 + k_2$. Taking $\kappa \rightarrow 0$ gives an earlier result.
 
 
 \subsection{distribution function}
-
+After a lot of work which is in your notebook, this becomes
 \begin{align}
-p(x,t) &= \El^{-1} \Big\{\El^{-1}\Big\{\frac{1}{s} \frac{(s+\kappa+k')s + \kappa k_2}{\eta v(s + \kappa + k_1) + s(s+ \kappa + k') + \kappa k_2};\eta\rightarrow x\Big\};s\rightarrow t\Big\}\\
-&= \El^{-1}\Big\{\frac{(s+\kappa + k')s + \kappa k_2}{s(s+\kappa + k_1)v}\exp\Big[-\frac{s(s+\kappa + k')+\kappa k_2}{(s+\kappa +k_1)v}x\Big];s\rightarrow t\Big\} \\
-&= e^{-(k_1 + \kappa)t}\El^{-1}\Big\{ \frac{(s + k_2)(s-\kappa -k_1)+\kappa k_2}{(s-\kappa-k_1)sv} \exp\Big[-\frac{(s-\kappa-k_1)(s+k_2)+\kappa k_2}{sv}x\Big] ;s\rightarrow t\Big\}\\
-&= e^{-(k_1 + \kappa)t - (k_2-k_1-\kappa)x/v}\El^{-1}\Big\{ \frac{(s + k_2)(s-\kappa -k_1)+\kappa k_2}{(s-\kappa-k_1)sv} \exp\Big[-\frac{k_1k_2}{vs}x - \frac{sx}{v}\Big] ;t\Big\}\\
-&= e^{-(k_1 + \kappa)t - (k_2-k_1-\kappa)x/v}\El^{-1}\Big\{ \frac{(s + k_2)(s-\kappa -k_1)+\kappa k_2}{(s-\kappa-k_1)sv} \exp\Big[-\frac{k_1k_2}{vs}x\Big] ;t-x/v\Big\}\\
+p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
+\Big[&\frac{1}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\} \\
+&+ \frac{k_2}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\frac{1}{s}\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\} \\
+&+ \frac{\kappa k_2}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\}\Big]
 \end{align}
-which gets big:
-\begin{multline}
-p(x,t) = e^{-(k_1 + \kappa)t - (k_2-k_1-\kappa)x/v} \\
-\times \Big[ \El^{-1}\Big\{\frac{1}{v}\exp\Big[-\frac{k_1k_2}{vs}x\Big];t-x/v\Big\} 
-+ \El^{-1}\Big\{\frac{k_2}{sv}\exp\Big[-\frac{k_1k_2}{vs}x\Big];t-x/v\Big\} \\
-+ \El^{-1}\Big\{\frac{\kappa k_2}{(s-\kappa-k_1)sv}\exp\Big[-\frac{k_1k_2}{vs}x\Big];t-x/v\Big\}
-\Big]
-\end{multline}
-\begin{multline}
-p(x,t) = e^{-(k_1 + \kappa)t - (k_2-k_1-\kappa)x/v} 
-\times \Big[ \frac{1}{v}\sqrt{\frac{k_1 k_2 x}{v (t-x/v)}}I_1\Big(2\sqrt{\frac{k_1k_2 x}{v}\big(t-\frac{x}{v}\big)}\Big) + \frac{1}{v}\delta(t-x/v) \\ + \frac{k_2}{v} I_0\Big(2\sqrt{\frac{k_1k_2 x}{v}\big(t-\frac{x}{v}\big)}\Big) \\
-+ \El^{-1}\Big\{\frac{\kappa k_2}{(s-\kappa-k_1)sv}\exp\Big[-\frac{k_1k_2}{vs}x\Big];t-x/v\Big\}
-\Big]
-\end{multline}
-The inverse transform can be performed as (Prudnikov 1.1.1.14)
 \begin{align}
- \frac{\kappa k_2}{v} &\El^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[-\frac{k_1k_2}{vs}x\Big];t-x/v\Big\}\\
-&=-\frac{\kappa k_2}{v}\frac{1}{\kappa + k_1}\Big(\int_0^{t-x/v} du I_0\Big(2\sqrt{\frac{k_1k_2 x}{v}u}\Big) - e^{(\kappa + k_1)t}\int_0^{t-x/v} du I_0\Big(2\sqrt{\frac{k_1k_2 x}{v}u}\Big)e^{-(\kappa + k_1)u}\Big)
+p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
+\Bigg[&\frac{1}{v}\delta(t-x/v) + \frac{1}{v}\sqrt{\frac{k_1k_2x}{v(t-x/v)}}\theta(t-x/v)\mathcal{I}_1\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg)\\
+&+\frac{k_2}{v}\theta(t-x/v)\mathcal{I}_0\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg)\\
+&+ \kappa\frac{ k_2}{v(\kappa+k_1)}e^{(\kappa+k_1)(t-x/v)}\theta(t-x/v)\mathcal{Q}(x,t)\Bigg]
 \end{align}
-I dunno how to do that.
+where the function $\mathcal{Q}$ is
+\be \mathcal{Q}(x,t) = \sum_{j=0}^\infty \frac{\big[\frac{k_1k_2x}{v(\kappa+k_1)}\big]^j}{j!j!} \gamma\big(j+1,[\kappa+k_1][t-x/v]\big),\ee
+where the $\mathcal{I}_\nu(z)$ are modified Bessel functions of the first kind, and $\gamma(\alpha,z)$ is the lower incomplete gamma function.
 
 \subsection{moments from motion}
 \be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][s+\kappa + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2}\ee

@@ -1,0 +1,126 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Balakrishnan and Chaturvedi}(1988)}]{Balakrishnan1988}
+Balakrishnan, V., and S.~Chaturvedi, {Persistent Diffusion on a Line},
+  \textit{Physica A}, \textit{148}, 581--596, 1988.
+
+\bibitem[{\textit{Bena}(2006)}]{Bena2006}
+Bena, I., {Dichotomous Markov noise: Exact results for out-of-equilibrium
+  systems. A review}, \textit{International Journal of Modern Physics B},
+  \textit{20}(20), 2825--2888, \doi{10.1142/S0217979206034881}, 2006.
+
+\bibitem[{\textit{Daly}(2019)}]{Daly2019}
+Daly, E., {Poisson process transient solution}, \textit{Personal
+  Communication}, pp. 1--2, 2019.
+
+\bibitem[{\textit{Daly and Porporato}(2006)}]{Daly2006}
+Daly, E., and A.~Porporato, {Probabilistic dynamics of some jump-diffusion
+  systems}, \textit{Physical Review E - Statistical, Nonlinear, and Soft Matter
+  Physics}, \textit{73}(2), 1--7, \doi{10.1103/PhysRevE.73.026108}, 2006.
+
+\bibitem[{\textit{Einstein}(1937)}]{Einstein1937}
+Einstein, H.~A., {Bed-load transport as a probability problem}, Ph.D. thesis,
+  ETH Zurich, 1937.
+
+\bibitem[{\textit{Fan et~al.}(2016)\textit{Fan, Singh, Guala,
+  Foufoula-Georgiou, and Wu}}]{Fan2016}
+Fan, N., A.~Singh, M.~Guala, E.~Foufoula-Georgiou, and B.~Wu, {Exploring a
+  semimechanistic episodic Langevin model for bed load transport: Emergence of
+  normal and anomalous advection and diffusion regimes}, \textit{Water
+  Resources Research}, \textit{52}(4), 3787--3814,
+  \doi{10.1002/2016WR018704.Received}, 2016.
+
+\bibitem[{\textit{Gordon et~al.}(1972)\textit{Gordon, Carmichael, and
+  Isackson}}]{Gordon1972}
+Gordon, R., J.~B. Carmichael, and F.~J. Isackson, {Saltation of Plastic Balls
+  in a 'One-Dimensional' Flume}, \textit{Water Resources Research},
+  \textit{8}(2), 444--458, \doi{10.1029/WR008i002p00444}, 1972.
+
+\bibitem[{\textit{Horsthemke and Lefever}(1984)}]{Horsthemke1984}
+Horsthemke, W., and R.~Lefever, \textit{{Noise-Induced Transitions: Theory and
+  Applications in Physics, Chemistry, and Biology}}, Springer-Verlag, 1984.
+
+\bibitem[{\textit{Hubbell and Sayre}(1964)}]{Hubbell1964}
+Hubbell, D.~W., and W.~W. Sayre, {Sand Transport Studies with Radioactive
+  Tracers}, \textit{J. Hydr. Div.}, \textit{90}(HY3), 39--68, 1964.
+
+\bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
+  Sander, and Parlange}}]{Lisle1998}
+Lisle, I.~G., C.~W. Rose, W.~L. Hogarth, P.~B. Hairsine, G.~C. Sander, and
+  J.-Y. Parlange, {Stochastic sediment transport in soil erosion},
+  \textit{Journal of Hydrology}, \textit{204}, 217--230, 1998.
+
+\bibitem[{\textit{Masoliver}(2016)}]{Masoliver2016}
+Masoliver, J., {Fractional telegrapher's equation from fractional persistent
+  random walks}, \textit{Physical Review E}, \textit{93}(5), 1--10,
+  \doi{10.1103/PhysRevE.93.052107}, 2016.
+
+\bibitem[{\textit{Masoliver and Lindenberg}(2017)}]{Masoliver2017}
+Masoliver, J., and K.~Lindenberg, {Continuous time persistent random walk: a
+  review and some generalizations}, \textit{European Physical Journal B},
+  \textit{90}(6), \doi{10.1140/epjb/e2017-80123-7}, 2017.
+
+\bibitem[{\textit{Nakagawa and Tsujimoto}(1976)}]{Nakagawa1976}
+Nakagawa, H., and T.~Tsujimoto, {On Probabilistic Characteristics of Motion of
+  Individual Sediment Particles on Stream Beds}, in \textit{Hydraulic Problems
+  Solved by Stochastic Methods: Second International IAHR Symposium on
+  Stochastic Hydraulics}, pp. 293--320, Lund, Sweden, 1976.
+
+\bibitem[{\textit{Nikora}(2002)}]{Nikora2002}
+Nikora, V., {On bed particle diffusion in gravel bed flows under weak bed load
+  transport}, \textit{Water Resources Research}, \textit{38}(6), 1--9,
+  \doi{10.1029/2001WR000513}, 2002.
+
+\bibitem[{\textit{Nikora et~al.}(2001)\textit{Nikora, Heald, Goring, and
+  McEwan}}]{Nikora2001a}
+Nikora, V., J.~Heald, D.~Goring, and I.~McEwan, {Diffusion of saltating
+  particles in unidirectional water flow over a rough granular bed},
+  \textit{Journal of Physics A: Mathematical and General}, \textit{34}(50),
+  \doi{10.1088/0305-4470/34/50/103}, 2001.
+
+\bibitem[{\textit{Risken}(1989)}]{Risken1989}
+Risken, H., \textit{{The Fokker-Planck Equation: Methods of Solution and
+  Applications}}, 2nd ed., Springer-Verlag, Ulm, 1989.
+
+\bibitem[{\textit{Sayre and Hubbell}(1965)}]{Sayre1965}
+Sayre, W.~W., and D.~W. Hubbell, {Transport and Dispersion of Labeled Bed
+  Material North Loup River , Nebraska}, \textit{Transport of Radionuclides by
+  Streams}, 1965.
+
+\bibitem[{\textit{{Van Den Broeck}}(1990)}]{VanDenBroeck1990}
+{Van Den Broeck}, C., {Taylor Dispersion Revisited}, \textit{Physica A},
+  \textit{168}, 677--696, 1990.
+
+\bibitem[{\textit{Weeks and Swinney}(1998)}]{Weeks1998}
+Weeks, E.~R., and H.~L. Swinney, {Anomalous diffusion resulting from strongly
+  asymmetric random walks}, \textit{Physical Review E - Statistical Physics,
+  Plasmas, Fluids, and Related Interdisciplinary Topics}, \textit{57}(5),
+  4915--4920, \doi{10.1103/PhysRevE.57.4915}, 1998.
+
+\bibitem[{\textit{Weeks et~al.}(1996)\textit{Weeks, Urbach, and
+  Swinney}}]{Weeks1996}
+Weeks, E.~R., J.~S. Urbach, and H.~L. Swinney, {Anomalous diffusion in
+  asymmetric random walks with a quasi-geostrophic flow example},
+  \textit{Physica D: Nonlinear Phenomena}, \textit{97}(1-3), 291--310,
+  \doi{10.1016/0167-2789(96)00082-6}, 1996.
+
+\bibitem[{\textit{Weiss}(1976)}]{Weiss1976}
+Weiss, G.~H., {The two-state random walk}, \textit{Journal of Statistical
+  Physics}, \textit{15}(2), 157--165, \doi{10.1007/BF01012035}, 1976.
+
+\bibitem[{\textit{Weiss}(1994)}]{Weiss1994}
+Weiss, G.~H., \textit{{Aspects and applications of the random walk}}, North
+  Holland, Amsterdam, 1994.
+
+\bibitem[{\textit{Zhang et~al.}(2012)\textit{Zhang, Meerschaert, and
+  Packman}}]{Zhang2012}
+Zhang, Y., M.~M. Meerschaert, and A.~I. Packman, {Linking fluvial bed sediment
+  transport across scales}, \textit{Geophysical Research Letters},
+  \textit{39}(20), 1--6, \doi{10.1029/2012GL053476}, 2012.
+
+\end{thebibliography}

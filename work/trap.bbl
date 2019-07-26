@@ -1,0 +1,27 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Einstein}(1937)}]{Einstein1937}
+Einstein, H.~A., {Bed-load transport as a probability problem}, Ph.D. thesis,
+  ETH Zurich, 1937.
+
+\bibitem[{\textit{Einstein}(1950)}]{Einstein1950}
+Einstein, H.~A., {The Bed-Load Function for Sediment Transportation in Open
+  Channel Flows}, \textit{Tech. Rep. 1026}, United States Department of
+  Agriculture, Washington, DC, 1950.
+
+\bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
+  Sander, and Parlange}}]{Lisle1998}
+Lisle, I.~G., C.~W. Rose, W.~L. Hogarth, P.~B. Hairsine, G.~C. Sander, and
+  J.-Y. Parlange, {Stochastic sediment transport in soil erosion},
+  \textit{Journal of Hydrology}, \textit{204}, 217--230, 1998.
+
+\bibitem[{\textit{Weiss}(1994)}]{Weiss1994}
+Weiss, G.~H., \textit{{Aspects and applications of the random walk}}, North
+  Holland, Amsterdam, 1994.
+
+\end{thebibliography}

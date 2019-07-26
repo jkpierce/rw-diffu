@@ -1,0 +1,145 @@
+\documentclass[11pt]{article}
+% General document formatting
+\usepackage[margin=0.75in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}         % side-by-side figures 
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{booktabs} % for wrapping tabulars in accord with
+\bibliographystyle{agu}
+\setlength{\droptitle}{-5em}   % This is your set screw
+
+%\usepackage[math]{kurier}
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+
+\newcommand\om{\omega}
+\newcommand\tom{\tilde{\omega}}
+\newcommand\tg{\tilde{g}}
+\newcommand\tp{\tilde{p}}
+\newcommand\tG{\tilde{G}}
+\newcommand\El{\mathcal{L}}
+\begin{document}
+
+\title{Bedload diffusion through an environment with traps}
+\author{Kevin Pierce}
+\maketitle
+
+\section{Random walk with trapping}
+Consider a tracer which can be either in motion or at rest.
+While the tracer is at rest, it can be trapped with a constant probability per unit time. 
+If the tracer traps, it is immobile for all time.
+The joint distributions that the tracer's sojourn ends, either from the motion state labeled by the index 2 or the rest state labeled by 1T or 1F for "trapped" or "free" are given by
+\begin{align}
+\om_{1T}(x,t) &= \theta_1\big[1-\Phi(t)\big]g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\big[1-\Phi(t)\big]g_1(x-x',t-t')\\
+\om_{1F}(x,t) &= \theta_1\Phi(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi(t) g_1(x-x',t-t')\\
+\om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t')\\
+\end{align}
+Taking double transforms gives
+\begin{align}
+\tom_{1T}(\eta,s) &= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s) \\
+\tom_{1F}(\eta,s) &= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa)\\
+\tom_2(\eta,s) &= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s)
+\end{align}
+This system solves for 
+\begin{align}
+\tom_{1T}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
+\tom_{1F}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa)\\
+\tom_{2}(\eta,s) &= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s)\\
+\end{align}
+The probabilities of being in state $0$ (trapped), $1$ (rest), and $2$ (motion) are
+\begin{align}
+p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t')\\
+p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\\
+p_2(x,t) &= \theta_2 G_2(x,t) + \int_0^x dx' \int_0^t dt' \omega_{1F}(x',t')G_2(x-x',t-t'),
+\end{align}
+Double transforming gives
+\begin{align}
+\tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s)\\
+\tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s) \\
+\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s)\\
+\end{align}
+The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$ or 
+\begin{multline}
+\tp(\eta,s) = \frac{1}{s}\frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
++\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)} \\
+\end{multline}
+Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s,$ it follows that the joint distribution is normalized in space: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = 1/s$.
+Taking the limit of zero trapping rate $\kappa \rightarrow 0$ the equations reduce to a two-state random walk equivalent to the theories of \citet{Einstein1937} and \citet{Lisle1998}, equation (6.33) in \citet{Weiss1994}. This all seems correct.
+
+\section{Lisle propagators}
+Setting $g_1(x,t) = \delta(x)k_1e^{-k_1t}$ and $g_2(x,t) = \delta(x-vt)k_2e^{-k_2 t}$ gives the Laplace representations
+\begin{align}
+\tg_1(\eta,s) &= \frac{k_1}{k_1 + s}\\
+\tg_2(\eta,s) &=  \frac{k_2}{k_2 + \eta v + s} \\
+\tG_i(\eta,s) &= \frac{\tg_i(\eta,s)}{k_i}
+\end{align}
+In terms of these propagators and assuming tracers start in motion $\theta_2 =1$ gives the form
+\be \tp(\eta,s) =\frac{1}{s} \frac{(s+\kappa+k')s + \kappa k_2}{\eta v(s + \kappa + k_1) + (s+ \kappa + k')s + \kappa k_2} \ee
+with $k' = k_1 + k_2$. Taking $\kappa \rightarrow 0$ gives an earlier result.
+
+
+\subsection{distribution function}
+After a lot of work which is in your notebook, this becomes
+\begin{align}
+p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
+\Big[&\frac{1}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\} \\
+&+ \frac{k_2}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\frac{1}{s}\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\} \\
+&+ \frac{\kappa k_2}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\}\Big]
+\end{align}
+\begin{align}
+p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
+\Bigg[&\frac{1}{v}\delta(t-x/v) + \frac{1}{v}\sqrt{\frac{k_1k_2x}{v(t-x/v)}}\theta(t-x/v)\mathcal{I}_1\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg)\\
+&+\frac{k_2}{v}\theta(t-x/v)\mathcal{I}_0\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg)\\
+&+ \kappa\frac{ k_2}{v(\kappa+k_1)}e^{(\kappa+k_1)(t-x/v)}\theta(t-x/v)\mathcal{Q}(x,t)\Bigg]
+\end{align}
+where the function $\mathcal{Q}$ is
+\be \mathcal{Q}(x,t) = \sum_{j=0}^\infty \frac{\big[\frac{k_1k_2x}{v(\kappa+k_1)}\big]^j}{j!j!} \gamma\big(j+1,[\kappa+k_1][t-x/v]\big),\ee
+where the $\mathcal{I}_\nu(z)$ are modified Bessel functions of the first kind, and $\gamma(\alpha,z)$ is the lower incomplete gamma function.
+
+\subsection{moments from motion}
+\be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][s+\kappa + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2}\ee
+\be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{[(s+\kappa + k')s+\kappa k_2][s+\kappa + k_1]^2}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}\ee
+\be  \frac{\bra\tilde{x}\ket} {v} = \frac{1}{s}\frac{s+\kappa + k_1}{(s+\kappa + k')s + \kappa k_2}\ee
+\be \frac{\bra \tilde{x}^2 \ket}{2v^2} = \frac{1}{s} \frac{[s+\kappa + k_1]^2}{[(s+\kappa + k')s + \kappa k_2]^2} \ee
+\subsubsection{the mean}
+\begin{align}
+\frac{\bra x \ket}{v} &= \El^{-1}\Big\{\frac{1}{s}\frac{s+\kappa + k_1}{(s+\kappa + k')s + \kappa k_2};t\Big\} \\
+&= \El^{-1}\Big\{\frac{1}{\big[s+\frac{\kappa+k'}{2}\big]^2+\kappa k_2 - \big[\frac{\kappa+k'}{2}\big]^2};t\Big\} + 
+\int_0^t du \El^{-1}\Big\{\frac{\kappa + k_1}{\big[s+\frac{\kappa+k'}{2}\big]^2+\kappa k_2 - \big[\frac{\kappa+k'}{2}\big]^2};u\Big\}\\
+&= e^{-(\kappa + k')t/2}\El^{-1}\Big\{\frac{1}{s^2 - b^2};t\Big\} + (\kappa + k_1)\int_0^t du e^{-(\kappa + k')u/2}\El^{-1}\Big\{\frac{1}{s^2 - b^2};u\Big\}
+\end{align}
+here $b^2 = -\kappa k_2 + \big[\frac{\kappa+k'}{2}\big]^2$
+Then with Prudnikov 2.1.5.4:
+\begin{align}
+\frac{\bra x \ket}{v} &= \frac{1}{b}e^{-(\kappa + k')t/2}\sinh(bt) + \frac{(\kappa +k_1)}{b}\int_0^t due^{-(\kappa + k')u/2}\sinh(bu)\\
+&=  \frac{1}{b}e^{-at}\sinh(bt) + \frac{\kappa + k_1}{2b}\Big[\frac{1}{b-a}\Big(e^{(b-a)t}-1\Big)+ \frac{1}{a+b}\Big(e^{-(a+b)t}-1\Big)\Big]
+\end{align}
+where $a=(\kappa + k')/2$ and $b = \sqrt{a^2 -\kappa k_2}$.
+The limit of $\kappa \rightarrow 0$ provides
+\be \frac{k'^2}{v}\bra x \ket=k_2(1-e^{-k't})+ k_1k't \ee
+which aligns perfectly with earlier results.
+
+
+\subsubsection{the second moment}
+A similar approach provides 
+\begin{align}
+ \frac{\bra x^2 \ket}{2v^2} &= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[(s+a)^2-b^2]^2};t\Big\}\\
+&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[s^2-b^2]^2};t\Big\}e^{-at}\\
+&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)e^{-at}\frac{1}{2b^3}\Big[bt\cosh(bt)-\sinh(bt)\Big]
+\end{align}
+using Prudnikov 2.1.5.6.
+
+\bibliography{biblio}
+\end{document}
+
+
+

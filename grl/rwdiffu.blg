@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: rwdiffu.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: biblio.bib.bib
+Repeated entry---line 2995 of file biblio.bib.bib
+ : @article{Sayre1965
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4696 of file biblio.bib.bib
+ : @article{Scher1973
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8492 of file biblio.bib.bib
+ : @article{Taylor1920
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9969 of file biblio.bib.bib
+ : @article{Dwivedi2011
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 11465 of file biblio.bib.bib
+ : @article{Bagnold1973
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 11605 of file biblio.bib.bib
+ : @article{Nikora2001a
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 12404 of file biblio.bib.bib
+ : @article{Einstein1905
+ :                      ,
+I'm skipping whatever remains of this entry
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in Taylor1920
+You've used 58 entries,
+            6951 wiz_defined-function locations,
+            1722 strings with 31209 characters,
+and the built_in function-call counts, 115048 in all, are:
+= -- 14204
+> -- 945
+< -- 5600
++ -- 5859
+- -- 116
+* -- 7571
+:= -- 21072
+add.period$ -- 242
+call.type$ -- 58
+change.case$ -- 990
+chr.to.int$ -- 0
+cite$ -- 117
+duplicate$ -- 3157
+empty$ -- 4431
+format.name$ -- 1589
+if$ -- 21696
+int.to.chr$ -- 0
+int.to.str$ -- 174
+missing$ -- 0
+newline$ -- 1542
+num.names$ -- 467
+pop$ -- 1586
+preamble$ -- 1
+purify$ -- 232
+quote$ -- 0
+skip$ -- 7556
+stack$ -- 0
+substring$ -- 6414
+swap$ -- 1863
+text.length$ -- 139
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 4960
+warning$ -- 1
+while$ -- 550
+width$ -- 0
+write$ -- 1915
+(There were 7 error messages)

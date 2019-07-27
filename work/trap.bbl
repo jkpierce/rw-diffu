@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{3}
 \providecommand{\natexlab}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
@@ -8,11 +8,6 @@
 \bibitem[{\textit{Einstein}(1937)}]{Einstein1937}
 Einstein, H.~A., {Bed-load transport as a probability problem}, Ph.D. thesis,
   ETH Zurich, 1937.
-
-\bibitem[{\textit{Einstein}(1950)}]{Einstein1950}
-Einstein, H.~A., {The Bed-Load Function for Sediment Transportation in Open
-  Channel Flows}, \textit{Tech. Rep. 1026}, United States Department of
-  Agriculture, Washington, DC, 1950.
 
 \bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
   Sander, and Parlange}}]{Lisle1998}

@@ -9,6 +9,8 @@
 
 %custom packages
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{comment}
+\usepackage{booktabs}
 % custom commands
 \newcommand\be{\begin{equation}}
 \newcommand\ee{\end{equation}} 
@@ -26,11 +28,11 @@
 \title{Back to Einstein: how to include trapping processes in fluvial diffusion models?}
 
 \authors{James K. Pierce \affil{1}and Marwan A. Hassan\affil{1}}
-\affiliation{1}{University of British Columbia}
+\affiliation{1}{Department of Geography \\University of British Columbia}
 \correspondingauthor{James Kevin Pierce}{kpierce@alumni.ubc.ca}
 
 \begin{keypoints}
-\item We generalize the bedload diffusion model of Hans Albert Einstein to include motion intervals and sediment trapping processes.
+\item We generalize the bedload diffusion model of Hans Albert Einstein to include periods of motion and sediment trapping processes.
 \item This derives three stages of bedload diffusion and unambiguously attributes physical mechanisms to each stage.
 \end{keypoints}
 
@@ -39,32 +41,36 @@ One approach to predict geomorphic change in rivers is to upscale from the motio
 \end{abstract}
 
 \section{Introduction}
-% " The problem of anomalous transport has ... "
-The random walk has been a ubiquitous model of natural phenomena across the physical sciences.
-The model was developed by the scientific giant Albert Einstein, who effectively used it to provide support for the molecular hypothesis \citep{Einstein1905}.
-Some decades later, his son Hans Albert Einstein (Einstein), who was a scientific giant in his own right \citep[e.g.][]{Ettema2004a}, generalized the model to describe the transport of sediment grains through gravel-bed rivers \citep{Einstein1937}.
-Under typical conditions in these rivers, flowing water causes sediment grains to move in an intermittent way, rolling, sliding, and bouncing along the bed, in a mode of motion referred to as bedload \citep{Bagnold1973}.
 
-The interactions of moving bedload grains with the bed and turbulent fluid flow have been notoriously difficult to quantify \citep[e.g.][]{Schmeeckle2007,Gordon1972,Dwivedi2011,Celik2014}, but the basic phenomenology is simple: individual grains move through the fluid in an alternating sequence of steps and rests \citep{Einstein1937, Einstein1950,Ancey2008,Heyman2016,Hassan2017}.
-Einstein started here. 
-By holding that step durations were so short relative to rest durations as to be effectively instantaneous, Einstein formulated the transport of individual bedload grains as an alternating sum of random variables.
-By convolving across sequences of rest and motion, he predicted the effective velocity of individual bedload grains, and he discerned the manner in which grains should spread apart or diffuse as they transport downstream due to differences in the motion characteristics of one grain and the next.
-Einstein's theory predicted a single stage of diffusion, whereby the mean-squared distance $\sigma_x^2$ between grains scales with time $t$ as $\sigma_x^2 \propto t$. This type of diffusion is called normal, in contrast to anomalous. Normal diffusion was seen in many early 20th century scientific problems \citep[e.g][]{Einstein1905,Taylor1920}.
 
-\citet{Montroll1965} formalized the approach of \citet{Einstein1937} in the language of mathematical physics, generalized it, and gave it a name: the continuous time random walk (CTRW). There's no indication they were aware of Einstein's pioneering work in doing so. Since their work, use of the model has exploded, with applications in physics \citep{Scher1973}, hydrology \citep{Rodriguez-Iturbe1987,Daly2006a}, chemistry \citep{Shugard1976}, biology \cite{Sokolov2012}, geology \citep{Berkowitz2006}.
-There are really too many applications to cite, but maybe the prevalence of review works give some indication \citep[e.g.][]{Codling2008,Masoliver2017,Berkowitz2006,Kutner2017,Metzler2000,Weiss1994}.
+\begin{comment}
 
-Sediment transport has been no exception to this trend. There are more recent works which can be characterized as direct applications of random walks \citep{Lisle1998}, or at the very least can be perceived as intimately linked to them \citep{Zhang2012, Ancey2014,Wu2019}.
-This is not to mention the large number of earlier works which are direct revisions and generalizations of Einstein \citep{Yang1971,Gordon1972,Hubbell1964,Sayre1965,Nakagawa1976,Nakagawa1980,Yano1969,Shen1980}.
-Within these contemporary river science works, a realization has emerged which Einstein was unaware of. In fact, the experimental methods of his day were technologically insufficient to resolve it. Sediment diffusion can be anomalous, meaning the rate of spreading of grains as they transport scales as $\sigma_x^2 \propto t^\alpha$ with $\alpha\neq1$.
-The anomalous transport of bedload is exotic. 
-It expresses at least three stages \citep{Nikora2001a}, and several conceptual models for this have been put forth \citep{Nikora2002, Martin2012}. Several works have concentrated on deriving these three stages \citep[e.g.][]{Fan2016,Zhang2012}, and others have concentrated on the asymptotic regime of large times \citep{Bradley2017,Hassan2017} which draws on the problem of the assymmetric random walk \citep[e.g.][]{Weeks1996,Weeks1998}.
-However, investigators have only just begun to characterize these three stages with quantitative models \citep[e.g.][]{Wu2019}.
-There is a need to do this.
-To this end, we suggest a means to include a trapping mechanism in random walk models.
-Probably you need to highlight that similar inclusions have already been made in one state models, and you need to highlight the progression of Einstein-type models through Hubbell and Shen into Lisle, which was the first einstein-type model which is fundamentally different in its inclusion of finite motion periods.
-Anomalous transport has been realized in many fields, such as charge transport in disordered solids \citep[e.g.][]{Scher1973}, dynamics across lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, chemistry issues (look deeper) \citep{Metzler2014}, transport through porous media \citep{AaraoReis2014,Yang2019}, dipoles in an electric field \citep{Jordanovic2011}, asymmetric random walks \citep{Weeks1996,Weeks1998} and so on. There are several review articles on anomalous transport \citep{Klafter2005,Klages2008,Sokolov2012} and there have been many attempts to model it from a fundamental standpoint \citep{Gorenflo2008,Pottier2003,Fedotov2015,Flekkøy2017}.
-Anyway, there's a bunch of references and a general logic flow starting to precipitate for an introduction.
+\end{comment}
+
+Models to predict the movement patterns of individual bedload sediment grains through rivers have been studied since at least \citet{Einstein1937}.
+Einstein originally used a random walk concept to describe these patterns statistically, and he applied his model to experimental data from a series of flume experiments.
+Individual movements are ultimately responsible for changes in the spatial organization of river channels \citep{Hassan2017}, so predictive models of these patterns could benefit a vast set of environmental considerations, ranging from aquatic habitat restoration \citep{Hauer2016} to the management of contaminated streams \citep{Macklin2006} and artificial reservoirs \citep{Schleiss2016}.
+Unfortunately, Einstein's approach does not provide a definitive solution to this problem, although its essential concepts lie at the base of the majority of contemporary approaches.
+The essential issue is that Einstein's original measurements on bedload transport characteristics are now known to be relevant only on a certain observation timescale \citep{Nikora2001a}.
+Since \citet{Einstein1937}, details of bedload transport have come to light which are not accessible by his measurement techniques.
+There is a need for new models to account for these new details and predict the movements of individual grains.
+
+When bedload grains transport downstream, each grain is imparted a unique sequence of forces by turbulent and steady components of the flow \citep{} and collisions with other moving and stationary grains \citep{Gordon1972}. 
+As a result, grains spread apart from one another as they transport downstream: a phenomenon called diffusion.
+Diffusion is characterized by the variance of particle position $\sigma_x^2(t)$ \citep{Furbish2017}.
+An extreme diversity of transport phenomena show diffusion: it is not limited to the movement of grains within river channels, and it has been deeply studied in geology \citep{Berkowitz2006}, chemistry {Shugard1976}, biology \citep{Sokolov2012}, hydrology \citep{Yang2019}, and many other contexts.
+The classic examples are pollen grains diffusing in response to molecular collisions while suspended in water, as first described mathematically by Hans Albert Einstein's father \citep{Einstein1905} and sand within a pipe flow \citep{Taylor1920}.
+In these cases, individual particles (pollen, sand, gravel) spread apart at a rate proportional to the time: $\sigma_x^2 \propto t$. Such diffusion is said to be normal.
+This name connotes the idea that this diffusion is somehow particularly characteristic of natural phenomena.
+
+In contrast to this nomenclature, researchers of transport phenomena across the physical sciences have realized that normal diffusion is far from ubiquitous \citep{Shlesinger1993}.
+When diffusion is not normal, it is called anomalous, a term defined by a variance scaling $\sigma_x^2 \propto t^\gamma$, where $\gamma \neq 1$. 
+Some examples of anomalous diffusion include transport of nutrients through lipid bilayers \citep[e.g.][]{Jeon2012,Molina-Garcia2018}, contaminants through groundwater aquifers \citep[e.g.][]{AaraoReis2014,Yang2019}, charge carriers through solids \citep[e.g.][]{Scher1973}, and, indeed, sediment grains through rivers \citep{Hassan2017,Phillips2013,Martin2012,Bradley2017}.
+In this work, we revisit the approach of Einstein to bear on the problem of multiple-stage diffusion.
+We draw upon methods developed in biology and condensed matter physics to form a description of anomalous and multi-stage diffusion which is directly linked to the original formulation of Einstein.
+There is a need to review \citet{Wu2019, Zhang2012, Hassan2017, Phillips2013, Martin2012} and write something meaningful involving them, then rewrite this introduction because it isn't good.
+Anyway, here's the model.
+
 
 \section{Bedload diffusion with trapping}
 To include motion, rest, and trapping, and to keep track of grains which fall into the trapped state, we need to introduce a three-state random walk.
@@ -74,6 +80,68 @@ The multistate random walk was first considered by \citet{Weiss1976} and it is r
 \om_{1F}(x,t) &= \theta_1\Phi(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi(t) g_1(x-x',t-t')\\
 \om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t')\\
 \end{align}
+The probabilities are 
+The probabilities of being in state $0$ (trapped), $1$ (rest), and $2$ (motion) are
+\begin{align}
+p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t')\\
+p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\\
+p_2(x,t) &= \theta_2 G_2(x,t) + \int_0^x dx' \int_0^t dt' \omega_{1F}(x',t')G_2(x-x',t-t'),
+\end{align},
+while the total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$.
+When the propagators are chosen as \citet{Lisle1998}, this has solution 
+\begin{align}
+p(x,t) = &e^{-(\kappa + k_1)(t-x/v)-k_2x/v} \theta(t-x/v)\\
+&\times \Bigg[\frac{1}{v}\delta(t-x/v) + \frac{1}{v}\sqrt{\frac{k_1k_2x}{v(t-x/v)}}\mathcal{I}_1\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg) +\frac{k_2}{v}\mathcal{I}_0\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg) \Bigg]\\
+&+ \kappa\frac{ k_2}{v(\kappa+k_1)}\theta(t-x/v)e^{-k_2x/v}\mathcal{P}_1\Big(\frac{k_1k_2x}{v(\kappa+k_1)},[\kappa+k_1][t-x/v] \Big)
+\label{eq:pdf}
+\end{align}
+as shown in appendix \ref{sec:appendix}. The $I_\nu$ are modified Bessel functions of the first kind and $\mathcal{P}_1$ is a Marcum-Q function \citep{Marcum1960,Temme1996}. $\theta(x)$ is the Heaviside step function and we use the convention $\theta(x=0)=1$.
+This distribution is depicted in figure \ref{fig:pdfs}.
+\begin{figure}
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot-edit.png}
+	\caption{Joint distributions of a tracer being found at $x$ $t$ are impeded by the trapping process. Panel (a) shows the \citet{Lisle1998} model, and panel (b) shows the the distribution \ref{eq:pdf} which results from a trapping process occurring at rate $\kappa$. Cross-comparison of both panels shows that trapping redistributes probability to smaller values of $x$, and this redistribution becomes more important for larger $t$.}
+	\label{fig:pdfs}
+\end{figure}
+The key tool in the analysis in the appendices is the double-Laplace transform of functions which depend on space and time:
+\be \hat{f}(\eta,s) = \int_0^\infty dx \int_0^\infty ds e^{-st-\eta x}f(x,t).\ee
+This unravels the convolution structure in the equations and provides an alternative approach to calculate the moments of $x$ which avoids integrating (\ref{eq:pdf}).
+This approach is based on taking derivatives of $\hat{p}(\eta,s)$ as described in appendix \ref{sec:appendix2}.
+The first two moments are
+\be \bra x(t) \ket = A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1 \label{eq:mean}\ee
+\be \bra x^2(t) \ket = A_2(t)e^{(b-a)t}+B_2(t)e^{-(a+b)t}+C_2, \label{eq:second}\ee
+where $A_i$ and $B_i$ are polynomials tabulated in (\ref{table:params}).
+The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.][]{Kittel1958}.
+In terms of these moments, the variance $\sigma_x^2 = \bra x^2\ket - \bra x \ket^2$ is
+\be \sigma_x^2(t) = A(t)e^{(b-a)t} + B(t)e^{-(a+b)t} + C(t) \label{eq:var}\ee
+We have made no approximation to derive this expression, so it represents the phenomena of a \citet{Lisle1998}-type model generalized to include sediment trapping processes.
+\begin{table}[!h]
+\centering
+\caption{Polynomials and transcendental functions used in the expressions of the mean (\ref{eq:mean}), second moment (\ref{eq:second}) and variance (\ref{eq:var}) of bedload tracers.}
+\label{table:params}
+\begin{tabular}{c}
+\toprule
+$A_1 = \frac{v}{2b}\big[1+\frac{\kappa+k_1}{b-a}\big]$ \\
+$B_1 = -\frac{v}{2b}\big[1-\frac{\kappa+k_1}{a+b}\big]$ \\
+$C_1 =  -\frac{v}{2b}\big[\frac{\kappa+k1}{b-a}+\frac{\kappa+k1}{a+b}\big]$\\
+$A_2(t)=\frac{v^2}{2b^3}\Big[b+(b-a)[bt-1]+2(\kappa+k_1)[bt-1] + \frac{(\kappa+k_1)^2}{(a-b)^2}[-abt+a+b(bt-2)]\Big] $\\
+$B_2(t) = \frac{v^2}{2b^3}\Big[b-(a+b)[bt-1]+2(\kappa+k_1)[bt+1] - \frac{(\kappa+k_1)^2}{(a+b)^2}[bt(a+b)+a+2b]\Big] $\\
+$C_2(t) = \frac{v^2}{2b^3}(\kappa+k_1)^2\Big[\frac{a+2b}{(a+b)^2}+\frac{-a+2b}{(a-b)^2}\Big]$\\
+$A(t) = A_2(t)-2A_1C_1 + A_1^2\exp[(b-a)t]$\\
+$B(t) = B_2(t)-2B_1C_1 + B_1^2\exp[-(a+b)t]$\\
+$C(t) = C_2-C_1^2+2A_1B_1\exp[-2at]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\section{Discussion: new findings and foundational links}
+\section{Conclusion}
+
+
+\appendix
+
+\section{Calculation of the distribution function with trapping}
+\label{sec:appendix}
 Taking double transforms gives
 \begin{align}
 \tom_{1T}(\eta,s) &= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s) \\
@@ -106,19 +174,7 @@ The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$ or
 +\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)} \\
 \end{multline}
 Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s,$ it follows that the joint distribution is normalized in space: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = 1/s$.
-Taking the limit of zero trapping rate $\kappa \rightarrow 0$ the equations reduce to a two-state random walk equivalent to the theories of \citet{Einstein1937} and \citet{Lisle1998}, equation (6.33) in \citet{Weiss1994}. This all seems correct.
-Setting $g_1(x,t) = \delta(x)k_1e^{-k_1t}$ and $g_2(x,t) = \delta(x-vt)k_2e^{-k_2 t}$ gives the Laplace representations
-\begin{align}
-\tg_1(\eta,s) &= \frac{k_1}{k_1 + s}\\
-\tg_2(\eta,s) &=  \frac{k_2}{k_2 + \eta v + s} \\
-\tG_i(\eta,s) &= \frac{\tg_i(\eta,s)}{k_i}
-\end{align}
-In terms of these propagators and assuming tracers start in motion $\theta_2 =1$ gives the form
-\be \tp(\eta,s) =\frac{1}{s} \frac{(s+\kappa+k')s + \kappa k_2}{\eta v(s + \kappa + k_1) + (s+ \kappa + k')s + \kappa k_2} \ee
-with $k' = k_1 + k_2$. Taking $\kappa \rightarrow 0$ gives an earlier result.
 
-
-\subsection{distribution function}
 After a lot of work which is in your notebook, this becomes
 \begin{align}
 p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
@@ -141,7 +197,9 @@ This function was originally introduced in relation to radar detection problems 
 \be \mathcal{Q}_1(x,y) = 1- \int_0^ydz e^{-z-x}\mathcal{I}_0(2\sqrt{xz})\ee
 So we are not far from where we started with \citet{Lisle1998}: Modified Bessel functions are the norm in this type of 1D diffusion problem \citep[e.g.][]{Lisle1998}.
 Hence in summary \be \mathcal{F}(x,t) = 1-\mathcal{Q}_1\Big(\frac{k_1k_2x}{v(\kappa+k_1)},[\kappa+k_1][t-x/v] \Big)\ee
-\subsection{moments from motion}
+
+\section{Calculation of the moments}
+\label{sec:appendix2}
 Often, Tauberian-type theorems are used to study the long or short time asymptotic scaling of first or second moments of random walks having any generality.
 This is because the mathematics get difficult, and Tauberian theorems provide a very powerful tool which leverages the stability of the Laplace transform.
 Unfortunately, this approach is insufficient for our purposes. We are unaware of an intermediate-regime Tauberian-type theorem, so we must pursue full solutions of the moments in order to discriminate the diffusive ranges and the full diffusion behavior.
@@ -150,7 +208,19 @@ Unfortunately, this approach is insufficient for our purposes. We are unaware of
 \be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{[(s+\kappa + k')s+\kappa k_2][s+\kappa + k_1]^2}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}\ee
 \be  \frac{\bra\tilde{x}\ket} {v} = \frac{1}{s}\frac{s+\kappa + k_1}{(s+\kappa + k')s + \kappa k_2}\ee
 \be \frac{\bra \tilde{x}^2 \ket}{2v^2} = \frac{1}{s} \frac{[s+\kappa + k_1]^2}{[(s+\kappa + k')s + \kappa k_2]^2} \ee
-\subsubsection{the mean}
+
+A similar approach provides 
+\begin{align}
+\frac{\bra x^2 \ket}{2v^2} &= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[(s+a)^2-b^2]^2};t\Big\}\\
+&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[s^2-b^2]^2};t\Big\}e^{-at}\\
+&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)e^{-at}\frac{1}{2b^3}\Big[bt\cosh(bt)-\sinh(bt)\Big]
+\end{align}
+using Prudnikov 2.1.5.6.
+This becomes
+\begin{align}
+\frac{\bra x^2 \ket}{2v^2} = \frac{t}{b}\sinh&(bt) + \frac{(\kappa + k_1)}{b^3}\big[bt\cosh(bt)-\sinh(bt)\big]\\
+&+e^{-at}\frac{b(b^2(at-2))-a^3t)\cosh(bt) +(a^3-a^2b^2t-3ab^2+b^4t)\sinh(bt)}{(a-b)^2(a+b)^2}
+\end{align}
 \begin{align}
 \frac{\bra x \ket}{v} &= \El^{-1}\Big\{\frac{1}{s}\frac{s+\kappa + k_1}{(s+\kappa + k')s + \kappa k_2};t\Big\} \\
 &= \El^{-1}\Big\{\frac{1}{\big[s+\frac{\kappa+k'}{2}\big]^2+\kappa k_2 - \big[\frac{\kappa+k'}{2}\big]^2};t\Big\} + 
@@ -168,31 +238,9 @@ The limit of $\kappa \rightarrow 0$ provides
 \be \frac{k'^2}{v}\bra x \ket=k_2(1-e^{-k't})+ k_1k't \ee
 which aligns perfectly with earlier results.
 
-
-\subsubsection{the second moment}
-A similar approach provides 
-\begin{align}
-\frac{\bra x^2 \ket}{2v^2} &= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[(s+a)^2-b^2]^2};t\Big\}\\
-&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[s^2-b^2]^2};t\Big\}e^{-at}\\
-&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)e^{-at}\frac{1}{2b^3}\Big[bt\cosh(bt)-\sinh(bt)\Big]
-\end{align}
-using Prudnikov 2.1.5.6.
-This becomes
-\begin{align}
-\frac{\bra x^2 \ket}{2v^2} = \frac{t}{b}\sinh&(bt) + \frac{(\kappa + k_1)}{b^3}\big[bt\cosh(bt)-\sinh(bt)\big]\\
-&+e^{-at}\frac{b(b^2(at-2))-a^3t)\cosh(bt) +(a^3-a^2b^2t-3ab^2+b^4t)\sinh(bt)}{(a-b)^2(a+b)^2}
-\end{align}
-
-
-\section{Discussion: new findings and foundational links}
-\section{Conclusion}
-
-
-\appendix
-\section{Mathematical appendix}
-
+\section{Links to \citet{Einstein1937} and \citet{Lisle1998}}
 \acknowledgments
-J. Pierce thanks Mindy Saunders  and Leonardo Golubovic for years of careful guidance in mathematics. He acknowledges helpful exchanges with Eduardo Daly and Peter Hanggi during the early stages of this work. M. Hassan acknowledges support from the NSERC Discovery program. All simulation codes are available on request from the first author.
+J. Pierce acknowledges helpful exchanges with Eduardo Daly and Peter Hanggi during the early stages of this work. M. Hassan is supported by an NSERC Discovery grant. All simulation code is available on request.
 
 \bibliography{biblio.bib}
 \end{document}

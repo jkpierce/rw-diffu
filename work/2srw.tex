@@ -113,9 +113,9 @@ I'm surprised this is not the normal diffusion equation.
 I'm curious if it's correct and if the solution involving $I_1$ solves it.
 Decomposing $p = e^{-k_1 t - k_2 x}\pi$ gives 
 \be \partial_x \partial_t \pi = k_1 k_2\pi.\ee
-Does this provide $\pi \propto \sqrt{\frac{k_1k_2t}{x}}I_1(2\sqrt{k_1k_2xt})$?
-Probably not.
-
+Using the series representation 
+\be \pi(x,t) = k_1k_2 \sum_{m=0}^\infty \frac{(k_1k_2)^m}{m!(m+1)!}t^{m+1}x^m \ee
+it's possible to see that the solution given earlier satisfies this differential equation. Presumably this would also follow from the Frobenius method.
 \section{The Lisle Theory}
 Apart from formulations of \citet{Einstein1937} using different step length and resting time distributions than exponential \citep[e.g.][]{Sayre1965}, the first significant advancement from \citet{Einstein1937} was due to \citet{Lisle1998}.
 This type of random walk is depicted in figure \ref{fig:lislewalk}.
@@ -297,6 +297,7 @@ The results are all correct and verified by simulations in figure \ref{fig:lisle
 	\caption{Variance and mean scaling compared to numerical simulations}
 	\label{fig:lislesims}
 \end{figure}
+
 The two stages of diffusion and their asymptotic behavior are indicated in figure \ref{fig:lisledif}. The initial ballistic diffusion is at least $\sigma_x^2 \propto t^2$ and at most $\sigma_x^2 \propto t^3$, and the crossover to normal diffusion occurs around $\text{max}\{1/k_1,1/k_2\}.$
 \begin{figure}[h]
 	\centering

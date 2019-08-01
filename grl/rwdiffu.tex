@@ -32,20 +32,16 @@
 \correspondingauthor{James Kevin Pierce}{kpierce@alumni.ubc.ca}
 
 \begin{keypoints}
-\item We generalize the bedload diffusion model of Hans Albert Einstein to include periods of motion and sediment trapping processes.
+\item We generalize the bedload diffusion model of Hans Albert Einstein to include the duration of sediment motion and the possibility of trapping.
 \item This derives three stages of bedload diffusion and unambiguously attributes physical mechanisms to each stage.
 \end{keypoints}
 
 \begin{abstract}
-One approach to predict geomorphic change in rivers is to upscale from the motions of individual sediment grains. A difficulty with this approach is the wide range of individual motion characteristics that imply sediment diffusion, or the spreading out of grains through time. A more acute difficulty is that these motion characteristics apparently vary across temporal and spatial scales, implying multiple stages of sediment diffusion. We relate this multi-stage diffusion to within-channel trapping processes that impede the motions of individual grains. Grains can become stranded on high bars during floods, or they can become buried within the sedimentary bed, but these processes take a relatively long time to occur. Drawing on ideas from condensed matter physics and cellular biology, we describe the motions of individual grains within channels as random walkers subject to trapping. This derives multi-stage diffusion and clarifies its mechanism, providing a tool to link between scales.
+One approach to predict geomorphic change in rivers is to upscale from the motions of individual sediment grains. A difficulty with this approach is the wide range of individual motion characteristics that imply sediment diffusion, or the spreading out of grains through time. A more acute difficulty is that these motion characteristics apparently vary across temporal and spatial scales, implying multiple stages of sediment diffusion. We relate this multi-stage diffusion to within-channel trapping processes that impede the motions of individual grains. Grains can become stranded on high bars during floods, or they can become buried within the sedimentary bed, but these processes take a relatively long time to occur. Drawing on ideas from condensed matter physics and cellular biology, we describe the finite-velocity motions of individual grains within channels as random walkers subject to trapping. This derives three stages of bedload diffusion and clarifies the underlying mechanism, providing a tool to link between scales.
 \end{abstract}
 
 \section{Introduction}
 
-
-\begin{comment}
-
-\end{comment}
 
 Models to predict the movement patterns of individual bedload sediment grains through rivers have been studied since at least \citet{Einstein1937}.
 Einstein originally used a random walk concept to describe these patterns statistically, and he applied his model to experimental data from a series of flume experiments.
@@ -58,7 +54,7 @@ There is a need for new models to account for these new details and predict the 
 When bedload grains transport downstream, each grain is imparted a unique sequence of forces by turbulent and steady components of the flow \citep{} and collisions with other moving and stationary grains \citep{Gordon1972}. 
 As a result, grains spread apart from one another as they transport downstream: a phenomenon called diffusion.
 Diffusion is characterized by the variance of particle position $\sigma_x^2(t)$ \citep{Furbish2017}.
-An extreme diversity of transport phenomena show diffusion: it is not limited to the movement of grains within river channels, and it has been deeply studied in geology \citep{Berkowitz2006}, chemistry {Shugard1976}, biology \citep{Sokolov2012}, hydrology \citep{Yang2019}, and many other contexts.
+An extreme diversity of transport phenomena show diffusion: it is not limited to the movement of grains within river channels, and it has been deeply studied in geology \citep{Berkowitz2006}, chemistry \citep{Shugard1976}, biology \citep{Sokolov2012}, hydrology \citep{Yang2019}, and many other contexts.
 The classic examples are pollen grains diffusing in response to molecular collisions while suspended in water, as first described mathematically by Hans Albert Einstein's father \citep{Einstein1905} and sand within a pipe flow \citep{Taylor1920}.
 In these cases, individual particles (pollen, sand, gravel) spread apart at a rate proportional to the time: $\sigma_x^2 \propto t$. Such diffusion is said to be normal.
 This name connotes the idea that this diffusion is somehow particularly characteristic of natural phenomena.
@@ -73,15 +69,36 @@ Anyway, here's the model.
 
 
 \section{Bedload diffusion with trapping}
-To include motion, rest, and trapping, and to keep track of grains which fall into the trapped state, we need to introduce a three-state random walk.
-The multistate random walk was first considered by \citet{Weiss1976} and it is reviewed in \citet{Weiss1994}.
+To include motion, rest, and burial into a model of bedload diffusion, we leverage the mathematical formalism of multi-state random walks.
+The multi-state random walk was first considered by \citet{Weiss1976} and is reviewed in \citet{Weiss1994}. Our development closely follows these works and involves two essential stages.
+First, we calculate the joint probabilities that a tracer's residence or sojourn within each state ends at time $t$ having position $x$.
+Second, we calculate the joint probabilities that a tracer in each state has position $x$ at time $t$ regardless of whether or not a sojourn has just completed.
+These two sets of objects completely define the stochastic dynamics of tracers.
+
+Tracers at rest may be trapped by burial.
+We consider burial to be permanent \citep[e.g.][]{Wu2019}, and we characterize it probabilistically.
+Assuming that resting grains may be buried with constant probability per unit time $\kappa$, the probability that a resting grain is not trapped after a time $t$ is given by a survival probability $\Phi(t) = e^{-\kappa t}$. Likewise, the probability that it is trapped after resting for a time $t$ is the complement $1-\Phi(t)$.
+Associating indices $i=0,1,2$ with the trapping, resting, and moving states, we introduce $\omega_{1T}(x,t)$, $\omega_{1F}(x,t)$, and $\omega_2(x,t)$ as the joint probabilities to find a grain having just completed a sojourn at $x,t$.
+The subscript ${1T}$ denotes the completion of a rest sojourn due to trapping, while $1F$ denotes the completion of a rest sojourn due to movement.
+Similarly, the subscript $2$ denotes the completion of a movement sojourn due to the onset of resting.
+We consider that only resting grains can be buried.
+Using an argument similar to \citet{Weiss1994}, we can write integral equations to link the $\omega$'s. 
 \begin{align}
 \om_{1T}(x,t) &= \theta_1\big[1-\Phi(t)\big]g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\big[1-\Phi(t)\big]g_1(x-x',t-t')\\
 \om_{1F}(x,t) &= \theta_1\Phi(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi(t) g_1(x-x',t-t')\\
 \om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t')\\
 \end{align}
-The probabilities are 
-The probabilities of being in state $0$ (trapped), $1$ (rest), and $2$ (motion) are
+The factors $g_i(\xi,\tau)$ are called propagators in the state $i$. They encode the transfer of probability across a distance $\xi$ and a time $\tau$ while the walker resides in the $i$th state.
+Specifying the propagators and solving these equations for the $\omega$ completes the first stage of the derivation.
+
+The propagators are defined by the behavior of particles in each state.
+We consider that sojourns through motion and rest states last for exponentially distributed times.
+Since resting particles do not move, while moving particles translate with a constant velocity $v$, we reason the propagators are 
+\be g_1(x,t) = \delta(x) k_1e^{-k_1t}\ee
+\be g_2(x,t) = \delta(x-vt)k_2e^{-k_2t}.\ee
+In this notation, $1/k_1$ is the mean resting time, while $1/k_2$ is the mean movement time.
+
+The second stage of our development involves the joint probabilities of being in state regardless of whether a sojourn has just completed. These are denoted by  $p_0$ (trapped), $p_1$ (rest), and $p_2$ (motion) and involve the $\omega$s for their definition.
 \begin{align}
 p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t')\\
 p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\\
@@ -124,7 +141,7 @@ $A_1 = \frac{v}{2b}\big[1+\frac{\kappa+k_1}{b-a}\big]$ \\
 $B_1 = -\frac{v}{2b}\big[1-\frac{\kappa+k_1}{a+b}\big]$ \\
 $C_1 =  -\frac{v}{2b}\big[\frac{\kappa+k1}{b-a}+\frac{\kappa+k1}{a+b}\big]$\\
 $A_2(t)=\frac{v^2}{2b^3}\Big[b+(b-a)[bt-1]+2(\kappa+k_1)[bt-1] + \frac{(\kappa+k_1)^2}{(a-b)^2}[-abt+a+b(bt-2)]\Big] $\\
-$B_2(t) = \frac{v^2}{2b^3}\Big[b-(a+b)[bt-1]+2(\kappa+k_1)[bt+1] - \frac{(\kappa+k_1)^2}{(a+b)^2}[bt(a+b)+a+2b]\Big] $\\
+$B_2(t) = \frac{v^2}{2b^3}\Big[b-(a+b)[bt+1]+2(\kappa+k_1)[bt+1] - \frac{(\kappa+k_1)^2}{(a+b)^2}[bt(a+b)+a+2b]\Big] $\\
 $C_2(t) = \frac{v^2}{2b^3}(\kappa+k_1)^2\Big[\frac{a+2b}{(a+b)^2}+\frac{-a+2b}{(a-b)^2}\Big]$\\
 $A(t) = A_2(t)-2A_1C_1 + A_1^2\exp[(b-a)t]$\\
 $B(t) = B_2(t)-2B_1C_1 + B_1^2\exp[-(a+b)t]$\\
@@ -135,6 +152,15 @@ $C(t) = C_2-C_1^2+2A_1B_1\exp[-2at]$\\
 
 
 \section{Discussion: new findings and foundational links}
+A plot of $\sigma_x^2(t)$ is shown in figure \ref{fig:var}.
+\begin{figure}
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/diffusion.png}
+	\caption{The variance of tracer position exhibits four distinct scaling regions as time increases: local, intermediate, global, and finally a non-diffusive range characterized by the eventual trapping of all grains.
+	Local and global ranges show super-diffusion $\sigma_x^2 \propto t^3$ while the intermediate range shows normal diffusion. These conclusions hold only for $\kappa \ll k_1 \ll k_2$, meaning motion intervals are generally much shorter than resting intervals, which are in turn are generally much smaller than the time required for resting particles to become buried.}
+	\label{fig:var}
+\end{figure}
+
+
 \section{Conclusion}
 
 

@@ -618,6 +618,33 @@ Shlesinger, M\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Shugard%
+\ \BBA {} Reiss%
+}{%
+Shugard%
+\ \BBA {} Reiss%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+Shugard1976}
+\APACinsertmetastar {%
+Shugard1976}%
+\begin{APACrefauthors}%
+Shugard, W.%
+\BCBT {}\ \BBA {} Reiss, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1976}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Transient nucleation in H20-H2S04 mixtures: A
+  stochastic approach}} {{Transient nucleation in H20-H2S04 mixtures: A
+  stochastic approach}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Chemical Physics}{65}{}{2827-- 2840}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sokolov%
 }{%
 Sokolov%

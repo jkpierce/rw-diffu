@@ -35,45 +35,45 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Taylor1920
-You've used 30 entries,
+You've used 34 entries,
             6951 wiz_defined-function locations,
-            1508 strings with 19253 characters,
-and the built_in function-call counts, 60834 in all, are:
-= -- 7459
-> -- 524
-< -- 2932
-+ -- 3194
-- -- 60
-* -- 4016
-:= -- 11034
-add.period$ -- 121
-call.type$ -- 30
-change.case$ -- 511
+            1540 strings with 20009 characters,
+and the built_in function-call counts, 68032 in all, are:
+= -- 8327
+> -- 585
+< -- 3279
++ -- 3525
+- -- 70
+* -- 4489
+:= -- 12327
+add.period$ -- 137
+call.type$ -- 34
+change.case$ -- 579
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 1770
-empty$ -- 2333
-format.name$ -- 920
-if$ -- 11402
+cite$ -- 69
+duplicate$ -- 1969
+empty$ -- 2635
+format.name$ -- 1024
+if$ -- 12785
 int.to.chr$ -- 0
-int.to.str$ -- 90
+int.to.str$ -- 102
 missing$ -- 0
-newline$ -- 807
-num.names$ -- 240
-pop$ -- 869
+newline$ -- 916
+num.names$ -- 272
+pop$ -- 990
 preamble$ -- 1
-purify$ -- 120
+purify$ -- 136
 quote$ -- 0
-skip$ -- 3915
+skip$ -- 4384
 stack$ -- 0
-substring$ -- 3489
-swap$ -- 1017
-text.length$ -- 66
+substring$ -- 3844
+swap$ -- 1136
+text.length$ -- 75
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2528
+type$ -- 2848
 warning$ -- 1
-while$ -- 315
+while$ -- 350
 width$ -- 0
-write$ -- 1008
+write$ -- 1142
 (There were 5 error messages)

@@ -156,19 +156,17 @@ The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.][]{Kitte
 This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \Big\{\bra\tilde{x}^2 \ket;t\Big\} - \El^{-1} \Big\{\bra\tilde{x} \ket;t\Big\}$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}.
 
 
-
 % solution for case theta_1=1: distribution function
-Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the distribution $p(x,t)$ and the cumulants $\bra x \ket$ and $\sigma_x^2(t)$ are derived in the appendix \ref{sec:appendix}. In terms of the dimensionless variables $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$, assuming all particles start from motion ($\theta_1=1$), the distribution function is 
-\begin{align}
-p(x,t) = &e^{-(\kappa + k_1)(t-x/v)-k_2x/v} \mathcal{H}(t-x/v)\\
-&\times \Bigg[\frac{1}{v}\delta(t-x/v) + \frac{1}{v}\sqrt{\frac{k_1k_2x}{v(t-x/v)}}\mathcal{I}_1\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg) +\frac{k_2}{v}\mathcal{I}_0\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg) \Bigg]\\
-&+ \kappa\frac{ k_2}{v(\kappa+k_1)}\mathcal{H}(t-x/v)e^{-k_2x/v}\mathcal{P}_1\Big(\frac{k_1k_2x}{v(\kappa+k_1)},[\kappa+k_1][t-x/v] \Big)
+Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the distribution $p(x,t)$, the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendix}. Using the shorthand $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$ \citep[c.f.][]{Lisle1998} and assuming all particles start from motion ($\theta_1=1$), the distribution function is 
+\begin{multline}
+p(x,t) = e^{-(\kappa + k_1)\tau/k_1-\xi}\mathcal{H}(\tau)\mathcal{H}(\xi)\Bigg[\frac{k_1}{v}\delta(\tau) + \frac{k_1}{v} \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1(2\sqrt{\xi\tau}) + \frac{k_2}{v} \mathcal{I}_0(2\sqrt{\xi\tau})\Bigg]\\
++ \kappa \frac{k_2}{v(\kappa+k_1)}\mathcal{H}(\tau)\mathcal{H}(\xi)e^{-\xi}\mathcal{P}_1\big(\kappa\xi/(\kappa+k_1), (\kappa+k_1)\tau/k_1\big).
 \label{eq:pdf}
-\end{align}
-The $I_\nu$ are modified Bessel functions of the first kind and $\mathcal{P}_1$ is a Marcum-Q function \citep{Marcum1960,Temme1996}. $\mathcal{H}(x)$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
+\end{multline}
+The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind and $\mathcal{P}_1$ is a (complementary) Marcum-Q function defined by $\mathcal{P}_1(x,y) = \int_0^y e^{-z-x}\mathcal{I}_0(2\sqrt{xz})dz. $ \citep{Marcum1960,Temme1996}. $\mathcal{H}(x)$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
 This distribution is depicted in figure \ref{fig:pdfs}.
 
-% figure
+% figure showing distribution functon
 \begin{figure}
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot-edit.png}
 	\caption{Joint distributions of a tracer being found at $x$ $t$ are impeded by the trapping process. Panel (a) shows the \citet{Lisle1998} model, and panel (b) shows the the distribution \ref{eq:pdf} which results from a trapping process occurring at rate $\kappa$. Cross-comparison of both panels shows that trapping redistributes probability to smaller values of $x$, and this redistribution becomes more important for larger $t$.}
@@ -209,36 +207,129 @@ It represents diffusion of bedload tracers subjected to burial and when the fini
 
 
 \section{Discussion: new findings and foundational links}
+
+
 \subsection{bedload diffusion}
-A plot of $\sigma_x^2(t)$ is shown in figure \ref{fig:var}.
-\begin{figure}
+% plot variance
+A plot of $\sigma_x^2(t)$ is shown in figure \ref{fig:var} for the case that motions are short relative to rests, and trapping occurs with characteristic timescale $1/\kappa$ which is in turn much shorter than the resting period.
+That is, for the case that $1/k_2 \ll 1/k_1 \ll 1/\kappa$.
+\begin{figure}[t]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/diffusion.png}
 	\caption{The variance of tracer position exhibits four distinct scaling regions as time increases: local, intermediate, global, and finally a non-diffusive range characterized by the eventual trapping of all grains.
 	Local and global ranges show super-diffusion $\sigma_x^2 \propto t^3$ while the intermediate range shows normal diffusion. These conclusions hold only for $\kappa \ll k_1 \ll k_2$, meaning motion intervals are generally much shorter than resting intervals, which are in turn are generally much smaller than the time required for resting particles to become buried.}
 	\label{fig:var}
 \end{figure}
-
-% plot variance
 % discuss 3+1 stages of diffusion
+For this case there are three stages of diffusion which we associate with the local, intermediate, and global ranges put forth by \citet{Nikora2001a}. There is also a late-stage period of no transport, when the distance between tracers is fixed.
+Figure \ref{fig:var} suggests the representation
+\be \sigma_x^2 \sim
+\begin{cases}
+t^{\gamma_\text{local}}, & t\ll \tau_\text{local},\\
+t, & \tau_\text{local} \ll t \ll \tau_\text{inter}, \\
+t^{\gamma_\text{global}}, & \tau_\text{inter} \ll t \ll \tau_\text{global}, \\
+\text{const.}, & \tau_\text{global} \ll  t
+\end{cases}\ee
+where $\tau_\text{local}$, $\tau_\text{inter}$, and $\tau_\text{global}$ are cross-over times between the diffusion regimes.
+$\gamma_\text{local}$ and $\gamma_\text{global}$ are exponents characterizing the local and global range super-diffusion.
+
 % discuss ballistic/normal/ballistic
+For the case $1/k_2 \ll 1/k_1 \ll 1/\kappa$ and the initial condition $\theta_1$ the exponents $\gamma_\text{local} \approx 3$ and $\gamma_\text{global} \approx 3$.
+% highlight the ranges of cross-over zones and describe physically why
+These regions of constant scaling are divided by cross-over zones having finite widths.
+Within these zones,the diffusion is not described by a constant scaling law.
+The boundaries of these zones are related to the dominant timescales of the transport process.
+We identify four key timescales.
+These are: (1) the mean time spent in motion, $1/k_2$; (2) the mean time spent at rest, $1/k_1$; (3) the mean time required for a resting grain to trap, $\tau_\text{trap}=1/\kappa$; and (4) the mean time required for a grain switching between motion and rest to trap, $\big(\kappa \frac{k_2}{k_1+k_2}\big)^{-1}$.
+To derive the 4th timescale we reason if grain cycles through motion and rest states without trapping, the mean time of a single cycle is $1/k_1 + 1/k_2$, while the mean time spent at rest is $1/k_1$. This means $\frac{1/k_1}{1/k_1 + 1/k_2} = \frac{k_2}{k'}$ is the fraction of time spent at rest \citep[c.f.][]{Ancey2006}. Using this ratio, there is an effective trapping rate $\frac{\kappa k_2}{k'}$ of grains cycling through rest and motion, which supports the 4th characteristic timescale $\frac{k'}{\kappa k_2}$.
+The cross-over times $\tau_\text{local}$, $\tau_\text{inter}$, and $\tau_\text{global}$ are geometric means of these four timescales.
+We discern $\tau_\text{local} = \sqrt{\frac{1}{k_1}\frac{1}{k_2}}$, $\tau_\text{global} = \sqrt{\frac{1}{\kappa} \frac{k'}{\kappa k_2}}$.
+A further geometric mean gives $\tau_\text{inter} = \sqrt{\tau_\text{local}\tau_\text{global}}$.
+These timescales are the vertical lines plotted in figure \ref{fig:var}.
+
 % discuss other possibilities
-% highlight the locations of cross-over poitns and describe physically why
+These results pertain to the conditions $1/k_2 \ll 1/k_1 \ll 1/\kappa$ and the initial condition $\theta_1$.
+The assumption that rests are much longer than motions was introduced by \citet{Einstein1937} and will be true for the intermittent stage of bedload motion \citep[e.g.][]{Nikora2001,Heyman2016} where the motion does not resemble a sheet flow \citep{Frey2014}.
+We cannot imagine that the characteristic timescale of trapping due to burial $1/\kappa$ would exceed the characteristic resting timescale $1/k_1$, so we consider this constraint always satisfied.
+Therefore we need to discern the phenomena of the model for other initial conditions, where $\theta_1 $ and $\theta_2$ are arbitrary; and for the case that $k_1$ and $k_2$ are not well-separated, so that bedload rests are not necessarily much longer than motions.
+In these cases, the diffusion characteristics are still described by (\ref{eq:var}), since it is an exact result, but the three-stage diffusion depicted in figure \ref{fig:var} is not necessarily retained.
+
+% effect of initial conditions
+The effect of initial conditions on the diffusion phenomena can be surmised using the approach of Tauberian theorems, which are a device to provide small (or large) time asymptotic behavior of a quantity which is known in Laplace space \citep[e.g.][]{Weiss1994}.
+We reason that initial conditions cannot affect the intermediate or global range diffusion apart from shifting the $\tau_\text{local}$, since its memory cannot be retained in our model.
+We note our model is Markovian by virtue of the choice of exponential propagators \citep{Weiss1994}, meaning it can only have short-term memory.
+We show in Appendix \ref{sec:appendix2} that the local range diffusion for arbitrary initial conditions is 
+\be \sigma_x^2 \sim v^2 \theta_1 \theta_2 t^2  + \frac{1}{3}(\theta_1 k_1 + \theta_2 k_2)v^2t^3\ee
+This is an interesting equation since it encodes a trade-off between $t^2$ and $t^3$ super-diffusion as initial conditions are varied.
+If the initial conditions are "pure", meaning all tracers were started at rest or in motion, so one of $\theta_i$ is zero, the local-range diffusion scales as $\sigma_x \sim t^3.$
+If the initial conditions are mixed, so both $\theta_i$ are non-zero, diffusion scales as $t^2$, which is still super-diffusive, but with a slower rate of spreading through time.
 
 \subsection{links to earlier works}
 
 % link to lisle 1998
+\citet{Lisle1998} generalized the theory of \citet{Einstein1937} to describe the stochastic transport of soil particles under rainfall.
+This model includes an exponentially distributed period of motion having velocity $v$ and exponentially distributed resting periods.
+Therefore our model is equivalent to that of \citet{Lisle1998} in the limit that the trapping process is turned off: $\kappa \rightarrow 0$.
+Taking this limit in (\ref{eq:var}) provides a simpler expression with only two stages of bedload diffusion: a local ballistic range and normal diffusion in the intermediate range. The global range phenomena are not captured since trapping processes are neglected.
+
 % link to Eintsein1937
+\citet{Einstein1937} considered steps to be instantaneous, and he characterized them by an exponential step distance distribution.
+To access this model from ours, a more careful type of limit is necessary, which reminds one of the limits often used to take continuum limits of lattice theories in physics \citep[e.g.][]{Goldstein1980, Weiss1994}.
+This involves sending the mean motion time $1/k_2 \rightarrow 0 $ (equivalent to $k_2 \rightarrow \infty$) while holding the mean step distance $l = v/k_2$ constant.
+Denoting the mean resting time by $\tau = 1/k_1$, this results in a bedload variance
+\be f=ma \ee
+consistent with \citet{Einstein1937}.
+This foundational model expresses only single-stage normal diffusion which is associated with the intermediate range. 
+The local and global ranges are not captured since the interval of motion and sediment trapping processes are neglected.
+
 % link to Wu2019
+More recently, \citet{Wu2019} modeled the diffusion of tracers undergoing burial by assuming grains move in instantaneous steps and may bury with a constant rate while at rest.
+Our model includes this in the limit that motions become instantaneous while $\kappa$ is left unconstrained: $k_2 \rightarrow \infty$ as $l = v/k_2$ is held constant and $\kappa \neq 0$.
+In this case, (\ref{eq:var}) becomes
+\be f=ma \ee
+This describes two stages of bedload diffusion as discriminated by \citet{Wu2019}.
+There is an intermediate range normal diffusion and a global range super-diffusion.
+The local range is not resolved since motion times were neglected.
+
+% discuss limitations and unifying role of this work
+Although our model captures three stages of bedload diffusion and unifies a set of earlier works under one mathematical formalism, there are several limitations worth noting.
+These constrain its applicability and provide directions for future research.
+The major limitation of this work, and, for that matter, the foundational works it builds upon, is that transport characteristics ($k_1, k_2, v, \text{ and }\kappa$, in our case) of sediment grains are considered independent of space and time.
+In reality, river channels are often in a state of active adjustment to disturbances in sediment supply regime and variations in hydraulic flow \citep{Church2017}. 
+The transport characteristics of individual grains are deeply linked to the morphology of river channels \citep{Hassan2017}, and therefore to morphodynamics as well \citep[e.g.][]{Dhont2018}.
+In addition, the (local range) velocities at which grains travel vary from one grain to the next \citep{Fathel2015, Heyman2016} and through time \citep{Fan2014, Ancey2014} due to turbulence \citep{Celik2014} and the unpredictable nature of bedload collisions with moving \citep{Lee2002} and stationary grains \citep{Gordon1972}.
+In summary, bedload transport happens in a spatially and temporally variable environment, so any characteristics of transport necessarily vary in time and space.
+To our knowledge, no existing theories have provided a concrete approach to account for this physical problem, and ours is no exception.
+To overcome this limitation, is a need to delve deeply into the theory of random phenomena and to applications beyond geophysics.
+Surely, there are approaches worth incorporating from other sciences \citep[e.g.][]{Kutner2017}.
 
 \subsection{Geomorphic scaling / scope of conclusions}
 % purpose of diffusion understanding
+Sediment diffusion in river channels is an important consideration because the movement patterns of individual grains are ultimately responsible for geomorphic change \citep{Hassan2017} and solid contaminant transport through river channels \citep{Malmon2005, Macklin2006}.
+This diffusion is anomalous, so any model that describes is also broadly relevant in contemporary science, since anomalous diffusion processes constitute significant difficulties in biology \citep[e.g.][]{Sokolov2012}, geology \citep[e.g.][]{Berkowitz2006}, physics \citep[e.g.][]{Metzler2000}, and chemistry \citep[e.g.][]{Metzler2014}, just as in geomorphology \citep[e.g.][]{Voller2010}.
+
+
 % issue with linking scales due to scale-dependence of sediment xport
+In all of these considerations, the key issue is that anomalous diffusion introduces a scale dependence to the phenomena under study.
+In sediment transport, this means the time-scale of observation can affect the measurement of transport characteristics, and descriptions of sediment transport phenomena are necessarily scale dependent.
+Indeed, this has been noted in a variety of experiments \citep{Singh2009,Saletti2015,Campagnol2012}.
+However, I need to learn more about it to write about it meaningfully.
+
 % we have shown a solution to this deriving all three stages of bedload transport using light-tailed distributions
+Although previous authors have derived three-stages of bedload diffusion using models that are equivalent to the inclusion of heavy-tailed sojourn times in a random-walk theory such as ours \citep[e.g.][]{Zhang2012}, and some authors have derived two stages of bedload diffusion \citep[e.g.][]{Wu2019}, we believe we are the first to construct a model of bedload diffusion which encompasses all three stages of bedload diffusion.
+We have done this by including trapping processes and finite motion periods into an \citet{Einstein1937}-type model.
+In this process, contemporary tools such as the mathematical formalism for continuous time random walks founded by \citet{Montroll1965} and generalized by \citet{Weiss1976} have been essential.
+
+
 \section{Conclusion}
-We have generalized \citet{Einstein1937} to derive the diffusion properties of bedload tracers transporting downstream while undergoing burial.
+We have generalized the model of \citet{Einstein1937} to derive the diffusion properties of bedload tracers transporting downstream while undergoing burial.
 This reveals four stages of tracer diffusion: an initial superdiffusion $\sigma_x^2 \propto t^2$ or $t^3$ depending on initial conditions, an intermediate normal diffusion $\sigma_x^2 \propto t$, and a late or global range of diffusion $\sigma_x^2 \propto t^\gamma$ with $1\leq \gamma \leq 3$.
 These conclusions are a mathematical description of the concepts suggested by \citet{Nikora2001,Nikora2002}. 
 We believe the physical reasoning we've developed here can be used to build new scale-independent descriptions of sediment transport in rivers.
+The .
+In closing, we believe the legacy of Einstein pervades nearly all contemporary descriptions of sediment transport phenomena, as Einstein was probably the first to take account of the mechanics of individual grains in his descriptions of sediment transport \citep{Einstein1937,Einstein1942,Einstein1950}.
+We speculate that geophysical descriptions of phenomena in rivers will become much more sophisticated and  in this century, and this rapid development will be driven by powerful contemporary motivators including climate change \citep{Phillips2016} and the global loss of aquatic biodiversity \citep{Hauer2016}.
+Surely this scientific progress would benefit from a careful accounting of its historical foundation.
+
 
 \appendix
 
@@ -275,7 +366,7 @@ The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$ or
 \tp(\eta,s) = \frac{1}{s}\frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
 +\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)} \\
 \end{multline}
-Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s,$ it follows that the joint distribution is normalized in space: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = 1/s$.
+Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s,$ it follows that the joint distribution is normalized in space no matter the choice of propagators: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = 1/s$.
 
 After a lot of work which is in your notebook, this becomes
 \begin{align}

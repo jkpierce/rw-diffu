@@ -12,68 +12,84 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: biblio.bib.bib
-Repeated entry---line 4696 of file biblio.bib.bib
- : @article{Scher1973
- :                   ,
+Repeated entry---line 5672 of file biblio.bib.bib
+ : @book{Goldstein1980
+ :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 7546 of file biblio.bib.bib
+Repeated entry---line 6832 of file biblio.bib.bib
+ : @article{Frey2014
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8832 of file biblio.bib.bib
+ : @article{Campagnol2012
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 9045 of file biblio.bib.bib
+ : @article{Saletti2015
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 10399 of file biblio.bib.bib
  : @article{Hauer2016
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8492 of file biblio.bib.bib
- : @article{Taylor1920
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11605 of file biblio.bib.bib
+Repeated entry---line 10816 of file biblio.bib.bib
  : @article{Nikora2001a
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 12404 of file biblio.bib.bib
+Repeated entry---line 12460 of file biblio.bib.bib
  : @article{Einstein1905
  :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 13181 of file biblio.bib.bib
+ : @article{Scher1973
+ :                   ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 13205 of file biblio.bib.bib
+ : @article{Taylor1920
+ :                    ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for ""
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Taylor1920
-You've used 34 entries,
+You've used 57 entries,
             6951 wiz_defined-function locations,
-            1540 strings with 20009 characters,
-and the built_in function-call counts, 68032 in all, are:
-= -- 8327
-> -- 585
-< -- 3279
-+ -- 3525
-- -- 70
-* -- 4489
-:= -- 12327
-add.period$ -- 137
-call.type$ -- 34
-change.case$ -- 579
+            1725 strings with 33820 characters,
+and the built_in function-call counts, 115894 in all, are:
+= -- 14125
+> -- 1003
+< -- 5727
++ -- 6114
+- -- 116
+* -- 7756
+:= -- 21253
+add.period$ -- 230
+call.type$ -- 57
+change.case$ -- 970
 chr.to.int$ -- 0
-cite$ -- 69
-duplicate$ -- 1969
-empty$ -- 2635
-format.name$ -- 1024
-if$ -- 12785
+cite$ -- 115
+duplicate$ -- 3325
+empty$ -- 4407
+format.name$ -- 1748
+if$ -- 21647
 int.to.chr$ -- 0
-int.to.str$ -- 102
+int.to.str$ -- 171
 missing$ -- 0
-newline$ -- 916
-num.names$ -- 272
-pop$ -- 990
+newline$ -- 1555
+num.names$ -- 456
+pop$ -- 1639
 preamble$ -- 1
-purify$ -- 136
+purify$ -- 228
 quote$ -- 0
-skip$ -- 4384
+skip$ -- 7303
 stack$ -- 0
-substring$ -- 3844
-swap$ -- 1136
-text.length$ -- 75
+substring$ -- 6648
+swap$ -- 1925
+text.length$ -- 126
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2848
+type$ -- 4688
 warning$ -- 1
-while$ -- 350
+while$ -- 596
 width$ -- 0
-write$ -- 1142
-(There were 5 error messages)
+write$ -- 1963
+(There were 9 error messages)

@@ -25,19 +25,21 @@
 
 \begin{document}
 
-\title{Back to Einstein: how to include trapping processes in fluvial diffusion models?}
+\title{Back to Einstein: how to include burial in fluvial sediment diffusion models?}
 
 \authors{James K. Pierce \affil{1}and Marwan A. Hassan\affil{1}}
 \affiliation{1}{Department of Geography \\University of British Columbia}
 \correspondingauthor{James Kevin Pierce}{kpierce@alumni.ubc.ca}
 
 \begin{keypoints}
-\item We generalize the bedload diffusion model of Hans Albert Einstein to include the duration of sediment motion and the possibility of trapping.
-\item This derives three stages of bedload diffusion and unambiguously attributes physical mechanisms to each stage.
+\item We generalize the bedload diffusion model of Hans Albert Einstein to include the duration of sediment motion and the possibility of trapping by burial.
+\item This derives three stages of bedload diffusion and unambiguously attributes a mechanism to each stage.
 \end{keypoints}
 
 \begin{abstract}
-One approach to predict geomorphic change in rivers is to upscale from the motions of individual sediment grains. A difficulty with this approach is the wide range of individual motion characteristics that imply sediment diffusion, or the spreading out of grains through time. A more acute difficulty is that these motion characteristics apparently vary across temporal and spatial scales, implying multiple stages of sediment diffusion. We relate this multi-stage diffusion to within-channel trapping processes that impede the motions of individual grains. Grains can become stranded on high bars during floods, or they can become buried within the sedimentary bed, but these processes take a relatively long time to occur. Drawing on ideas from condensed matter physics and cellular biology, we describe the finite-velocity motions of individual grains within channels as random walkers subject to trapping. This derives three stages of bedload diffusion and clarifies the underlying mechanism, providing a tool to link between scales.
+	
+We develop a random-walk description of three ranges of bedload diffusion. This generalizes the bedload transport model of Hans Albert Einstein to account for the duration of sediment movement and the possibility that grains at rest can become permanently buried.
+We solve the model analytically and express the crossover times between diffusion ranges in terms of measurable parameters.
 \end{abstract}
 
 \section{Introduction}
@@ -102,7 +104,7 @@ The subscript ${1T}$ ("trapped") denotes the completion of a rest sojourn due to
 Similarly, the subscript $2$ denotes the completion of a movement sojourn due to the onset of resting.
 Using an argument similar to \citet{Weiss1994}, we can write integral equations to link these $\omega$'s. 
 \begin{align}
-\om_{1T}(x,t) &= \theta_1\big[1-\Phi(t)\big]g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\big[1-\Phi(t-t')\big]g_1(x-x',t-t')\label{eq:x}\\
+\om_{1T}(x,t) &= \theta_1\Phi_c(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_c(t-t')g_1(x-x',t-t')\label{eq:x}\\
 \om_{1F}(x,t) &= \theta_1\Phi(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi(t-t') g_1(x-x',t-t')\\
 \om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \\
 \end{align}
@@ -198,7 +200,7 @@ It represents diffusion of bedload tracers subjected to burial and when the fini
 		$C_2(t) = \frac{v^2}{2b^3}(\kappa+k_1)^2\Big[\frac{a+2b}{(a+b)^2}+\frac{-a+2b}{(a-b)^2}\Big]$\\
 		$A(t) = A_2(t)-2A_1C_1 + A_1^2\exp[(b-a)t]$\\
 		$B(t) = B_2(t)-2B_1C_1 + B_1^2\exp[-(a+b)t]$\\
-		$C(t) = C_2-C_1^2+2A_1B_1\exp[-2at]$\\
+		$C(t) = C_2(t)-C_1^2+2A_1B_1\exp[-2at]$\\
 		\bottomrule
 	\end{tabular}
 \end{table}

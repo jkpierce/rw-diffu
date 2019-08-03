@@ -116,6 +116,63 @@ Arfken, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Balakrishnan%
+\ \BBA {} Chaturvedi%
+}{%
+Balakrishnan%
+\ \BBA {} Chaturvedi%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+Balakrishnan1988}
+\APACinsertmetastar {%
+Balakrishnan1988}%
+\begin{APACrefauthors}%
+Balakrishnan, V.%
+\BCBT {}\ \BBA {} Chaturvedi, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1988}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Persistent Diffusion on a Line}} {{Persistent Diffusion
+  on a Line}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physica A}{148}{}{581--596}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bena%
+}{%
+Bena%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+Bena2006}
+\APACinsertmetastar {%
+Bena2006}%
+\begin{APACrefauthors}%
+Bena, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Dichotomous Markov noise: Exact results for
+  out-of-equilibrium systems. A review}} {{Dichotomous Markov noise: Exact
+  results for out-of-equilibrium systems. A review}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Modern Physics
+  B}{20}{20}{2825--2888}.
+\newblock
+\begin{APACrefURL}
+  \url{http://arxiv.org/abs/cond-mat/0606116{\%}0Ahttp://dx.doi.org/10.1142/S0217979206034881}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1142/S0217979206034881} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Berkowitz%
 , Cortis%
 , Dentz%
@@ -145,6 +202,36 @@ Berkowitz, B.%
 \APACjournalVolNumPages{Reviews of Geophysics}{44}{2}{1--49}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2005RG000178} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bialik%
+, Nikora%
+\BCBL {}\ \BBA {} Rowi{\'{n}}ski%
+}{%
+Bialik%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Bialik2012}
+\APACinsertmetastar {%
+Bialik2012}%
+\begin{APACrefauthors}%
+Bialik, R\BPBI J.%
+, Nikora, V\BPBI I.%
+\BCBL {}\ \BBA {} Rowi{\'{n}}ski, P\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{3D Lagrangian modelling of saltating particles
+  diffusion in turbulent water flow}} {{3D Lagrangian modelling of saltating
+  particles diffusion in turbulent water flow}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Acta Geophysica}{60}{6}{1639--1660}.
+\newblock
+\begin{APACrefDOI} \doi{10.2478/s11600-012-0003-2} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -395,6 +482,42 @@ Einstein, H\BPBI A.%
 
 \bibitem [\protect \citeauthoryear {%
 Fan%
+, Singh%
+, Guala%
+, Foufoula-Georgiou%
+\BCBL {}\ \BBA {} Wu%
+}{%
+Fan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Fan2016}
+\APACinsertmetastar {%
+Fan2016}%
+\begin{APACrefauthors}%
+Fan, N.%
+, Singh, A.%
+, Guala, M.%
+, Foufoula-Georgiou, E.%
+\BCBL {}\ \BBA {} Wu, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Exploring a semimechanistic episodic Langevin model for
+  bed load transport: Emergence of normal and anomalous advection and diffusion
+  regimes}} {{Exploring a semimechanistic episodic Langevin model for bed load
+  transport: Emergence of normal and anomalous advection and diffusion
+  regimes}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resources Research}{52}{4}{3787--3814}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/2016WR018704.Received} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fan%
 , Zhong%
 , Wu%
 , Foufoula-Georgiou%
@@ -462,6 +585,31 @@ Fathel, S\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Flekk{\o}y%
+}{%
+Flekk{\o}y%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Flekkøy2017}
+\APACinsertmetastar {%
+Flekkøy2017}%
+\begin{APACrefauthors}%
+Flekk{\o}y, E\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Minimal model for anomalous diffusion}} {{Minimal model
+  for anomalous diffusion}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physical Review E}{95}{1}{1--6}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.95.012139} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Frey%
 }{%
 Frey%
@@ -486,41 +634,6 @@ Frey, P.%
   Landforms}{39}{5}{646--655}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/esp.3517} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Furbish%
-, Fathel%
-, Schmeeckle%
-, Jerolmack%
-\BCBL {}\ \BBA {} Schumer%
-}{%
-Furbish%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2017}}%
-}]{%
-Furbish2017}
-\APACinsertmetastar {%
-Furbish2017}%
-\begin{APACrefauthors}%
-Furbish, D\BPBI J.%
-, Fathel, S\BPBI L.%
-, Schmeeckle, M\BPBI W.%
-, Jerolmack, D\BPBI J.%
-\BCBL {}\ \BBA {} Schumer, R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The elements and richness of particle diffusion during
-  sediment transport at small timescales}} {{The elements and richness of
-  particle diffusion during sediment transport at small timescales}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Earth Surface Processes and
-  Landforms}{42}{1}{214--237}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/esp.4084} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -607,6 +720,36 @@ Hassan, M\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Hassan%
+, Church%
+\BCBL {}\ \BBA {} Schick%
+}{%
+Hassan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1991}}%
+}]{%
+Hassan1991}
+\APACinsertmetastar {%
+Hassan1991}%
+\begin{APACrefauthors}%
+Hassan, M\BPBI A.%
+, Church, M.%
+\BCBL {}\ \BBA {} Schick, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1991}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Distance of movement of coarse particles in gravel bed
+  streams}} {{Distance of movement of coarse particles in gravel bed
+  streams}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resources Research}{27}{4}{503--511}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/90WR02762} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Hauer%
 \ \protect \BOthers {.}}{%
 Hauer%
@@ -668,6 +811,32 @@ Heyman, J.%
   Surface}{121}{10}{1931--1952}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/2015JF003672} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hubbell%
+\ \BBA {} Sayre%
+}{%
+Hubbell%
+\ \BBA {} Sayre%
+}{%
+{\protect \APACyear {1964}}%
+}]{%
+Hubbell1964}
+\APACinsertmetastar {%
+Hubbell1964}%
+\begin{APACrefauthors}%
+Hubbell, D\BPBI W.%
+\BCBT {}\ \BBA {} Sayre, W\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1964}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sand Transport Studies with Radioactive Tracers}}
+  {{Sand Transport Studies with Radioactive Tracers}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{J. Hydr. Div.}{90}{HY3}{39--68}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1055,6 +1224,39 @@ Montroll, E\BPBI W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Nakagawa%
+\ \BBA {} Tsujimoto%
+}{%
+Nakagawa%
+\ \BBA {} Tsujimoto%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+Nakagawa1976}
+\APACinsertmetastar {%
+Nakagawa1976}%
+\begin{APACrefauthors}%
+Nakagawa, H.%
+\BCBT {}\ \BBA {} Tsujimoto, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1976}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{On Probabilistic Characteristics of Motion of
+  Individual Sediment Particles on Stream Beds}} {{On Probabilistic
+  Characteristics of Motion of Individual Sediment Particles on Stream
+  Beds}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Hydraulic Problems Solved by Stochastic Methods: Second
+  International IAHR Symposium on Stochastic Hydraulics} {Hydraulic problems
+  solved by stochastic methods: Second international iahr symposium on
+  stochastic hydraulics}\ (\BPGS\ 293--320).
+\newblock
+\APACaddressPublisher{Lund, Sweden}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Nikora%
 }{%
 Nikora%
@@ -1180,33 +1382,30 @@ Phillips, C\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Phillips%
-, Martin%
-\BCBL {}\ \BBA {} Jerolmack%
+Reynolds%
+\ \BBA {} Rhodes%
 }{%
-Phillips%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2013}}%
+Reynolds%
+\ \BBA {} Rhodes%
+}{%
+{\protect \APACyear {2009}}%
 }]{%
-Phillips2013}
+Reynolds2009}
 \APACinsertmetastar {%
-Phillips2013}%
+Reynolds2009}%
 \begin{APACrefauthors}%
-Phillips, C\BPBI B.%
-, Martin, R\BPBI L.%
-\BCBL {}\ \BBA {} Jerolmack, D\BPBI J.%
+Reynolds, A.%
+\BCBT {}\ \BBA {} Rhodes, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2013}{}{}.
+\APACrefYearMonthDay{2009}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Impulse framework for unsteady flows reveals
-  superdiffusive bed load transport}} {{Impulse framework for unsteady flows
-  reveals superdiffusive bed load transport}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{The Levy flight paradigm: random search patterns and
+  mechanisms}} {{The Levy flight paradigm: random search patterns and
+  mechanisms}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Geophysical Research Letters}{40}{7}{1328--1333}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/grl.50323} \end{APACrefDOI}
+\APACjournalVolNumPages{Ecology}{90}{4}{877--887}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1244,117 +1443,33 @@ Saletti, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Scher%
-\ \BBA {} Lax%
+Schmidt%
+, Sagu{\'{e}}s%
+\BCBL {}\ \BBA {} Sokolov%
 }{%
-Scher%
-\ \BBA {} Lax%
-}{%
-{\protect \APACyear {1973}}%
-}]{%
-Scher1973}
-\APACinsertmetastar {%
-Scher1973}%
-\begin{APACrefauthors}%
-Scher, H.%
-\BCBT {}\ \BBA {} Lax, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1973}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Stochastic transport in a disordered solid. I. Theory}}
-  {{Stochastic transport in a disordered solid. I. Theory}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physical Review B}{7}{10}{4491--4502}.
-\newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevB.7.4491} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Schleiss%
-, Franca%
-, Juez%
-\BCBL {}\ \BBA {} {De Cesare}%
-}{%
-Schleiss%
+Schmidt%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
+{\protect \APACyear {2007}}%
 }]{%
-Schleiss2016}
+Schmidt2007}
 \APACinsertmetastar {%
-Schleiss2016}%
+Schmidt2007}%
 \begin{APACrefauthors}%
-Schleiss, A.%
-, Franca, M.%
-, Juez, C.%
-\BCBL {}\ \BBA {} {De Cesare}, G.%
+Schmidt, M\BPBI G.%
+, Sagu{\'{e}}s, F.%
+\BCBL {}\ \BBA {} Sokolov, I\BPBI M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2016}{}{}.
+\APACrefYearMonthDay{2007}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Reservoir sedimentation}} {{Reservoir
-  sedimentation}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Mesoscopic description of reactions for anomalous
+  diffusion: A case study}} {{Mesoscopic description of reactions for anomalous
+  diffusion: A case study}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Hydraulic Research}{54}{6}{}.
+\APACjournalVolNumPages{Journal of Physics Condensed Matter}{19}{6}{}.
 \newblock
-\begin{APACrefDOI} \doi{10.1080/00221686.2016.1225320} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Shlesinger%
-, Zaslavsky%
-\BCBL {}\ \BBA {} Klafter%
-}{%
-Shlesinger%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1993}}%
-}]{%
-Shlesinger1993}
-\APACinsertmetastar {%
-Shlesinger1993}%
-\begin{APACrefauthors}%
-Shlesinger, M\BPBI F.%
-, Zaslavsky, G\BPBI M.%
-\BCBL {}\ \BBA {} Klafter, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1993}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Strange kinetics}} {{Strange kinetics}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Nature}{363}{6424}{31--37}.
-\newblock
-\begin{APACrefDOI} \doi{10.1038/363031a0} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Shugard%
-\ \BBA {} Reiss%
-}{%
-Shugard%
-\ \BBA {} Reiss%
-}{%
-{\protect \APACyear {1976}}%
-}]{%
-Shugard1976}
-\APACinsertmetastar {%
-Shugard1976}%
-\begin{APACrefauthors}%
-Shugard, W.%
-\BCBT {}\ \BBA {} Reiss, H.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1976}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Transient nucleation in H20-H2S04 mixtures: A
-  stochastic approach}} {{Transient nucleation in H20-H2S04 mixtures: A
-  stochastic approach}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Chemical Physics}{65}{}{2827-- 2840}.
+\begin{APACrefDOI} \doi{10.1088/0953-8984/19/6/065118} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1428,7 +1543,7 @@ Taylor1920}
 \APACinsertmetastar {%
 Taylor1920}%
 \begin{APACrefauthors}%
-Taylor, G\BPBI I.%
+Taylor, G.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -1462,6 +1577,40 @@ Temme, N\BPBI M.%
   classical functions of mathematical physics}}.
 \newblock
 \APACaddressPublisher{}{John Wiley {\&} Sons Ltd.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vallaeys%
+, Tyson%
+, Lane%
+, Deleersnijder%
+\BCBL {}\ \BBA {} Hanert%
+}{%
+Vallaeys%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Vallaeys2017}
+\APACinsertmetastar {%
+Vallaeys2017}%
+\begin{APACrefauthors}%
+Vallaeys, V.%
+, Tyson, R\BPBI C.%
+, Lane, W\BPBI D.%
+, Deleersnijder, E.%
+\BCBL {}\ \BBA {} Hanert, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A L{\'{e}}vy-flight diffusion model to predict
+  transgenic pollen dispersal}} {{A L{\'{e}}vy-flight diffusion model to
+  predict transgenic pollen dispersal}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Royal Society Interface}{14}{126}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1098/rsif.2016.0889} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1608,10 +1757,36 @@ Wu, Z.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Yang%
+C\BPBI T.~Yang%
+\ \BBA {} Sayre%
+}{%
+C\BPBI T.~Yang%
+\ \BBA {} Sayre%
+}{%
+{\protect \APACyear {1971}}%
+}]{%
+Yang1971}
+\APACinsertmetastar {%
+Yang1971}%
+\begin{APACrefauthors}%
+Yang, C\BPBI T.%
+\BCBT {}\ \BBA {} Sayre, W\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1971}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Stochastic model for sand dispersion}} {{Stochastic
+  model for sand dispersion}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Hydraulics Division, ASCE}{97}{HY2}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X\BPBI R.~Yang%
 \ \BBA {} Wang%
 }{%
-Yang%
+X\BPBI R.~Yang%
 \ \BBA {} Wang%
 }{%
 {\protect \APACyear {2019}}%
@@ -1639,6 +1814,32 @@ Yang, X\BPBI R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1038/s41598-019-39363-3} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yano%
+}{%
+Yano%
+}{%
+{\protect \APACyear {1969}}%
+}]{%
+Yano1969}
+\APACinsertmetastar {%
+Yano1969}%
+\begin{APACrefauthors}%
+Yano, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1969}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Tracer Studies on the Movement of Sand and Gravel}}
+  {{Tracer Studies on the Movement of Sand and Gravel}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 12th Congress IAHR, Vol 2.}
+  {Proceedings of the 12th congress iahr, vol 2.}\ (\BPGS\ 121--129).
+\newblock
+\APACaddressPublisher{Kyoto, Japan}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

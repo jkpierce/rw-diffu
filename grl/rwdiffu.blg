@@ -12,84 +12,83 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: biblio.bib.bib
-Repeated entry---line 5672 of file biblio.bib.bib
- : @book{Goldstein1980
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6832 of file biblio.bib.bib
- : @article{Frey2014
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8832 of file biblio.bib.bib
+Repeated entry---line 1743 of file biblio.bib.bib
  : @article{Campagnol2012
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9045 of file biblio.bib.bib
+Repeated entry---line 5819 of file biblio.bib.bib
  : @article{Saletti2015
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10399 of file biblio.bib.bib
- : @article{Hauer2016
- :                   ,
+Repeated entry---line 6842 of file biblio.bib.bib
+ : @book{Goldstein1980
+ :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10816 of file biblio.bib.bib
+Repeated entry---line 8753 of file biblio.bib.bib
+ : @article{Frey2014
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8793 of file biblio.bib.bib
  : @article{Nikora2001a
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 12460 of file biblio.bib.bib
+Repeated entry---line 10264 of file biblio.bib.bib
  : @article{Einstein1905
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13181 of file biblio.bib.bib
- : @article{Scher1973
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13205 of file biblio.bib.bib
+Repeated entry---line 11493 of file biblio.bib.bib
  : @article{Taylor1920
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
+Repeated entry---line 11664 of file biblio.bib.bib
+ : @article{Bialik2012
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 13106 of file biblio.bib.bib
+ : @article{Hauer2016
+ :                   ,
+I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Taylor1920
-You've used 57 entries,
+You've used 64 entries,
             6951 wiz_defined-function locations,
-            1725 strings with 33820 characters,
-and the built_in function-call counts, 115894 in all, are:
-= -- 14125
-> -- 1003
-< -- 5727
-+ -- 6114
-- -- 116
-* -- 7756
-:= -- 21253
-add.period$ -- 230
-call.type$ -- 57
-change.case$ -- 970
+            1776 strings with 35772 characters,
+and the built_in function-call counts, 130504 in all, are:
+= -- 15978
+> -- 1108
+< -- 6445
++ -- 6859
+- -- 130
+* -- 8691
+:= -- 23938
+add.period$ -- 262
+call.type$ -- 64
+change.case$ -- 1091
 chr.to.int$ -- 0
-cite$ -- 115
-duplicate$ -- 3325
-empty$ -- 4407
-format.name$ -- 1748
-if$ -- 21647
+cite$ -- 129
+duplicate$ -- 3701
+empty$ -- 4952
+format.name$ -- 1911
+if$ -- 24413
 int.to.chr$ -- 0
-int.to.str$ -- 171
+int.to.str$ -- 192
 missing$ -- 0
-newline$ -- 1555
-num.names$ -- 456
-pop$ -- 1639
+newline$ -- 1734
+num.names$ -- 512
+pop$ -- 1810
 preamble$ -- 1
-purify$ -- 228
+purify$ -- 256
 quote$ -- 0
-skip$ -- 7303
+skip$ -- 8329
 stack$ -- 0
-substring$ -- 6648
-swap$ -- 1925
-text.length$ -- 126
+substring$ -- 7482
+swap$ -- 2153
+text.length$ -- 152
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4688
+type$ -- 5376
 warning$ -- 1
-while$ -- 596
+while$ -- 656
 width$ -- 0
-write$ -- 1963
+write$ -- 2177
 (There were 9 error messages)

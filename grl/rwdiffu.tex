@@ -32,31 +32,32 @@
 \correspondingauthor{James Kevin Pierce}{kpierce@alumni.ubc.ca}
 
 \begin{keypoints}
-\item We develop a random-walk model of particles in intermittent transport through an environment with traps.
-\item Its solution provides three diffusion ranges of which two are anomalous.
-\item We apply it to bedload transport through rivers, generalizing the classic approach of H.A. Einstein and clarifying the scale-dependence of the process.
+\item We develop a random-walk model of objects in intermittent transport through an environment with traps.
+\item Its solution provides three ranges of diffusion, two of which are anomalous.
+\item We apply the model to bedload transport of sediment undergoing burial within a river channel and clarify the scale-dependence of bedload diffusion.
 
 \end{keypoints}
 
 \begin{abstract}
 	
 
-In gravel-bed rivers, grains transport downstream in sequences of rests and motions. While resting, they can be trapped by burial.
+In gravel-bed rivers, grains transport downstream through a sequence of motion and rest intervals. When at rest, grains can be trapped by burial.
 We develop a random-walk model of this phenomenon and solve it analytically.
 This predicts three ranges of bedload diffusion. We express the crossover times between these diffusion ranges in terms of measurable transport parameters, and explain each range in terms of underlying physical processes.
-This work supports the widespread effort across the sciences to model multiple-range diffusion and anomalous transport, and it provides new geophysical understanding of the scale-dependence expressed by fluvial sediment transport. We believe this work will help to better understand and predict bedload transport.
+This work supports the widespread effort across the sciences to model multiple-range diffusion and anomalous transport, and it provides new geophysical understanding of the scale-dependent phenomenon of fluvial sediment transport. We believe our findings will help to better understand and predict bedload transport and encourage descriptions of channel morphodynamics based on upscaling underlying grain-scale processes.
 
 \end{abstract}
 
 \section{Introduction}
 % what is problem and why does it matter
-Anomalous diffusion has been the focus of intense scientific scrutiny lately, since it appears in contexts as diverse and important the transport of cholesterols through lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, contaminants through soils \citep{Berkowitz2006,Yang2019}, and pollinating insects through ecosystems \citep{Reynolds2009,Vallaeys2017}.
-In this work, we study anomalous diffusion as it emerges from sediment grains transporting through river channels \citep{Martin2012,Bradley2017} by revisiting and generalizing the foundational model of \citet{Einstein1937}.
+Anomalous diffusion has been the focus of intense scientific scrutiny lately, since it appears in contexts as diverse and important the transport of cholesterols through lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, contaminants through soils \citep{Berkowitz2006,Yang2019}, and pollinator insects through ecosystems \citep{Reynolds2009,Vallaeys2017}.
+In this work, we study anomalous diffusion as it emerges from sediment grains transporting through river channels \citep{Martin2012,Bradley2017}.
+We approach this problem by revisiting and generalizing the foundational bedload diffusion model of \citet{Einstein1937}.
 Diffusion is the spreading apart of objects as they transport.
 It is induced by differences in the transport characteristics of one object and the next, and it is usually quantified by the time-dependence of the positional variance $\sigma_x^2(t)$ of the population.
 When $\sigma_x^2 \propto t$, the diffusion is said to be normal, since this is found in the classic diffusion problems \citep[e.g.][]{Einstein1905,Taylor1920}.
 However, many transport phenomena show $\sigma_x^2 \propto t^\gamma$, with $\gamma \neq 1$. This diffusion is said to be anomalous \citep{Sokolov2012}.
-If $\gamma>1$, it is said to be super-diffusive; while if $\gamma <1$, it is said to be sub-diffusive \citep{Weeks1998}.
+If $\gamma>1$, it is said to be super-diffusive; while if $\gamma <1$, it is said to be sub-diffusive \citep{Metzler2000}.
 
 % what do we know about it 
 Coarse sediment moving through river channels shows either anomalous or normal diffusion depending on the timescale of observation \citep{Nikora2002}.
@@ -64,7 +65,7 @@ This is a significant issue for the prediction of contaminant and sediment trans
 Contemporary data and numerical simulations show up to three ranges of bedload diffusion \citep{Martin2012, Bialik2012, Zhang2012, Fan2016, Bradley2017,Wu2019}.
 These were first identified by \citet{Nikora2001a,Nikora2002}, who termed these local, intermediate, and global ranges in order of increasing scale.
 $\sigma_x^2$ scales with time differently in each range, and this scaling can be anomalous or normal.
-While earlier works have developed models of bedload diffusion, there are contradictions in the literature about the expected diffusion characteristics (super/normal/sub) of each range, and no model has been developed, to our knowledge, that derives all three diffusion ranges from process-based concepts of fluvial sediment transport.
+While earlier works have developed models of bedload diffusion, there are contradictions in the literature about the expected diffusion characteristics (super/normal/sub-diffusion) of each range, and no model has been developed, to our knowledge, that derives all three diffusion ranges from process-based concepts of fluvial sediment transport.
 
 % how do we approach it
 In this work, we present a model of bedload diffusion which describes local, intermediate, and global ranges by including the duration of motion and the possibility of trapping due to burial into the classic bedload diffusion model of \citet{Einstein1937}.
@@ -79,101 +80,102 @@ However, we believe our model is the first analytically solvable model of three 
 This model is developed in section \ref{sec:model} and solved in section \ref{sec:solution}.
 The solution permits us to directly attribute physical processes to each diffusion range for the first time, to discern the crossover times between ranges in terms of empirically measurable transport parameters, and to derive earlier works as limiting cases \citep[e.g.][]{Lisle1998,Wu2019,Einstein1937} in section \ref{sec:discussion}.
 
-\section{Bedload diffusion with trapping as a multi-state random walk}
+\section{Bedload diffusion with burial as a multi-state random walk}
 \label{sec:model}
 We use a three-state random walk where the states are motion, rest, and burial.
 We label these as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
-Our development of the governing equations for the three-state walk closely mimics that in \citet{Weiss1994}, and our means of incorporating the trapping process is essentially contained in \citet{Schmidt2007}. 
+Our development of the governing equations for the three-state walk closely mimics \citet{Weiss1994}, and our approach to incorporating the trapping process closely mirrors \citet{Schmidt2007}. 
 In our model, residence times in motion and rest states are random variables characterized by exponential distributions and motions are characterized by a constant velocity $v$.
-We consider burial to be a permanent condition which has some probability to occur when resting particles are covered by transported sediment.
-The probability of burial per unit time (burial rate) is considered constant, so the probability of trapping increases the longer grains rest.
+We consider burial to be a permanent condition which has some probability to occur when resting grains are covered by transported sediment.
+The probability of burial per unit time (burial rate) is considered constant, so the probability of trapping increases with the time grains spend resting.
 
 % describe meaning of sojourns and g_i/G_i/theta_i
 A central concept in our derivation is the idea of a sojourn in the state $i$ \citep{Weiss1994}.
-When a particle enters a state $i$ at some time $t_0$ and position $x_0$, then leaves a state at some other time $t_1$ and position $x_1$, we say that the particle has completed a sojourn $i$. The joint probability density for a complete sojourn through the state $i$ of time $\tau = t_1-t_0$ and displacement $\xi = x_1-x_0$ is denoted $g_i(\xi,\tau).$ Similarly, we can consider incomplete sojourns. If a particle begins a sojourn in the state $i$ at $(t_0,x_0)$ and the sojourn is still on-going, the joint probability density to find the particle at $(x_1,t_1)$ is $G_i(\xi,\tau)$. The $g_i$ and $G_i$ can be further decomposed when time and space components of the motion are independent \citep{Weiss1994}.
-We refer to $g_i$ and $G_i$ as propagators, since they move probability through space-time.
+When a grain enters a state $i$ at some time $t_0$ and position $x_0$, then leaves a state at some other time $t_1$ and position $x_1$, we say that the grain has completed a sojourn in the state $i$. The joint probability density for a complete sojourn through the state $i$ of time $\tau = t_1-t_0$ and displacement $\xi = x_1-x_0$ is denoted $g_i(\xi,\tau).$ Similarly, we can consider incomplete sojourns. If a grain begins a sojourn in the state $i$ at $(t_0,x_0)$ and the sojourn is still on-going, the joint probability density to find the grain at $(x_1,t_1)$ is $G_i(\xi,\tau)$. The $g_i$ and $G_i$ can be further decomposed when time and space components of the motion are independent \citep{Weiss1994}.
+We refer to $g_i$ and $G_i$ as the complete and incomplete propagators, since they move probability through space-time and are associated respectively with complete and incomplete sojourns.
 
 % discuss two-stage derivation of weiss
-Our target is the probability distribution $p(x,t)$ to find a particle at $x,t$ if we know it started at $(x,t)=(0,0)$, i.e.,  $p(x,0)=\delta(x).$
-Hitting this target has three main steps.
-First, we introduce and solve for a set of quantities associated with transitions from one state to another.
-Second, we use these quantities to solve for the probabilities that a particle is in state $i$ having position $x$ at time $t$.
-The third step is trivial: we sum the former objects over all states to derive the probability that a particle is in any state at $(x,t)$.
+Our target is the probability distribution $p(x,t)$ to find a grain at $x,t$ if we know it started at $(x,t)=(0,0)$, i.e., with the initial distribution $p(x,0)=\delta(x)$.
+We consider its initial probabilities to be at rest or in motion are $\theta_1$ and $\theta_2$. 
+Normalization requires $\theta_1+\theta_2=1$.
+We do not consider the possibility that grains start buried.
+Our derivation has two main steps.
+First, we introduce and solve for a set of joint probabilities associated with transitions of a grain from one state to another.
+Second, we use these quantities to solve for the probabilities that a grain is in state $i$ having position $x$ at time $t$.
+Afterward, we sum the these distributions over all states $i$ to derive the joint probability that a grain is in any state at $(x,t)$.
 
 % derive omegas
 Now we begin the first stage of the derivation.
-Tracers at rest may be trapped by burial.
+Grains at rest may be trapped by burial.
 We consider burial to be permanent \citep[e.g.][]{Wu2019}, and we assume resting grains may be buried with constant probability per unit time $\kappa$.
-From this assumption, the probability that a grain is not trapped after a time $t$ at rest is given by a survival probability $\Phi(t) = e^{-\kappa t}$. Likewise, the probability that it is trapped after resting for a time $t$ is the complement $1-\Phi(t)$.
+From this assumption, the probability that a grain is not trapped after a time $t$ at rest is given by a survival probability $\Phi_F(t) = e^{-\kappa t}$ ($F$ is for "free"). Likewise, the probability that it is trapped after resting for a time $t$ is the complement $\Phi_T(t) = 1-\Phi_F(t)$ ($T$ is for "trapped").
 We introduce $\omega_{1T}(x,t)$, $\omega_{1F}(x,t)$, and $\omega_2(x,t)$ as the joint probabilities to find a grain at $(x,t)$ having just completed a sojourn.
-The subscript ${1T}$ ("trapped") denotes the completion of a rest sojourn due to trapping, while $1F$ ("free") denotes the completion of a rest sojourn due to movement.
-Similarly, the subscript $2$ denotes the completion of a movement sojourn due to the onset of resting.
-Using an argument similar to \citet{Weiss1994}, we can write integral equations to link these $\omega$'s. 
+The subscript ${1T}$ denotes the completion of a rest sojourn due to trapping by burial, while $1F$ denotes the completion of a rest sojourn due to motion.
+Similarly, the subscript $2$ denotes the completion of a motion sojourn due to the onset of resting.
+Using an argument similar to \citet{Weiss1994}, we write integral equations to link the $\omega$'s: 
 \begin{align}
-\om_{1T}(x,t) &= \theta_1\Phi_c(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_c(t-t')g_1(x-x',t-t')\label{eq:x}\\
-\om_{1F}(x,t) &= \theta_1\Phi(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi(t-t') g_1(x-x',t-t')\\
-\om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \\
+\om_{1T}(x,t) &= \theta_1\Phi_T(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_T(t-t')g_1(x-x',t-t')\label{eq:x}\\
+\om_{1F}(x,t) &= \theta_1\Phi_F(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi_F(t-t') g_1(x-x',t-t')\\
+\om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \label{eq:y}
 \end{align}
-$\theta_1$ and $\theta_2$ are the initial ($t=0$) probabilities for particles to have started at rest and motion.
-These equations all have the same structure: consider the first to understand their foundational reasoning.
-$\omega_{1T}(x,t)$ describes the probability that a sojourn in the state $1$ ends due to trapping at $(x,t)$. The first term states that the particle started at $(x,t)=(0,0)$ (with probability $\theta_1$) in the $i=1$ state, propagated a distance $x$ and a time $t$ (with probability $g_1(x,t)$), was trapped (with probability $1-\Phi(t)$), and is now at $x,t$. 
-The second term describes a second possibility.
-In this case, the particle was in a motion sojourn which ended at $x',t'$, at which point it came to rest, it propagated from $x',t'$ to $x,t$ at rest (with probability $g_1(x-x',t-t')$, and was trapped during this sojourn (with probability $\Phi(t-t')$).
-The other equations can be reasoned similarly, in a manner analogous to \citet{Weiss1994}.
-Once the propagators are specified, we can solve these equations for the $\omega$'s. This completes the first stage of the derivation.
+The first equation can be understood as follows: $\omega_{1T}(x,t)$ describes the probability that a sojourn in the state $1$ ends due to trapping at $(x,t)$. This quantity has two contributions. The first contribution represents the possibility that the grain started at $(x,t)=(0,0)$ in the $i=1$ state (with probability $\theta_1$), propagated a distance $x$ and a time $t$ in the $i=1$ state (with probability $g_1(x,t)$), was trapped (with probability $\Phi_T(t)$), and is now at $(x,t)$. 
+The second contribution describes the possibility that the grain was in a motion sojourn which ended at $x',t'$ when it came to rest. From here, it propagated from $x',t'$ to $x,t$ at rest (with probability $g_1(x-x',t-t')$) and was trapped during this sojourn (with probability $\Phi_T(t-t')$).
+The other equations can be reasoned similarly; these arguments are analogous to \citet{Weiss1994}.
+Once the propagators are specified, we can solve (\ref{eq:x}-\ref{eq:y}) for the $\omega$'s. This completes the first stage of the derivation.
 
 % derive p's
 The second stage of our derivation involves the joint probabilities of being in state regardless of whether a sojourn has just completed. These are denoted by  $p_0(x,t)$ (trapped), $p_1(x,t)$ (rest), and $p_2(x,t)$ (motion), and they involve the $\omega$'s for their definition:
 \begin{align}
-p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t')\\
-p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\\
-p_2(x,t) &= \theta_2 G_2(x,t) + \int_0^x dx' \int_0^t dt' \omega_{1F}(x',t')G_2(x-x',t-t').\label{eq:z}
+p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t') \label{eq:b}\\
+p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\label{eq:a}\\
+p_2(x,t) &= \theta_2 G_2(x,t) + \int_0^x dx' \int_0^t dt'  \omega_{1F}(x',t')G_2(x-x',t-t').\label{eq:z}
 \end{align}
-The reasoning here is totally analogous, except we use the propagators for incomplete sojourns.
-These can be solved once the propagators are specified and the $\omega$'s are known.
-The third stage of the derivation is to form the total probability for a particle to be found at $(x,t)$.
+Equation (\ref{eq:b}) says that grains buried at any $(x,t)$ arrived there due to trapping at $x$ at any time leading up to $t$.
+The reasoning in (\ref{eq:a}-\ref{eq:z}) is the same as for (\ref{eq:x}-\ref{eq:y}), except we use the propagators for incomplete sojourns.
+These equations can be solved once the propagators are specified and the $\omega$'s are known from (\ref{eq:x}-\ref{eq:y}).
+Finally, we form the total probability density for a grain to be found at $(x,t)$ in any state.
 This is simply 
-\be p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)\ee
-Now we turn to the definition of the propagators and solution of the resulting model defined by (\ref{eq:x}-\ref{eq:z}).
+\be p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t). \label{eq:dist}\ee
+This joint density is completely determined once (\ref{eq:x}-\ref{eq:z}) are solved.
 
 
-\section{Specification of Propagators and solution of model}
+\section{Specification of propagators and solution of model}
 \label{sec:solution}
 % choice of propagators
 We consider sojourns in the rest state to occur for an exponentially distributed time interval, given by the distribution $\psi_1(t) = k_1 e^{-k_1t}.$
 The probability that a sojourn in this state lasts for at least the time $t$ is then given by $\Psi_1(t) = \int_t^\infty \psi_1(t)dt = e^{-k_1 t}$.
-Since resting particles do not move, the probability of finding the particle at its starting position is $1$, while the probability of finding it anywhere else is zero.
+Since resting grains do not move, the probability of finding the grain at its starting position is $1$, while the probability of finding it anywhere else is zero.
 Hence the resting propagator for a complete sojourn is $g_1(x,t) = \delta(x)\psi_1(t),$ or 
 \be g_1(x,t) = \delta(x)k_1e^{-k_1t}.\label{eq:prop1} \ee
 Likewise, the resting propagator for an incomplete sojourn is $G_1(x,t) = \delta(x)e^{-k_1t} = g_1(x,t)/k_1.$
-We consider motions to occur with a constant velocity $v$ and to last for an exponentially distributed duration given by $\psi_2(t) = k_2 e^{-k_2t}.$
-Since motions are deterministic, the probability to find a particle at position $x$ in a sojourn is $\delta(x-vt)$, and the complete propagator is 
+We consider motions to occur with a constant velocity $v$ and to have an exponentially distributed duration given by $\psi_2(t) = k_2 e^{-k_2t}.$
+Since motions are deterministic, the probability to find a grain at position $x$ in a sojourn is $\delta(x-vt)$, and the complete propagator is 
 \be g_2(x,t) = \delta(x-vt)k_2e^{-k_2t},\label{eq:prop2}\ee
 while the incomplete propagator is $G_2(x,t) = g_2(x,t)/k_2$ as before.
 
 % distribution functions and moments in laplace space
-Having defined the propagators, we can set out to solve (\ref{eq:x}-\ref{eq:z}) and understand the diffusion of bedload with a finite motion interval and when subject to trapping by burial.
+Having defined the propagators, we set out to solve (\ref{eq:x}-\ref{eq:z}) and understand the diffusion of bedload with a finite motion interval and when subject to trapping by burial.
 The convolution structure of (\ref{eq:x}-\ref{eq:z}) presents a formidable problem.
 Luckily, we have the device of Laplace transforms.
 These project integro-differential equations into an alternate space in which convolutions are unraveled \citep[e.g.][]{Arfken1985}.
 The double Laplace transform of a joint probability distribution $p(x,t)$ is defined by 
 \be \tilde{p}(\eta,s) = \int_0^\infty dx e^{-\eta x}\int_0^\infty dt e^{-st} p(x,t) \label{eq:doubletransform}\ee
-The Laplace-transformed moments of $x$ are linked to derivatives of the double-transformed distribution \citep[e.g.][]{Weeks1998}.
+The Laplace-transformed moments of $x$ are linked to derivatives of the double-transformed distribution.
 From (\ref{eq:doubletransform}) it's clear that
-\be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k p(\eta,s)\Big|_{\eta=0}.\ee
+\be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k p(\eta,s)\Big|_{\eta=0}.\label{eq:momenttrick}\ee
 The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.][]{Kittel1958}.
-This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \Big\{\bra\tilde{x}^2 \ket;t\Big\} - \El^{-1} \Big\{\bra\tilde{x} \ket;t\Big\}$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}.
+This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution (\ref{eq:dist}).
 
 
 % solution for case theta_1=1: distribution function
-Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the distribution $p(x,t)$, the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendix}. Using the shorthand $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$ \citep[c.f.][]{Lisle1998} and assuming all particles start from motion ($\theta_1=1$), the distribution function is 
+Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendixB}. Using the shorthand notation $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$ \citep[c.f.][]{Lisle1998} and assuming all grains start from motion ($\theta_1=1$), the distribution is 
 \begin{multline}
 p(x,t) = e^{-(\kappa + k_1)\tau/k_1-\xi}\mathcal{H}(\tau)\mathcal{H}(\xi)\Bigg[\frac{k_1}{v}\delta(\tau) + \frac{k_1}{v} \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1(2\sqrt{\xi\tau}) + \frac{k_2}{v} \mathcal{I}_0(2\sqrt{\xi\tau})\Bigg]\\
 + \kappa \frac{k_2}{v(\kappa+k_1)}\mathcal{H}(\tau)\mathcal{H}(\xi)e^{-\xi}\mathcal{P}_1\big(\kappa\xi/(\kappa+k_1), (\kappa+k_1)\tau/k_1\big).
 \label{eq:pdf}
 \end{multline}
-The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind and $\mathcal{P}_1$ is a (complementary) Marcum-Q function defined by $\mathcal{P}_1(x,y) = \int_0^y e^{-z-x}\mathcal{I}_0(2\sqrt{xz})dz. $ \citep{Marcum1960,Temme1996}. $\mathcal{H}(x)$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
-This distribution is depicted in figure \ref{fig:pdfs}.
+The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind and $\mathcal{P}_1$ is a (complementary) Marcum Q-function defined by $\mathcal{P}_1(x,y) = \int_0^y e^{-z-x}\mathcal{I}_0(2\sqrt{xz})dz $ \citep{Temme1996}. The Q-function was initially introduced in relation to radar detection theory \citep{Marcum1960}. $\mathcal{H}(x)$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
+The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs}.
 
 % figure showing distribution functon
 \begin{figure}
@@ -181,18 +183,17 @@ This distribution is depicted in figure \ref{fig:pdfs}.
 	\caption{Joint distributions of a tracer being found at $x$ $t$ are impeded by the trapping process. Panel (a) shows the \citet{Lisle1998} model, and panel (b) shows the the distribution \ref{eq:pdf} which results from a trapping process occurring at rate $\kappa$. Cross-comparison of both panels shows that trapping redistributes probability to smaller values of $x$, and this redistribution becomes more important for larger $t$.}
 	\label{fig:pdfs}
 \end{figure}
-
-
 % solution for theta_1=1: moments
-
-For the same initial conditions $\theta_1=1$ the first two moments are
+\noindent The first two moments are
 \be \bra x(t) \ket = A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1 \label{eq:mean}\ee
 \be \bra x^2(t) \ket = A_2(t)e^{(b-a)t}+B_2(t)e^{-(a+b)t}+C_2. \label{eq:second}\ee
-The $A_i$ and $B_i$ are polynomials tabulated in (\ref{table:params}).
+Here $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ are shorthand notations.
+The $A_i$ and $B_i$ are polynomials available in table (\ref{table:params}).
 In terms of these moments, the variance is
 \be \sigma_x^2(t) = A(t)e^{(b-a)t} + B(t)e^{-(a+b)t} + C(t) \label{eq:var}\ee
+Where $A, B,$ and $C$ are transcendental functions in table in (\ref{table:params}).
 We have made no approximation to derive this expression.
-It represents diffusion of bedload tracers subjected to burial and when the finite period of motion is accounted for. \citet{Lisle1998}
+It represents the downstream diffusion of bedload grains when motion durations and the possibility of burial within the sedimentary bed are accounted for.
 \begin{table}[!h]
 	\centering
 	\caption{Polynomials and transcendental functions used in the expressions of the mean (\ref{eq:mean}), second moment (\ref{eq:second}) and variance (\ref{eq:var}) of bedload tracers.}
@@ -225,7 +226,7 @@ That is, for the case that $1/k_2 \ll 1/k_1 \ll 1/\kappa$.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/diffusion.png}
 	\caption{The variance of tracer position exhibits four distinct scaling regions as time increases: local, intermediate, global, and finally a non-diffusive range characterized by the eventual trapping of all grains.
-	Local and global ranges show super-diffusion $\sigma_x^2 \propto t^3$ while the intermediate range shows normal diffusion. These conclusions hold only for $\kappa \ll k_1 \ll k_2$, meaning motion intervals are generally much shorter than resting intervals, which are in turn are generally much smaller than the time required for resting particles to become buried.}
+	Local and global ranges show super-diffusion $\sigma_x^2 \propto t^3$ while the intermediate range shows normal diffusion. These conclusions hold only for $\kappa \ll k_1 \ll k_2$, meaning motion intervals are generally much shorter than resting intervals, which are in turn are generally much smaller than the time required for resting grains to become buried.}
 	\label{fig:var}
 \end{figure}
 % discuss 3+1 stages of diffusion
@@ -257,7 +258,7 @@ These timescales are the vertical lines plotted in figure \ref{fig:var}.
 
 % discuss other possibilities
 These results pertain to the conditions $1/k_2 \ll 1/k_1 \ll 1/\kappa$ and the initial condition $\theta_1$.
-The assumption that rests are much longer than motions was introduced by \citet{Einstein1937} and will be true for the intermittent stage of bedload motion \citep[e.g.][]{Nikora2001,Heyman2016} where the motion does not resemble a sheet flow \citep{Frey2014}.
+The assumption that rests are much longer than motions was introduced by \citet{Einstein1937}, and it is valid for weak bedload transport that does not resemble a sheet flow \citep{Frey2014}.
 We cannot imagine that the characteristic timescale of trapping due to burial $1/\kappa$ would exceed the characteristic resting timescale $1/k_1$, so we consider this constraint always satisfied.
 Therefore we need to discern the phenomena of the model for other initial conditions, where $\theta_1 $ and $\theta_2$ are arbitrary; and for the case that $k_1$ and $k_2$ are not well-separated, so that bedload rests are not necessarily much longer than motions.
 In these cases, the diffusion characteristics are still described by (\ref{eq:var}), since it is an exact result, but the three-stage diffusion depicted in figure \ref{fig:var} is not necessarily retained.
@@ -266,7 +267,7 @@ In these cases, the diffusion characteristics are still described by (\ref{eq:va
 The effect of initial conditions on the diffusion phenomena can be surmised using the approach of Tauberian theorems, which are a device to provide small (or large) time asymptotic behavior of a quantity which is known in Laplace space \citep[e.g.][]{Weiss1994}.
 We reason that initial conditions cannot affect the intermediate or global range diffusion apart from shifting the $\tau_\text{local}$, since its memory cannot be retained in our model.
 We note our model is Markovian by virtue of the choice of exponential propagators \citep{Weiss1994}, meaning it can only have short-term memory.
-We show in Appendix \ref{sec:appendix2} that the local range diffusion for arbitrary initial conditions is 
+We show in Appendix \ref{sec:appendixC} that the local range diffusion for arbitrary initial conditions is 
 \be \sigma_x^2 \sim v^2 \theta_1 \theta_2 t^2  + \frac{1}{3}(\theta_1 k_1 + \theta_2 k_2)v^2t^3\ee
 This is an interesting equation since it encodes a trade-off between $t^2$ and $t^3$ super-diffusion as initial conditions are varied.
 If the initial conditions are "pure", meaning all tracers were started at rest or in motion, so one of $\theta_i$ is zero, the local-range diffusion scales as $\sigma_x \sim t^3.$
@@ -305,7 +306,7 @@ These constrain its applicability and provide directions for future research.
 The major limitation of this work, and, for that matter, the foundational works it builds upon, is that transport characteristics ($k_1, k_2, v, \text{ and }\kappa$, in our case) of sediment grains are considered independent of space and time.
 In reality, river channels are often in a state of active adjustment to disturbances in sediment supply regime and variations in hydraulic flow \citep{Church2017}. 
 The transport characteristics of individual grains are deeply linked to the morphology of river channels \citep{Hassan2017}, and therefore to morphodynamics as well \citep[e.g.][]{Dhont2018}.
-In addition, the (local range) velocities at which grains travel vary from one grain to the next \citep{Fathel2015, Heyman2016} and through time \citep{Fan2014, Ancey2014} due to turbulence \citep{Celik2014} and the unpredictable nature of bedload collisions with moving \citep{Lee2002} and stationary grains \citep{Gordon1972}.
+In addition, the (local range) velocities at which grains travel vary from one grain to the next \citep{Fathel2015, Heyman2016} and through time \citep{Fan2014, Ancey2014a} due to turbulence \citep{Celik2014} and the unpredictable nature of bedload collisions with moving \citep{Lee2002} and stationary grains \citep{Gordon1972}.
 In summary, bedload transport happens in a spatially and temporally variable environment, so any characteristics of transport necessarily vary in time and space.
 To our knowledge, no existing theories have provided a concrete approach to account for this physical problem, and ours is no exception.
 To overcome this limitation, is a need to delve deeply into the theory of random phenomena and to applications beyond geophysics.
@@ -313,7 +314,7 @@ Surely, there are approaches worth incorporating from other sciences \citep[e.g.
 
 \subsection{Geomorphic scaling / scope of conclusions}
 % purpose of diffusion understanding
-Sediment diffusion in river channels is an important consideration because the movement patterns of individual grains are ultimately responsible for geomorphic change \citep{Hassan2017} and solid contaminant transport through river channels \citep{Malmon2005, Macklin2006}.
+Sediment diffusion in river channels is an important consideration because the motion patterns of individual grains are ultimately responsible for geomorphic change \citep{Hassan2017} and solid contaminant transport through river channels \citep{Malmon2005, Macklin2006}.
 This diffusion is anomalous, so any model that describes is also broadly relevant in contemporary science, since anomalous diffusion processes constitute significant difficulties in biology \citep[e.g.][]{Sokolov2012}, geology \citep[e.g.][]{Berkowitz2006}, physics \citep[e.g.][]{Metzler2000}, and chemistry \citep[e.g.][]{Metzler2014}, just as in geomorphology \citep[e.g.][]{Voller2010}.
 
 
@@ -331,8 +332,8 @@ In this process, contemporary tools such as the mathematical formalism for conti
 
 \section{Conclusion}
 We have generalized the model of \citet{Einstein1937} to derive the diffusion properties of bedload tracers transporting downstream while undergoing burial.
-This reveals four stages of tracer diffusion: an initial superdiffusion $\sigma_x^2 \propto t^2$ or $t^3$ depending on initial conditions, an intermediate normal diffusion $\sigma_x^2 \propto t$, and a late or global range of diffusion $\sigma_x^2 \propto t^\gamma$ with $1\leq \gamma \leq 3$.
-These conclusions are a mathematical description of the concepts suggested by \citet{Nikora2001,Nikora2002}. 
+This reveals three stages of tracer diffusion: an initial superdiffusion $\sigma_x^2 \propto t^2$ or $t^3$ depending on initial conditions, an intermediate normal diffusion $\sigma_x^2 \propto t$, and a late or global range of diffusion $\sigma_x^2 \propto t^\gamma$ with $1\leq \gamma \leq 3$.
+These conclusions are a mathematical description of the concepts suggested by \citet{Nikora2001a,Nikora2002}. 
 We believe the physical reasoning we've developed here can be used to build new scale-independent descriptions of sediment transport in rivers.
 The .
 In closing, we believe the legacy of Einstein pervades nearly all contemporary descriptions of sediment transport phenomena, as Einstein was probably the first to take account of the mechanics of individual grains in his descriptions of sediment transport \citep{Einstein1937,Einstein1942,Einstein1950}.
@@ -342,105 +343,78 @@ Surely this scientific progress would benefit from a careful accounting of its h
 
 \appendix
 
-\section{Calculation of the distribution function with trapping}
-\label{sec:appendix}
-Taking double transforms gives
+\section{Calculation of the distribution function}
+\label{sec:appendixA}
+Double transforming (\ref{eq:x}-\ref{eq:y}) using the definition (\ref{eq:doubletransform}) gives
 \begin{align}
 \tom_{1T}(\eta,s) &= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s) \\
 \tom_{1F}(\eta,s) &= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa)\\
 \tom_2(\eta,s) &= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s)
 \end{align}
-This system solves for 
+This purely algebraic system solves for 
 \begin{align}
 \tom_{1T}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
 \tom_{1F}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa)\\
-\tom_{2}(\eta,s) &= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s)\\
+\tom_{2}(\eta,s) &= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s).\\
 \end{align}
-
-
-The probabilities of being in state $0$ (trapped), $1$ (rest), and $2$ (motion) are
-\begin{align}
-p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t')\\
-p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\\
-p_2(x,t) &= \theta_2 G_2(x,t) + \int_0^x dx' \int_0^t dt' \omega_{1F}(x',t')G_2(x-x',t-t'),
-\end{align}
-Double transforming gives
+Double transforming (\ref{eq:b}-\ref{eq:z}) gives
 \begin{align}
 \tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s)\\
 \tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s) \\
-\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s)\\
+\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s).\\
 \end{align}
-The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$ or 
+The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$ or in Laplace space, 
 \begin{multline}
 \tp(\eta,s) = \frac{1}{s}\frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
 +\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)} \\
+\label{eq:lap}
 \end{multline}
-Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s,$ it follows that the joint distribution is normalized in space no matter the choice of propagators: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = 1/s$.
-
-After a lot of work which is in your notebook, this becomes
-\begin{align}
+Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s$ \citep[e.g.][]{Weiss1994}, it follows that the joint distribution is normalized in space regardless of the choice of propagators: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = \mathcal{L}\{1;s\} = 1/s$.
+Plugging in the propagators (\ref{eq:prop1}-\ref{eq:prop2}) to \ref{eq:lap} gives 
+\be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s + \kappa k_2 + \theta_1\kappa \eta v}{\eta v(s+\kappa+k_1)+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
+We take the double inverse transform of this equation for the case that grains start in motion.
+Setting $\theta_1=0$ and $\theta_2=1$ before inverse transforming (\ref{eq:nicedist}) over $\eta$ first, using the transform 15.103 from \citet{Arfken1985}, provides
+\be \tilde{p}(x,s) = \frac{(s+\kappa+k')s+\kappa k_2}{sv(s+\kappa+k_1)}
+\exp{\Big(-\frac{s(s+\kappa+k')+\kappa k_2}{s+\kappa+k_1}\frac{x}{v}\Big)}.\ee
+Taking the inverse transform over $s$ and leveraging the Laplace transform's linearity, substitution, and translation operations \citep[e.g.][]{Arfken1985} gives the form
+\begin{multline}
 p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
-\Big[&\frac{1}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\} \\
-&+ \frac{k_2}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\frac{1}{s}\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\} \\
-&+ \frac{\kappa k_2}{v}\El_{s\rightarrow t-x/v}^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[\frac{k_1k_2}{vs}x\Big]\Big\}\Big]
-\end{align}
-\begin{align}
-p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
-\Bigg[&\frac{1}{v}\delta(t-x/v) + \frac{1}{v}\sqrt{\frac{k_1k_2x}{v(t-x/v)}}\theta(t-x/v)\mathcal{I}_1\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg)\\
-&+\frac{k_2}{v}\theta(t-x/v)\mathcal{I}_0\Bigg(2\sqrt{\frac{k_1k_2x}{v}\Big(t-\frac{x}{v}\Big)}\Bigg)\\
-&+ \kappa\frac{ k_2}{v(\kappa+k_1)}e^{(\kappa+k_1)(t-x/v)}\theta(t-x/v)\mathcal{F}(x,t)\Bigg]
-\end{align}
-where the function $\mathcal{F}$ is
-\be \mathcal{F}(x,t) = \sum_{j=0}^\infty \frac{\big[\frac{k_1k_2x}{v(\kappa+k_1)}\big]^j}{j!j!} \gamma\big(j+1,[\kappa+k_1][t-x/v]\big),\ee
-where the $\mathcal{I}_\nu(z)$ are modified Bessel functions of the first kind, and $\gamma(\alpha,z)$ is the lower incomplete gamma function.
-This function $\mathcal{F}(x,t)$ is the Marcum Q-function \citep{Temme1996}, given by 
-\be \mathcal{Q}_1(x,y) = 1-e^{-x}\sum_{n=0}^\infty \frac{x^n}{n!}\frac{\gamma(1+n,y)}{\Gamma(n+1)}\ee
-This function was originally introduced in relation to radar detection problems \citep[e.g.][]{Marcum1960}. It has a representation as an infinite superposition of modified Bessel functions:
-\be \mathcal{Q}_1(x,y) = 1- \int_0^ydz e^{-z-x}\mathcal{I}_0(2\sqrt{xz})\ee
-So we are not far from where we started with \citet{Lisle1998}: Modified Bessel functions are the norm in this type of 1D diffusion problem \citep[e.g.][]{Lisle1998}.
-Hence in summary \be \mathcal{F}(x,t) = 1-\mathcal{Q}_1\Big(\frac{k_1k_2x}{v(\kappa+k_1)},[\kappa+k_1][t-x/v] \Big)\ee
+\Big[\frac{1}{v}\El^{-1}\Big\{\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\} \\
++ \frac{k_2}{v}\El^{-1}\Big\{\frac{1}{s}\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\} \\
++ \frac{\kappa k_2}{v}\El^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\}\Big].
+\end{multline}
+Performing these transforms using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \citet{Prudnikov1992a} and using the definition of the Marcum Q-function \citep[e.g.][]{Temme1996}, we arrive at (\ref{eq:pdf}).
 
 \section{Calculation of the moments}
-\label{sec:appendix2}
-Often, Tauberian-type theorems are used to study the long or short time asymptotic scaling of first or second moments of random walks having any generality.
-This is because the mathematics get difficult, and Tauberian theorems provide a very powerful tool which leverages the stability of the Laplace transform.
-Unfortunately, this approach is insufficient for our purposes. We are unaware of an intermediate-regime Tauberian-type theorem, so we must pursue full solutions of the moments in order to discriminate the diffusive ranges and the full diffusion behavior.
-
+\label{sec:appendixB}
+We employ (\ref{eq:momenttrick}) to compute the moments of position $x$. The first two derivatives of the double Laplace transformed distribution (\ref{eq:lap}) are
 \be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][s+\kappa + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2}\ee
-\be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{[(s+\kappa + k')s+\kappa k_2][s+\kappa + k_1]^2}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}\ee
-\be  \frac{\bra\tilde{x}\ket} {v} = \frac{1}{s}\frac{s+\kappa + k_1}{(s+\kappa + k')s + \kappa k_2}\ee
-\be \frac{\bra \tilde{x}^2 \ket}{2v^2} = \frac{1}{s} \frac{[s+\kappa + k_1]^2}{[(s+\kappa + k')s + \kappa k_2]^2} \ee
-
-A similar approach provides 
+\be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{[(s+\kappa + k')s+\kappa k_2][s+\kappa + k_1]^2}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}.\ee
+Evaluating these at $\eta=0$ and using (\ref{eq:momenttrick}) provides the Laplace transformed moments:
+\be  \frac{\bra\tilde{x}(s)\ket} {v} = \Big((\kappa+k_1)s^{-1}+1 \Big)\frac{1}{(s+a)^2-b^2} \label{eq:lapmean}\ee
+\be \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \Big((\kappa+k_1)^2s^{-1} + 2(\kappa+k_1) + s\Big) \frac{1}{[(s+a)^2-b^2]^2}.\label{eq:lapsecondmom}\ee
+Where the parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to complete the squares in their denominators.
+These are inverse transformed by using the linearity and translation properties with those for integration and differentiation \citep[e.g.][]{Arfken1985}.
+For the mean this calculation is
 \begin{align}
-\frac{\bra x^2 \ket}{2v^2} &= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[(s+a)^2-b^2]^2};t\Big\}\\
-&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)\El^{-1}\Big\{\frac{1}{[s^2-b^2]^2};t\Big\}e^{-at}\\
-&= \Big(\frac{d}{dt}\circ + \circ \Big|_{t=0} + 2(\kappa + k_1)\circ + (\kappa+k_1)^2\int_0^t dt \circ \Big)e^{-at}\frac{1}{2b^3}\Big[bt\cosh(bt)-\sinh(bt)\Big]
+\frac{\bra x \ket}{v} &= \Big((\kappa+k_1)\int_0^t dt \circ+1 \Big)e^{-at}\frac{1}{s^2-b^2}\\
+&=  \frac{1}{b}e^{-at}\sinh(bt) + \frac{\kappa + k_1}{2b}\Big[\frac{1}{b-a}\Big(e^{(b-a)t}-1\Big)+ \frac{1}{a+b}\Big(e^{-(a+b)t}-1\Big)\Big]
 \end{align}
-using Prudnikov 2.1.5.6.
-This becomes
+where the symbol $\circ$ denotes operation on everything to the right of the following parenthesis. In this derivation we used 2.1.5.4 from \citet{Prudnikov1992a}. This equation rearranges to (\ref{eq:mean}).
+Applying a similar approach to the second moment (\ref{eq:lapsecondmom}) obtains
+\begin{align}
+\frac{\bra x^2 \ket}{2v^2} 
+&= \Big((\kappa+k_1)^2\int_0^t dt \circ + 2(\kappa + k_1)\circ +  [\partial_t + \delta(t)]\circ \Big)e^{-at}\El^{-1}\Big\{\frac{1}{[s^2-b^2]^2};t\Big\}.\\
+\end{align}
+Using 2.1.5.6 from \citet{Prudnikov1992a} this becomes
 \begin{align}
 \frac{\bra x^2 \ket}{2v^2} = \frac{t}{b}\sinh&(bt) + \frac{(\kappa + k_1)}{b^3}\big[bt\cosh(bt)-\sinh(bt)\big]\\
 &+e^{-at}\frac{b(b^2(at-2))-a^3t)\cosh(bt) +(a^3-a^2b^2t-3ab^2+b^4t)\sinh(bt)}{(a-b)^2(a+b)^2}
 \end{align}
-\begin{align}
-\frac{\bra x \ket}{v} &= \El^{-1}\Big\{\frac{1}{s}\frac{s+\kappa + k_1}{(s+\kappa + k')s + \kappa k_2};t\Big\} \\
-&= \El^{-1}\Big\{\frac{1}{\big[s+\frac{\kappa+k'}{2}\big]^2+\kappa k_2 - \big[\frac{\kappa+k'}{2}\big]^2};t\Big\} + 
-\int_0^t du \El^{-1}\Big\{\frac{\kappa + k_1}{\big[s+\frac{\kappa+k'}{2}\big]^2+\kappa k_2 - \big[\frac{\kappa+k'}{2}\big]^2};u\Big\}\\
-&= e^{-(\kappa + k')t/2}\El^{-1}\Big\{\frac{1}{s^2 - b^2};t\Big\} + (\kappa + k_1)\int_0^t du e^{-(\kappa + k')u/2}\El^{-1}\Big\{\frac{1}{s^2 - b^2};u\Big\}
-\end{align}
-here $b^2 = -\kappa k_2 + \big[\frac{\kappa+k'}{2}\big]^2$
-Then with Prudnikov 2.1.5.4:
-\begin{align}
-\frac{\bra x \ket}{v} &= \frac{1}{b}e^{-(\kappa + k')t/2}\sinh(bt) + \frac{(\kappa +k_1)}{b}\int_0^t due^{-(\kappa + k')u/2}\sinh(bu)\\
-&=  \frac{1}{b}e^{-at}\sinh(bt) + \frac{\kappa + k_1}{2b}\Big[\frac{1}{b-a}\Big(e^{(b-a)t}-1\Big)+ \frac{1}{a+b}\Big(e^{-(a+b)t}-1\Big)\Big]
-\end{align}
-where $a=(\kappa + k')/2$ and $b = \sqrt{a^2 -\kappa k_2}$. We are interested in the domain that $a\geq \sqrt{\kappa k_2}$ so that $b\geq a$.
-The limit of $\kappa \rightarrow 0$ provides
-\be \frac{k'^2}{v}\bra x \ket=k_2(1-e^{-k't})+ k_1k't \ee
-which aligns perfectly with earlier results.
+which rearranges to (\ref{eq:var}).
 
-\section{Links to \citet{Einstein1937} and \citet{Lisle1998}}
+\section{Initial conditions and limiting behaviors}
+\label{sec:appendixC}
 Turning off the trapping process by sending $\kappa \rightarrow 0 $ reproduces the earlier model of \citet{Lisle1998}. 
 Noting that $b \sim k'/2 + (k_1-k_2)\kappa/(2k')$ and $a+b \sim k' + k_1\kappa/k'$ as $\kappa \rightarrow 0$ transforms (\ref{eq:mean}) to 
 \be \bra x \ket \sim  \frac{vk_1}{k'}t + \frac{vk_2}{k'^2}(1-e^{-k't})\ee

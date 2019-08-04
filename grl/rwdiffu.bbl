@@ -65,29 +65,32 @@ Ancey, C.%
 
 \bibitem [\protect \citeauthoryear {%
 Ancey%
-, Bohorquez%
-\BCBL {}\ \BBA {} Bardou%
+\ \BBA {} Heyman%
 }{%
 Ancey%
-\ \protect \BOthers {.}}{%
+\ \BBA {} Heyman%
+}{%
 {\protect \APACyear {2014}}%
 }]{%
-Ancey2014}
+Ancey2014a}
 \APACinsertmetastar {%
-Ancey2014}%
+Ancey2014a}%
 \begin{APACrefauthors}%
 Ancey, C.%
-, Bohorquez, P.%
-\BCBL {}\ \BBA {} Bardou, E.%
+\BCBT {}\ \BBA {} Heyman, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Sediment Transport in Mountain Rivers}} {{Sediment
-  Transport in Mountain Rivers}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{A microstructural approach to bed load transport: mean
+  behaviour and fluctuations of particle transport rates}} {{A microstructural
+  approach to bed load transport: mean behaviour and fluctuations of particle
+  transport rates}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{ERCOFTAC Bulletin.}{100}{}{37--52}.
+\APACjournalVolNumPages{Journal of Fluid Mechanics}{744}{2014}{129--168}.
+\newblock
+\begin{APACrefDOI} \doi{10.1017/jfm.2014.74} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1287,46 +1290,12 @@ Nikora, V.%
 
 \bibitem [\protect \citeauthoryear {%
 Nikora%
-, Goring%
-, McEwan%
-, Griffiths%
-\BCBL {}\ \BBA {} Nikora%
-}{%
-Nikora%
-, Goring%
-\BCBL {}\ \protect \BOthers {.}}{%
-{\protect \APACyear {2001}}%
-}]{%
-Nikora2001}
-\APACinsertmetastar {%
-Nikora2001}%
-\begin{APACrefauthors}%
-Nikora, V.%
-, Goring, D.%
-, McEwan, I.%
-, Griffiths, G.%
-\BCBL {}\ \BBA {} Nikora.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2001}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Spatially averaged open-channel flow over rough bed}}
-  {{Spatially averaged open-channel flow over rough bed}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Hydraulic
-  Engineering}{127}{February}{123--133}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Nikora%
 , Heald%
 , Goring%
 \BCBL {}\ \BBA {} McEwan%
 }{%
 Nikora%
-, Heald%
-\BCBL {}\ \protect \BOthers {.}}{%
+\ \protect \BOthers {.}}{%
 {\protect \APACyear {2001}}%
 }]{%
 Nikora2001a}
@@ -1379,6 +1348,33 @@ Phillips, C\BPBI B.%
 \APACjournalVolNumPages{Science}{352}{6286}{694--697}.
 \newblock
 \begin{APACrefDOI} \doi{10.1126/science.aad3348} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Prudnikov%
+, Brychkov%
+\BCBL {}\ \BBA {} Marichev%
+}{%
+Prudnikov%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1992}}%
+}]{%
+Prudnikov1992a}
+\APACinsertmetastar {%
+Prudnikov1992a}%
+\begin{APACrefauthors}%
+Prudnikov, A.%
+, Brychkov, Y\BPBI A.%
+\BCBL {}\ \BBA {} Marichev, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {{Integrals and Series: Volume 5: Inverse Laplace Transforms}}
+  {{Integrals and Series: Volume 5: Inverse Laplace Transforms}}.
+\newblock
+\APACaddressPublisher{}{Gordon and Breach Science Publishers}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1644,36 +1640,6 @@ Voller, V\BPBI R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2009JF001278} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Weeks%
-\ \BBA {} Swinney%
-}{%
-Weeks%
-\ \BBA {} Swinney%
-}{%
-{\protect \APACyear {1998}}%
-}]{%
-Weeks1998}
-\APACinsertmetastar {%
-Weeks1998}%
-\begin{APACrefauthors}%
-Weeks, E\BPBI R.%
-\BCBT {}\ \BBA {} Swinney, H\BPBI L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1998}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Anomalous diffusion resulting from strongly asymmetric
-  random walks}} {{Anomalous diffusion resulting from strongly asymmetric
-  random walks}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physical Review E - Statistical Physics, Plasmas,
-  Fluids, and Related Interdisciplinary Topics}{57}{5}{4915--4920}.
-\newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevE.57.4915} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

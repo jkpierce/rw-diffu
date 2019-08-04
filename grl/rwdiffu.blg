@@ -50,45 +50,45 @@ Repeated entry---line 13106 of file biblio.bib.bib
 I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Taylor1920
-You've used 64 entries,
+You've used 63 entries,
             6951 wiz_defined-function locations,
-            1776 strings with 35772 characters,
-and the built_in function-call counts, 130504 in all, are:
-= -- 15978
-> -- 1108
-< -- 6445
-+ -- 6859
-- -- 130
-* -- 8691
-:= -- 23938
-add.period$ -- 262
-call.type$ -- 64
-change.case$ -- 1091
+            1767 strings with 32711 characters,
+and the built_in function-call counts, 128896 in all, are:
+= -- 15795
+> -- 1081
+< -- 6402
++ -- 6815
+- -- 126
+* -- 8588
+:= -- 23745
+add.period$ -- 258
+call.type$ -- 63
+change.case$ -- 1074
 chr.to.int$ -- 0
-cite$ -- 129
-duplicate$ -- 3701
-empty$ -- 4952
-format.name$ -- 1911
-if$ -- 24413
+cite$ -- 127
+duplicate$ -- 3629
+empty$ -- 4870
+format.name$ -- 1859
+if$ -- 24075
 int.to.chr$ -- 0
-int.to.str$ -- 192
+int.to.str$ -- 189
 missing$ -- 0
-newline$ -- 1734
-num.names$ -- 512
-pop$ -- 1810
+newline$ -- 1702
+num.names$ -- 504
+pop$ -- 1805
 preamble$ -- 1
-purify$ -- 256
+purify$ -- 252
 quote$ -- 0
-skip$ -- 8329
+skip$ -- 8184
 stack$ -- 0
-substring$ -- 7482
-swap$ -- 2153
-text.length$ -- 152
+substring$ -- 7433
+swap$ -- 2104
+text.length$ -- 149
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 5376
+type$ -- 5296
 warning$ -- 1
-while$ -- 656
+while$ -- 638
 width$ -- 0
-write$ -- 2177
+write$ -- 2130
 (There were 9 error messages)

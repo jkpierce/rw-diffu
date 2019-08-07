@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.6.9)  3 AUG 2019 21:32
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.6.9)  4 AUG 2019 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -429,13 +429,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 229--229
 ls, which are in turn are gen-er-ally much
  []
 
-[6] [7] [8] [9] [10] [11] (./rwdiffu.bbl
+[6] [7] [8] [9] [10] [11] [12] (./rwdiffu.bbl
 Underfull \hbox (badness 2111) in paragraph at lines 16--32
 []\OT1/cmr/m/n/10 Aar~ao Reis, F. D., & Di Caprio, D.  (2014).  Crossover from 
 anoma-lous to nor-mal 
  []
 
-[12]
+
 Underfull \hbox (badness 3792) in paragraph at lines 47--65
 \OT1/cmr/m/n/10 i-ment trans-port ex-per-i-ments.  \OT1/cmr/m/it/10 Phys-i-cal 
 Re-view E - Sta-tis-ti-cal, Non-lin-ear, and 
@@ -472,7 +472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 158--177
 17979206034881$   \OT1/cmr/m/n/10 doi: 
  []
 
-
+[13]
 Underfull \hbox (badness 5175) in paragraph at lines 192--209
 []\OT1/cmr/m/n/10 Berkowitz, B., Cor-tis, A., Dentz, M., & Scher, H.  (2006).  
 Mod-el-ing Non-fickian 
@@ -559,9 +559,6 @@ doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13]
 Underfull \hbox (badness 10000) in paragraph at lines 572--589
 []\OT1/cmr/m/n/10 Fathel, S. L., Fur-bish, D. J., & Schmeeckle, M. W.  (2015). 
  Ex-per-i-men-tal ev-i- 
@@ -580,6 +577,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--589
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 738--754
 \OT1/cmr/m/n/10 par-ti-cles in gravel bed streams.  \OT1/cmr/m/it/10 Wa-ter Re-
 sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 27\OT1/cmr/m/n/10 (4), 503-
@@ -655,9 +655,6 @@ Underfull \hbox (badness 7256) in paragraph at lines 1089--1106
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
 Underfull \hbox (badness 10000) in paragraph at lines 1121--1141
 \OT1/cmr/m/n/10 mod-els and their prop-er-ties: Non-stationarity, non-ergodicit
 y, and age-ing at 
@@ -688,6 +685,9 @@ sium on stochas-tic
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 1422--1440
 []\OT1/cmr/m/n/10 Saletti, M., Mol-nar, P., Zim-mer-mann, A. E., Has-san, M. A.
 , & Church, M. 
@@ -725,9 +725,6 @@ Underfull \hbox (badness 7451) in paragraph at lines 1593--1611
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
 Underfull \hbox (badness 1490) in paragraph at lines 1681--1692
 []\OT1/cmr/m/n/10 Weiss, G. H.  (1994).  \OT1/cmr/m/it/10 As-pects and ap-pli-c
 a-tions of the ran-dom walk\OT1/cmr/m/n/10 .  Am-s-ter-dam: 
@@ -777,19 +774,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1764--1784
  [] .1038 / s41598 [] -019 [] -39363 [] -3$   \OT1/cmr/m/n/10 doi: 
  []
 
-) [16] (./rwdiffu.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+[17] (./rwdiffu.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4573 strings out of 493638
- 59407 string characters out of 6146797
+ 4574 strings out of 493638
+ 59417 string characters out of 6146797
  131816 words of memory out of 5000000
- 7879 multiletter control sequences out of 15000+600000
+ 7880 multiletter control sequences out of 15000+600000
  13258 words of font info for 52 fonts, out of 8000000 for 9000
  1334 hyphenation exceptions out of 8191
- 50i,15n,37p,739b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,37p,739b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on rwdiffu.pdf (16 pages).
+Output written on rwdiffu.pdf (17 pages).

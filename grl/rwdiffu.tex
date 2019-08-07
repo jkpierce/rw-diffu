@@ -78,7 +78,7 @@ Our development allows us to derive three ranges of diffusion and the scaling be
 Several progressive works have discriminated multiple ranges of bedload diffusion due to the duration of motion \citep{Lisle1998} and sediment burial \citep{Wu2019}, and multiple ranges of diffusion have been shown in models of other transport phenomena \cite[e.g.][]{Bena2006, Balakrishnan1988, Flekkøy2017, AaraoReis2014}.
 However, we believe our model is the first analytically solvable model of three diffusion ranges.
 This model is developed in section \ref{sec:model} and solved in section \ref{sec:solution}.
-The solution permits us to directly attribute physical processes to each diffusion range for the first time, to discern the crossover times between ranges in terms of empirically measurable transport parameters, and to derive earlier works as limiting cases \citep[e.g.][]{Lisle1998,Wu2019,Einstein1937} in section \ref{sec:discussion}.
+In section \ref{sec:discussion} we use this solution to directly attribute physical processes to each diffusion range for the first time, to discern the crossover times between ranges in terms of empirically measurable transport parameters, and to derive earlier works as limiting cases \citep[e.g.][]{Lisle1998,Wu2019,Einstein1937}.
 
 \section{Bedload diffusion with burial as a multi-state random walk}
 \label{sec:model}
@@ -187,7 +187,7 @@ The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs}.
 \noindent The first two moments are
 \be \bra x(t) \ket = A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1 \label{eq:mean}\ee
 \be \bra x^2(t) \ket = A_2(t)e^{(b-a)t}+B_2(t)e^{-(a+b)t}+C_2. \label{eq:second}\ee
-Here $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ are shorthand notations.
+
 The $A_i$ and $B_i$ are polynomials available in table (\ref{table:params}).
 In terms of these moments, the variance is
 \be \sigma_x^2(t) = A(t)e^{(b-a)t} + B(t)e^{-(a+b)t} + C(t) \label{eq:var}\ee
@@ -397,10 +397,11 @@ Where the parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introdu
 These are inverse transformed by using the linearity and translation properties with those for integration and differentiation \citep[e.g.][]{Arfken1985}.
 For the mean this calculation is
 \begin{align}
-\frac{\bra x \ket}{v} &= \Big((\kappa+k_1)\int_0^t dt \circ+1 \Big)e^{-at}\frac{1}{s^2-b^2}\\
+\frac{\bra x \ket}{v} &= \Big((\kappa+k_1)\int_0^t dt \circ+1 \Big)e^{-at}\El^{-1}\Big\{\frac{1}{s^2-b^2};t\Big\}\\
 &=  \frac{1}{b}e^{-at}\sinh(bt) + \frac{\kappa + k_1}{2b}\Big[\frac{1}{b-a}\Big(e^{(b-a)t}-1\Big)+ \frac{1}{a+b}\Big(e^{-(a+b)t}-1\Big)\Big]
 \end{align}
 where the symbol $\circ$ denotes operation on everything to the right of the following parenthesis. In this derivation we used 2.1.5.4 from \citet{Prudnikov1992a}. This equation rearranges to (\ref{eq:mean}).
+
 Applying a similar approach to the second moment (\ref{eq:lapsecondmom}) obtains
 \begin{align}
 \frac{\bra x^2 \ket}{2v^2} 
@@ -411,24 +412,51 @@ Using 2.1.5.6 from \citet{Prudnikov1992a} this becomes
 \frac{\bra x^2 \ket}{2v^2} = \frac{t}{b}\sinh&(bt) + \frac{(\kappa + k_1)}{b^3}\big[bt\cosh(bt)-\sinh(bt)\big]\\
 &+e^{-at}\frac{b(b^2(at-2))-a^3t)\cosh(bt) +(a^3-a^2b^2t-3ab^2+b^4t)\sinh(bt)}{(a-b)^2(a+b)^2}
 \end{align}
-which rearranges to (\ref{eq:var}).
+which rearranges to (\ref{eq:second}).
+The variance (\ref{eq:var}) follows from $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2.$
 
 \section{Initial conditions and limiting behaviors}
 \label{sec:appendixC}
-Turning off the trapping process by sending $\kappa \rightarrow 0 $ reproduces the earlier model of \citet{Lisle1998}. 
-Noting that $b \sim k'/2 + (k_1-k_2)\kappa/(2k')$ and $a+b \sim k' + k_1\kappa/k'$ as $\kappa \rightarrow 0$ transforms (\ref{eq:mean}) to 
-\be \bra x \ket \sim  \frac{vk_1}{k'}t + \frac{vk_2}{k'^2}(1-e^{-k't})\ee
-in the limit, consistent with the transient solution of the \citet{Lisle1998} model.
-Taking a further and slightly more intricate limit provides the theory of \citet{Einstein1937}. This involves taking the mean motion duration $1/k_2 \rightarrow 0$ while holding the mean step distance $l=v/k_2$ constant.
-Denoting the mean resting time by $\tau=1/k_1$, this limits to
-\be \bra x \ket \sim l + lt/\tau,\ee
-consistent with the derivation of \citet{Einstein1937}.
-Grains move with an effective velocity $l/\tau$ formed by the mean step distance divided by the mean resting time.
-The additional factor of $l$ is associated with the initial condition: All grains started in a step, so each has already traveled (instantaneously) a distance $l$ at $t=0$.
+\subsection{Limit to \citet{Lisle1998}}
+The \citet{Lisle1998} model arises from ours in the absence of the trapping process: $\kappa \rightarrow 0$.
+In this case, 
+\subsection{Limit to \citet{Einstein1937}}
+\subsection{Limit to \citet{Wu2019}}
+The \citet{Wu2019} model is equivalent to ours when the motions are taken to be instantaneous. This is the limit when $k_2 \rightarrow \infty$ as $l=v/k_2$.
+In this case, we discern using Taylor expansions that $b-a \sim -\kappa$, $ a \sim k_2/2$, $b\sim k_2/2$, and $a+b \sim k_2$.
+Using these expansions in $A_1$ and $C_1$ from table \ref{table:params} provides
+\begin{align}
+\frac{A_1}{l} &= -\frac{k_1}{\kappa}\\
+\frac{C_1}{l} &= \big(1+\frac{k_1}{\kappa}\big),
+\end{align}
+meaning the first moment of $x$ is 
+\be \frac{\bra x \ket}{l} \sim 1 + \frac{k_1}{\kappa}\big(1-e^{-\kappa t}\big).\ee
+Similarly the polynomials involved in the second moment, $A_2$ and $C_2$ limit to 
+\begin{align}
+\frac{A_2(t)}{l^2} &= -2\frac{k_1}{\kappa} - \Big(\frac{k_1}{\kappa}\Big)^2\big(\kappa t+ 1\big)\\
+\frac{C_2}{l^2} &=1+ \Big(\frac{k_1}{\kappa}\Big)^2 + 2\frac{k_1}{\kappa}.\\
+\end{align}
+We do not require the limiting behavior of $B_1$ and $B_2(t)$ since the exponential factor $\exp(-(a+b)t)$ eliminates these factors in the limit.
+These limits provide the second moment as 
+\be \frac{\bra x^2 \ket}{l^2} = 1 + 2 \frac{k_1}{\kappa}(1-e^{-\kappa t}) + \Big(\frac{k_1}{\kappa}\Big)^2 (1-(1+\kappa t)e^{-\kappa t}),\ee
+meaning the variance in the \citet{Wu2019} limit is 
+\be \sigma_x^2 = \Big(\frac{k_1 l}{\kappa}\Big)^2 \Big[(1-\kappa t)e^{-\kappa t}-e^{-2\kappa t}\Big].\label{eq:wuvar}\ee
+This equation is similar to the central result of the work by \citet{Wu2019}. It describes two stages of bedload diffusion.
+There are minor differences related to the implicit assumption of \citet{Wu2019} that tracers start at rest.
+\subsection{Limit to \citet{Wu2019} 2nd attempt}
+Our model limits to a close analogue of \citet{Wu2019}.
+Taking the limit as $k_2 \rightarrow \infty$ while $v/k_2 = l$ is held constant (the mean step length) and the initial condition is set to $\theta_1=1$ in (\ref{eq:nicedist}) gives
+\be\tilde{p}(\eta,s) = \frac{1}{s}\frac{s+\kappa + \kappa l \eta }{\eta l (s + \kappa + k_1) + s + \kappa} .\ee
+\citet{Wu2019} assumed a Taylor expansion to second order in the Laplace variable $\eta$ was an appropriate representation of the step length pdf.
+In our framework, this transforms the above equation to 
+\be \ee
 
 
+
+Taking the inverse transform over $\eta$ gives
+\be \tilde{p}(x,s) = \frac{1}{s}\Big( [s+\kappa]+\kappa l[\partial_x + \delta(x)]\Big)\frac{1}{l(s+\kappa + k_1)}\exp\Big(- \frac{s+\kappa}{s+\kappa + k_1}\frac{x}{l}\Big)\ee
 \acknowledgments
-J. Pierce acknowledges helpful exchanges with Eduardo Daly and Peter Hanggi during the early stages of this work. M. Hassan is supported by an NSERC Discovery grant. All simulation code is available on request.
+J. Pierce acknowledges a helpful exchange with Eduardo Daly during the early stages of this work. M. Hassan is supported by an NSERC Discovery grant. All simulation code is available on request.
 
 \bibliography{biblio.bib}
 \end{document}

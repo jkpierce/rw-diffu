@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+% General document formatting
+\usepackage[margin=0.75in]{geometry}
+\usepackage[parfill]{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}         % side-by-side figures 
+% Related to math
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{titling}
+\usepackage{hyperref}
+\usepackage{wrapfig}
+\usepackage{booktabs} % for wrapping tabulars in accord with
+\bibliographystyle{agu}
+\setlength{\droptitle}{-5em}   % This is your set screw
+
+%\usepackage[math]{kurier}
+\newcommand\be{\begin{equation}} % shortcut to start eq envs 
+\newcommand\ee{\end{equation}}   % shortcut to end eq envs
+\newcommand\bra{\langle}
+\newcommand\ket{\rangle}
+
+\newcommand\om{\omega}
+\newcommand\tom{\tilde{\omega}}
+\newcommand\tg{\tilde{g}}
+\newcommand\tp{\tilde{p}}
+\newcommand\tG{\tilde{G}}
+\newcommand\El{\mathcal{L}}
+
+\title{Marcum Q-Function: Laplace transforms for 2SRW paper}
+\author{Kevin Pierce}
+
+\begin{document}
+
+\maketitle
+For computing the distribution function for the two-state random walk with trapping from the rest state, a number of Laplace transforms arise which are difficult applications of special functions.
+These are:
+\begin{align}
+\mathcal{T}_1(t;a,c) &= \El^{-1} \Big\{\frac{1}{(s-a)}\exp(c/s);t\Big\} \\
+\mathcal{T}_2(t;a,c) &= \El^{-1} \Big\{\frac{1}{(s-a)s}\exp(c/s);t\Big\}\\
+\mathcal{T}_3(t;a,b,c) &= \El^{-1} \Big\{\frac{1}{(s-a)(s-b)s}\exp(c/s);t\Big\} \\
+\mathcal{T}_4(t;a,b,c) &= \El^{-1} \Big\{\frac{1}{(s-a)(s-b)s^2}\exp(c/s);t\Big\} \\
+\end{align}
+There isn't much info on these. However there are a few key starting points:
+\begin{align}
+\mathcal{K}_1(t;c)=\El^{-1} \Big\{\exp(c/s);t\Big\} &= \delta(t) +  \sqrt{\frac{c}{t}}\mathcal{I}_1\big(2\sqrt{ct}\big) \label{eq:key1}\\
+\mathcal{K}_2(t;c) = \El^{-1} \Big\{\frac{1}{s}\exp(c/s);t\Big\} &= \mathcal{I}_0\big(2\sqrt{ct}\big) \label{eq:key2}.
+\end{align}
+One definition of the modified Bessel function is 
+\be \mathcal{I}_\nu(x) = \sum_{k=0}^\infty \frac{(x/2)^{\nu+2k}}{k!\Gamma(\nu+k+1)}.\ee
+This satisfies the property $\mathcal{I}_\nu(z) =  \mathcal{I}_{-\nu}(z)$.
+More generally, it obeys the recursion relation
+\be \mathcal{I}_{\nu-1}(z) - \mathcal{I}_{\nu+1}(z) = \frac{2\nu}{z}\mathcal{I}_\nu(z),\ee
+and has derivatives 
+\be \mathcal{I}_\nu'(z) = \mathcal{I}_{\nu-1}(z) - \frac{\nu}{z}\mathcal{I}_\nu(z) = \mathcal{I}_{\nu+1}(z) + \frac{\nu}{z}\mathcal{I}_{\nu}(z).\label{eq:Ideriv}\ee
+The two Laplace transforms above can be verified from this definition and linked using the property (from \citet{Prudnikov1992a}):
+\be \El^{-1}\Big\{\frac{F(s)}{s-a}\Big\} = e^{at}\int_0^t du e^{-au}f(u). \label{eq:shift}\ee
+A link to the (complementary) Marcum Q-function also appears. This is defined by 
+\be \mathcal{P}_\mu(x,y) = \int_0^y dz \Big(\frac{z}{x}\Big)^{\frac{1}{2}(\mu-1)} e^{-z-x}\mathcal{I}_{\mu-1}\big(2\sqrt{xz}\big),\ee
+and the central reference for this function is \citet{Temme1996}.
+The complementary function obeys the recursion
+\be \mathcal{P}_{\mu+1}(x,y) = \mathcal{P}_\mu(x,y) - \Big(\frac{y}{x}\Big)^{\mu/2}e^{-x}\mathcal{I}_{\mu}\big(2\sqrt{xz}\big)\ee
+\section{The transform $\mathcal{T}_1$:}
+Using (\ref{eq:shift}) and (\ref{eq:key1}) obtains 
+\begin{align}
+e^{-at}\mathcal{T}_1(t;a,c)-1 &= \int_0^t dt e^{-au} \sqrt{\frac{c}{u}}\mathcal{I}_1\big(2\sqrt{cu}\big)\\ 
+\end{align} 
+The derivative recursion formula (\ref{eq:Ideriv}) provides $\partial_u \mathcal{I}_0(2\sqrt{cu}) = \sqrt{(c/u)}\mathcal{I}_1(2\sqrt{cu}).$ Using this relation and integrating by parts leads to 
+\be e^{-at}\mathcal{T}_1(t;a,c)-1 = e^{-at}\mathcal{I}_0(2\sqrt{ct})-1 + a\int_0^t du e^{-au} \mathcal{I}_0(2\sqrt{cu}),\ee
+noting the value $\mathcal{I}_0(0) = 1$.
+Rearranging gives
+\be \mathcal{T}_1(t;a,c) = \mathcal{I}_0(2\sqrt{ct}) + a e^{at}\int_0^t du e^{-au }\mathcal{I}_0(2\sqrt{cu}).\ee
+Setting $z=au$ and multiplying and dividing by $e^{c/a}$ provides
+\be \mathcal{T}_1(t;a,c) = \mathcal{I}_0(2\sqrt{ct}) + e^{at+c/a} \int_0^{at} dz e^{-z - c/a }\mathcal{I}_0(2\sqrt{(c/a)z}),\ee
+which is identified as 
+\be \mathcal{T}_1(t;a,c) =\El^{-1} \Big\{\frac{1}{(s-a)}\exp(c/s);t\Big\}= \mathcal{I}_0(2\sqrt{ct}) + e^{at+c/a}\mathcal{P}_1(c/a,at).\ee
+This becomes $\mathcal{K}_2(t;c)$ in the limit $a\rightarrow 0$ as expected.
+\section{The transform $\mathcal{T}_2$:}
+Using (\ref{eq:shift}) and (\ref{eq:key2}) provides 
+\be \mathcal{T}_2(t;a,c) = e^{at}\int_0^t du e^{-au}\mathcal{I}_0(2\sqrt{cu}),\ee
+which rearranges to 
+\be \mathcal{T}_2(t;a,c) = \El^{-1} \Big\{\frac{1}{(s-a)s}\exp(c/s);t\Big\} = \frac{1}{a}e^{at+c/a}\mathcal{P}_1(c/a,at).\ee
+\section{The transform $\mathcal{T}_3$:}
+Leveraging the partial fractions expansion 
+\be \frac{1}{(s-a)(s-b)} = \frac{1}{b-a}\Big[\frac{-1}{s-a} + \frac{1}{s-b}\Big]\ee
+with (\ref{eq:key2}) provides 
+\be \mathcal{T}_3(t;a,b,c) = \frac{1}{b-a}\Big[-\mathcal{T}_2(t;a;c) + \mathcal{T}_2(t;b,c)\Big]\ee
+or 
+\be \mathcal{T}_3(t;a,b,c) = \El^{-1} \Big\{\frac{1}{(s-a)(s-b)s}\exp(c/s);t\Big\} = \frac{1}{b-a}\Big[-\frac{1}{a}e^{at+c/a}\mathcal{P}_1(c/a,at)\ + \frac{1}{b}e^{bt+c/b}\mathcal{P}_1(c/b,bt)\Big].\ee
+\section{The transform $\mathcal{T}_4$:}
+Using the partial fractions expansion
+\be\frac{1}{(s-a)(s-b)s^2} = \frac{a+b}{a^2b^2s} + \frac{1}{a^2(a-b)(s-a)}+\frac{1}{b^2(b-a)(s-b)} + \frac{1}{abs^2} \ee
+gives 
+\be \mathcal{T}_4(t;a,b,c) = \frac{a+b}{a^2b^2}\mathcal{K}_2(t;c) + \frac{1}{a^2(a-b)}\mathcal{T}_1(t;a,c) + \frac{1}{b^2(b-a)}\mathcal{T}_1(t;b,c) + \frac{1}{ab}\mathcal{K}_3(t;c),
+\ee
+where 
+\be \mathcal{K}_3(t;c) = \int_0^t du \mathcal{I}_0(2\sqrt{cu}) = \frac{1}{c}\sum_{k=0}^\infty \frac{(ct)^{k+1}}{k!(k+1)!} = \sqrt{\frac{t}{c}} \mathcal{I}_1(2\sqrt{ct}).\ee
+That should do it ... 
+
+Probably it remains to check these by taking direct transforms.
+\bibliography{biblio}
+\end{document}

@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: marcumQ.aux
+The style file: agu.bst
+Database file #1: biblio.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+You've used 2 entries,
+            3075 wiz_defined-function locations,
+            1074 strings with 9587 characters,
+and the built_in function-call counts, 937 in all, are:
+= -- 52
+> -- 49
+< -- 1
++ -- 20
+- -- 12
+* -- 74
+:= -- 121
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 2
+cite$ -- 6
+duplicate$ -- 81
+empty$ -- 84
+format.name$ -- 16
+if$ -- 186
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 18
+newline$ -- 13
+num.names$ -- 8
+pop$ -- 51
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 38
+stack$ -- 0
+substring$ -- 6
+swap$ -- 32
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 0
+while$ -- 6
+width$ -- 0
+write$ -- 26

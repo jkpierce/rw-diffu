@@ -34,51 +34,55 @@
 \begin{keypoints}
 \item We develop a random-walk model of objects in intermittent transport through an environment with traps.
 \item Its solution provides three ranges of diffusion, two of which are anomalous.
-\item We apply the model to bedload transport of sediment undergoing burial within a river channel and clarify the scale-dependence of bedload diffusion.
+\item We apply the model transported sediment undergoing burial within a river channel and clarify the scale-dependence of bedload diffusion.
 
 \end{keypoints}
 
 \begin{abstract}
 	
 
-In gravel-bed rivers, grains transport downstream through a sequence of motion and rest intervals. When at rest, grains can be trapped by burial.
-We develop a random-walk model of this phenomenon and solve it analytically.
-This predicts three ranges of bedload diffusion. We express the crossover times between these diffusion ranges in terms of measurable transport parameters, and explain each range in terms of underlying physical processes.
-This work supports the widespread effort across the sciences to model multiple-range diffusion and anomalous transport, and it provides new geophysical understanding of the scale-dependent phenomenon of fluvial sediment transport. We believe our findings will help to better understand and predict bedload transport and encourage descriptions of channel morphodynamics based on upscaling underlying grain-scale processes.
-
+In gravel-bed rivers, grains move through a sequence of motions and rests. 
+Differences in the movement characteristics of one grain and the next imply sediment diffusion, whereby individual grains spread apart as they transport.
+When grains rest on the surface, they can be buried by material transported from upstream.
+Buried grains are not exposed to the fluid flow, so these grains are immobile for relatively long periods, only being mobile again once they're uncovered.  This crucially modifies the diffusion characteristics of transported sediment.
+Despite the importance of sediment burial to diffusion, very few diffusion models have accounted for it.
+In this letter, we develop a random-walk model to incorporate sediment burial.
+The model predicts three ranges of sediment diffusion with distinct characteristics in each range.
+We express the crossover times between these ranges in terms of measurable transport parameters, and explain each range in terms of underlying physical processes.
+This provides new geophysical understanding of the scale-dependent phenomenon of fluvial sediment transport. 
+Understanding the multiple ranges of sediment diffusion in river channels will improve predictions of channel morphodynamics.
 \end{abstract}
 
 \section{Introduction}
 % what is problem and why does it matter
-Anomalous diffusion has been the focus of intense scientific scrutiny lately, since it appears in contexts as diverse and important the transport of cholesterols through lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, contaminants through soils \citep{Berkowitz2006,Yang2019}, and pollinator insects through ecosystems \citep{Reynolds2009,Vallaeys2017}.
-In this work, we study anomalous diffusion as it emerges from sediment grains transporting through river channels \citep{Martin2012,Bradley2017}.
-We approach this problem by revisiting and generalizing the foundational bedload diffusion model of \citet{Einstein1937}.
-Diffusion is the spreading apart of objects as they transport.
-It is induced by differences in the transport characteristics of one object and the next, and it is usually quantified by the time-dependence of the positional variance $\sigma_x^2(t)$ of the population.
+Anomalous diffusion has been the topic of intense study, since it appears in contexts as diverse and important as the transport of cholesterols through lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, contaminants through soils \citep{Berkowitz2006,Yang2019}, and pollinator insects through ecosystems \citep{Reynolds2009,Vallaeys2017}.
+Emerging research in fluvial geomorphology has found its way to anomalous diffusion as well, since coarse sediment grains transporting through river channels apparently display it \citep{Martin2012,Bradley2017}.
+\citet{Einstein1937} developed the first model of fluvial bedload diffusion, which is the spreading apart of grains as they transport downstream.
+Diffusion is induced by differences in the transport characteristics of one grain and the next, and it is usually quantified by the time-dependence of the positional variance $\sigma_x^2(t)$ of a population.
 When $\sigma_x^2 \propto t$, the diffusion is said to be normal, since this is found in the classic diffusion problems \citep[e.g.][]{Einstein1905,Taylor1920}.
 However, many transport phenomena show $\sigma_x^2 \propto t^\gamma$, with $\gamma \neq 1$. This diffusion is said to be anomalous \citep{Sokolov2012}.
 If $\gamma>1$, it is said to be super-diffusive; while if $\gamma <1$, it is said to be sub-diffusive \citep{Metzler2000}.
 
 % what do we know about it 
-Coarse sediment moving through river channels shows either anomalous or normal diffusion depending on the timescale of observation \citep{Nikora2002}.
-This is a significant issue for the prediction of contaminant and sediment transport through river channels \citep{Macklin2006, Hassan2017}, since it implies models should be scale dependent, and it renders experimental data contingent on their observation timescales.
-Contemporary data and numerical simulations show up to three ranges of bedload diffusion \citep{Martin2012, Bialik2012, Zhang2012, Fan2016, Bradley2017,Wu2019}.
-These were first identified by \citet{Nikora2001a,Nikora2002}, who termed these local, intermediate, and global ranges in order of increasing scale.
+Since Einstein, investigators have come to recognize that coarse sediment moving through river channels can show either anomalous or normal diffusion depending on the timescale of observation \citep{Nikora2002}.
+This is a significant issue since it implies diffusion models should be scale dependent, and it renders experimental data contingent on their observation timescales.
+\citet{Nikora2001a,Nikora2002} first identified three ranges of bedload diffusion from simulations and experimental data, and they termed these local, intermediate, and global ranges in order of increasing scale.
 $\sigma_x^2$ scales with time differently in each range, and this scaling can be anomalous or normal.
+Their findings are supported by a wide set of contemporary data and numerical simulations that show up to three ranges of bedload diffusion \citep{Martin2012, Bialik2012, Zhang2012, Fan2016, Bradley2017,Wu2019}.
 While earlier works have developed models of bedload diffusion, there are contradictions in the literature about the expected diffusion characteristics (super/normal/sub-diffusion) of each range, and no model has been developed, to our knowledge, that derives all three diffusion ranges from process-based concepts of fluvial sediment transport.
 
 % how do we approach it
-In this work, we present a model of bedload diffusion which describes local, intermediate, and global ranges by including the duration of motion and the possibility of trapping due to burial into the classic bedload diffusion model of \citet{Einstein1937}.
+In this letter, we present a model of bedload diffusion which describes local, intermediate, and global ranges by including the duration of motion and the possibility of trapping due to burial into the classic bedload diffusion model of \citet{Einstein1937}.
 Einstein's model has been highly influential in river geophysics and has fostered an entire paradigm of research that leverages and generalizes his stochastic methods \citep[e.g.][]{Hubbell1964, Yano1969, Yang1971, Gordon1972, Nakagawa1976}.
 Its essential content is that individual grains move in instantaneous steps interrupted by durations of rest which lie on statistical distributions \citep{Hassan1991}.
 It predicts a single range of normal diffusion \citep{Einstein1937, Nakagawa1976}.
-Essentially, the Einstein model is a special case of the continuous time random walk (CTRW) \citep{Montroll1965} originally developed to describe anomalous diffusion of charge carriers in solids.
+Essentially, the Einstein model is a special case of the continuous time random walk (CTRW) \citep{Montroll1965}, originally developed to describe anomalous diffusion of charge carriers in solids.
 To include the duration of motion and the burial process we leverage the multi-state generalization of the CTRW developed by \citet{Weiss1976, Weiss1994}.
 Our development allows us to derive three ranges of diffusion and the scaling behavior of $\sigma_x^2$ in each range. The model is analytically solvable, and we determine the cross-over times between diffusion ranges.
 Several progressive works have discriminated multiple ranges of bedload diffusion due to the duration of motion \citep{Lisle1998} and sediment burial \citep{Wu2019}, and multiple ranges of diffusion have been shown in models of other transport phenomena \cite[e.g.][]{Bena2006, Balakrishnan1988, Flekkøy2017, AaraoReis2014}.
-However, we believe our model is the first analytically solvable model of three diffusion ranges.
-This model is developed in section \ref{sec:model} and solved in section \ref{sec:solution}.
-In section \ref{sec:discussion} we use this solution to directly attribute physical processes to each diffusion range for the first time, to discern the crossover times between ranges in terms of empirically measurable transport parameters, and to derive earlier works as limiting cases \citep[e.g.][]{Lisle1998,Wu2019,Einstein1937}.
+However, we believe our proposed model is the first analytically solvable model of three diffusion ranges.
+We present the model in section \ref{sec:model} and solve it in section \ref{sec:solution}.
+We use the solution in section \ref{sec:discussion} to directly attribute physical processes to each diffusion range, to discern the crossover times between ranges in terms of empirically measurable transport parameters, and to derive earlier works as limiting cases \citep[e.g.][]{Lisle1998,Wu2019,Einstein1937}.
 
 \section{Bedload diffusion with burial as a multi-state random walk}
 \label{sec:model}
@@ -96,9 +100,8 @@ We refer to $g_i$ and $G_i$ as the complete and incomplete propagators, since th
 
 % discuss two-stage derivation of weiss
 Our target is the probability distribution $p(x,t)$ to find a grain at $x,t$ if we know it started at $(x,t)=(0,0)$, i.e., with the initial distribution $p(x,0)=\delta(x)$.
-We consider its initial probabilities to be at rest or in motion are $\theta_1$ and $\theta_2$. 
+We denote the initial probabilities to be at rest or in motion as $\theta_1$ and $\theta_2$. 
 Normalization requires $\theta_1+\theta_2=1$.
-We do not consider the possibility that grains start buried.
 Our derivation has two main steps.
 First, we introduce and solve for a set of joint probabilities associated with transitions of a grain from one state to another.
 Second, we use these quantities to solve for the probabilities that a grain is in state $i$ having position $x$ at time $t$.
@@ -145,16 +148,17 @@ This joint density is completely determined once (\ref{eq:x}-\ref{eq:z}) are sol
 We consider sojourns in the rest state to occur for an exponentially distributed time interval, given by the distribution $\psi_1(t) = k_1 e^{-k_1t}.$
 The probability that a sojourn in this state lasts for at least the time $t$ is then given by $\Psi_1(t) = \int_t^\infty \psi_1(t)dt = e^{-k_1 t}$.
 Since resting grains do not move, the probability of finding the grain at its starting position is $1$, while the probability of finding it anywhere else is zero.
-Hence the resting propagator for a complete sojourn is $g_1(x,t) = \delta(x)\psi_1(t),$ or 
+Hence the complete propagator for a rest sojourn is $g_1(x,t) = \delta(x)\psi_1(t),$ or 
 \be g_1(x,t) = \delta(x)k_1e^{-k_1t}.\label{eq:prop1} \ee
-Likewise, the resting propagator for an incomplete sojourn is $G_1(x,t) = \delta(x)e^{-k_1t} = g_1(x,t)/k_1.$
+Likewise, the incomplete propagator for a rest sojourn is $G_1(x,t) = \delta(x)e^{-k_1t} = g_1(x,t)/k_1.$
+The motion propagators are reasoned similarly.
 We consider motions to occur with a constant velocity $v$ and to have an exponentially distributed duration given by $\psi_2(t) = k_2 e^{-k_2t}.$
-Since motions are deterministic, the probability to find a grain at position $x$ in a sojourn is $\delta(x-vt)$, and the complete propagator is 
+Since motions are considered deterministic, the probability to find a grain at position $x$ in a motion sojourn is $\delta(x-vt)$, and the complete propagator is 
 \be g_2(x,t) = \delta(x-vt)k_2e^{-k_2t},\label{eq:prop2}\ee
 while the incomplete propagator is $G_2(x,t) = g_2(x,t)/k_2$ as before.
 
 % distribution functions and moments in laplace space
-Having defined the propagators, we set out to solve (\ref{eq:x}-\ref{eq:z}) and understand the diffusion of bedload with a finite motion interval and when subject to trapping by burial.
+Having defined the propagators, we set out to solve (\ref{eq:x}-\ref{eq:z}) and understand bedload diffusion with a finite motion interval and when subject to trapping by burial.
 The convolution structure of (\ref{eq:x}-\ref{eq:z}) presents a formidable problem.
 Luckily, we have the device of Laplace transforms.
 These project integro-differential equations into an alternate space in which convolutions are unraveled \citep[e.g.][]{Arfken1985}.
@@ -164,11 +168,11 @@ The Laplace-transformed moments of $x$ are linked to derivatives of the double-t
 From (\ref{eq:doubletransform}) it's clear that
 \be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k p(\eta,s)\Big|_{\eta=0}.\label{eq:momenttrick}\ee
 The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.][]{Kittel1958}.
-This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution (\ref{eq:dist}).
+This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution in equation (\ref{eq:dist}).
 
 
 % solution for case theta_1=1: distribution function
-Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendixB}. Using the shorthand notation $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$ \citep[c.f.][]{Lisle1998} and assuming all grains start from motion ($\theta_1=1$), the distribution is 
+Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$, are derived in appendix \ref{sec:appendixB}. Using the shorthand notation $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$ \citep[c.f.][]{Lisle1998} and assuming all grains start from motion ($\theta_1=1$), the distribution is 
 \begin{multline}
 p(x,t) = e^{-(\kappa + k_1)\tau/k_1-\xi}\mathcal{H}(\tau)\mathcal{H}(\xi)\Bigg[\frac{k_1}{v}\delta(\tau) + \frac{k_1}{v} \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1(2\sqrt{\xi\tau}) + \frac{k_2}{v} \mathcal{I}_0(2\sqrt{\xi\tau})\Bigg]\\
 + \kappa \frac{k_2}{v(\kappa+k_1)}\mathcal{H}(\tau)\mathcal{H}(\xi)e^{-\xi}\mathcal{P}_1\big(\kappa\xi/(\kappa+k_1), (\kappa+k_1)\tau/k_1\big).

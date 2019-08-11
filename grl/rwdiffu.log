@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.6.9)  7 AUG 2019 16:26
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.6.9)  10 AUG 2019 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -356,87 +356,86 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 30.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1]
+)
+Overfull \hbox (4.59892pt too wide) in paragraph at lines 37--38
+[]\OT1/cmr/m/n/10 We ap-ply the model to sed-i-ment trans-port in rivers to cla
+r-ify the scale-dependence 
+ []
+
+[1]
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 56.
+(Font)              size <10.95> substituted on input line 55.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 56.
+(Font)              size <10.95> substituted on input line 55.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Underfull \vbox (badness 1552) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
 [4]
-Overfull \hbox (12.2032pt too wide) in paragraph at lines 166--169
+Overfull \hbox (12.2032pt too wide) in paragraph at lines 165--168
 \OT1/cmr/m/n/10 The Laplace-transformed mo-ments of $\OML/cmm/m/it/10 x$ \OT1/c
 mr/m/n/10 are linked to deriva-tives of the double-transformed 
  []
 
 File: ./figures/pdf-plot-edit.png Graphic file (type QTm)
 <use  "./figures/pdf-plot-edit.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
 []\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 Joint dis-tri-bu-tions of a tracer 
 be-ing found at $\OML/cmm/m/it/9 x$ $t$ \OT1/cmr/m/n/9 are im-peded by the trap
 -ping pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
 \OT1/cmr/m/n/9 cess. Panel (a) shows the Lisle et al.[] (1998) model, and panel
  (b) shows the the dis-tri-bu-tion 12[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
 \OT1/cmr/m/n/9 which re-sults from a trap-ping pro-cess oc-cur-ring at rate $\O
 ML/cmm/m/it/9 ^^T$\OT1/cmr/m/n/9 . Cross-comparison of both pan-els shows
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--187
+Underfull \hbox (badness 10000) in paragraph at lines 186--186
 \OT1/cmr/m/n/9 that trap-ping re-dis-tributes prob-a-bil-ity to smaller val-ues
  of $\OML/cmm/m/it/9 x$\OT1/cmr/m/n/9 , and this re-dis-tri-bu-tion be-comes
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\OT1/cmr/bx/n/9 Table 1. \OT1/cmr/m/n/9 Poly-no-mi-als and tran-scen-den-tal 
 func-tions used in the ex-pres-sions of the mean (13[]),
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 File: ./figures/diffusion.png Graphic file (type QTm)
 <use  "./figures/diffusion.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 The vari-ance of tracer po-si-tion 
 ex-hibits four dis-tinct scal-ing re-gions as time in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 \OT1/cmr/m/n/9 creases: lo-cal, in-ter-me-di-ate, global, and fi-nally a non-di
 ffusive range char-ac-ter-ized by the even-tual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 \OT1/cmr/m/n/9 in-ter-vals are gen-er-ally much shorter than rest-ing in-ter-va
 ls, which are in turn are gen-er-ally much
  []
 
-[6]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]
-[8] [9] [10] [11] [12] (./rwdiffu.bbl
+[6] [7] [8] [9] [10] Excluding 'comment' comment. [11] [12] (./rwdiffu.bbl
 Underfull \hbox (badness 2111) in paragraph at lines 16--32
 []\OT1/cmr/m/n/10 Aar~ao Reis, F. D., & Di Caprio, D.  (2014).  Crossover from 
 anoma-lous to nor-mal 
@@ -454,7 +453,7 @@ Underfull \hbox (badness 2818) in paragraph at lines 79--95
 tes.  \OT1/cmr/m/it/10 Jour-nal of Fluid 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 158--177
 []\OT1/cmr/m/n/10 Bena, I.  (2006).  Di-choto-mous Markov noise: Ex-act re-sult
 s for out-of- 
@@ -516,7 +515,7 @@ Underfull \hbox (badness 7047) in paragraph at lines 313--329
 s.  \OT1/cmr/m/it/10 Jour-nal of Fluid 
  []
 
-
+[13]
 Underfull \hbox (badness 1259) in paragraph at lines 371--386
 \OT1/cmr/m/n/10 Cre-ated by Bar Mi-gra-tion or Sed-i-ment Waves?  \OT1/cmr/m/it
 /10 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/10 , 
@@ -584,9 +583,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--589
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
 Underfull \hbox (badness 10000) in paragraph at lines 738--754
 \OT1/cmr/m/n/10 par-ti-cles in gravel bed streams.  \OT1/cmr/m/it/10 Wa-ter Re-
 sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 27\OT1/cmr/m/n/10 (4), 503-
@@ -613,6 +609,9 @@ ent, mo-tion, and de-po-
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 913--928
 \OT1/cmr/m/n/10 fifty-year his-tory, state of art and out-look.  \OT1/cmr/m/it/
 10 Eu-ro-pean Phys-i-cal Jour-nal B\OT1/cmr/m/n/10 , 
@@ -686,9 +685,6 @@ d bi-lay-ers.  \OT1/cmr/m/it/10 New Jour-nal
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
 Underfull \hbox (badness 10000) in paragraph at lines 1242--1261
 \OT1/cmr/m/it/10 by stochas-tic meth-ods: Sec-ond in-ter-na-tional iahr sym-po-
 sium on stochas-tic 
@@ -714,6 +710,9 @@ i:
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
 Underfull \hbox (badness 3525) in paragraph at lines 1454--1470
 \OT1/cmr/m/n/10 ac-tions for anoma-lous dif-fu-sion: A case study.  \OT1/cmr/m/
 it/10 Jour-nal of Physics Con-densed 
@@ -781,23 +780,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 1764--1784
  [] .1038 / s41598 [] -019 [] -39363 [] -3$   \OT1/cmr/m/n/10 doi: 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16])
-[17] (./rwdiffu.aux)
+) [16] (./rwdiffu.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4574 strings out of 493638
- 59417 string characters out of 6146797
- 131816 words of memory out of 5000000
- 7880 multiletter control sequences out of 15000+600000
+ 4577 strings out of 493638
+ 59439 string characters out of 6146797
+ 132816 words of memory out of 5000000
+ 7883 multiletter control sequences out of 15000+600000
  13258 words of font info for 52 fonts, out of 8000000 for 9000
  1334 hyphenation exceptions out of 8191
- 50i,15n,37p,739b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,15n,37p,739b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on rwdiffu.pdf (17 pages).
+Output written on rwdiffu.pdf (16 pages).

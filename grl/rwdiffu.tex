@@ -34,23 +34,22 @@
 \begin{keypoints}
 \item We develop a random-walk model of objects in intermittent transport through an environment with traps.
 \item Its solution provides three ranges of diffusion, two of which are anomalous.
-\item We apply the model transported sediment undergoing burial within a river channel and clarify the scale-dependence of bedload diffusion.
+\item We apply the model to sediment transport in rivers to clarify the scale-dependence of bedload diffusion.
 
 \end{keypoints}
 
 \begin{abstract}
 	
 
-In gravel-bed rivers, grains move through a sequence of motions and rests. 
-Differences in the movement characteristics of one grain and the next imply sediment diffusion, whereby individual grains spread apart as they transport.
-When grains rest on the surface, they can be buried by material transported from upstream.
-Buried grains are not exposed to the fluid flow, so these grains are immobile for relatively long periods, only being mobile again once they're uncovered.  This crucially modifies the diffusion characteristics of transported sediment.
-Despite the importance of sediment burial to diffusion, very few diffusion models have accounted for it.
+In gravel-bed rivers, sediment grains transport through a sequence of motions and rests.
+When grains rest on the surface, they can be buried by material deposited from upstream.
+Buried grains are not exposed to the fluid flow, so these grains are immobile for relatively long periods, only becoming mobile once they're uncovered.  
+This crucially affects the transport characteristics of sediment.
+Despite the importance of sediment burial to diffusion, very few models have accounted for it.
 In this letter, we develop a random-walk model to incorporate sediment burial.
 The model predicts three ranges of sediment diffusion with distinct characteristics in each range.
 We express the crossover times between these ranges in terms of measurable transport parameters, and explain each range in terms of underlying physical processes.
-This provides new geophysical understanding of the scale-dependent phenomenon of fluvial sediment transport. 
-Understanding the multiple ranges of sediment diffusion in river channels will improve predictions of channel morphodynamics.
+This provides new geophysical understanding of the scale-dependent phenomenon of fluvial sediment transport.
 \end{abstract}
 
 \section{Introduction}
@@ -351,32 +350,37 @@ Surely this scientific progress would benefit from a careful accounting of its h
 \label{sec:appendixA}
 Double transforming (\ref{eq:x}-\ref{eq:y}) using the definition (\ref{eq:doubletransform}) gives
 \begin{align}
-\tom_{1T}(\eta,s) &= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s) \\
+\tom_{1T}(\eta,s) &= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s)\\
 \tom_{1F}(\eta,s) &= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa)\\
 \tom_2(\eta,s) &= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s)
 \end{align}
 This purely algebraic system solves for 
 \begin{align}
-\tom_{1T}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
+\tom_{1T}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \label{eq:A} \\
 \tom_{1F}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa)\\
-\tom_{2}(\eta,s) &= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s).\\
+\tom_{2}(\eta,s) &= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s). 
 \end{align}
 Double transforming (\ref{eq:b}-\ref{eq:z}) gives
 \begin{align}
 \tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s)\\
 \tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s) \\
-\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s).\\
+\tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s).\label{eq:Z}
 \end{align}
-The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$ or in Laplace space, 
+The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using (\ref{eq:A}-\ref{eq:Z}) this becomes, in the double Laplace representation, 
 \begin{multline}
 \tp(\eta,s) = \frac{1}{s}\frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
-+\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)} \\
++\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}. \\
 \label{eq:lap}
 \end{multline}
-Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s$ \citep[e.g.][]{Weiss1994}, it follows that the joint distribution is normalized in space regardless of the choice of propagators: $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = \mathcal{L}\{1;s\} = 1/s$.
-Plugging in the propagators (\ref{eq:prop1}-\ref{eq:prop2}) to \ref{eq:lap} gives 
-\be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s + \kappa k_2 + \theta_1\kappa \eta v}{\eta v(s+\kappa+k_1)+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
-We take the double inverse transform of this equation for the case that grains start in motion.
+Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s$ \citep[e.g.][]{Weiss1994}, it follows that the joint distribution is normalized in space regardless of the choice of propagators, since $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = \mathcal{L}\{1;s\} = 1/s$.
+Using the propagators outlined in equations (\ref{eq:prop1}-\ref{eq:prop2}) in (\ref{eq:lap}) gives 
+\be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s  + \theta_1(s+\kappa )\eta v+ \kappa k_2}{(s+\kappa+k_1)\eta v+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
+The double inverse transform of this equation provides the distribution $p(x,t)$.
+
+
+
+
+\begin{comment}
 Setting $\theta_1=0$ and $\theta_2=1$ before inverse transforming (\ref{eq:nicedist}) over $\eta$ first, using the transform 15.103 from \citet{Arfken1985}, provides
 \be \tilde{p}(x,s) = \frac{(s+\kappa+k')s+\kappa k_2}{sv(s+\kappa+k_1)}
 \exp{\Big(-\frac{s(s+\kappa+k')+\kappa k_2}{s+\kappa+k_1}\frac{x}{v}\Big)}.\ee
@@ -388,7 +392,7 @@ p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
 + \frac{\kappa k_2}{v}\El^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\}\Big].
 \end{multline}
 Performing these transforms using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \citet{Prudnikov1992a} and using the definition of the Marcum Q-function \citep[e.g.][]{Temme1996}, we arrive at (\ref{eq:pdf}).
-
+\end{comment}
 \section{Calculation of the moments}
 \label{sec:appendixB}
 We employ (\ref{eq:momenttrick}) to compute the moments of position $x$. The first two derivatives of the double Laplace transformed distribution (\ref{eq:lap}) are

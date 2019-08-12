@@ -54,8 +54,8 @@ This provides new geophysical understanding of the scale-dependent phenomenon of
 
 \section{Introduction}
 % what is problem and why does it matter
-Anomalous diffusion has been the topic of intense study, since it appears in contexts as diverse and important as the transport of cholesterols through lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, contaminants through soils \citep{Berkowitz2006,Yang2019}, and pollinator insects through ecosystems \citep{Reynolds2009,Vallaeys2017}.
-Emerging research in fluvial geomorphology has found its way to anomalous diffusion as well, since coarse sediment grains transporting through river channels apparently display it \citep{Martin2012,Bradley2017}.
+Anomalous diffusion has been the topic of intense research lately, since it appears in contexts as diverse and important as the transport of cholesterols through lipid bilayers \citep{Jeon2012,Molina-Garcia2018}, contaminants through soils \citep{Berkowitz2006,Yang2019}, and pollinator insects through ecosystems \citep{Reynolds2009,Vallaeys2017}.
+Emerging research in fluvial geomorphology has come to anomalous diffusion as well, since coarse sediment grains transporting through river channels apparently display it \citep{Martin2012,Bradley2017}.
 \citet{Einstein1937} developed the first model of fluvial bedload diffusion, which is the spreading apart of grains as they transport downstream.
 Diffusion is induced by differences in the transport characteristics of one grain and the next, and it is usually quantified by the time-dependence of the positional variance $\sigma_x^2(t)$ of a population.
 When $\sigma_x^2 \propto t$, the diffusion is said to be normal, since this is found in the classic diffusion problems \citep[e.g.][]{Einstein1905,Taylor1920}.
@@ -63,7 +63,7 @@ However, many transport phenomena show $\sigma_x^2 \propto t^\gamma$, with $\gam
 If $\gamma>1$, it is said to be super-diffusive; while if $\gamma <1$, it is said to be sub-diffusive \citep{Metzler2000}.
 
 % what do we know about it 
-Since Einstein, investigators have come to recognize that coarse sediment moving through river channels can show either anomalous or normal diffusion depending on the timescale of observation \citep{Nikora2002}.
+Researchers after Einstein have come to recognize that coarse sediment moving through river channels can show either anomalous or normal diffusion depending on the timescale of observation \citep{Nikora2002}.
 This is a significant issue since it implies diffusion models should be scale dependent, and it renders experimental data contingent on their observation timescales.
 \citet{Nikora2001a,Nikora2002} first identified three ranges of bedload diffusion from simulations and experimental data, and they termed these local, intermediate, and global ranges in order of increasing scale.
 $\sigma_x^2$ scales with time differently in each range, and this scaling can be anomalous or normal.
@@ -395,20 +395,20 @@ Performing these transforms using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \c
 \end{comment}
 \section{Calculation of the moments}
 \label{sec:appendixB}
-We employ (\ref{eq:momenttrick}) to compute the moments of position $x$. The first two derivatives of the double Laplace transformed distribution (\ref{eq:lap}) are
-\be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][s+\kappa + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2}\ee
-\be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{[(s+\kappa + k')s+\kappa k_2][s+\kappa + k_1]^2}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}.\ee
-Evaluating these at $\eta=0$ and using (\ref{eq:momenttrick}) provides the Laplace transformed moments:
-\be  \frac{\bra\tilde{x}(s)\ket} {v} = \Big((\kappa+k_1)s^{-1}+1 \Big)\frac{1}{(s+a)^2-b^2} \label{eq:lapmean}\ee
-\be \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \Big((\kappa+k_1)^2s^{-1} + 2(\kappa+k_1) + s\Big) \frac{1}{[(s+a)^2-b^2]^2}.\label{eq:lapsecondmom}\ee
-Where the parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to complete the squares in their denominators.
-These are inverse transformed by using the linearity and translation properties with those for integration and differentiation \citep[e.g.][]{Arfken1985}.
-For the mean this calculation is
+We employ (\ref{eq:momenttrick}) to compute the first two moments of position $x$ and ultimately the variance $\sigma_x^2 = \bra x^2\ket - \bra x \ket^2$. The first two derivatives of the double Laplace transformed distribution (\ref{eq:nicedist}) are
+\be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2},\ee
+\be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{(s+\kappa+k_1)[(s+\kappa + k')s+\kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}.\ee
+Evaluating these at $\eta=0$ with equation (\ref{eq:momenttrick}) provides the Laplace transformed moments
+\be  \frac{\bra\tilde{x}(s)\ket} {v} = \frac{1}{s} \frac{\theta_2(s+\kappa)+k_1}{(s+a+b)(s+a-b)}\label{eq:lapmean},\ee
+\be \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \frac{1}{s}\frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{(s+a+b)^2(s+a-b)^2},\label{eq:lapsecondmom}\ee
+where the parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to complete the squares in the denominators.
+These equations can be inverse transformed using the linearity, translation, integration, and differentiation properties of Laplace transforms \citep[e.g.][]{Arfken1985} after expanding them in partial fractions.
+For the mean, the calculation is
 \begin{align}
-\frac{\bra x \ket}{v} &= \Big((\kappa+k_1)\int_0^t dt \circ+1 \Big)e^{-at}\El^{-1}\Big\{\frac{1}{s^2-b^2};t\Big\}\\
-&=  \frac{1}{b}e^{-at}\sinh(bt) + \frac{\kappa + k_1}{2b}\Big[\frac{1}{b-a}\Big(e^{(b-a)t}-1\Big)+ \frac{1}{a+b}\Big(e^{-(a+b)t}-1\Big)\Big]
+\frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\circ\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
+&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} - \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big]
 \end{align}
-where the symbol $\circ$ denotes operation on everything to the right of the following parenthesis. In this derivation we used 2.1.5.4 from \citet{Prudnikov1992a}. This equation rearranges to (\ref{eq:mean}).
+The symbol $\circ$ denotes operation on everything to the right of the following parenthesis. This equation rearranges to (\ref{eq:mean}).
 
 Applying a similar approach to the second moment (\ref{eq:lapsecondmom}) obtains
 \begin{align}

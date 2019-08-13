@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.6.9)  11 AUG 2019 20:45
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2019.6.9)  12 AUG 2019 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -416,26 +416,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--202
 func-tions used in the ex-pres-sions of the mean (13[]),
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Excluding 'comment' comment.
 File: ./figures/diffusion.png Graphic file (type QTm)
-<use  "./figures/diffusion.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+ <use  "./figures/diffusion.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 []\OT1/cmr/bx/n/9 Figure  2. \OT1/cmr/m/n/9 The vari-ance of tracer po-si-tion 
 ex-hibits four dis-tinct scal-ing re-gions as time in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 \OT1/cmr/m/n/9 creases: lo-cal, in-ter-me-di-ate, global, and fi-nally a non-di
 ffusive range char-ac-ter-ized by the even-tual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
+Underfull \hbox (badness 10000) in paragraph at lines 242--242
 \OT1/cmr/m/n/9 in-ter-vals are gen-er-ally much shorter than rest-ing in-ter-va
 ls, which are in turn are gen-er-ally much
  []
 
-[6] [7] [8] [9] [10] Excluding 'comment' comment. [11] [12] (./rwdiffu.bbl
+[6]
+Underfull \vbox (badness 3088) has occurred while \output is active []
+
+ [7]
+[8] [9]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Excluding 'comment' comment. [11] [12] (./rwdiffu.bbl
 Underfull \hbox (badness 2111) in paragraph at lines 16--32
 []\OT1/cmr/m/n/10 Aar~ao Reis, F. D., & Di Caprio, D.  (2014).  Crossover from 
 anoma-lous to nor-mal 
@@ -484,7 +496,7 @@ Underfull \hbox (badness 5175) in paragraph at lines 192--209
 Mod-el-ing Non-fickian 
  []
 
-
+[13]
 Underfull \hbox (badness 3108) in paragraph at lines 223--239
 []\OT1/cmr/m/n/10 Bialik, R. J., Nikora, V. I., & Rowi^^Snski, P. M.  (2012).  
 3D La-grangian mod-elling 
@@ -515,7 +527,7 @@ Underfull \hbox (badness 7047) in paragraph at lines 313--329
 s.  \OT1/cmr/m/it/10 Jour-nal of Fluid 
  []
 
-[13]
+
 Underfull \hbox (badness 1259) in paragraph at lines 371--386
 \OT1/cmr/m/n/10 Cre-ated by Bar Mi-gra-tion or Sed-i-ment Waves?  \OT1/cmr/m/it
 /10 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/10 , 
@@ -583,6 +595,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--589
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Underfull \hbox (badness 10000) in paragraph at lines 738--754
 \OT1/cmr/m/n/10 par-ti-cles in gravel bed streams.  \OT1/cmr/m/it/10 Wa-ter Re-
 sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 27\OT1/cmr/m/n/10 (4), 503-
@@ -609,9 +624,6 @@ ent, mo-tion, and de-po-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
 Underfull \hbox (badness 10000) in paragraph at lines 913--928
 \OT1/cmr/m/n/10 fifty-year his-tory, state of art and out-look.  \OT1/cmr/m/it/
 10 Eu-ro-pean Phys-i-cal Jour-nal B\OT1/cmr/m/n/10 , 
@@ -691,6 +703,9 @@ sium on stochas-tic
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
 Underfull \hbox (badness 10000) in paragraph at lines 1422--1440
 []\OT1/cmr/m/n/10 Saletti, M., Mol-nar, P., Zim-mer-mann, A. E., Has-san, M. A.
 , & Church, M. 
@@ -710,9 +725,6 @@ i:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
 Underfull \hbox (badness 3525) in paragraph at lines 1454--1470
 \OT1/cmr/m/n/10 ac-tions for anoma-lous dif-fu-sion: A case study.  \OT1/cmr/m/
 it/10 Jour-nal of Physics Con-densed 
@@ -780,19 +792,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 1764--1784
  [] .1038 / s41598 [] -019 [] -39363 [] -3$   \OT1/cmr/m/n/10 doi: 
  []
 
-) [16] (./rwdiffu.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+[17] (./rwdiffu.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 4577 strings out of 493638
- 59439 string characters out of 6146797
- 131816 words of memory out of 5000000
- 7883 multiletter control sequences out of 15000+600000
+ 4576 strings out of 493638
+ 59422 string characters out of 6146797
+ 133816 words of memory out of 5000000
+ 7882 multiletter control sequences out of 15000+600000
  13258 words of font info for 52 fonts, out of 8000000 for 9000
  1334 hyphenation exceptions out of 8191
- 50i,15n,37p,739b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,21n,37p,739b,519s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on rwdiffu.pdf (16 pages).
+Output written on rwdiffu.pdf (17 pages).

@@ -115,11 +115,11 @@ We introduce $\omega_{1T}(x,t)$, $\omega_{1F}(x,t)$, and $\omega_2(x,t)$ as the 
 The subscript ${1T}$ denotes the completion of a rest sojourn due to trapping by burial, while $1F$ denotes the completion of a rest sojourn due to motion.
 Similarly, the subscript $2$ denotes the completion of a motion sojourn due to the onset of resting.
 Using an argument similar to \citet{Weiss1994}, we write integral equations to link the $\omega$'s: 
-\begin{align}
-\om_{1T}(x,t) &= \theta_1\Phi_T(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_T(t-t')g_1(x-x',t-t')\label{eq:x}\\
-\om_{1F}(x,t) &= \theta_1\Phi_F(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi_F(t-t') g_1(x-x',t-t')\\
-\om_2(x,t) &= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \label{eq:y}
-\end{align}
+\begin{alignat}{2}
+&\om_{1T}(x,t) &&= \theta_1\Phi_T(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_T(t-t')g_1(x-x',t-t')\label{eq:x}\\
+&\om_{1F}(x,t) &&= \theta_1\Phi_F(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi_F(t-t') g_1(x-x',t-t')\\
+&\om_2(x,t) &&= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \label{eq:y}
+\end{alignat}
 The first equation can be understood as follows: $\omega_{1T}(x,t)$ describes the probability that a sojourn in the state $1$ ends due to trapping at $(x,t)$. This quantity has two contributions. The first contribution represents the possibility that the grain started at $(x,t)=(0,0)$ in the $i=1$ state (with probability $\theta_1$), propagated a distance $x$ and a time $t$ in the $i=1$ state (with probability $g_1(x,t)$), was trapped (with probability $\Phi_T(t)$), and is now at $(x,t)$. 
 The second contribution describes the possibility that the grain was in a motion sojourn which ended at $x',t'$ when it came to rest. From here, it propagated from $x',t'$ to $x,t$ at rest (with probability $g_1(x-x',t-t')$) and was trapped during this sojourn (with probability $\Phi_T(t-t')$).
 The other equations can be reasoned similarly; these arguments are analogous to \citet{Weiss1994}.
@@ -203,21 +203,31 @@ It represents the downstream diffusion of bedload grains when motion durations a
 	\label{table:params}
 	\begin{tabular}{c}
 		\toprule
-		$A_1 = \frac{v}{2b}\big[1+\frac{\kappa+k_1}{b-a}\big]$ \\
-		$B_1 = -\frac{v}{2b}\big[1-\frac{\kappa+k_1}{a+b}\big]$ \\
-		$C_1 =  -\frac{v}{2b}\big[\frac{\kappa+k_1}{b-a}+\frac{\kappa+k_1}{a+b}\big]$\\
-		$A_2(t)=\frac{v^2}{2b^3}\Big[b+(b-a)[bt-1]+2(\kappa+k_1)[bt-1] + \frac{(\kappa+k_1)^2}{(a-b)^2}[-abt+a+b(bt-2)]\Big] $\\
-		$B_2(t) = \frac{v^2}{2b^3}\Big[b-(a+b)[bt+1]+2(\kappa+k_1)[bt+1] - \frac{(\kappa+k_1)^2}{(a+b)^2}[bt(a+b)+a+2b]\Big] $\\
-		$C_2(t) = \frac{v^2}{2b^3}(\kappa+k_1)^2\Big[\frac{a+2b}{(a+b)^2}+\frac{-a+2b}{(a-b)^2}\Big]$\\
-		$A(t) = A_2(t)-2A_1C_1 + A_1^2\exp[(b-a)t]$\\
-		$B(t) = B_2(t)-2B_1C_1 + B_1^2\exp[-(a+b)t]$\\
-		$C(t) = C_2(t)-C_1^2+2A_1B_1\exp[-2at]$\\
+		$\begin{aligned}[t]
+		&A_1 = \frac{v}{2b}\big[\theta_2+\frac{k_1+\theta_2\kappa}{b-a}\big] \\
+		&B_1 = -\frac{v}{2b}\big[\theta_2-\frac{k_1+\theta_2 \kappa}{a+b}\big] \\
+		&C_1 =  -\frac{v}{2b}\big[\frac{k_1+\theta_2 \kappa}{b-a}+\frac{k_1+\theta_2 \kappa}{a+b}\big]\\
+		&A_2(t) = \frac{v^2}{2b^3}\Big[(bt-1)[k_1+\theta_2(2\kappa + k_1 + b-a)]+\theta_2b \\
+		&\hspace{3cm} + \frac{(\kappa+k_1)(\theta_2\kappa+k_1)}{(b-a)^2}[(bt-1)(b-a)-b]\Big]\\
+		&B_2(t) = \frac{v^2}{2b^3}\Big[(bt+1)[k_1 + \theta_2(2\kappa+k_1-a-b)]+\theta_2b\\
+		&\hspace{3cm} + \frac{(\kappa+k_1)(\theta_2\kappa+k_1)}{(a+b)^2}[(bt+1)(a+b)-b]\Big]\\
+		&C_2 = \frac{v^2}{2b^3}(\kappa+k_1)(\theta_2 \kappa + k_1)\Big[\frac{2a-b}{(b-a)^2}+\frac{a+2b}{(a+b)^2}\Big]\\
+		&A(t) = A_2(t)-2A_1C_1 - A_1^2\exp[(b-a)t]\\
+		&B(t) = B_2(t)-2B_1C_1 - B_1^2\exp[-(a+b)t]\\
+		&C(t) = C_2(t)-C_1^2-2A_1B_1\exp[-2at]\\			
+		\end{aligned}$\\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
 
+		\begin{comment}
+		
+		$A_2(t)=\frac{v^2}{2b^3}\Big[b+(b-a)[bt-1]+2(\kappa+k_1)[bt-1] + \frac{(\kappa+k_1)^2}{(a-b)^2}[-abt+a+b(bt-2)]\Big] $\\
+		$B_2(t) = \frac{v^2}{2b^3}\Big[b-(a+b)[bt+1]+2(\kappa+k_1)[bt+1] - \frac{(\kappa+k_1)^2}{(a+b)^2}[bt(a+b)+a+2b]\Big] $\\
+		$C_2(t) = \frac{v^2}{2b^3}(\kappa+k_1)^2\Big[\frac{a+2b}{(a+b)^2}+\frac{-a+2b}{(a-b)^2}\Big]$\\
 
+		\end{comment}
 
 \section{Discussion: new findings and foundational links}
 \label{sec:discussion}
@@ -402,24 +412,23 @@ Evaluating these at $\eta=0$ with equation (\ref{eq:momenttrick}) provides the L
 \be  \frac{\bra\tilde{x}(s)\ket} {v} = \frac{1}{s} \frac{\theta_2(s+\kappa)+k_1}{(s+a+b)(s+a-b)}\label{eq:lapmean},\ee
 \be \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \frac{1}{s}\frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{(s+a+b)^2(s+a-b)^2},\label{eq:lapsecondmom}\ee
 where the parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to complete the squares in the denominators.
-These equations can be inverse transformed using the linearity, translation, integration, and differentiation properties of Laplace transforms \citep[e.g.][]{Arfken1985} after expanding them in partial fractions.
+These equations can be inverse transformed using the linearity, translation, integration, and differentiation properties of Laplace transforms \citep[e.g.][]{Arfken1985} after expansion in partial fractions.
 For the mean, the calculation is
 \begin{align}
-\frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\circ\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
-&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} - \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big]
+\frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
+&= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} - \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big].
 \end{align}
-The symbol $\circ$ denotes operation on everything to the right of the following parenthesis. This equation rearranges to (\ref{eq:mean}).
-
-Applying a similar approach to the second moment (\ref{eq:lapsecondmom}) obtains
-\begin{align}
-\frac{\bra x^2 \ket}{2v^2} 
-&= \Big((\kappa+k_1)^2\int_0^t dt \circ + 2(\kappa + k_1)\circ +  [\partial_t + \delta(t)]\circ \Big)e^{-at}\El^{-1}\Big\{\frac{1}{[s^2-b^2]^2};t\Big\}.\\
-\end{align}
-Using 2.1.5.6 from \citet{Prudnikov1992a} this becomes
-\begin{align}
-\frac{\bra x^2 \ket}{2v^2} = \frac{t}{b}\sinh&(bt) + \frac{(\kappa + k_1)}{b^3}\big[bt\cosh(bt)-\sinh(bt)\big]\\
-&+e^{-at}\frac{b(b^2(at-2))-a^3t)\cosh(bt) +(a^3-a^2b^2t-3ab^2+b^4t)\sinh(bt)}{(a-b)^2(a+b)^2}
-\end{align}
+This equation rearranges to (\ref{eq:mean}).
+Applying the same approach to the second moment (\ref{eq:lapsecondmom}) provides
+\begin{multline}
+\frac{2b^2}{v^2}\bra x^2 \ket = \Big[\theta_2(\delta(t) + \partial_t) + (\theta_2(2\kappa + k_1)+k_1) + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^t dt \Big] \\
+\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2}-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}
+\end{multline}
+This becomes 
+\begin{multline}
+\frac{2b^3}{v^2}\bra x^2 \ket = \Big[\theta_2\partial_t + [\theta_2(2\kappa+k_1)+k_1] + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^tdt\Big]\\
+\times \Big((bt-1)e^{(b-a)t}+(bt+1)e^{-(a+b)t}\Big)
+\end{multline}
 which rearranges to (\ref{eq:second}).
 The variance (\ref{eq:var}) follows from $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2.$
 

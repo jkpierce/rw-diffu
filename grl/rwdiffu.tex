@@ -22,6 +22,9 @@
 \newcommand\tp{\tilde{p}}
 \newcommand\tG{\tilde{G}}
 \newcommand\El{\mathcal{L}}
+%\usepackage{layouts}
+%\printinunitsof{in}\prntlen{\textwidth} % check scales in the document
+
 
 \begin{document}
 
@@ -182,8 +185,10 @@ The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs}.
 
 % figure showing distribution functon
 \begin{figure}
-	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot-edit.png}
-	\caption{Joint distributions of a tracer being found at $x$ $t$ are impeded by the trapping process. Panel (a) shows the \citet{Lisle1998} model, and panel (b) shows the the distribution \ref{eq:pdf} which results from a trapping process occurring at rate $\kappa$. Cross-comparison of both panels shows that trapping redistributes probability to smaller values of $x$, and this redistribution becomes more important for larger $t$.}
+	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot.png}
+	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). Points result from direct simulations, while the solid lines are the analytical distribution in equation (\ref{eq:pdf}). Colors pertain to different times. Units are unspecified, since our aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- the absence of burial.
+	In this case, the joint distribution tends toward Gaussian at large times \citep[e.g.][]{Einstein1937,Lisle1998}. Panel (b) shows the case when grains have probability $\kappa = 0.01$ per time to become buried.
+	Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. This demonstrates that the burial process redistributes probability to smaller values of $x$ than would otherwise be expected without burial \citep[c.f.][]{Wu2019}. This effect is encoded mathematically by the Marcum Q-function terms in equation  (\ref{eq:pdf}). A similar tendency is seen in field studies of tracer dispersion in gravel bed rivers \citep[e.g.][]{Hassan1994}.}
 	\label{fig:pdfs}
 \end{figure}
 % solution for theta_1=1: moments
@@ -238,8 +243,7 @@ A plot of $\sigma_x^2(t)$ is shown in figure \ref{fig:var} for the case that mot
 That is, for the case that $1/k_2 \ll 1/k_1 \ll 1/\kappa$.
 \begin{figure}[t]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/diffusion.png}
-	\caption{The variance of tracer position exhibits four distinct scaling regions as time increases: local, intermediate, global, and finally a non-diffusive range characterized by the eventual trapping of all grains.
-	Local and global ranges show super-diffusion $\sigma_x^2 \propto t^3$ while the intermediate range shows normal diffusion. These conclusions hold only for $\kappa \ll k_1 \ll k_2$, meaning motion intervals are generally much shorter than resting intervals, which are in turn are generally much smaller than the time required for resting grains to become buried.}
+	\caption{Joint distributions to be at position $x$ at time $t$ for parameters $k_1=0.1s^{-1}$,$k_2=1.0s^{-1}$, and $v=2.0ms^{-1}$.}
 	\label{fig:var}
 \end{figure}
 % discuss 3+1 stages of diffusion

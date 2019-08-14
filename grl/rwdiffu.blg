@@ -16,6 +16,10 @@ Repeated entry---line 1743 of file biblio.bib.bib
  : @article{Campagnol2012
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 5126 of file biblio.bib.bib
+ : @article{Hassan1994
+ :                    ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 5819 of file biblio.bib.bib
  : @article{Saletti2015
  :                     ,
@@ -52,43 +56,43 @@ apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in Taylor1920
 You've used 63 entries,
             6951 wiz_defined-function locations,
-            1767 strings with 32711 characters,
-and the built_in function-call counts, 128896 in all, are:
-= -- 15795
-> -- 1081
-< -- 6402
-+ -- 6815
+            1768 strings with 32690 characters,
+and the built_in function-call counts, 128936 in all, are:
+= -- 15803
+> -- 1076
+< -- 6410
++ -- 6823
 - -- 126
-* -- 8588
-:= -- 23745
+* -- 8607
+:= -- 23774
 add.period$ -- 258
 call.type$ -- 63
 change.case$ -- 1074
 chr.to.int$ -- 0
 cite$ -- 127
-duplicate$ -- 3629
-empty$ -- 4870
-format.name$ -- 1859
-if$ -- 24075
+duplicate$ -- 3620
+empty$ -- 4865
+format.name$ -- 1851
+if$ -- 24071
 int.to.chr$ -- 0
 int.to.str$ -- 189
 missing$ -- 0
-newline$ -- 1702
+newline$ -- 1703
 num.names$ -- 504
-pop$ -- 1805
+pop$ -- 1779
 preamble$ -- 1
 purify$ -- 252
 quote$ -- 0
-skip$ -- 8184
+skip$ -- 8201
 stack$ -- 0
-substring$ -- 7433
-swap$ -- 2104
+substring$ -- 7442
+swap$ -- 2109
 text.length$ -- 149
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 5296
 warning$ -- 1
-while$ -- 638
+while$ -- 633
 width$ -- 0
-write$ -- 2130
-(There were 9 error messages)
+write$ -- 2128
+(There were 10 error messages)

@@ -724,6 +724,35 @@ Hassan, M\BPBI A.%
 
 \bibitem [\protect \citeauthoryear {%
 Hassan%
+\ \BBA {} Church%
+}{%
+Hassan%
+\ \BBA {} Church%
+}{%
+{\protect \APACyear {1994}}%
+}]{%
+Hassan1994}
+\APACinsertmetastar {%
+Hassan1994}%
+\begin{APACrefauthors}%
+Hassan, M\BPBI A.%
+\BCBT {}\ \BBA {} Church, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Vertical mixing of coarse particles in gravel bed
+  rivers: A kinematic model}} {{Vertical mixing of coarse particles in gravel
+  bed rivers: A kinematic model}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resources Research}{30}{4}{1173--1185}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/93WR03351} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hassan%
 , Church%
 \BCBL {}\ \BBA {} Schick%
 }{%
@@ -1348,33 +1377,6 @@ Phillips, C\BPBI B.%
 \APACjournalVolNumPages{Science}{352}{6286}{694--697}.
 \newblock
 \begin{APACrefDOI} \doi{10.1126/science.aad3348} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Prudnikov%
-, Brychkov%
-\BCBL {}\ \BBA {} Marichev%
-}{%
-Prudnikov%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {1992}}%
-}]{%
-Prudnikov1992a}
-\APACinsertmetastar {%
-Prudnikov1992a}%
-\begin{APACrefauthors}%
-Prudnikov, A.%
-, Brychkov, Y\BPBI A.%
-\BCBL {}\ \BBA {} Marichev, O.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1992}.
-\newblock
-\APACrefbtitle {{Integrals and Series: Volume 5: Inverse Laplace Transforms}}
-  {{Integrals and Series: Volume 5: Inverse Laplace Transforms}}.
-\newblock
-\APACaddressPublisher{}{Gordon and Breach Science Publishers}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

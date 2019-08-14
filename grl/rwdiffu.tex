@@ -174,34 +174,37 @@ This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 
 
 
 % solution for case theta_1=1: distribution function
-Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$, are derived in appendix \ref{sec:appendixB}. Using the shorthand notation $\xi = k_2 x/v$ and $\tau = k_1(t-x/v)$ \citep[c.f.][]{Lisle1998} and assuming all grains start from motion ($\theta_1=1$), the distribution is 
+Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$, and ultimately the variance of position $\sigma_x^2(t)$, are derived in appendix \ref{sec:appendixB}. Using the shorthand notation $\xi = k_2 x/v$, $\tau = k_1(t-x/v)$, and $\Omega = (\kappa+k_1)/k_1$ \citep[c.f.][]{Lisle1998}, the joint distribution is 
 \begin{multline}
-p(x,t) = e^{-(\kappa + k_1)\tau/k_1-\xi}\mathcal{H}(\tau)\mathcal{H}(\xi)\Bigg[\frac{k_1}{v}\delta(\tau) + \frac{k_1}{v} \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1(2\sqrt{\xi\tau}) + \frac{k_2}{v} \mathcal{I}_0(2\sqrt{\xi\tau})\Bigg]\\
-+ \kappa \frac{k_2}{v(\kappa+k_1)}\mathcal{H}(\tau)\mathcal{H}(\xi)e^{-\xi}\mathcal{P}_1\big(\kappa\xi/(\kappa+k_1), (\kappa+k_1)\tau/k_1\big).
+p(x,t) = \theta_1\Big[1-\frac{k_1}{\kappa+k_1}\Big(1-e^{-{\kappa+k_1}t}\Big)\Big]\delta(x) \\ + \frac{1}{v}e^{-\Omega \tau - \xi}\Big(\theta_1\Big[k_1\mathcal{I}_0 + k_2\sqrt{\frac{\tau}{\xi}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big]  + \theta_2\Big[k_1\delta(\tau) + k_2 \mathcal{I}_0\big(2\sqrt{\xi\tau}\big)+k_1 \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big]\Big) \\
++ \frac{1}{v}\frac{\kappa k_2}{\kappa + k_1}e^{-\kappa \xi/(\kappa + k_1)}\Big((\theta_1/\Omega)\mathcal{P}_2(\xi/\Omega,\Omega\tau) + \theta_2 \mathcal{P}_1(\xi/\Omega,\Omega\tau)\Big).
 \label{eq:pdf}
 \end{multline}
-The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind and $\mathcal{P}_1$ is a (complementary) Marcum Q-function defined by $\mathcal{P}_1(x,y) = \int_0^y e^{-z-x}\mathcal{I}_0(2\sqrt{xz})dz $ \citep{Temme1996}. The Q-function was initially introduced in relation to radar detection theory \citep{Marcum1960}. $\mathcal{H}(x)$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
-The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs}.
+$\mathcal{H}(x)$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
+The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind, and the $\mathcal{P}_\mu$ are generalized (and complementary) Marcum Q-functions defined by $\mathcal{P}_\mu(x,y) = \int_0^y e^{-z-x}(y/x)^{(\mu-1)/2}\mathcal{I}_0(2\sqrt{xz})dz $ \citep{Temme1996}. The Marcum Q-functions are convolutions between modified Bessel functions and exponential kernels. They were initially devised in relation to radar detection theory \citep{Marcum1960}. 
+Conceptually, these result in our context from the trapping process. According to our assumptions, resting grains can trap in some interval of time with an exponential probability. The probability that grains are resting follows a modified Bessel distribution \citep[e.g.][]{Einstein1937,Lisle1998}.
+Thus we get the convolution structure of the Marcum Q-functions in describing the burial of sediment.
+Consistent with this interpretation, the terms involving these convolutions vanish when $\kappa \rightarrow 0$, that is, when the rate of burial is zero.
+The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} along with simulations by a direct method \citep[c.f.][]{Barik2006}. 
 
 % figure showing distribution functon
 \begin{figure}
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot.png}
-	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). Points result from direct simulations, while the solid lines are the analytical distribution in equation (\ref{eq:pdf}). Colors pertain to different times. Units are unspecified, since our aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- the absence of burial.
+	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). The scattered points result from direct simulations, while the solid lines are the analytical distribution in equation (\ref{eq:pdf}). Colors pertain to different times. Units are unspecified, since our aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- the absence of burial.
 	In this case, the joint distribution tends toward Gaussian at large times \citep[e.g.][]{Einstein1937,Lisle1998}. Panel (b) shows the case when grains have probability $\kappa = 0.01$ per time to become buried.
 	Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. This demonstrates that the burial process redistributes probability to smaller values of $x$ than would otherwise be expected without burial \citep[c.f.][]{Wu2019}. This effect is encoded mathematically by the Marcum Q-function terms in equation  (\ref{eq:pdf}). A similar tendency is seen in field studies of tracer dispersion in gravel bed rivers \citep[e.g.][]{Hassan1994}.}
 	\label{fig:pdfs}
 \end{figure}
+
 % solution for theta_1=1: moments
-\noindent The first two moments are
+\noindent The first two moments are derived in appendix \ref{sec:appendixB}. They have the form
 \be \bra x(t) \ket = A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1 \label{eq:mean}\ee
 \be \bra x^2(t) \ket = A_2(t)e^{(b-a)t}+B_2(t)e^{-(a+b)t}+C_2. \label{eq:second}\ee
-
-The $A_i$ and $B_i$ are polynomials available in table (\ref{table:params}).
+The $A_i$ and $B_i$ are polynomials available in table \ref{table:params}.
 In terms of these moments, the variance is
 \be \sigma_x^2(t) = A(t)e^{(b-a)t} + B(t)e^{-(a+b)t} + C(t) \label{eq:var}\ee
-Where $A, B,$ and $C$ are transcendental functions in table in (\ref{table:params}).
-We have made no approximation to derive this expression.
-It represents the downstream diffusion of bedload grains when motion durations and the possibility of burial within the sedimentary bed are accounted for.
+Where $A, B,$ and $C$ are transcendental functions in table \ref{table:params}.
+We have made no approximations to derive these results. They are exact, analytical solutions for the transport characteristics of bedload grains transporting downstream as they gradually become buried within the sedimentary bed of the river channel.
 \begin{table}[!h]
 	\centering
 	\caption{Polynomials and transcendental functions used in the expressions of the mean (\ref{eq:mean}), second moment (\ref{eq:second}) and variance (\ref{eq:var}) of bedload tracers.}
@@ -387,56 +390,51 @@ The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using (\ref{
 \label{eq:lap}
 \end{multline}
 Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s$ \citep[e.g.][]{Weiss1994}, it follows that the joint distribution is normalized in space regardless of the choice of propagators, since $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = \mathcal{L}\{1;s\} = 1/s$.
-Using the propagators outlined in equations (\ref{eq:prop1}-\ref{eq:prop2}) in (\ref{eq:lap}) gives 
+Plugging the propagators outlined in equations (\ref{eq:prop1}-\ref{eq:prop2}) into equation (\ref{eq:lap}) gives 
 \be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s  + \theta_1(s+\kappa )\eta v+ \kappa k_2}{(s+\kappa+k_1)\eta v+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
 The double inverse transform of this equation provides the distribution $p(x,t)$.
-
-
-
-
-\begin{comment}
-Setting $\theta_1=0$ and $\theta_2=1$ before inverse transforming (\ref{eq:nicedist}) over $\eta$ first, using the transform 15.103 from \citet{Arfken1985}, provides
-\be \tilde{p}(x,s) = \frac{(s+\kappa+k')s+\kappa k_2}{sv(s+\kappa+k_1)}
-\exp{\Big(-\frac{s(s+\kappa+k')+\kappa k_2}{s+\kappa+k_1}\frac{x}{v}\Big)}.\ee
-Taking the inverse transform over $s$ and leveraging the Laplace transform's linearity, substitution, and translation operations \citep[e.g.][]{Arfken1985} gives the form
+It is convenient to take the inverse transform over $\eta$ first.
+Using the results 15.103 (transform of exponential), 15.123 (transform of derivative), and 15.141 (transform of Dirac delta function) from \citet{Arfken1985} provides 
+\begin{multline} \tp(x,s) = \theta_1 \frac{s+\kappa}{s(s+\kappa + k_1)} + \frac{1}{v} \Big(\frac{(s+\kappa+k')s+\kappa k_2}{s(s+\kappa+k_1)} - \frac{\theta_1(s+\kappa)[s(s+\kappa+k_1)+\kappa k_2]}{s(s+\kappa+k_1)^2}\Big)\\
+\times \exp\Big[-\frac{(s+\kappa+k')s+\kappa k_2}{s+\kappa+k_1}\frac{x}{v}\Big].\end{multline}
+Taking the inverse Laplace transform over $s$, applying results 15.152 (substitution), 15.164 (translation), and 15.175 (transform of $te^{kt}$) from \citet{Arfken1985}, and defining shorthand variables $\tau = k_1(t-x/v)$, $\xi = k_2 x/v$, and $\Omega = (\kappa + k_1)/k_1$, gives the form 
 \begin{multline}
-p(x,t) = e^{-(\kappa + k_1)(t-x/v)-k_2x/v}
-\Big[\frac{1}{v}\El^{-1}\Big\{\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\} \\
-+ \frac{k_2}{v}\El^{-1}\Big\{\frac{1}{s}\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\} \\
-+ \frac{\kappa k_2}{v}\El^{-1}\Big\{\frac{1}{(s-\kappa-k_1)s}\exp\Big[\frac{k_1k_2}{vs}x\Big];t-x/v\Big\}\Big].
+p(x,t) = \theta_1\Big[1-\frac{k_1}{\kappa + k_1}\big(1-e^{-(\kappa + k_1)t}\big)\Big]\delta(x) + \frac{1}{v}\exp[\Omega \tau - \xi]\\
+\times \El^{-1}\Big\{\Big( \theta_2 + \frac{\theta_1k_1+\theta_2 k_2}{s}+\frac{\theta_1k_1k_2}{s^2} + \frac{\theta_2\kappa k_2}{s(s-\kappa-k_1)} + \frac{\theta_1\kappa k_1 k_2}{s^2(s-\kappa-k_1)}\Big)\\
+\times\exp\big[\frac{\kappa_1 \xi}{vs}\big];\tau/k_1\Big\}.
 \end{multline}
-Performing these transforms using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \citet{Prudnikov1992a} and using the definition of the Marcum Q-function \citep[e.g.][]{Temme1996}, we arrive at (\ref{eq:pdf}).
-\end{comment}
+Using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \citet{Prudnikov1992a} in conjunction with the definition of the Marcum Q-function $ \mathcal{P}_\mu(x,t)$ \citep[e.g.][]{Temme1996}, we finally arrive at equation (\ref{eq:pdf}) for the joint distribution $p(x,t)$.
+
 \section{Calculation of the moments}
 \label{sec:appendixB}
 We employ (\ref{eq:momenttrick}) to compute the first two moments of position $x$ and ultimately the variance $\sigma_x^2 = \bra x^2\ket - \bra x \ket^2$. The first two derivatives of the double Laplace transformed distribution (\ref{eq:nicedist}) are
 \be \partial_\eta \tp(\eta,s) = -v \frac{1}{s}\frac{[(s+\kappa + k')s + \kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa +k_1) + (s+ \kappa + k')s+\kappa k_2]^2},\ee
 \be \partial_\eta^2 \tp(\eta,s) = 2v^2 \frac{1}{s} \frac{(s+\kappa+k_1)[(s+\kappa + k')s+\kappa k_2][\theta_2(s+\kappa) + k_1]}{[\eta v(s+\kappa + k_1) + (s+\kappa + k')s+ \kappa k_2]^3}.\ee
-Evaluating these at $\eta=0$ with equation (\ref{eq:momenttrick}) provides the Laplace transformed moments
+Evaluating these at $\eta=0$ and applying equation (\ref{eq:momenttrick}) provides the Laplace transformed moments
 \be  \frac{\bra\tilde{x}(s)\ket} {v} = \frac{1}{s} \frac{\theta_2(s+\kappa)+k_1}{(s+a+b)(s+a-b)}\label{eq:lapmean},\ee
 \be \frac{\bra \tilde{x}^2(s) \ket}{2v^2} = \frac{1}{s}\frac{(s+\kappa+k_1)(\theta_2(s+\kappa)+k_1)}{(s+a+b)^2(s+a-b)^2},\label{eq:lapsecondmom}\ee
 where the parameters $a= (\kappa+k')/2$ and $b^2 = a^2 -\kappa k_2$ were introduced to complete the squares in the denominators.
-These equations can be inverse transformed using the linearity, translation, integration, and differentiation properties of Laplace transforms \citep[e.g.][]{Arfken1985} after expansion in partial fractions.
+These equations can be inverse transformed using the translation (15.164), integration (15.11.1), and differentiation (15.123) properties of Laplace transforms \citep{Arfken1985} after expanding in partial fractions.
 For the mean, the calculation is
 \begin{align}
 \frac{2b}{v}\bra x \ket &= \big[\theta_2 + (k_1+\theta_2 \kappa)\int_0^t dt\big]\El^{-1}\Big\{ \frac{1}{s+a-b}-\frac{1}{s+a+b};t\Big\}\\
 &= \Big[\theta_2 + \frac{k_1+\theta_2\kappa}{b-a}\Big]e^{(b-a)t} - \Big[\theta_2 - \frac{k_1+\theta_2\kappa}{a+b}\Big]e^{-(a+b)t} - \Big[\frac{k_1+\theta_2\kappa}{b-a} + \frac{k_1+\theta_2\kappa}{a+b}\Big].
 \end{align}
 This equation rearranges to (\ref{eq:mean}).
-Applying the same approach to the second moment (\ref{eq:lapsecondmom}) provides
+The second moment (\ref{eq:lapsecondmom}) is 
 \begin{multline}
 \frac{2b^2}{v^2}\bra x^2 \ket = \Big[\theta_2(\delta(t) + \partial_t) + (\theta_2(2\kappa + k_1)+k_1) + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^t dt \Big] \\
-\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2}-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}
+\times \El^{-1}\Big\{ \frac{1}{(s+a-b)^2} + \frac{1}{(s+a+b)^2}-\frac{1}{b(s+a-b)}+\frac{1}{b(s+a+b)};t\Big\}.
 \end{multline}
 This becomes 
 \begin{multline}
 \frac{2b^3}{v^2}\bra x^2 \ket = \Big[\theta_2\partial_t + [\theta_2(2\kappa+k_1)+k_1] + (\kappa+k_1)(\theta_2\kappa+k_1)\int_0^tdt\Big]\\
-\times \Big((bt-1)e^{(b-a)t}+(bt+1)e^{-(a+b)t}\Big)
+\times \Big((bt-1)e^{(b-a)t}+(bt+1)e^{-(a+b)t}\Big),
 \end{multline}
-which rearranges to (\ref{eq:second}).
-The variance (\ref{eq:var}) follows from $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2.$
+which evaluates to equation (\ref{eq:second}).
+The variance in equation (\ref{eq:var}) (and table \ref{table:params}) follows from $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2.$
 
-\section{Initial conditions and limiting behaviors}
+\section{Limiting behaviors of $\sigma_x^2$}
 \label{sec:appendixC}
 \subsection{Limit to \citet{Lisle1998}}
 The \citet{Lisle1998} model arises from ours in the absence of the trapping process: $\kappa \rightarrow 0$.
@@ -470,14 +468,15 @@ Taking the limit as $k_2 \rightarrow \infty$ while $v/k_2 = l$ is held constant 
 \be\tilde{p}(\eta,s) = \frac{1}{s}\frac{s+\kappa + \kappa l \eta }{\eta l (s + \kappa + k_1) + s + \kappa} .\ee
 \citet{Wu2019} assumed a Taylor expansion to second order in the Laplace variable $\eta$ was an appropriate representation of the step length pdf.
 In our framework, this transforms the above equation to 
-\be \ee
+
 
 
 
 Taking the inverse transform over $\eta$ gives
 \be \tilde{p}(x,s) = \frac{1}{s}\Big( [s+\kappa]+\kappa l[\partial_x + \delta(x)]\Big)\frac{1}{l(s+\kappa + k_1)}\exp\Big(- \frac{s+\kappa}{s+\kappa + k_1}\frac{x}{l}\Big)\ee
 \acknowledgments
-J. Pierce acknowledges a helpful exchange with Eduardo Daly during the early stages of this work. M. Hassan is supported by an NSERC Discovery grant. All simulation code is available on request.
+J. Pierce acknowledges a helpful exchange with Eduardo Daly during the early stages of this work. M. Hassan is supported by an NSERC Discovery grant. The python code used to simulate the random walk and generate all plots is available at \sloppy
+\url{https://github.com/kevinkayaks/rw-diffu}.
 
 \bibliography{biblio.bib}
 \end{document}

@@ -145,6 +145,37 @@ Balakrishnan, V.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Barik%
+, Ghosh%
+\BCBL {}\ \BBA {} Ray%
+}{%
+Barik%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Barik2006}
+\APACinsertmetastar {%
+Barik2006}%
+\begin{APACrefauthors}%
+Barik, D.%
+, Ghosh, P\BPBI K.%
+\BCBL {}\ \BBA {} Ray, D\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Langevin dynamics with dichotomous noise; Direct
+  simulation and applications}} {{Langevin dynamics with dichotomous noise;
+  Direct simulation and applications}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Statistical Mechanics: Theory and
+  Experiment}{}{3}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1088/1742-5468/2006/03/P03010} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Bena%
 }{%
 Bena%
@@ -637,6 +668,32 @@ Frey, P.%
   Landforms}{39}{5}{646--655}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/esp.3517} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gillespie%
+}{%
+Gillespie%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Gillespie2007}
+\APACinsertmetastar {%
+Gillespie2007}%
+\begin{APACrefauthors}%
+Gillespie, D\BPBI T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Stochastic Simulation of Chemical Kinetics}}
+  {{Stochastic Simulation of Chemical Kinetics}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Annual Review of Physical Chemistry}{58}{1}{35--55}.
+\newblock
+\begin{APACrefDOI} \doi{10.1146/annurev.physchem.58.032806.104637}
+  \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1377,6 +1434,33 @@ Phillips, C\BPBI B.%
 \APACjournalVolNumPages{Science}{352}{6286}{694--697}.
 \newblock
 \begin{APACrefDOI} \doi{10.1126/science.aad3348} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Prudnikov%
+, Brychkov%
+\BCBL {}\ \BBA {} Marichev%
+}{%
+Prudnikov%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1992}}%
+}]{%
+Prudnikov1992a}
+\APACinsertmetastar {%
+Prudnikov1992a}%
+\begin{APACrefauthors}%
+Prudnikov, A.%
+, Brychkov, Y\BPBI A.%
+\BCBL {}\ \BBA {} Marichev, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {{Integrals and Series: Volume 5: Inverse Laplace Transforms}}
+  {{Integrals and Series: Volume 5: Inverse Laplace Transforms}}.
+\newblock
+\APACaddressPublisher{}{Gordon and Breach Science Publishers}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

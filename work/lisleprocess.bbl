@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{\textit{Lisle et~al.}(1998)\textit{Lisle, Rose, Hogarth, Hairsine,
+  Sander, and Parlange}}]{Lisle1998}
+Lisle, I.~G., C.~W. Rose, W.~L. Hogarth, P.~B. Hairsine, G.~C. Sander, and
+  J.-Y. Parlange, {Stochastic sediment transport in soil erosion},
+  \textit{Journal of Hydrology}, \textit{204}, 217--230, 1998.
+
+\end{thebibliography}

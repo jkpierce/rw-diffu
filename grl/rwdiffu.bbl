@@ -207,6 +207,35 @@ Bena, I.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Berezhkovskii%
+\ \BBA {} Weiss%
+}{%
+Berezhkovskii%
+\ \BBA {} Weiss%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+Berezhkovskii2002}
+\APACinsertmetastar {%
+Berezhkovskii2002}%
+\begin{APACrefauthors}%
+Berezhkovskii, A\BPBI M.%
+\BCBT {}\ \BBA {} Weiss, G\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Detailed description of a two-state non-Markov system}}
+  {{Detailed description of a two-state non-Markov system}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physica A: Statistical Mechanics and its
+  Applications}{303}{1-2}{1--12}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/S0378-4371(01)00431-9} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Berkowitz%
 , Cortis%
 , Dentz%
@@ -384,6 +413,36 @@ Church, M.%
 \APACjournalVolNumPages{Water Resources Research}{53}{}{5--10}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/2016WR019675.Received} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Daly%
+\ \BBA {} Porporato%
+}{%
+Daly%
+\ \BBA {} Porporato%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Daly2010}
+\APACinsertmetastar {%
+Daly2010}%
+\begin{APACrefauthors}%
+Daly, E.%
+\BCBT {}\ \BBA {} Porporato, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Effect of different jump distributions on the dynamics
+  of jump processes}} {{Effect of different jump distributions on the dynamics
+  of jump processes}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physical Review E - Statistical, Nonlinear, and Soft
+  Matter Physics}{81}{6}{1--10}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.81.061133} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -668,32 +727,6 @@ Frey, P.%
   Landforms}{39}{5}{646--655}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/esp.3517} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Gillespie%
-}{%
-Gillespie%
-}{%
-{\protect \APACyear {2007}}%
-}]{%
-Gillespie2007}
-\APACinsertmetastar {%
-Gillespie2007}%
-\begin{APACrefauthors}%
-Gillespie, D\BPBI T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2007}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Stochastic Simulation of Chemical Kinetics}}
-  {{Stochastic Simulation of Chemical Kinetics}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Annual Review of Physical Chemistry}{58}{1}{35--55}.
-\newblock
-\begin{APACrefDOI} \doi{10.1146/annurev.physchem.58.032806.104637}
-  \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1726,6 +1759,36 @@ Voller, V\BPBI R.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2009JF001278} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Weeks%
+\ \BBA {} Swinney%
+}{%
+Weeks%
+\ \BBA {} Swinney%
+}{%
+{\protect \APACyear {1998}}%
+}]{%
+Weeks1998}
+\APACinsertmetastar {%
+Weeks1998}%
+\begin{APACrefauthors}%
+Weeks, E\BPBI R.%
+\BCBT {}\ \BBA {} Swinney, H\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Anomalous diffusion resulting from strongly asymmetric
+  random walks}} {{Anomalous diffusion resulting from strongly asymmetric
+  random walks}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physical Review E - Statistical Physics, Plasmas,
+  Fluids, and Related Interdisciplinary Topics}{57}{5}{4915--4920}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.57.4915} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

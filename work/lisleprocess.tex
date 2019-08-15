@@ -31,18 +31,20 @@
 \author{Kevin Pierce}
 \maketitle
 
-The Lisle distribution in Laplace space is 
-\be \tp(\eta,s) = \frac{1}{s} \frac{k'+s + \theta_1\eta v}{\eta v(s+k_1) + s(s+k')} \ee
-It inverts to 
+The \citet{Lisle1998} model in double Laplace space is 
+\be \tp(\eta,s) = \frac{1}{s} \frac{k'+s + \theta_1\eta v}{\eta v(s+k_1) + s(s+k')}. \label{eq:laplacedist} \ee
+This follows from the $\kappa \rightarrow 0$ limit of equation A.11 in the main text.
+This inverts to 
 \begin{multline} p(x,t) = \theta_1\delta(x) e^{-k_1t}+\frac{1}{v}e^{-\tau-\xi}\Big\{\theta_1\Big[k_1 \mathcal{I}_0\Big(2\sqrt{\xi\tau}\Big) + k_2\sqrt{\frac{\tau}{\xi}}\mathcal{I}_1\Big(2\sqrt{\xi\tau}\Big)\Big] \\
 + \theta_2\Big[k_1\delta(\tau) + k_2 \mathcal{I}_0\Big(2\sqrt{\xi\tau}\Big) + k_1\sqrt{\frac{\xi}{\tau}}\mathcal{I}_1\Big(2\sqrt{\xi\tau}\Big)\Big] \Big\}.
 \end{multline}
-Taking derivatives of it implies Laplace moments
+This is the $\kappa \rightarrow 0$ limit of equation 12 in the main text.
+Taking derivatives of (\ref{eq:laplacedist}) implies Laplace moments
 \be \frac{\bra \tilde{x}\ket}{v} = \frac{k_1 + \theta_2 s}{s^2(s+k')}\ee 
 \be \frac{\bra \tilde{x}^2\ket}{2v^2} = \frac{(s+k_1)(\theta_2 s+k_1)}{s^3(s+k')^2}.\ee 
-Inverting the first equation provides the mean 
+Inverting the first moment provides the mean 
 \be \frac{k'^2 \bra x \ket}{v} = k_1 k' t + (\theta_2 k_2 - \theta_1 k_1)(1-e^{-k't}).\ee
-Inverting the second provides the second moment
+Inverting the second moment provides
 \begin{multline}
 \frac{k'^4}{2v^2}\bra x^2 \ket = \theta_2 k'^2(1-(1+k't)e^{-k't}) \\ + k_1k'(1+\theta_2)((1+e^{-k't})k't-2(1-e^{-k't})) \\+ \frac{k_1^2}{k'^4}(3(1-e^{-k't})-k't(2+e^{-k't})+\frac{(k't)^2}{2}).
 \end{multline}
@@ -52,7 +54,9 @@ This rearranges to
 = \theta_2 \Big[k_1k'(k't-1+e^{-k't}) + k_2^2(1-(1+k't)e^{-k't})\Big] \\
 + k_1k'((1+e^{-k't})k't-2(1-e^{-k't})) \\+ \frac{k_1^2}{k'^4}(3(1-e^{-k't})-k't(2+e^{-k't})+\frac{(k't)^2}{2}).
 \end{multline}
-This doesn't really simplify, nor does the variance. It only gets worse. Anyway, you can use this to check your results for the more general model.
+These provide the variance
+\be \sigma_x^2(x) = A(t)e^{-k't} + B(t), \ee
+where 
 \bibliography{biblio}
 \end{document}
 

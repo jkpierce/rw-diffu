@@ -170,7 +170,7 @@ The Laplace-transformed moments of $x$ are linked to derivatives of the double-t
 From (\ref{eq:doubletransform}) it's clear that
 \be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k \tilde{p}(\eta,s)\Big|_{\eta=0}.\label{eq:momenttrick}\ee
 The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.][]{Kittel1958}.
-This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution in equation \ref{eq:dist}.
+This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution in equation (\ref{eq:dist}).
 
 
 % solution for case theta_1=1: distribution function
@@ -190,9 +190,9 @@ The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside s
 % figure showing distribution functon
 \begin{figure}
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot.png}
-	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). The solid lines are the analytical distribution in equation \ref{eq:pdf}, while the points are simulation results to show mathematical correctness. Colors pertain to different times. Units are unspecified, since our aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- the absence of burial.
+	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). The solid lines are the analytical distribution in equation (\ref{eq:pdf}), while the points are simulation results to show mathematical correctness. Colors pertain to different times. Units are unspecified, since our aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- the absence of burial.
 	In this case, the joint distribution tends toward Gaussian at large times \citep[e.g.][]{Einstein1937,Lisle1998}. Panel (b) shows the case when grains have rate $\kappa = 0.01$ to become buried while resting.
-	Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. This shows a redistribution of probability to smaller values of $x$ due to the burial process \citep[c.f.][]{Wu2019}. The redistribution is encoded mathematically by the Marcum Q-function terms in equation  \ref{eq:pdf}. A similar tendency is seen in field studies of tracer dispersion in gravel bed rivers \citep[e.g.][]{Hassan1994}.}
+	Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. This shows a redistribution of probability to smaller values of $x$ due to the burial process \citep[c.f.][]{Wu2019}. The redistribution is encoded mathematically by the Marcum Q-function terms in equation  (\ref{eq:pdf}). A similar tendency is seen in field studies of tracer dispersion in gravel bed rivers \citep[e.g.][]{Hassan1994}.}
 	\label{fig:pdfs}
 \end{figure}
 
@@ -233,6 +233,14 @@ We have made no approximations to derive these results. They are exact, analytic
 
 \section{Discussion: scale dependence of bedload diffusion}
 \label{sec:discussion}
+
+%global range requires further study
+\citet{Nikora2002} originally proposed global range sub-diffusion.
+\citet{Phillips2013}, \citet{Martin2012}, and \citet{Bradley2010} all probably observed global range super-diffusion, in agreement with our model.
+\citet{Weeks1998} analyzed the asymmetric random walk with power law residence times, and found depending on the tail parameter of the resting time distribution and characteristics of the step length distribution, diffusion can be either sub-diffusive or super-diffusive as $t\rightarrow \infty$.
+Hence all of these phenomena are conceptually contained in the random walk with power law tails.
+\citet{Martin2012, Martin2014, Pierce2019, Bradley2017} have all posited power-law resting time distributions.
+
 
 
 \begin{figure}[t]
@@ -320,14 +328,15 @@ The variance in equation (\ref{eq:var}) results from the algebra $\sigma_x^2 = \
 
 \section{Limiting behavior of the moments}
 \label{sec:appendixC}
-The easiest approach to extract the earlier results of \cite{Wu2019}, \citet{Lisle1998}, and \citet{Einstein1937} for the moments and positional variance as limiting cases,it's most straightfoward to use the Laplace transformed moments \ref{eq:lapmean} and \ref{eq:lapsecondmom} as a starting point.
-First we obtain the \citet{Wu2019} model. 
+The easiest approach to extract the earlier results of \cite{Wu2019}, \citet{Lisle1998}, and \citet{Einstein1937} for the moments and positional variance as limiting cases,it's most straightforward to use the Laplace transformed moments (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) as a starting point.
+An alternate approach is to take limits in the moments (\ref{eq:mean}) and (\ref{eq:second}) directly, but this is somewhat more challenging.
+First we obtain the \citet{Wu2019} model as a limit case. 
 These authors accounted for sediment burial considering motions to be instantaneous.
 They characterized sediment movement by a thin-tailed step length distribution.
 This implicitly involves an infinite motion velocity.
-To obtain their conclusions on bedload diffusion, we send the mean duration of motion to zero while sending the velocity to infinity ($1/k_2\rightarrow 0$ and $v\rightarrow \infty$) and holding the mean step distance $l = v/k_2$ constant.
+To obtain their conclusions on bedload diffusion, we send the mean duration of motion to zero, the velocity to infinity ($1/k_2\rightarrow 0$ and $v\rightarrow \infty$), and we hold the mean step distance $l = v/k_2$ constant.
 We use the initial condition that grains start at rest ($\theta_1=1$).
-Enacting these limits in equations \ref{eq:lapmean} and \ref{eq:lapsecondmom} provides
+Enacting these limits in equations (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) provides
 \begin{align}
 \bra \tilde{x} \ket &= k_1l\frac{1}{s(s+\kappa)},\\
 \bra \tilde{x}^2 \ket &= 2l^2k_1 \frac{s+\kappa+k_1}{s(s+\kappa)^2}.
@@ -339,27 +348,29 @@ From here, the \citet{Einstein1937} result can be obtained by turning off the bu
 \be \sigma_x^2(t) = 2D_d t.\ee
 This represents a single range of normal diffusion \citep[c.f.][]{Hubbell1964,Nakagawa1976}.
 
-The \citet{Lisle1998} result can be obtained similarly. For this case, we neglect the burial process $(\kappa \rightarrow 0$) but retain the finite velocity and motion duration in equations \ref{eq:lapmean} and \ref{eq:lapsecondmom}.
-This provides 
+The \citet{Lisle1998} result can be obtained similarly. For this case, we neglect the burial process $(\kappa \rightarrow 0$) but retain the finite velocity and motion duration in equations (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}).
+For the initial condition $\theta_1=1$, this provides 
 \begin{align}
-\bra \tilde{x} \ket &= v \frac{\theta_2 s + k_1}{s(s+k')}, \label{eq:li1}\\
-\bra \tilde{x}^2 \ket &= 2v^2 \frac{(s+k_1)(\theta_2s+k_1)}{s^3(s+k')^2}. \label{eq:li2}
+\bra \tilde{x} \ket &= vk_1 \frac{1 }{s^2(s+k')}, \label{eq:li1}\\
+\bra \tilde{x}^2 \ket &= 2v^2k_1 \frac{s+k_1}{s^3(s+k')^2}. \label{eq:li2}
 \end{align}
-Inverting these equations provides a variance encoding two stages of diffusion: at small times there is super-diffusion $\sigma_x^2 \propto t^\gamma$ with $\gamma = 2-3$ depending on the initial condition, and at longer times there is normal diffusion. These equations are lengthy and are not included here, nor were they actually provided in the \citet{Lisle1998} work, as it concentrated on the asymptotic solution in the $t\rightarrow \infty$ limit when $\theta_2=1$. For the sake of completeness we have included a complete analysis of the \citet{Lisle1998} model and its diffusion characteristics in the supplementary information. There we show that equations \ref{eq:li1} and \ref{eq:li2} provide two stages of diffusion and link back to the Einstein model in the limit of instantaneous steps: $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$.
+Inverting these equations provides the variance of the model when $t\ll 1/\kappa$:
+\be \sigma_x^2 = 2v^2k_1\Big(\frac{k_1}{k'^4}\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2kt}\big] + \frac{k_2}{k'^4}\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\ee
+This result encodes two stages of diffusion: at small times there is super-diffusion $\sigma_x^2 \propto t^\gamma$ with $\gamma = 2-3$ depending on the initial condition, and at longer times there is normal diffusion. This links back to the Einstein model in the limit of instantaneous steps: $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$.
 
-Finally, we examine the limit $t\rightarrow 0 $. This will highlight the effect of initial conditions on the local range super-diffusion.
-By applying Tauberian theorems, we can argue the $ t \rightarrow 0$ variance is determined by the $s\rightarrow \infty$ limits of \ref{eq:lapmean} and \ref{eq:lapsecondmom} \citep[e.g.][]{Weiss1994, Weeks1998}.  Expanding these equations in powers of $1/s \rightarrow 0$ and inverting the resulting transforms gives
-\begin{align} \bra x \ket &= v \theta_2 t + \frac{1}{2}v(\theta_1k_1-\theta_2k_2)t^2 + O(t^3)\\
+Finally, we examine the limit $t\rightarrow 0 $ while leaving $\kappa \neq 0$. This will highlight the effect of initial conditions on the local range super-diffusion of the model we present in this letter.
+By applying Tauberian theorems, we can argue the $ t \rightarrow 0$ variance is determined by the $s\rightarrow \infty$ limits of (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) \citep[e.g.][]{Weiss1994, Weeks1998}.  Expanding these equations in powers of $1/s \rightarrow 0$ and inverting the resulting transforms gives
+\begin{align} \bra x \ket &= v \theta_2 t + \frac{1}{2}v(\theta_1k_1-\theta_2k_2)t^2 + O(t^3),\\
 \bra x^2 \ket &= v^2\theta_2 t^2 + \frac{1}{3}v^2(\theta_1k_1-2\theta_2k_2)t^3+ O(t^4).
 \end{align}
-Taking only leading terms, these equations provide the asymptotic ($t\rightarrow 0$) variance 
+Taking only leading order terms for each option of $\theta_1$ and $\theta_2$, these equations provide the asymptotic ($t\rightarrow 0$) variance 
 \be \sigma_x^2(t) \sim v^2\theta_1\theta_2t^2 + \frac{v^2}{3}[\theta_1k_1+\theta_2k_2]t^3.\ee
 In deriving this result, we observe that $t^3$ is the leading order whenever the initial conditions are pure, meaning $\theta_i=0$ for $i=1$ or $i=2$. 
 In contrast, when initial conditions are mixed, meaning $\theta_i \neq 0$ for $i=1$ and $i=2$, $t^2$ is the leading order.
 This justifies the neglect of factors involving the mixture $\theta_1\theta_2$ in the $O(t^3)$ term. 
 
 \acknowledgments
-J. Pierce acknowledges helpful exchanges with Eduardo Daly and Peter H{\"a}nggi during the early stages of this work. He would like to thank Mindy Saunders and Leonardo Golubovic for their careful guidance in mathematics through the years. M. Hassan is supported by an NSERC Discovery grant. The Python simulation code is available at \sloppy
+J. Pierce acknowledges helpful exchanges with Eduardo Daly and Peter H{\"a}nggi during the early stages of this work. He would like to thank Melinda Saunders and Leonardo Golubovic for their careful guidance in mathematics through the years. M. Hassan is supported by an NSERC Discovery grant. The Python simulation code is available at \sloppy
 \url{https://github.com/kevinkayaks/rw-diffu}.
 
 \bibliography{biblio.bib}

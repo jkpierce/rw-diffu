@@ -12,87 +12,62 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: biblio.bib.bib
-Repeated entry---line 1743 of file biblio.bib.bib
- : @article{Campagnol2012
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5126 of file biblio.bib.bib
- : @article{Hassan1994
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5819 of file biblio.bib.bib
- : @article{Saletti2015
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6842 of file biblio.bib.bib
- : @book{Goldstein1980
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8753 of file biblio.bib.bib
- : @article{Frey2014
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8793 of file biblio.bib.bib
- : @article{Nikora2001a
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10264 of file biblio.bib.bib
+Repeated entry---line 3366 of file biblio.bib.bib
  : @article{Einstein1905
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11493 of file biblio.bib.bib
- : @article{Taylor1920
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11664 of file biblio.bib.bib
+Repeated entry---line 10346 of file biblio.bib.bib
  : @article{Bialik2012
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13106 of file biblio.bib.bib
- : @article{Hauer2016
- :                   ,
+Repeated entry---line 11497 of file biblio.bib.bib
+ : @article{Hassan1994
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 12146 of file biblio.bib.bib
+ : @article{Nikora2001a
+ :                     ,
 I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-Warning--No journal in Taylor1920
-You've used 68 entries,
+You've used 48 entries,
             6951 wiz_defined-function locations,
-            1803 strings with 33753 characters,
-and the built_in function-call counts, 138639 in all, are:
-= -- 17004
-> -- 1156
-< -- 6882
-+ -- 7317
-- -- 136
-* -- 9246
-:= -- 25561
-add.period$ -- 278
-call.type$ -- 68
-change.case$ -- 1159
+            1645 strings with 21697 characters,
+and the built_in function-call counts, 95017 in all, are:
+= -- 11742
+> -- 769
+< -- 4609
++ -- 4907
+- -- 96
+* -- 6237
+:= -- 17388
+add.period$ -- 197
+call.type$ -- 48
+change.case$ -- 818
 chr.to.int$ -- 0
-cite$ -- 137
-duplicate$ -- 3889
-empty$ -- 5239
-format.name$ -- 1987
-if$ -- 25910
+cite$ -- 96
+duplicate$ -- 2646
+empty$ -- 3657
+format.name$ -- 1307
+if$ -- 17903
 int.to.chr$ -- 0
-int.to.str$ -- 204
+int.to.str$ -- 144
 missing$ -- 0
-newline$ -- 1838
-num.names$ -- 544
-pop$ -- 1930
+newline$ -- 1272
+num.names$ -- 384
+pop$ -- 1349
 preamble$ -- 1
-purify$ -- 272
+purify$ -- 192
 quote$ -- 0
-skip$ -- 8804
+skip$ -- 6164
 stack$ -- 0
-substring$ -- 7983
-swap$ -- 2260
-text.length$ -- 159
+substring$ -- 5383
+swap$ -- 1538
+text.length$ -- 108
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 5696
-warning$ -- 1
-while$ -- 678
+type$ -- 4032
+warning$ -- 0
+while$ -- 456
 width$ -- 0
-write$ -- 2299
-(There were 10 error messages)
+write$ -- 1573
+(There were 4 error messages)

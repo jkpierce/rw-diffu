@@ -31,69 +31,6 @@ AaraoReis2014}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Ancey%
-, B{\"{o}}hm%
-, Jodeau%
-\BCBL {}\ \BBA {} Frey%
-}{%
-Ancey%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2006}}%
-}]{%
-Ancey2006}
-\APACinsertmetastar {%
-Ancey2006}%
-\begin{APACrefauthors}%
-Ancey, C.%
-, B{\"{o}}hm, T.%
-, Jodeau, M.%
-\BCBL {}\ \BBA {} Frey, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2006}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Statistical description of sediment transport
-  experiments}} {{Statistical description of sediment transport
-  experiments}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physical Review E - Statistical, Nonlinear, and Soft
-  Matter Physics}{74}{1}{1--14}.
-\newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevE.74.011302} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Ancey%
-\ \BBA {} Heyman%
-}{%
-Ancey%
-\ \BBA {} Heyman%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-Ancey2014a}
-\APACinsertmetastar {%
-Ancey2014a}%
-\begin{APACrefauthors}%
-Ancey, C.%
-\BCBT {}\ \BBA {} Heyman, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A microstructural approach to bed load transport: mean
-  behaviour and fluctuations of particle transport rates}} {{A microstructural
-  approach to bed load transport: mean behaviour and fluctuations of particle
-  transport rates}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Fluid Mechanics}{744}{2014}{129--168}.
-\newblock
-\begin{APACrefDOI} \doi{10.1017/jfm.2014.74} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Arfken%
 }{%
 Arfken%
@@ -282,7 +219,7 @@ Bialik2012}%
 \begin{APACrefauthors}%
 Bialik, R\BPBI J.%
 , Nikora, V\BPBI I.%
-\BCBL {}\ \BBA {} Rowi{\'{n}}ski, P\BPBI M.%
+\BCBL {}\ \BBA {} Rowi{\'{n}}ski, P.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -298,9 +235,41 @@ Bialik, R\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bradley%
+D\BPBI N.~Bradley%
+, Tucker%
+\BCBL {}\ \BBA {} Benson%
 }{%
-Bradley%
+D\BPBI N.~Bradley%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Bradley2010}
+\APACinsertmetastar {%
+Bradley2010}%
+\begin{APACrefauthors}%
+Bradley, D\BPBI N.%
+, Tucker, G\BPBI E.%
+\BCBL {}\ \BBA {} Benson, D\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Fractional dispersion in a sand bed river}}
+  {{Fractional dispersion in a sand bed river}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research}{115}{}{F00A09}.
+\newblock
+\begin{APACrefURL} \url{http://doi.wiley.com/10.1029/2009JF001268}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2009JF001268} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+N\BPBI D.~Bradley%
+}{%
+N\BPBI D.~Bradley%
 }{%
 {\protect \APACyear {2017}}%
 }]{%
@@ -322,97 +291,6 @@ Bradley, N\BPBI D.%
 \APACjournalVolNumPages{Geophysical Research Letters}{44}{24}{12,227--12,235}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/2017GL075045} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Campagnol%
-, Radice%
-, Ballio%
-, Milano%
-\BCBL {}\ \BBA {} Dipartimento%
-}{%
-Campagnol%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2012}}%
-}]{%
-Campagnol2012}
-\APACinsertmetastar {%
-Campagnol2012}%
-\begin{APACrefauthors}%
-Campagnol, J.%
-, Radice, A.%
-, Ballio, F.%
-, Milano, P.%
-\BCBL {}\ \BBA {} Dipartimento, I\BPBI I\BPBI A\BPBI R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2012}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Scale-Based Statistical Analysis of Sediment Fluxes}}
-  {{Scale-Based Statistical Analysis of Sediment Fluxes}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Acta Geophysica}{60}{6}{1744--1777}.
-\newblock
-\begin{APACrefDOI} \doi{10.2478/s11600-012-0028-6} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Celik%
-, Diplas%
-\BCBL {}\ \BBA {} Dancey%
-}{%
-Celik%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2014}}%
-}]{%
-Celik2014}
-\APACinsertmetastar {%
-Celik2014}%
-\begin{APACrefauthors}%
-Celik, A\BPBI O.%
-, Diplas, P.%
-\BCBL {}\ \BBA {} Dancey, C\BPBI L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Instantaneous pressure measurements on a spherical
-  grain under threshold flow conditions}} {{Instantaneous pressure measurements
-  on a spherical grain under threshold flow conditions}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Fluid Mechanics}{741}{}{60--97}.
-\newblock
-\begin{APACrefDOI} \doi{10.1017/jfm.2013.632} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Church%
-\ \BBA {} Haschenburger%
-}{%
-Church%
-\ \BBA {} Haschenburger%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-Church2017}
-\APACinsertmetastar {%
-Church2017}%
-\begin{APACrefauthors}%
-Church, M.%
-\BCBT {}\ \BBA {} Haschenburger, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{What is the "active layer"?}} {{What is the "active
-  layer"?}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Water Resources Research}{53}{}{5--10}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/2016WR019675.Received} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -443,35 +321,6 @@ Daly, E.%
   Matter Physics}{81}{6}{1--10}.
 \newblock
 \begin{APACrefDOI} \doi{10.1103/PhysRevE.81.061133} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Dhont%
-\ \BBA {} Ancey%
-}{%
-Dhont%
-\ \BBA {} Ancey%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-Dhont2018}
-\APACinsertmetastar {%
-Dhont2018}%
-\begin{APACrefauthors}%
-Dhont, B.%
-\BCBT {}\ \BBA {} Ancey, C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Are Bedload Transport Pulses in Gravel Bed Rivers
-  Created by Bar Migration or Sediment Waves?}} {{Are Bedload Transport Pulses
-  in Gravel Bed Rivers Created by Bar Migration or Sediment Waves?}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Geophysical Research Letters}{45}{11}{5501--5508}.
-\newblock
-\begin{APACrefDOI} \doi{10.1029/2018GL077792} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -524,56 +373,6 @@ Einstein, H\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-H\BPBI A.~Einstein%
-}{%
-H\BPBI A.~Einstein%
-}{%
-{\protect \APACyear {1942}}%
-}]{%
-Einstein1942}
-\APACinsertmetastar {%
-Einstein1942}%
-\begin{APACrefauthors}%
-Einstein, H\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1942}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Formulas for the transportation of bed load}}
-  {{Formulas for the transportation of bed load}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Transactions of the A.S.C.E.}{106}{}{561--597}.
-\newblock
-\begin{APACrefDOI} \doi{10.1061/(ASCE)HY.1943-7900.0001248.} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-H\BPBI A.~Einstein%
-}{%
-H\BPBI A.~Einstein%
-}{%
-{\protect \APACyear {1950}}%
-}]{%
-Einstein1950}
-\APACinsertmetastar {%
-Einstein1950}%
-\begin{APACrefauthors}%
-Einstein, H\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1950}{}{}.
-\newblock
-\APACrefbtitle {{The Bed-Load Function for Sediment Transportation in Open
-  Channel Flows}} {{The Bed-Load Function for Sediment Transportation in Open
-  Channel Flows}}\ \APACbVolEdTR{}{\BTR{}\ \BNUM\ 1026}.
-\newblock
-\APACaddressInstitution{Washington, DC}{United States Department of
-  Agriculture}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Fan%
 , Singh%
 , Guala%
@@ -610,74 +409,6 @@ Fan, N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Fan%
-, Zhong%
-, Wu%
-, Foufoula-Georgiou%
-\BCBL {}\ \BBA {} Guala%
-}{%
-Fan%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2014}}%
-}]{%
-Fan2014}
-\APACinsertmetastar {%
-Fan2014}%
-\begin{APACrefauthors}%
-Fan, N.%
-, Zhong, D.%
-, Wu, B.%
-, Foufoula-Georgiou, E.%
-\BCBL {}\ \BBA {} Guala, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A mechanistic-stochastic formulation of bed load
-  particle motions: From individual particle forces to the Fokker-Planck
-  equation under low transport rates}} {{A mechanistic-stochastic formulation
-  of bed load particle motions: From individual particle forces to the
-  Fokker-Planck equation under low transport rates}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Geophysical Research: Earth
-  Surface}{1}{119}{2147--2173}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/2013JF003000.Received} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Fathel%
-, Furbish%
-\BCBL {}\ \BBA {} Schmeeckle%
-}{%
-Fathel%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
-}]{%
-Fathel2015}
-\APACinsertmetastar {%
-Fathel2015}%
-\begin{APACrefauthors}%
-Fathel, S\BPBI L.%
-, Furbish, D\BPBI J.%
-\BCBL {}\ \BBA {} Schmeeckle, M\BPBI W.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Experimental evidence of statistical ensemble behavior
-  in bed load sediment transport}} {{Experimental evidence of statistical
-  ensemble behavior in bed load sediment transport}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research F: Earth
-  Surface}{120}{11}{2298--2317}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/2015JF003552} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Flekk{\o}y%
 }{%
 Flekk{\o}y%
@@ -700,55 +431,6 @@ Flekk{\o}y, E\BPBI G.%
 \APACjournalVolNumPages{Physical Review E}{95}{1}{1--6}.
 \newblock
 \begin{APACrefDOI} \doi{10.1103/PhysRevE.95.012139} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Frey%
-}{%
-Frey%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-Frey2014}
-\APACinsertmetastar {%
-Frey2014}%
-\begin{APACrefauthors}%
-Frey, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Particle velocity and concentration profiles in bedload
-  experiments on a steep slope}} {{Particle velocity and concentration profiles
-  in bedload experiments on a steep slope}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Earth Surface Processes and
-  Landforms}{39}{5}{646--655}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/esp.3517} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Goldstein%
-}{%
-Goldstein%
-}{%
-{\protect \APACyear {1980}}%
-}]{%
-Goldstein1980}
-\APACinsertmetastar {%
-Goldstein1980}%
-\begin{APACrefauthors}%
-Goldstein, H.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{1980}.
-\newblock
-\APACrefbtitle {{Classical Mechanics}} {{Classical Mechanics}}.
-\newblock
-\APACaddressPublisher{}{Addison-Weston}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -778,38 +460,6 @@ Gordon, R.%
 \APACjournalVolNumPages{Water Resources Research}{8}{2}{444--458}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/WR008i002p00444} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Hassan%
-\ \BBA {} Bradley%
-}{%
-Hassan%
-\ \BBA {} Bradley%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-Hassan2017}
-\APACinsertmetastar {%
-Hassan2017}%
-\begin{APACrefauthors}%
-Hassan, M\BPBI A.%
-\BCBT {}\ \BBA {} Bradley, D\BPBI N.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Geomorphic controls on tracer particle dispersion in
-  gravel bed rivers}} {{Geomorphic controls on tracer particle dispersion in
-  gravel bed rivers}}.{\BBCQ}
-\newblock
-\BIn{} \APACrefbtitle {Gravel-Bed Rivers: Processes and Disasters} {Gravel-bed
-  rivers: Processes and disasters}\ (\BPGS\ 159--184).
-\newblock
-\APACaddressPublisher{New York, NY}{John Wiley {\&} Sons Ltd.}
-\newblock
-\begin{APACrefDOI} \doi{10.16719/j.cnki.1671-6981.2015.03.007} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -869,70 +519,6 @@ Hassan, M\BPBI A.%
 \APACjournalVolNumPages{Water Resources Research}{27}{4}{503--511}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/90WR02762} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Hauer%
-\ \protect \BOthers {.}}{%
-Hauer%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-Hauer2016}
-\APACinsertmetastar {%
-Hauer2016}%
-\begin{APACrefauthors}%
-Hauer, F\BPBI R.%
-, Locke, H.%
-, Dreitz, V\BPBI J.%
-, Hebblewhite, M.%
-, Lowe, W\BPBI H.%
-, Muhlfeld, C\BPBI C.%
-\BDBL {}Rood, S\BPBI B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Gravel-bed river floodplains are the ecological nexus
-  of glaciated mountain landscapes}} {{Gravel-bed river floodplains are the
-  ecological nexus of glaciated mountain landscapes}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Science Advances}{2}{6}{1--14}.
-\newblock
-\begin{APACrefDOI} \doi{10.1126/sciadv.1600026} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Heyman%
-, Bohorquez%
-\BCBL {}\ \BBA {} Ancey%
-}{%
-Heyman%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2016}}%
-}]{%
-Heyman2016}
-\APACinsertmetastar {%
-Heyman2016}%
-\begin{APACrefauthors}%
-Heyman, J.%
-, Bohorquez, P.%
-\BCBL {}\ \BBA {} Ancey, C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Entrainment, motion, and deposition of coarse particles
-  transported by water over a sloping mobile bed}} {{Entrainment, motion, and
-  deposition of coarse particles transported by water over a sloping mobile
-  bed}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research: Earth
-  Surface}{121}{10}{1931--1952}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/2015JF003672} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1017,65 +603,6 @@ Kittel, C.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Kutner%
-\ \BBA {} Masoliver%
-}{%
-Kutner%
-\ \BBA {} Masoliver%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-Kutner2017}
-\APACinsertmetastar {%
-Kutner2017}%
-\begin{APACrefauthors}%
-Kutner, R.%
-\BCBT {}\ \BBA {} Masoliver, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{The continuous time random walk, still trendy:
-  fifty-year history, state of art and outlook}} {{The continuous time random
-  walk, still trendy: fifty-year history, state of art and outlook}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{European Physical Journal B}{90}{3}{}.
-\newblock
-\begin{APACrefDOI} \doi{10.1140/epjb/e2016-70578-3} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Lee%
-, You%
-\BCBL {}\ \BBA {} Lin%
-}{%
-Lee%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2002}}%
-}]{%
-Lee2002}
-\APACinsertmetastar {%
-Lee2002}%
-\begin{APACrefauthors}%
-Lee, H\BHBI Y.%
-, You, J\BHBI Y.%
-\BCBL {}\ \BBA {} Lin, Y\BHBI T.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2002}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Continuous Saltating Process of Multiple Sediment
-  Particles}} {{Continuous Saltating Process of Multiple Sediment
-  Particles}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Hydraulic Engineering}{128}{4}{443--450}.
-\newblock
-\begin{APACrefDOI} \doi{10.2113/gselements.12.1.39} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Lisle%
 \ \protect \BOthers {.}}{%
 Lisle%
@@ -1101,72 +628,6 @@ Lisle, I\BPBI G.%
   {{Stochastic sediment transport in soil erosion}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Hydrology}{204}{}{217--230}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Macklin%
-\ \protect \BOthers {.}}{%
-Macklin%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2006}}%
-}]{%
-Macklin2006}
-\APACinsertmetastar {%
-Macklin2006}%
-\begin{APACrefauthors}%
-Macklin, M\BPBI G.%
-, Brewer, P\BPBI A.%
-, Hudson-Edwards, K\BPBI A.%
-, Bird, G.%
-, Coulthard, T\BPBI J.%
-, Dennis, I\BPBI A.%
-\BDBL {}Turner, J\BPBI N.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2006}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A geomorphological approach to the management of rivers
-  contaminated by metal mining}} {{A geomorphological approach to the
-  management of rivers contaminated by metal mining}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Geomorphology}{79}{3-4}{423--447}.
-\newblock
-\begin{APACrefDOI} \doi{10.1016/j.geomorph.2006.06.024} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Malmon%
-, Reneau%
-, Dunne%
-, Katzman%
-\BCBL {}\ \BBA {} Drakos%
-}{%
-Malmon%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2005}}%
-}]{%
-Malmon2005}
-\APACinsertmetastar {%
-Malmon2005}%
-\begin{APACrefauthors}%
-Malmon, D\BPBI V.%
-, Reneau, S\BPBI L.%
-, Dunne, T.%
-, Katzman, D.%
-\BCBL {}\ \BBA {} Drakos, P\BPBI G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Influence of sediment storage on downstream delivery of
-  contaminated sediment}} {{Influence of sediment storage on downstream
-  delivery of contaminated sediment}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Water Resources Research}{41}{5}{1--17}.
-\newblock
-\begin{APACrefDOI} \doi{10.1029/2004WR003288} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1224,38 +685,33 @@ Martin, R\BPBI L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Metzler%
-, Jeon%
-, Cherstvy%
-\BCBL {}\ \BBA {} Barkai%
+Martin%
+, Purohit%
+\BCBL {}\ \BBA {} Jerolmack%
 }{%
-Metzler%
+Martin%
 \ \protect \BOthers {.}}{%
 {\protect \APACyear {2014}}%
 }]{%
-Metzler2014}
+Martin2014}
 \APACinsertmetastar {%
-Metzler2014}%
+Martin2014}%
 \begin{APACrefauthors}%
-Metzler, R.%
-, Jeon, J\BPBI H.%
-, Cherstvy, A\BPBI G.%
-\BCBL {}\ \BBA {} Barkai, E.%
+Martin, R\BPBI L.%
+, Purohit, P\BPBI K.%
+\BCBL {}\ \BBA {} Jerolmack, D\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2014}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Anomalous diffusion models and their properties:
-  Non-stationarity, non-ergodicity, and ageing at the centenary of single
-  particle tracking}} {{Anomalous diffusion models and their properties:
-  Non-stationarity, non-ergodicity, and ageing at the centenary of single
-  particle tracking}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Sedimentary bed evolution as a mean-reverting random
+  walk: Implications for tracer statistics}} {{Sedimentary bed evolution as a
+  mean-reverting random walk: Implications for tracer statistics}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Physical Chemistry Chemical
-  Physics}{16}{44}{24128--24164}.
+\APACjournalVolNumPages{Geophysical Research Letters}{41}{17}{6152--6159}.
 \newblock
-\begin{APACrefDOI} \doi{10.1039/c4cp03465a} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1002/2014GL060525} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1442,31 +898,60 @@ Nikora, V.%
 
 \bibitem [\protect \citeauthoryear {%
 Phillips%
-\ \BBA {} Jerolmack%
+, Martin%
+\BCBL {}\ \BBA {} Jerolmack%
 }{%
 Phillips%
-\ \BBA {} Jerolmack%
-}{%
-{\protect \APACyear {2016}}%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
 }]{%
-Phillips2016}
+Phillips2013}
 \APACinsertmetastar {%
-Phillips2016}%
+Phillips2013}%
 \begin{APACrefauthors}%
 Phillips, C\BPBI B.%
-\BCBT {}\ \BBA {} Jerolmack, D\BPBI J.%
+, Martin, R\BPBI L.%
+\BCBL {}\ \BBA {} Jerolmack, D\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2016}{}{}.
+\APACrefYearMonthDay{2013}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{Self-organized river channels are a critical filter on
-  climate signals}} {{Self-organized river channels are a critical filter on
-  climate signals}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Impulse framework for unsteady flows reveals
+  superdiffusive bed load transport}} {{Impulse framework for unsteady flows
+  reveals superdiffusive bed load transport}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Science}{352}{6286}{694--697}.
+\APACjournalVolNumPages{Geophysical Research Letters}{40}{7}{1328--1333}.
 \newblock
-\begin{APACrefDOI} \doi{10.1126/science.aad3348} \end{APACrefDOI}
+\begin{APACrefDOI} \doi{10.1002/grl.50323} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pierce%
+\ \BBA {} Hassan%
+}{%
+Pierce%
+\ \BBA {} Hassan%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+Pierce2019}
+\APACinsertmetastar {%
+Pierce2019}%
+\begin{APACrefauthors}%
+Pierce, J\BPBI K.%
+\BCBT {}\ \BBA {} Hassan, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Joint stochastic model of bedload transport and bed
+  elevations: derivation of heavy-tailed resting times}} {{Joint stochastic
+  model of bedload transport and bed elevations: derivation of heavy-tailed
+  resting times}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research : Earth Surface}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1524,40 +1009,6 @@ Reynolds, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Saletti%
-, Molnar%
-, Zimmermann%
-, Hassan%
-\BCBL {}\ \BBA {} Church%
-}{%
-Saletti%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2015}}%
-}]{%
-Saletti2015}
-\APACinsertmetastar {%
-Saletti2015}%
-\begin{APACrefauthors}%
-Saletti, M.%
-, Molnar, P.%
-, Zimmermann, A\BPBI E.%
-, Hassan, M\BPBI A.%
-\BCBL {}\ \BBA {} Church, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Temporal variability and memory in sediment transport
-  in an experimental step-pool channel}} {{Temporal variability and memory in
-  sediment transport in an experimental step-pool channel}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Water Resour. Res.}{51}{}{1649--1670}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/2015WR017096.Received} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Schmidt%
 , Sagu{\'{e}}s%
 \BCBL {}\ \BBA {} Sokolov%
@@ -1585,41 +1036,6 @@ Schmidt, M\BPBI G.%
 \APACjournalVolNumPages{Journal of Physics Condensed Matter}{19}{6}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.1088/0953-8984/19/6/065118} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Singh%
-, Fienberg%
-, Jerolmack%
-, Marr%
-\BCBL {}\ \BBA {} Foufoula-Georgiou%
-}{%
-Singh%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2009}}%
-}]{%
-Singh2009}
-\APACinsertmetastar {%
-Singh2009}%
-\begin{APACrefauthors}%
-Singh, A.%
-, Fienberg, K.%
-, Jerolmack, D\BPBI J.%
-, Marr, J.%
-\BCBL {}\ \BBA {} Foufoula-Georgiou, E.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2009}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Experimental evidence for statistical scaling and
-  intermittency in sediment transport rates}} {{Experimental evidence for
-  statistical scaling and intermittency in sediment transport rates}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research: Earth
-  Surface}{114}{1}{1--16}.
-\newblock
-\begin{APACrefDOI} \doi{10.1029/2007JF000963} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1658,16 +1074,17 @@ Taylor1920}
 \APACinsertmetastar {%
 Taylor1920}%
 \begin{APACrefauthors}%
-Taylor, G.%
+Taylor, G\BPBI I.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{1920}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{DIFFUSION BY CONTINUOUS MOVEMENTS}} {{DIFFUSION BY
-  CONTINUOUS MOVEMENTS}}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{Diffusion by continuous movements}} {{Diffusion by
+  continuous movements}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{}{6}{}{}.
+\APACjournalVolNumPages{Proceedings of the London Mathematical
+  Society}{s2-20}{1}{196--212}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1726,39 +1143,6 @@ Vallaeys, V.%
 \APACjournalVolNumPages{Journal of the Royal Society Interface}{14}{126}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.1098/rsif.2016.0889} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Voller%
-\ \BBA {} Paola%
-}{%
-Voller%
-\ \BBA {} Paola%
-}{%
-{\protect \APACyear {2010}}%
-}]{%
-Voller2010}
-\APACinsertmetastar {%
-Voller2010}%
-\begin{APACrefauthors}%
-Voller, V\BPBI R.%
-\BCBT {}\ \BBA {} Paola, C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2010}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Can anomalous diffusion describe depositional fluvial
-  profiles?}} {{Can anomalous diffusion describe depositional fluvial
-  profiles?}}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research: Earth
-  Surface}{115}{F2}{n/a----n/a}.
-\newblock
-\begin{APACrefURL} \url{http://doi.wiley.com/10.1029/2009JF001278}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1029/2009JF001278} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

@@ -222,10 +222,10 @@ We have made no approximations to derive these results. They are exact, analytic
 		&\hspace{3cm} + \frac{(\kappa+k_1)(\theta_2\kappa+k_1)}{(b-a)^2}[(bt-1)(b-a)-b]\Big]\\
 		&B_2(t) = \frac{v^2}{2b^3}\Big[(bt+1)[k_1 + \theta_2(2\kappa+k_1-a-b)]+\theta_2b\\
 		&\hspace{3cm} -\frac{(\kappa+k_1)(\theta_2\kappa+k_1)}{(a+b)^2}[(bt+1)(a+b)+b]\Big]\\
-		&C_2 = \frac{v^2}{2b^3}(\kappa+k_1)(\theta_2 \kappa + k_1)\Big[\frac{2a-b}{(b-a)^2}+\frac{a+2b}{(a+b)^2}\Big]\\
+		&C_2 = \frac{v^2}{2b^3}(\kappa+k_1)(\theta_2 \kappa + k_1)\Big[\frac{2b-a}{(b-a)^2}+\frac{a+2b}{(a+b)^2}\Big]\\
 		&A(t) = A_2(t)-2A_1C_1 - A_1^2\exp[(b-a)t]\\
 		&B(t) = B_2(t)-2B_1C_1 - B_1^2\exp[-(a+b)t]\\
-		&C(t) = C_2(t)-C_1^2-2A_1B_1\exp[-2at]\\			
+		&C(t) = C_2-C_1^2-2A_1B_1\exp[-2at]\\			
 		\end{aligned}$\\
 		\bottomrule
 	\end{tabular}
@@ -355,7 +355,7 @@ For the initial condition $\theta_1=1$, this provides
 \bra \tilde{x}^2 \ket &= 2v^2k_1 \frac{s+k_1}{s^3(s+k')^2}. \label{eq:li2}
 \end{align}
 Inverting these equations provides the variance of the model when $t\ll 1/\kappa$:
-\be \sigma_x^2 = 2v^2k_1\Big(\frac{k_1}{k'^4}\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2kt}\big] + \frac{k_2}{k'^4}\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\ee
+\be \sigma_x^2 = 2v^2k_1\Big(\frac{k_1}{k'^4}\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2k't}\big] + \frac{k_2}{k'^4}\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\ee
 This result encodes two stages of diffusion: at small times there is super-diffusion $\sigma_x^2 \propto t^\gamma$ with $\gamma = 2-3$ depending on the initial condition, and at longer times there is normal diffusion. This links back to the Einstein model in the limit of instantaneous steps: $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$.
 
 Finally, we examine the limit $t\rightarrow 0 $ while leaving $\kappa \neq 0$. This will highlight the effect of initial conditions on the local range super-diffusion of the model we present in this letter.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.9)  15 AUG 2019 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.9)  15 AUG 2019 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,12 +504,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--213
 func-tions used in the ex-pres-sions of the mean (13[]),
  []
 
-<./figures/diffusion.png, id=42, 462.64845pt x 289.44135pt>
+<./figures/diffusion.png, id=42, 450.2421pt x 292.09125pt>
 File: ./figures/diffusion.png Graphic file (type png)
 
 <use ./figures/diffusion.png>
 Package pdftex.def Info: ./figures/diffusion.png used on input line 247.
-(pdftex.def)             Requested size: 397.48499pt x 248.68503pt.
+(pdftex.def)             Requested size: 397.48499pt x 257.87453pt.
  [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -825,7 +825,7 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt9.pfb>
-Output written on rwdiffu.pdf (14 pages, 622313 bytes).
+Output written on rwdiffu.pdf (14 pages, 598599 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream

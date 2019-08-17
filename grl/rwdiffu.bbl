@@ -434,6 +434,32 @@ Flekk{\o}y, E\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Giddings%
+\ \BBA {} Eyring%
+}{%
+Giddings%
+\ \BBA {} Eyring%
+}{%
+{\protect \APACyear {1955}}%
+}]{%
+Giddings1955}
+\APACinsertmetastar {%
+Giddings1955}%
+\begin{APACrefauthors}%
+Giddings, J\BPBI C.%
+\BCBT {}\ \BBA {} Eyring, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1955}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A molecular dynamic theory of chromatography}} {{A
+  molecular dynamic theory of chromatography}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Physical Chemistry}{59}{5}{416--420}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Gordon%
 , Carmichael%
 \BCBL {}\ \BBA {} Isackson%

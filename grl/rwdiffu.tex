@@ -97,11 +97,11 @@ The probability of burial per unit time (burial rate) is considered constant, so
 
 % describe meaning of sojourns and g_i/G_i/theta_i
 A central concept in our derivation is the idea of a sojourn in the state $i$ \citep{Weiss1994}.
-When a grain enters a state $i$ at some time $t_0$ and position $x_0$, then leaves a state at some other time $t_1$ and position $x_1$, we say that the grain has completed a sojourn in the state $i$. The joint probability density for a complete sojourn through the state $i$ of time $T = t_1-t_0$ and displacement $X = x_1-x_0$ is denoted $g_i(X,T).$ Similarly, we can consider incomplete sojourns. If a grain begins a sojourn in the state $i$ at $(t_0,x_0)$ and the sojourn is still on-going, the joint probability density to find the grain at $(x_1,t_1)$ is $G_i(X,T)$. The $g_i$ and $G_i$ can be further decomposed when time and space components of the motion are independent \citep{Weiss1994}.
+When a grain enters a state $i$ at some time $t_0$ and position $x_0$, then leaves a state at some other time $t_1$ and position $x_1$, we say that the grain has completed a sojourn in the state $i$. The joint probability density for a complete sojourn through the state $i$ of time $t = t_1-t_0$ and displacement $x = x_1-x_0$ is denoted $g_i(x,t).$ Similarly, we can consider incomplete sojourns. If a grain begins a sojourn in the state $i$ at $(t_0,x_0)$ and the sojourn is still on-going, the joint probability density to find the grain at $(x_1,t_1)$ is $G_i(x,t)$. The $g_i$ and $G_i$ can be further decomposed when time and space components of the motion are independent \citep{Weiss1994}.
 We refer to $g_i$ and $G_i$ as the complete and incomplete propagators, since they move probability through space-time and are associated respectively with complete and incomplete sojourns.
 
 % discuss two-stage derivation of weiss
-Our target is the probability distribution $p(x,t)$ to find a grain at $x,t$ if we know it started at $(x,t)=(0,0)$, i.e., with the initial distribution $p(x,0)=\delta(x)$.
+Our target is the probability distribution $p(x,t)$ to find a grain at $x,t$ if we know it started at $(x,t)=(0,0)$, that is, with the initial distribution $p(x,0)=\delta(x)$.
 We denote the initial probabilities to be at rest or in motion as $\theta_1$ and $\theta_2$. 
 Normalization requires $\theta_1+\theta_2=1$.
 Our derivation has two main steps.
@@ -113,10 +113,10 @@ Afterward, we sum the these distributions over all states $i$ to derive the join
 Now we begin the first stage of the derivation.
 Grains at rest may be trapped by burial.
 We consider burial to be permanent \citep[e.g.][]{Wu2019}, and we assume resting grains may be buried with constant probability per unit time $\kappa$.
-From this assumption, the probability that a grain is not trapped after a time $t$ at rest is given by a survival probability $\Phi_F(t) = e^{-\kappa t}$ ($F$ is for "free"). Likewise, the probability that it is trapped after resting for a time $t$ is the complement $\Phi_T(t) = 1-\Phi_F(t)$ ($T$ is for "trapped").
+From this assumption, the probability that a grain is not trapped after a time $t$ at rest is given by a survival function $\Phi_F(t) = e^{-\kappa t}$ ($F$ is for "free"). Likewise, the probability that it is trapped after resting for a time $t$ is the complement $\Phi_T(t) = 1-\Phi_F(t)$ ($T$ is for "trapped").
 We introduce $\omega_{1T}(x,t)$, $\omega_{1F}(x,t)$, and $\omega_2(x,t)$ as the joint probabilities to find a grain at $(x,t)$ having just completed a sojourn.
 The subscript ${1T}$ denotes the completion of a rest sojourn due to trapping by burial, while $1F$ denotes the completion of a rest sojourn due to motion.
-Similarly, the subscript $2$ denotes the completion of a motion sojourn due to the onset of resting.
+Similarly, the subscript $2$ denotes the completion of a motion sojourn due to resting.
 Using an argument similar to \citet{Weiss1994}, we write integral equations to link the $\omega$'s: 
 \begin{alignat}{2}
 &\om_{1T}(x,t) &&= \theta_1\Phi_T(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_T(t-t')g_1(x-x',t-t')\label{eq:x}\\
@@ -124,7 +124,7 @@ Using an argument similar to \citet{Weiss1994}, we write integral equations to l
 &\om_2(x,t) &&= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \label{eq:y}
 \end{alignat}
 The first equation can be understood as follows: $\omega_{1T}(x,t)$ describes the probability that a sojourn in the state $1$ ends due to trapping at $(x,t)$. This quantity has two contributions. The first contribution represents the possibility that the grain started at $(x,t)=(0,0)$ in the $i=1$ state (with probability $\theta_1$), propagated a distance $x$ and a time $t$ in the $i=1$ state (with probability $g_1(x,t)$), was trapped (with probability $\Phi_T(t)$), and is now at $(x,t)$. 
-The second contribution describes the possibility that the grain was in a motion sojourn which ended at $x',t'$ when it came to rest. From here, it propagated from $x',t'$ to $x,t$ at rest (with probability $g_1(x-x',t-t')$) and was trapped during this sojourn (with probability $\Phi_T(t-t')$).
+The second contribution describes the possibility that the grain was in a motion sojourn which ended at $x',t'$ when it came to rest. From here, it propagated from $x',t'$ to $x,t$ at rest (with probability density $g_1(x-x',t-t')$) and was trapped during this sojourn (with probability density $\Phi_T(t-t')$).
 The other equations can be reasoned similarly; these arguments are analogous to \citet{Weiss1994}.
 Once the propagators are specified, we can solve (\ref{eq:x}-\ref{eq:y}) for the $\omega$'s. This completes the first stage of the derivation.
 
@@ -149,7 +149,7 @@ This joint density is completely determined once (\ref{eq:x}-\ref{eq:z}) are sol
 % choice of propagators
 We consider sojourns in the rest state to occur for an exponentially distributed time interval, given by the distribution $\psi_1(t) = k_1 e^{-k_1t}.$
 The probability that a sojourn in this state lasts for at least the time $t$ is then given by $\Psi_1(t) = \int_t^\infty \psi_1(t)dt = e^{-k_1 t}$.
-Since resting grains do not move, the probability of finding the grain at its starting position is $1$, while the probability of finding it anywhere else is zero.
+Since grains do not move in the rest sojourn, the probability density of finding the grain at position $x$ in the rest sojourn in $\delta(x)$.
 Hence the complete propagator for rest sojourns is $g_1(x,t) = \delta(x)\psi_1(t),$ or 
 \be g_1(x,t) = \delta(x)k_1e^{-k_1t}.\label{eq:prop1} \ee
 Likewise, the incomplete propagator for a rest sojourn is $G_1(x,t) = \delta(x)\Psi_1(t) = \delta(x)e^{-k_1t} = g_1(x,t)/k_1.$
@@ -174,18 +174,20 @@ This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 
 
 
 % solution for case theta_1=1: distribution function
-Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$ and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendixB}. With the shorthand notations $\xi = k_2 x/v$, $\tau = k_1(t-x/v)$, and $\Omega = (\kappa+k_1)/k_1$ \citep[c.f.][]{Lisle1998}, the joint distribution is 
+Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$ and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendixB}. With the shorthand notations $\xi = k_2 x/v$, $\tau = k_1(t-x/v)$, and $\Omega = (\kappa+k_1)/k_1$ \citep[c.f.][]{Lisle1998}, the joint distribution to find a grain at position $x$ at time $t$ is 
 \begin{multline}
 p(x,t) = \theta_1\mathcal{H}(\xi)\mathcal{H}(\tau)\Big[1-\frac{k_1}{\kappa+k_1}\Big(1-e^{-(\kappa+k_1)t}\Big)\Big]\delta(x) \\ + \frac{1}{v}e^{-\Omega \tau - \xi}\mathcal{H}(\xi)\mathcal{H}(\tau)\Big(\theta_1\Big[k_1\mathcal{I}_0\big(2\sqrt{\xi\tau}\big) + k_2\sqrt{\frac{\tau}{\xi}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big] \\ + \theta_2\Big[k_1\delta(\tau) + k_2 \mathcal{I}_0\big(2\sqrt{\xi\tau}\big)+k_1 \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big]\Big) \\
 + \frac{1}{v}\frac{\kappa k_2}{\kappa + k_1}e^{-\kappa \xi/(\kappa + k_1)}\mathcal{H}(\xi)\mathcal{H}(\tau)\Big((\theta_1/\Omega)\mathcal{P}_2(\xi/\Omega,\Omega\tau) + \theta_2 \mathcal{P}_1(\xi/\Omega,\Omega\tau)\Big).
 \label{eq:pdf}
 \end{multline}
 $\mathcal{H}$ is the Heaviside step function and we use the convention $\mathcal{H}(0)=1$.
-The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind, and the $\mathcal{P}_\mu$ are generalized Marcum Q-functions defined by $\mathcal{P}_\mu(x,y) = \int_0^y e^{-z-x}(z/x)^{(\mu-1)/2}\mathcal{I}_{\mu-1}(2\sqrt{xz})dz $ \citep{Temme1996}. Modified Bessel functions are common in one-dimensional diffusion problems \citep[e.g.][]{Einstein1937,Daly2010}. The Marcum Q-functions are convolutions between modified Bessel functions and decaying exponentials. They were originally devised in relation to radar detection theory \citep{Marcum1960}. 
+The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind, and the $\mathcal{P}_\mu$ are generalized Marcum Q-functions defined by $\mathcal{P}_\mu(x,y) = \int_0^y e^{-z-x}(z/x)^{(\mu-1)/2}\mathcal{I}_{\mu-1}(2\sqrt{xz})dz $ \citep{Temme1996}. Modified Bessel functions are common in one-dimensional diffusion problems \citep[e.g.][]{Einstein1937,Giddings1955,Daly2010}. 
+
+The Marcum Q-functions are convolutions between modified Bessel functions and decaying exponentials. They were originally devised in relation to radar detection problems \citep{Marcum1960}. 
 Conceptually, the Q-functions emerge in our context from the sediment burial process. According to our assumptions, resting grains can become buried in some interval of time with an exponential probability. Meanwhile, the probability that grains are resting follows a modified Bessel distribution \citep[e.g.][]{Einstein1937,Lisle1998}.
 As a result, the probability that sediment is resting and becomes buried involves the convolution structure of the Marcum Q-functions.
 Consistent with this interpretation, the terms involving these convolutions vanish when as the burial rate is taken to zero $(\kappa \rightarrow 0)$.
-The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside simulations generated by a direct method. The simulation method evaluates the cumulative transition probabilities on a small timestep \citep[c.f.][]{Barik2006}. A link to the simulation code (including descriptive comments) is available in the acknowledgments.
+The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside simulations generated by a direct method. This method is based on evaluating the cumulative transition probabilities between states on a small timestep \citep[c.f.][]{Barik2006}. A link to the simulation code, which includes descriptive comments, is available in the acknowledgments.
 
 % figure showing distribution functon
 \begin{figure}
@@ -197,11 +199,12 @@ The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside s
 \end{figure}
 
 % solution for theta_1=1: moments
-\noindent The first two moments and the positional variance are derived in appendix \ref{sec:appendixB}. 
+ The first two moments and the positional variance are derived in appendix \ref{sec:appendixB}. 
 The moments take the form
 \be \bra x(t) \ket = A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1 \label{eq:mean}\ee
 \be \bra x^2(t) \ket = A_2(t)e^{(b-a)t}+B_2(t)e^{-(a+b)t}+C_2. \label{eq:second}\ee
 In these equations, $a = (\kappa + k_1+k_2)/2$ and $b = \sqrt{a^2-\kappa k_2}$ are effective rates having dimensions of inverse time.
+We also use the shorthand $k' = k_1 + k_2$.
 The $A_i$ and $B_i$ are polynomials available in table \ref{table:params}.
 The variance is
 \be \sigma_x^2(t) = A(t)e^{(b-a)t} + B(t)e^{-(a+b)t} + C(t). \label{eq:var}\ee
@@ -231,7 +234,7 @@ We have made no approximations to derive these results. They are exact, analytic
 	\end{tabular}
 \end{table}
 
-\section{Discussion: scale dependence of bedload diffusion}
+\section{Discussion of scale-dependent bedload diffusion}
 \label{sec:discussion}
 
 %global range requires further study
@@ -241,11 +244,16 @@ We have made no approximations to derive these results. They are exact, analytic
 Hence all of these phenomena are conceptually contained in the random walk with power law tails.
 \citet{Martin2012, Martin2014, Pierce2019, Bradley2017} have all posited power-law resting time distributions.
 
+timescales are 
+\begin{align} T_L &= \sqrt{\frac{1}{k_2}\frac{1}{k_1}}\\
+T_I &= \sqrt{\frac{1}{k_1}\frac{1}{\kappa}}\\
+T_G &= \sqrt{\frac{1}{\kappa}\frac{k_1+k_2}{\kappa k_1}}
+\end{align}
 
 
 \begin{figure}[t]
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/diffusion.png}
-	\caption{Joint distributions to be at position $x$ at time $t$ for parameters $k_1=0.1s^{-1}$,$k_2=1.0s^{-1}$, and $v=2.0ms^{-1}$.}
+	\caption{Diffusion figure}
 	\label{fig:var}
 \end{figure}
 
@@ -324,12 +332,12 @@ This becomes
 \times \Big((bt-1)e^{(b-a)t}+(bt+1)e^{-(a+b)t}\Big),
 \end{multline}
 which evaluates to equation (\ref{eq:second}).
-The variance in equation (\ref{eq:var}) results from the algebra $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2.$
+The variance in equation (\ref{eq:var}) follows from $\sigma_x^2 = \bra x^2 \ket - \bra x \ket^2.$
 
 \section{Limiting behavior of the moments}
 \label{sec:appendixC}
-The easiest approach to extract the earlier results of \cite{Wu2019}, \citet{Lisle1998}, and \citet{Einstein1937} for the moments and positional variance as limiting cases,it's most straightforward to use the Laplace transformed moments (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) as a starting point.
-An alternate approach is to take limits in the moments (\ref{eq:mean}) and (\ref{eq:second}) directly, but this is somewhat more challenging.
+The easiest approach to extract the earlier results of \cite{Wu2019}, \citet{Lisle1998}, and \citet{Einstein1937} for the moments and positional variance as limiting cases is to use the Laplace transformed moments (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) as a starting point.
+An alternate approach is to take limits in the moments (\ref{eq:mean}) and (\ref{eq:second}) directly, but this is somewhat challenging.
 First we obtain the \citet{Wu2019} model as a limit case. 
 These authors accounted for sediment burial considering motions to be instantaneous.
 They characterized sediment movement by a thin-tailed step length distribution.
@@ -354,11 +362,11 @@ For the initial condition $\theta_1=1$, this provides
 \bra \tilde{x} \ket &= vk_1 \frac{1 }{s^2(s+k')}, \label{eq:li1}\\
 \bra \tilde{x}^2 \ket &= 2v^2k_1 \frac{s+k_1}{s^3(s+k')^2}. \label{eq:li2}
 \end{align}
-Inverting these equations provides the variance of the model when $t\ll 1/\kappa$:
-\be \sigma_x^2 = 2v^2k_1\Big(\frac{k_1}{k'^4}\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2k't}\big] + \frac{k_2}{k'^4}\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\ee
+Inverting these equations provides the variance when $t\ll 1/\kappa$:
+\be \sigma_x^2 = 2v^2\frac{k_1}{k'^4}\Big(k_1\big[\frac{1}{2} - k'te^{-k't} - \frac{1}{2} e^{-2k't}\big] + k_2\big[-2+k't + (2+k't)e^{-k't}\big]\Big).\ee
 This result encodes two stages of diffusion: at small times there is super-diffusion $\sigma_x^2 \propto t^\gamma$ with $\gamma = 2-3$ depending on the initial condition, and at longer times there is normal diffusion. This links back to the Einstein model in the limit of instantaneous steps: $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$.
 
-Finally, we examine the limit $t\rightarrow 0 $ while leaving $\kappa \neq 0$. This will highlight the effect of initial conditions on the local range super-diffusion of the model we present in this letter.
+Finally, we examine the limit $t\rightarrow 0 $ while leaving $\kappa \neq 0$. This will highlight the effect of initial conditions on the local range super-diffusion.
 By applying Tauberian theorems, we can argue the $ t \rightarrow 0$ variance is determined by the $s\rightarrow \infty$ limits of (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) \citep[e.g.][]{Weiss1994, Weeks1998}.  Expanding these equations in powers of $1/s \rightarrow 0$ and inverting the resulting transforms gives
 \begin{align} \bra x \ket &= v \theta_2 t + \frac{1}{2}v(\theta_1k_1-\theta_2k_2)t^2 + O(t^3),\\
 \bra x^2 \ket &= v^2\theta_2 t^2 + \frac{1}{3}v^2(\theta_1k_1-2\theta_2k_2)t^3+ O(t^4).

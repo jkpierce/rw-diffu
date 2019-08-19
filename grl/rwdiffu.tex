@@ -119,20 +119,20 @@ The subscript ${1T}$ denotes the completion of a rest sojourn due to trapping by
 Similarly, the subscript $2$ denotes the completion of a motion sojourn due to resting.
 Using an argument similar to \citet{Weiss1994}, we write integral equations to link the $\omega$'s: 
 \begin{alignat}{2}
-&\om_{1T}(x,t) &&= \theta_1\Phi_T(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_T(t-t')g_1(x-x',t-t')\label{eq:x}\\
-&\om_{1F}(x,t) &&= \theta_1\Phi_F(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi_F(t-t') g_1(x-x',t-t')\\
-&\om_2(x,t) &&= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t') \label{eq:y}
+&\om_{1T}(x,t) &&= \theta_1\Phi_T(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t')\Phi_T(t-t')g_1(x-x',t-t')\label{eq:x},\\
+&\om_{1F}(x,t) &&= \theta_1\Phi_F(t)g_1(x,t) + \int_0^x dx' \int_0^t dt' \om_2(x',t') \Phi_F(t-t') g_1(x-x',t-t'),\\
+&\om_2(x,t) &&= \theta_2 g_2(x,t) + \int_0^x dx' \int_0^t dt' \om_{1F}(x',t')g_2(x-x',t-t'). \label{eq:y}
 \end{alignat}
-The first equation can be understood as follows: $\omega_{1T}(x,t)$ describes the probability that a sojourn in the state $1$ ends due to trapping at $(x,t)$. This quantity has two contributions. The first contribution represents the possibility that the grain started at $(x,t)=(0,0)$ in the $i=1$ state (with probability $\theta_1$), propagated a distance $x$ and a time $t$ in the $i=1$ state (with probability $g_1(x,t)$), was trapped (with probability $\Phi_T(t)$), and is now at $(x,t)$. 
-The second contribution describes the possibility that the grain was in a motion sojourn which ended at $x',t'$ when it came to rest. From here, it propagated from $x',t'$ to $x,t$ at rest (with probability density $g_1(x-x',t-t')$) and was trapped during this sojourn (with probability density $\Phi_T(t-t')$).
+The first equation can be understood as follows: $\omega_{1T}(x,t)$ describes the probability that a sojourn in the state $1$ ends due to trapping at $(x,t)$. This quantity has two contributions. The first contribution represents the possibility that the grain started at $(x,t)=(0,0)$ in the $i=1$ state (with probability $\theta_1$), propagated a distance $x$ and a time $t$ in the $i=1$ state (with probability density $g_1(x,t)$), was trapped (with probability $\Phi_T(t)$), and is now at $(x,t)$. 
+The second contribution describes the possibility that the grain was in a motion sojourn which ended at $x',t'$ when it came to rest. From here, it propagated from $x',t'$ to $x,t$ at rest (with probability density $g_1(x-x',t-t')$) and was trapped during this sojourn (with probability $\Phi_T(t-t')$).
 The other equations can be reasoned similarly; these arguments are analogous to \citet{Weiss1994}.
 Once the propagators are specified, we can solve (\ref{eq:x}-\ref{eq:y}) for the $\omega$'s. This completes the first stage of the derivation.
 
 % derive p's
 The second stage of our derivation involves the joint probabilities of being in state regardless of whether a sojourn has just completed. These are denoted by  $p_0(x,t)$ (trapped), $p_1(x,t)$ (rest), and $p_2(x,t)$ (motion), and they involve the $\omega$'s for their definition:
 \begin{align}
-p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t') \label{eq:b}\\
-p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t')\label{eq:a}\\
+p_0(x,t) &= \int_0^t dt' \omega_{1T}(x,t-t'), \label{eq:b}\\
+p_1(x,t) &= \theta_1 G_1(x,t) + \int_0^x dx' \int_0^t dt' \omega_2(x',t')G_1(x-x',t-t'),\label{eq:a}\\
 p_2(x,t) &= \theta_2 G_2(x,t) + \int_0^x dx' \int_0^t dt'  \omega_{1F}(x',t')G_2(x-x',t-t').\label{eq:z}
 \end{align}
 Equation (\ref{eq:b}) says that grains buried at any $(x,t)$ arrived there due to trapping at $x$ at any time leading up to $t$.
@@ -148,8 +148,8 @@ This joint density is completely determined once (\ref{eq:x}-\ref{eq:z}) are sol
 \label{sec:solution}
 % choice of propagators
 We consider sojourns in the rest state to occur for an exponentially distributed time interval, given by the distribution $\psi_1(t) = k_1 e^{-k_1t}.$
-The probability that a sojourn in this state lasts for at least the time $t$ is then given by $\Psi_1(t) = \int_t^\infty \psi_1(t)dt = e^{-k_1 t}$.
-Since grains do not move in the rest sojourn, the probability density of finding the grain at position $x$ in the rest sojourn in $\delta(x)$.
+The probability that a sojourn in this state lasts for at least a time $t$ is then given by $\Psi_1(t) = \int_t^\infty \psi_1(t)dt = e^{-k_1 t}$.
+Since grains do not move in the rest sojourn, the probability density that a grain is displaced by a distance $x$ in the rest sojourn in $\delta(x)$.
 Hence the complete propagator for rest sojourns is $g_1(x,t) = \delta(x)\psi_1(t),$ or 
 \be g_1(x,t) = \delta(x)k_1e^{-k_1t}.\label{eq:prop1} \ee
 Likewise, the incomplete propagator for a rest sojourn is $G_1(x,t) = \delta(x)\Psi_1(t) = \delta(x)e^{-k_1t} = g_1(x,t)/k_1.$
@@ -161,20 +161,20 @@ while the incomplete propagator is $G_2(x,t) = g_2(x,t)/k_2$ as before.
 
 % distribution functions and moments in laplace space
 Having defined the propagators, we set out to solve (\ref{eq:x}-\ref{eq:z}) and understand bedload diffusion with a finite motion interval and when subject to trapping by burial.
-The convolution structure of (\ref{eq:x}-\ref{eq:z}) presents a formidable problem.
+The convolution structure of equations (\ref{eq:x}-\ref{eq:z}) presents a formidable problem.
 Luckily, we have the device of Laplace transforms.
 These project integro-differential equations into an alternate space in which convolutions are unraveled \citep[e.g.][]{Arfken1985}.
 The double Laplace transform of a joint probability distribution $p(x,t)$ is defined by 
 \be \tilde{p}(\eta,s) = \int_0^\infty dx e^{-\eta x}\int_0^\infty dt e^{-st} p(x,t). \label{eq:doubletransform}\ee
-The Laplace-transformed moments of $x$ are linked to derivatives of the double-transformed distribution (\ref{eq:doubletransform}) \citep[e.g.][]{Berezhkovskii2002}.
-From (\ref{eq:doubletransform}) it's clear that
+The Laplace-transformed moments of $x$ are linked to derivatives of the double-transformed distribution (\ref{eq:doubletransform}) \citep[cf.][]{Berezhkovskii2002}.
+From equation (\ref{eq:doubletransform}) it's clear that
 \be \bra \tilde{x}(s)^k \ket = (-)^k\partial_\eta^k \tilde{p}(\eta,s)\Big|_{\eta=0}.\label{eq:momenttrick}\ee
 The operator $\bra \circ \ket$ denotes the ensemble average \citep[e.g.][]{Kittel1958}.
 This means we can compute the variance of position as $\sigma_x^2(t) = \bra x^2 \ket - \bra x \ket^2 = \El^{-1} \{\bra\tilde{x}^2 \ket;t\} - \El^{-1} \{\bra\tilde{x} \ket;t\}^2$, where $\El^{-1}$ denotes the inverse Laplace transform \citep[e.g.][]{Arfken1985}. This is a powerful tool, since we can use it to derive the positional variance without integrating the distribution in equation (\ref{eq:dist}).
 
 
 % solution for case theta_1=1: distribution function
-Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$ and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendixB}. With the shorthand notations $\xi = k_2 x/v$, $\tau = k_1(t-x/v)$, and $\Omega = (\kappa+k_1)/k_1$ \citep[c.f.][]{Lisle1998}, the joint distribution to find a grain at position $x$ at time $t$ is 
+Using the propagators (\ref{eq:prop1}-\ref{eq:prop2}) and this transform calculus, the joint distribution $p(x,t)$ is derived in appendix \ref{sec:appendixA}, while the moments $\bra x \ket$ and $\bra x^2 \ket$ and ultimately the variance of position $\sigma_x^2(t)$ are derived in appendix \ref{sec:appendixB}. With the shorthand notations $\xi = k_2 x/v$, $\tau = k_1(t-x/v)$, and $\Omega = (\kappa+k_1)/k_1$ \citep[cf.][]{Lisle1998}, the joint distribution to find a grain at position $x$ at time $t$ is 
 \begin{multline}
 p(x,t) = \theta_1\mathcal{H}(\xi)\mathcal{H}(\tau)\Big[1-\frac{k_1}{\kappa+k_1}\Big(1-e^{-(\kappa+k_1)t}\Big)\Big]\delta(x) \\ + \frac{1}{v}e^{-\Omega \tau - \xi}\mathcal{H}(\xi)\mathcal{H}(\tau)\Big(\theta_1\Big[k_1\mathcal{I}_0\big(2\sqrt{\xi\tau}\big) + k_2\sqrt{\frac{\tau}{\xi}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big] \\ + \theta_2\Big[k_1\delta(\tau) + k_2 \mathcal{I}_0\big(2\sqrt{\xi\tau}\big)+k_1 \sqrt{\frac{\xi}{\tau}}\mathcal{I}_1\big(2\sqrt{\xi\tau}\big)\Big]\Big) \\
 + \frac{1}{v}\frac{\kappa k_2}{\kappa + k_1}e^{-\kappa \xi/(\kappa + k_1)}\mathcal{H}(\xi)\mathcal{H}(\tau)\Big((\theta_1/\Omega)\mathcal{P}_2(\xi/\Omega,\Omega\tau) + \theta_2 \mathcal{P}_1(\xi/\Omega,\Omega\tau)\Big).
@@ -186,15 +186,15 @@ The $\mathcal{I}_\nu$ are modified Bessel functions of the first kind, and the $
 The Marcum Q-functions are convolutions between modified Bessel functions and decaying exponentials. They were originally devised in relation to radar detection problems \citep{Marcum1960}. 
 Conceptually, the Q-functions emerge in our context from the sediment burial process. According to our assumptions, resting grains can become buried in some interval of time with an exponential probability. Meanwhile, the probability that grains are resting follows a modified Bessel distribution \citep[e.g.][]{Einstein1937,Lisle1998}.
 As a result, the probability that sediment is resting and becomes buried involves the convolution structure of the Marcum Q-functions.
-Consistent with this interpretation, the terms involving these convolutions vanish when as the burial rate is taken to zero $(\kappa \rightarrow 0)$.
-The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside simulations generated by a direct method. This method is based on evaluating the cumulative transition probabilities between states on a small timestep \citep[c.f.][]{Barik2006}. A link to the simulation code, which includes descriptive comments, is available in the acknowledgments.
+Consistent with this interpretation, the terms involving these convolutions vanish when the burial rate is taken to zero $(\kappa \rightarrow 0)$.
+The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside simulations generated by a direct method. This method is based on evaluating the cumulative transition probabilities between states on a small timestep \citep[cf.][]{Barik2006}. A link to the simulation code, which includes descriptive comments, is available in the acknowledgments.
 
 % figure showing distribution functon
 \begin{figure}
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/pdf-plot.png}
 	\caption{Joint distributions for a grain to be at position $x$ at time $t$ are displayed for the choice $k_1=0.1$, $k_2=1.0$, $v=2.0$. Grains are considered initially at rest ($\theta_1=1$, $\theta_2=0$). The solid lines are the analytical distribution in equation (\ref{eq:pdf}), while the points are simulation results to show mathematical correctness. Colors pertain to different times. Units are unspecified, since our aim is to demonstrate the general characteristics of $p(x,t)$. Panel (a) shows the case $\kappa=0$ -- the absence of burial.
 	In this case, the joint distribution tends toward Gaussian at large times \citep[e.g.][]{Einstein1937,Lisle1998}. Panel (b) shows the case when grains have rate $\kappa = 0.01$ to become buried while resting.
-	Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. This shows a redistribution of probability to smaller values of $x$ due to the burial process \citep[c.f.][]{Wu2019}. The redistribution is encoded mathematically by the Marcum Q-function terms in equation  (\ref{eq:pdf}). A similar tendency is seen in field studies of tracer dispersion in gravel bed rivers \citep[e.g.][]{Hassan1994}.}
+	Because of burial, the joint distribution tends toward a more uniform distribution than Gaussian. This shows a redistribution of probability to smaller values of $x$ due to the burial process \citep[cf.][]{Wu2019}. The redistribution is encoded mathematically by the Marcum Q-function terms in equation  (\ref{eq:pdf}). A similar tendency is seen in field studies of tracer dispersion in gravel bed rivers \citep[e.g.][]{Hassan1994}.}
 	\label{fig:pdfs}
 \end{figure}
 
@@ -237,6 +237,55 @@ We have made no approximations to derive these results. They are exact, analytic
 \section{Discussion of scale-dependent bedload diffusion}
 \label{sec:discussion}
 
+% diffusion shows three ranges and a range of no diffusion; relies on k2>k1>kap and initial condition theta_1=1.
+% these assumptions seem reasonable in light of experimental data
+% the timescales of these ranges can be reasoned physically. dominant scales are 1/k1, 1/k2, 1/kap. crossovers between the ranges are governed by mixtures of these scales
+% implication is that normal diffusion should be present for a range of times $T_L<t<T_I$
+
+
+The key inputs of the model are the velocity $v$ of moving sediment and three key timescales: $1/k_2$, $1/k_1$, and $1/\kappa$.
+These are the mean duration of motion, the mean duration of rest, and the mean time sediment can rest before becoming buried.
+When $k_2\gg k_1 \gg \kappa$ and $\theta_1=1$, meaning motions are much shorter than rests and that grains start from rest, as displayed in figure (\ref{fig:var}), the model expresses three ranges of diffusion where the positional variance scales approximately as a power law: $\sigma_x^2 \propto t^\gamma$.
+These are identified as the local, intermediate, and global ranges proposed by \citet{Nikora2001a, Nikora2002}.
+There is also a fourth range where there is no diffusion, corresponding to the burial of all sediment grains.
+In between these ranges, there are crossover regions where the scaling is transitional.
+Because these crossovers are relatively narrow, spanning less than a decade of time units, we can characterize them approximately using a crossover time concept.
+As depicted on figure (\ref{fig:var}), the three crossovers are at the times $T_L$ (local/intermediate crossover), $T_I$ (intermediate/global crossover), and $T_G$ (global/geomorphic crossover).
+
+We determine expressions for these crossover times by reasoning about the mechanism generating each diffusion range with the underlying timescales $1/k_1$, $1/k_2$, and $1/\kappa$ of the model.
+
+
+
+ This aligns with the original concept of \citet{Nikora2001a,Nikora2002} and with a variety of bedload transport numerical simulations \citep{Bialik2012}. The model also expresses a period of no diffusion that appears at timescales larger than the global range.
+Because this period involves the burial of sediment grains, its properties should be dependent on scour and fill dynamics within the channel.
+As seen in figure (\ref{fig:var}), between the diffusion ranges, there are relatively narrow cross-over regions in which the scaling does not follow a pure power law.
+Since the crossover regions are narrow, they can be characterized by a set of crossover times.
+As indicated in figure (\ref{fig:var}), these are denoted $T_L$, $T_I$, and $T_G$ for local, intermediate, and global. 
+These timescales can be written in terms of the fundamental scales of sediment motion: $1/k_2$, the mean time spent in motion; $1/k_1$, the mean time spent at rest; and $1/\kappa$, the mean time required for a resting grain to become buried.
+
+The local range is associated with 
+
+
+
+
+There has been increasing emphasis on the timescales of sediment burial and scour to a particular elevation \citep{Nakagawa1980, Voepel2013, Martin2014, Pierce2019}.
+
+
+
+
+
+
+
+% limits to einstein/wu/lisle
+% leveraging approaches from the physics literature on random walks, we present a unifying mathematical framework encompassing the existing sediment diffusion models
+% a longstanding and unsolved issue in sediment diffusion is the effect of morphology.
+% shortcomings of the model include inability to incorporate unsteady transport conditions, and the longstanding problem of morphology.
+% we have identified simplified processes of sediment motion in river channels: entrainment, deposition, and burial.
+% However, a whole host of processes plays a role in real sediment diffusion processes.
+% the effect of morphology on transport is a well-known issue.
+%
+
+
 %global range requires further study
 \citet{Nikora2002} originally proposed global range sub-diffusion.
 \citet{Phillips2013}, \citet{Martin2012}, and \citet{Bradley2010} all probably observed global range super-diffusion, in agreement with our model.
@@ -265,30 +314,30 @@ T_G &= \sqrt{\frac{1}{\kappa}\frac{k_1+k_2}{\kappa k_1}}
 \section{Calculation of the distribution function}
 \label{sec:appendixA}
 Double transforming (\ref{eq:x}-\ref{eq:y}) using the definition (\ref{eq:doubletransform}) gives
-\begin{align}
-\tom_{1T}(\eta,s) &= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s)\\
-\tom_{1F}(\eta,s) &= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa)\\
-\tom_2(\eta,s) &= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s)
-\end{align}
+
+\begin{alignat}{2}
+&\tom_{1T}(\eta,s) &&= \theta_1 \tg_1(\eta,s) + \tom_2(\eta,s)\tg_1(\eta,s)-\tom_{1F}(\eta,s),\\
+&\tom_{1F}(\eta,s) &&= \theta_1\tg_1(\eta,s+\kappa) + \tom_2(\eta,s)\tg_1(\eta,s+\kappa),\\
+&\tom_2(\eta,s) &&= \theta_2 \tg_2(\eta,s) + \tom_{1F}(\eta,s)\tg_2(\eta,s).
+\end{alignat}
 This purely algebraic system solves for 
-\begin{align}
-\tom_{1T}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \label{eq:A} \\
-\tom_{1F}(\eta,s) &= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa)\\
-\tom_{2}(\eta,s) &= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s). 
-\end{align}
+\begin{alignat}{2}
+&\tom_{1T}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\}, \label{eq:A} \\
+&\tom_{1F}(\eta,s) &&= \frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_1(\eta,s+\kappa),\\
+&\tom_{2}(\eta,s) &&= \frac{\theta_2 + \theta_1 \tg_1(\eta,s+\kappa)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\tg_2(\eta,s). 
+\end{alignat}
 Double transforming (\ref{eq:b}-\ref{eq:z}) gives
 \begin{align}
-\tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s)\\
-\tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s) \\
+\tp_0(\eta,s) &= \frac{1}{s}\tom_{1T}(\eta,s),\\
+\tp_1(\eta,s) &= \theta_1 \tG_1(\eta,s) + \tom_2(\eta,s) \tG_1(\eta,s),\\
 \tp_2(\eta,s) &= \theta_2 \tG_2(\eta,s) + \tom_{1F}(\eta,s)\tG_2(\eta,s).\label{eq:Z}
 \end{align}
-The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using (\ref{eq:A}-\ref{eq:Z}) this becomes, in the double Laplace representation, 
+The total probability is $p(x,t) = p_0(x,t) + p_1(x,t) + p_2(x,t)$. Using equations (\ref{eq:A}-\ref{eq:Z}) this becomes, in the double Laplace representation, 
 \begin{multline}
 \tp(\eta,s) = \frac{1}{s}\frac{\theta_1 + \theta_2 \tg_2(\eta,s)}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}\big\{\tg_1(\eta,s)-\tg_1(\eta,s+\kappa) \big\} \\
 +\frac{\theta_1\big[\tG_1(\eta,s) + \tg_1(\eta,s+\kappa)\tG_2(\eta,s)\big]+ \theta_2\big[\tG_2(\eta,s) + \tg_2(\eta,s)\tG_1(\eta,s)\big]}{1-\tg_1(\eta,s+\kappa)\tg_2(\eta,s)}. \\
 \label{eq:lap}
 \end{multline}
-Using the identities $\tg_i(0,s) = \tilde{\psi}_i(s)$ and $\tG_i(0,s) = (1-\tilde{\psi}_i(s))/s$ \citep[e.g.][]{Weiss1994}, it follows that the joint distribution is normalized in space regardless of the choice of propagators, since $\tp(0,s) = \mathcal{L}\{\int_0^\infty dx p(x,t);s\} = \mathcal{L}\{1;s\} = 1/s$.
 Plugging the propagators outlined in equations (\ref{eq:prop1}-\ref{eq:prop2}) into equation (\ref{eq:lap}) gives 
 \be \tilde{p}(\eta,s) = \frac{1}{s}\frac{(s+\kappa + k')s  + \theta_1(s+\kappa )\eta v+ \kappa k_2}{(s+\kappa+k_1)\eta v+(s+\kappa+k')s + \kappa k_2}.\label{eq:nicedist}\ee
 In this equation, $k'=k_1+k_2$, and we have used the normalization requirement of the initial probabilities $\theta_1 + \theta_2 = 1.$
@@ -301,7 +350,7 @@ Taking the remaining inverse transform over $s$, applying results 15.152 (substi
 \begin{multline}
 p(x,t) = \theta_1\Big[1-\frac{k_1}{\kappa + k_1}\big(1-e^{-(\kappa + k_1)t}\big)\Big]\delta(x) + \frac{1}{v}\exp[\Omega \tau - \xi]\\
 \times \El^{-1}\Big\{\Big( \theta_2 + \frac{\theta_1k_1+\theta_2 k_2}{s}+\frac{\theta_1k_1k_2}{s^2} + \frac{\theta_2\kappa k_2}{s(s-\kappa-k_1)} + \frac{\theta_1\kappa k_1 k_2}{s^2(s-\kappa-k_1)}\Big)\\
-\times\exp\big[\frac{\kappa_1 \xi}{vs}\big];\tau/k_1\Big\}.
+\times\exp\big[\frac{k_1 \xi}{s}\big];\tau/k_1\Big\}.
 \end{multline}
 Using entries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from \citet{Prudnikov1992a} in conjunction with the definition of the Marcum Q-function $ \mathcal{P}_\mu(x,t)$ \citep[e.g.][]{Temme1996}, and inserting the Heaviside functions to account for the fact that grains can neither travel backwards nor at speeds exceeding $v$, we finally arrive at equation \ref{eq:pdf} for the joint distribution $p(x,t)$.
 
@@ -354,7 +403,7 @@ Inverting these equations and introducing the variables $c=lk_1$ (an effective v
 This is mathematically identical to the key result of \citet{Wu2019}, providing two ranges of diffusion when $\kappa \ll k_1$. One is normal and the other, induced by sediment burial, is super-diffusive.
 From here, the \citet{Einstein1937} result can be obtained by turning off the burial process ($\kappa \rightarrow 0$):
 \be \sigma_x^2(t) = 2D_d t.\ee
-This represents a single range of normal diffusion \citep[c.f.][]{Hubbell1964,Nakagawa1976}.
+This represents a single range of normal diffusion \citep[cf.][]{Hubbell1964,Nakagawa1976}.
 
 The \citet{Lisle1998} result can be obtained similarly. For this case, we neglect the burial process $(\kappa \rightarrow 0$) but retain the finite velocity and motion duration in equations (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}).
 For the initial condition $\theta_1=1$, this provides 
@@ -367,15 +416,13 @@ Inverting these equations provides the variance when $t\ll 1/\kappa$:
 This result encodes two stages of diffusion: at small times there is super-diffusion $\sigma_x^2 \propto t^\gamma$ with $\gamma = 2-3$ depending on the initial condition, and at longer times there is normal diffusion. This links back to the Einstein model in the limit of instantaneous steps: $1/k_2 \rightarrow 0$ and $v\rightarrow \infty$ while $v/k_2 = l$.
 
 Finally, we examine the limit $t\rightarrow 0 $ while leaving $\kappa \neq 0$. This will highlight the effect of initial conditions on the local range super-diffusion.
-By applying Tauberian theorems, we can argue the $ t \rightarrow 0$ variance is determined by the $s\rightarrow \infty$ limits of (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) \citep[e.g.][]{Weiss1994, Weeks1998}.  Expanding these equations in powers of $1/s \rightarrow 0$ and inverting the resulting transforms gives
+By applying Tauberian theorems, we can argue the $ t \rightarrow 0$ variance is determined by the $s\rightarrow \infty$ limits of (\ref{eq:lapmean}) and (\ref{eq:lapsecondmom}) \citep[e.g.][]{Weiss1994, Weeks1998}.  Expanding these equations in powers of $1/s \ll 1$ and inverting the resulting transforms gives
 \begin{align} \bra x \ket &= v \theta_2 t + \frac{1}{2}v(\theta_1k_1-\theta_2k_2)t^2 + O(t^3),\\
 \bra x^2 \ket &= v^2\theta_2 t^2 + \frac{1}{3}v^2(\theta_1k_1-2\theta_2k_2)t^3+ O(t^4).
 \end{align}
 Taking only leading order terms for each option of $\theta_1$ and $\theta_2$, these equations provide the asymptotic ($t\rightarrow 0$) variance 
-\be \sigma_x^2(t) \sim v^2\theta_1\theta_2t^2 + \frac{v^2}{3}[\theta_1k_1+\theta_2k_2]t^3.\ee
-In deriving this result, we observe that $t^3$ is the leading order whenever the initial conditions are pure, meaning $\theta_i=0$ for $i=1$ or $i=2$. 
-In contrast, when initial conditions are mixed, meaning $\theta_i \neq 0$ for $i=1$ and $i=2$, $t^2$ is the leading order.
-This justifies the neglect of factors involving the mixture $\theta_1\theta_2$ in the $O(t^3)$ term. 
+\be \sigma_x^2(t) \sim v^2\theta_1\theta_2t^2 + \frac{1}{3}v^2(\theta_1k_1+\theta_2k_2)t^3.\ee
+This equation shows the effect of initial conditions on the diffusion characteristics of the local range.
 
 \acknowledgments
 J. Pierce acknowledges helpful exchanges with Eduardo Daly and Peter H{\"a}nggi during the early stages of this work. He would like to thank Melinda Saunders and Leonardo Golubovic for their careful guidance in mathematics through the years. M. Hassan is supported by an NSERC Discovery grant. The Python simulation code is available at \sloppy

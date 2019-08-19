@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: rwdiffu.aux
 The style file: apacite.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -29,45 +29,45 @@ Repeated entry---line 12146 of file biblio.bib.bib
  :                     ,
 I'm skipping whatever remains of this entry
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 49 entries,
+You've used 51 entries,
             6951 wiz_defined-function locations,
-            1653 strings with 21847 characters,
-and the built_in function-call counts, 96675 in all, are:
-= -- 11950
-> -- 783
-< -- 4676
-+ -- 4977
-- -- 98
-* -- 6341
-:= -- 17672
-add.period$ -- 201
-call.type$ -- 49
-change.case$ -- 835
+            1667 strings with 23046 characters,
+and the built_in function-call counts, 100522 in all, are:
+= -- 12419
+> -- 816
+< -- 4869
++ -- 5168
+- -- 102
+* -- 6598
+:= -- 18390
+add.period$ -- 209
+call.type$ -- 51
+change.case$ -- 869
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 2694
-empty$ -- 3729
-format.name$ -- 1331
-if$ -- 18233
+cite$ -- 102
+duplicate$ -- 2797
+empty$ -- 3878
+format.name$ -- 1387
+if$ -- 18958
 int.to.chr$ -- 0
-int.to.str$ -- 147
+int.to.str$ -- 153
 missing$ -- 0
-newline$ -- 1297
-num.names$ -- 392
-pop$ -- 1373
+newline$ -- 1350
+num.names$ -- 408
+pop$ -- 1423
 preamble$ -- 1
-purify$ -- 196
+purify$ -- 204
 quote$ -- 0
-skip$ -- 6282
+skip$ -- 6533
 stack$ -- 0
-substring$ -- 5462
-swap$ -- 1568
-text.length$ -- 110
+substring$ -- 5668
+swap$ -- 1628
+text.length$ -- 114
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4112
+type$ -- 4272
 warning$ -- 0
-while$ -- 463
+while$ -- 482
 width$ -- 0
-write$ -- 1604
+write$ -- 1672
 (There were 4 error messages)

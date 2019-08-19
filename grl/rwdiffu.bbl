@@ -861,6 +861,32 @@ Nakagawa, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Nakagawa%
+\ \BBA {} Tsujimoto%
+}{%
+Nakagawa%
+\ \BBA {} Tsujimoto%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+Nakagawa1980}
+\APACinsertmetastar {%
+Nakagawa1980}%
+\begin{APACrefauthors}%
+Nakagawa, H.%
+\BCBT {}\ \BBA {} Tsujimoto, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1980}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sand bed instability due to bed load motion}} {{Sand
+  bed instability due to bed load motion}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the Hydraulics Division-ASCE}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Nikora%
 }{%
 Nikora%
@@ -1169,6 +1195,38 @@ Vallaeys, V.%
 \APACjournalVolNumPages{Journal of the Royal Society Interface}{14}{126}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.1098/rsif.2016.0889} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Voepel%
+, Schumer%
+\BCBL {}\ \BBA {} Hassan%
+}{%
+Voepel%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Voepel2013}
+\APACinsertmetastar {%
+Voepel2013}%
+\begin{APACrefauthors}%
+Voepel, H.%
+, Schumer, R.%
+\BCBL {}\ \BBA {} Hassan, M\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sediment residence time distributions: Theory and
+  application from bed elevation measurements}} {{Sediment residence time
+  distributions: Theory and application from bed elevation
+  measurements}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Earth
+  Surface}{118}{4}{2557--2567}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/jgrf.20151} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

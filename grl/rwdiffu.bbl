@@ -219,7 +219,7 @@ Bialik2012}%
 \begin{APACrefauthors}%
 Bialik, R\BPBI J.%
 , Nikora, V\BPBI I.%
-\BCBL {}\ \BBA {} Rowi{\'{n}}ski, P.%
+\BCBL {}\ \BBA {} Rowi{\'{n}}ski, P\BPBI M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -235,41 +235,9 @@ Bialik, R\BPBI J.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-D\BPBI N.~Bradley%
-, Tucker%
-\BCBL {}\ \BBA {} Benson%
+Bradley%
 }{%
-D\BPBI N.~Bradley%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2010}}%
-}]{%
-Bradley2010}
-\APACinsertmetastar {%
-Bradley2010}%
-\begin{APACrefauthors}%
-Bradley, D\BPBI N.%
-, Tucker, G\BPBI E.%
-\BCBL {}\ \BBA {} Benson, D\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2010}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Fractional dispersion in a sand bed river}}
-  {{Fractional dispersion in a sand bed river}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research}{115}{}{F00A09}.
-\newblock
-\begin{APACrefURL} \url{http://doi.wiley.com/10.1029/2009JF001268}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1029/2009JF001268} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-N\BPBI D.~Bradley%
-}{%
-N\BPBI D.~Bradley%
+Bradley%
 }{%
 {\protect \APACyear {2017}}%
 }]{%
@@ -289,6 +257,36 @@ Bradley, N\BPBI D.%
   Superdiffusion}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Geophysical Research Letters}{44}{24}{12,227--12,235}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/2017GL075045} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bradley%
+\ \BBA {} Tucker%
+}{%
+Bradley%
+\ \BBA {} Tucker%
+}{%
+{\protect \APACyear {2012}}%
+}]{%
+Bradley2012}
+\APACinsertmetastar {%
+Bradley2012}%
+\begin{APACrefauthors}%
+Bradley, N\BPBI D.%
+\BCBT {}\ \BBA {} Tucker, G\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Measuring gravel transport and dispersion in a mountain
+  river using passive radio tracers}} {{Measuring gravel transport and
+  dispersion in a mountain river using passive radio tracers}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth Surface Processes and
+  Landforms}{37}{}{1034--1045}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/2017GL075045} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
@@ -373,6 +371,31 @@ Einstein, H\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+H\BPBI A.~Einstein%
+}{%
+H\BPBI A.~Einstein%
+}{%
+{\protect \APACyear {1942}}%
+}]{%
+Einstein1942}
+\APACinsertmetastar {%
+Einstein1942}%
+\begin{APACrefauthors}%
+Einstein, H\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1942}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Formulas for the transportation of bed load}}
+  {{Formulas for the transportation of bed load}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Transactions of the A.S.C.E.}{106}{}{561--597}.
+\newblock
+\begin{APACrefDOI} \doi{10.1061/(ASCE)HY.1943-7900.0001248.} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Fan%
 , Singh%
 , Guala%
@@ -434,6 +457,67 @@ Flekk{\o}y, E\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Frey%
+}{%
+Frey%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Frey2014}
+\APACinsertmetastar {%
+Frey2014}%
+\begin{APACrefauthors}%
+Frey, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Particle velocity and concentration profiles in bedload
+  experiments on a steep slope}} {{Particle velocity and concentration profiles
+  in bedload experiments on a steep slope}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth Surface Processes and
+  Landforms}{39}{5}{646--655}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/esp.3517} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Gaeuman%
+, Stewart%
+, Schmandt%
+\BCBL {}\ \BBA {} Pryor%
+}{%
+Gaeuman%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Gaeuman2017}
+\APACinsertmetastar {%
+Gaeuman2017}%
+\begin{APACrefauthors}%
+Gaeuman, D.%
+, Stewart, R.%
+, Schmandt, B.%
+\BCBL {}\ \BBA {} Pryor, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Geomorphic response to gravel augmentation and
+  high-flow dam release in the Trinity River, California}} {{Geomorphic
+  response to gravel augmentation and high-flow dam release in the Trinity
+  River, California}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Earth Surface Processes and
+  Landforms}{42}{15}{2523--2540}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/esp.4191} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Giddings%
 \ \BBA {} Eyring%
 }{%
@@ -486,6 +570,38 @@ Gordon, R.%
 \APACjournalVolNumPages{Water Resources Research}{8}{2}{444--458}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/WR008i002p00444} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hassan%
+\ \BBA {} Bradley%
+}{%
+Hassan%
+\ \BBA {} Bradley%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Hassan2017}
+\APACinsertmetastar {%
+Hassan2017}%
+\begin{APACrefauthors}%
+Hassan, M\BPBI A.%
+\BCBT {}\ \BBA {} Bradley, D\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Geomorphic controls on tracer particle dispersion in
+  gravel bed rivers}} {{Geomorphic controls on tracer particle dispersion in
+  gravel bed rivers}}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Gravel-Bed Rivers: Processes and Disasters} {Gravel-bed
+  rivers: Processes and disasters}\ (\BPGS\ 159--184).
+\newblock
+\APACaddressPublisher{New York, NY}{John Wiley {\&} Sons Ltd.}
+\newblock
+\begin{APACrefDOI} \doi{10.16719/j.cnki.1671-6981.2015.03.007} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -606,6 +722,42 @@ Jeon, J\BPBI H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Kasprak%
+, Wheaton%
+, Ashmore%
+, Hensleigh%
+\BCBL {}\ \BBA {} Peirce%
+}{%
+Kasprak%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+Kasprak2014}
+\APACinsertmetastar {%
+Kasprak2014}%
+\begin{APACrefauthors}%
+Kasprak, A.%
+, Wheaton, J\BPBI M.%
+, Ashmore, P\BPBI E.%
+, Hensleigh, J\BPBI W.%
+\BCBL {}\ \BBA {} Peirce, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The relationship between particle travel distance and
+  channel morphology : Results from physical models of braided rivers}} {{The
+  relationship between particle travel distance and channel morphology :
+  Results from physical models of braided rivers}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research : Earth
+  Surface}{120}{}{55--74}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/2014JF003310.Received} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Kittel%
 }{%
 Kittel%
@@ -626,6 +778,37 @@ Kittel, C.%
   Physics}}.
 \newblock
 \APACaddressPublisher{}{R.E. Krieger Pub. Co.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lajeunesse%
+, Malverti%
+\BCBL {}\ \BBA {} Charru%
+}{%
+Lajeunesse%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Lajeunesse2010}
+\APACinsertmetastar {%
+Lajeunesse2010}%
+\begin{APACrefauthors}%
+Lajeunesse, E.%
+, Malverti, L.%
+\BCBL {}\ \BBA {} Charru, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Bed load transport in turbulent flow at the grain
+  scale: Experiments and modeling}} {{Bed load transport in turbulent flow at
+  the grain scale: Experiments and modeling}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Geophysical Research: Earth
+  Surface}{115}{4}{}.
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2009JF001628} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -654,6 +837,38 @@ Lisle, I\BPBI G.%
   {{Stochastic sediment transport in soil erosion}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Hydrology}{204}{}{217--230}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Macklin%
+\ \protect \BOthers {.}}{%
+Macklin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Macklin2006}
+\APACinsertmetastar {%
+Macklin2006}%
+\begin{APACrefauthors}%
+Macklin, M\BPBI G.%
+, Brewer, P\BPBI A.%
+, Hudson-Edwards, K\BPBI A.%
+, Bird, G.%
+, Coulthard, T\BPBI J.%
+, Dennis, I\BPBI A.%
+\BDBL {}Turner, J\BPBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A geomorphological approach to the management of rivers
+  contaminated by metal mining}} {{A geomorphological approach to the
+  management of rivers contaminated by metal mining}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geomorphology}{79}{3-4}{423--447}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.geomorph.2006.06.024} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -976,34 +1191,6 @@ Phillips, C\BPBI B.%
 \APACjournalVolNumPages{Geophysical Research Letters}{40}{7}{1328--1333}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/grl.50323} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Pierce%
-\ \BBA {} Hassan%
-}{%
-Pierce%
-\ \BBA {} Hassan%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-Pierce2019}
-\APACinsertmetastar {%
-Pierce2019}%
-\begin{APACrefauthors}%
-Pierce, J\BPBI K.%
-\BCBT {}\ \BBA {} Hassan, M\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Joint stochastic model of bedload transport and bed
-  elevations: derivation of heavy-tailed resting times}} {{Joint stochastic
-  model of bedload transport and bed elevations: derivation of heavy-tailed
-  resting times}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Geophysical Research : Earth Surface}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

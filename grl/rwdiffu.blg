@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: rwdiffu.aux
 The style file: apacite.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -12,62 +12,72 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: biblio.bib.bib
-Repeated entry---line 3366 of file biblio.bib.bib
+Repeated entry---line 4939 of file biblio.bib.bib
+ : @article{Lajeunesse2010
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 7384 of file biblio.bib.bib
  : @article{Einstein1905
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10346 of file biblio.bib.bib
- : @article{Bialik2012
- :                    ,
+Repeated entry---line 8065 of file biblio.bib.bib
+ : @article{Frey2014
+ :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11497 of file biblio.bib.bib
+Repeated entry---line 8225 of file biblio.bib.bib
+ : @article{Kasprak2014
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8645 of file biblio.bib.bib
  : @article{Hassan1994
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 12146 of file biblio.bib.bib
- : @article{Nikora2001a
- :                     ,
+Repeated entry---line 8804 of file biblio.bib.bib
+ : @article{Bialik2012
+ :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Pryce2015"
+Warning--I didn't find a database entry for "Sokolev2012"
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 51 entries,
+You've used 57 entries,
             6951 wiz_defined-function locations,
-            1667 strings with 23046 characters,
-and the built_in function-call counts, 100522 in all, are:
-= -- 12419
-> -- 816
-< -- 4869
-+ -- 5168
-- -- 102
-* -- 6598
-:= -- 18390
-add.period$ -- 209
-call.type$ -- 51
-change.case$ -- 869
+            1718 strings with 26283 characters,
+and the built_in function-call counts, 114143 in all, are:
+= -- 14076
+> -- 932
+< -- 5598
++ -- 5935
+- -- 114
+* -- 7542
+:= -- 20961
+add.period$ -- 234
+call.type$ -- 57
+change.case$ -- 972
 chr.to.int$ -- 0
-cite$ -- 102
-duplicate$ -- 2797
-empty$ -- 3878
-format.name$ -- 1387
-if$ -- 18958
+cite$ -- 114
+duplicate$ -- 3165
+empty$ -- 4355
+format.name$ -- 1584
+if$ -- 21439
 int.to.chr$ -- 0
-int.to.str$ -- 153
+int.to.str$ -- 171
 missing$ -- 0
-newline$ -- 1350
-num.names$ -- 408
-pop$ -- 1423
+newline$ -- 1519
+num.names$ -- 456
+pop$ -- 1580
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 228
 quote$ -- 0
-skip$ -- 6533
+skip$ -- 7391
 stack$ -- 0
-substring$ -- 5668
-swap$ -- 1628
-text.length$ -- 114
+substring$ -- 6490
+swap$ -- 1850
+text.length$ -- 132
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 4272
+type$ -- 4816
 warning$ -- 0
-while$ -- 482
+while$ -- 545
 width$ -- 0
-write$ -- 1672
-(There were 4 error messages)
+write$ -- 1885
+(There were 6 error messages)

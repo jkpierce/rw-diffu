@@ -35,9 +35,9 @@
 \correspondingauthor{James Kevin Pierce}{kpierce@alumni.ubc.ca}
 
 \begin{keypoints}
-\item We develop a random-walk model of objects in intermittent transport through an environment with traps.
-\item Its solution provides three ranges of diffusion, two of which are anomalous.
-\item We apply the model to sediment transport in rivers to clarify the scale-dependence of bedload diffusion.
+\item We develop a random-walk model of objects in intermittent transport through an environment with traps
+\item Its solution provides three ranges of diffusion, two of which are anomalous
+\item We apply the model to sediment transport in rivers to clarify the scale-dependence of bedload diffusion
 
 \end{keypoints}
 
@@ -88,8 +88,8 @@ We use the solution in section \ref{sec:discussion} to directly attribute physic
 
 \section{Bedload diffusion with burial as a multi-state random walk}
 \label{sec:model}
-We use a three-state random walk where the states are motion, rest, and burial.
-We label these as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
+Consider a three-state random walk where the states are motion, rest, and burial.
+Label these as $i=2$ (motion), $i=1$ (rest), and $i=0$ (burial).
 Our development of the governing equations for the three-state walk closely mimics \citet{Weiss1994}, and our approach to incorporating the trapping process closely mirrors \citet{Schmidt2007}. 
 In our model, residence times in motion and rest states are random variables characterized by exponential distributions and motions are characterized by a constant velocity $v$.
 We consider burial to be a permanent condition which has some probability to occur when resting grains are covered by transported sediment.
@@ -164,7 +164,7 @@ while the incomplete propagator is $G_2(x,t) = g_2(x,t)/k_2$ as before.
 
 % distribution functions and moments in laplace space
 Having defined the propagators, we set out to solve (\ref{eq:x}-\ref{eq:z}) and understand bedload diffusion with a finite motion interval and when subject to trapping by burial.
-The convolution structure of equations (\ref{eq:x}-\ref{eq:z}) presents a formidable problem.
+The convolution structure  of equations (\ref{eq:x}-\ref{eq:z}) presents a formidable problem.
 Luckily, we have the device of Laplace transforms.
 These project integro-differential equations into an alternate space in which convolutions are unraveled \citep[e.g.][]{Arfken1985}.
 The double Laplace transform of a joint probability distribution $p(x,t)$ is defined by 
@@ -203,7 +203,7 @@ The distribution (\ref{eq:pdf}) is depicted in figure \ref{fig:pdfs} alongside s
 
 % solution for theta_1=1: moments
  The first two moments and the positional variance are derived in appendix \ref{sec:appendixB}.
-The moments take the form
+The moments are
 \begin{align}
 \bra x(t) \ket &= A_1 e^{(b-a)t}+B_1e^{-(a+b)t}+C_1, \label{eq:mean}\\
 \bra x^2(t) \ket &= A_2(t)e^{(b-a)t}+B_2(t)e^{-(a+b)t}+C_2. \label{eq:second}
@@ -249,141 +249,98 @@ Using this terminology, we summarize that when $k_2\gg k_1 \gg \kappa$ and $\the
 \label{sec:discussion}
 \begin{figure}[t]	
 	\includegraphics[width=\linewidth,keepaspectratio]{./figures/diffusion.png}
-	\caption{The variance of equation (\ref{eq:var}) for the parameters $1/k_2 = 1.5$s, $1/k_1 = 30.0$s, and $v=0.1$m/s. These values are comparable to laboratory flume experiments transporting small ($\sim 5$mm) gravels \citep[cf.][]{Lajeunesse2010,Martin2012}. The timescale of burial is set to $1/\kappa = 7200.0$s (two hours), and the initial condition is rest ($\theta_1=1$). The solid line is equation (\ref{eq:var}) while the points are directly simulated. When $k_2\gg k_1 \gg \kappa$, as as is the case in this plot, there are four distinct scaling ranges of $\sigma_x^2$: local, intermediate, global, and geomorphic. Within each range, a slope key is added to demonstrate the scaling $\sigma_x^2 \propto t^\gamma$. There are three crossovers between these ranges, denoted on the figure by vertical lines. Crossover times $T_L$, $T_I$, and $T_G$ are indicated at the bottom of the plot. They are given in equations (\ref{eq:TL}-\ref{eq:TG}) in terms of model parameters. }
+	\caption{The variance equation (\ref{eq:var}) is plotted for the parameters $1/k_2 = 1.5$s, $1/k_1 = 30.0$s, and $v=0.1$m/s. These values are comparable to laboratory flume experiments transporting small ($\sim 5$mm) gravels \citep[cf.][]{Lajeunesse2010,Martin2012}. The timescale of burial is set to $1/\kappa = 7200.0$s (two hours), and the initial condition is rest ($\theta_1=1$). The solid line is equation (\ref{eq:var}) while the points are directly simulated. When $k_2\gg k_1 \gg \kappa$, as as is the case in this plot, there are four distinct scaling ranges of $\sigma_x^2$: local, intermediate, global, and geomorphic. Within each range, a slope key is added to demonstrate the scaling $\sigma_x^2 \propto t^\gamma$. There are three crossovers between these ranges, denoted on the figure by vertical lines. Crossover times $T_L$, $T_I$, and $T_G$ are indicated at the bottom of the plot. They are given in equations (\ref{eq:TL}-\ref{eq:TG}) in terms of model parameters. }
 	\label{fig:var}
 \end{figure}
-% explanation of results. required inputs, general description of phenomena
-% i.e. there are diffusion exponents and crossover times.
-% we call the ranges local, intermediate, global, geomorphic
-% the key problem to understand the diffusion is to clarify the exponents and 
-% the crossover times
+
 The model we have presented involves four parameters. These are the characteristic velocity $v$ of moving sediment and three key timescales: $1/k_2$, $1/k_1$, and $1/\kappa$.
-These timescales represent the mean duration of motion, the mean duration of rest, and the mean duration of rest to become buried.
-As shown in figure \ref{fig:var}, the diffusion in the first three ranges is approximately characterized by scaling laws of the form $\sigma_x^2 \propto t^\gamma$.
+These timescales represent the mean duration of motion, the mean duration of rest, and the mean duration of rest before burial occurs.
+As shown in figure \ref{fig:var}, the diffusion in the first three ranges is approximately characterized by scaling laws $\sigma_x^2 \propto t^\gamma$.
 The exponents $\gamma$ in each range result from competition between different terms in equation (\ref{eq:var}).
-Between these ranges, there are three crossover regions where the scaling is not a pure power law.
-Because these crossover regions are relatively narrow, we can characterize them with crossover times $T_L$, $T_I$, and $T_G$.
-Then the diffusion ranges can be denoted by $0< t < T_L$ (local), $T_L < t < T_I$ (intermediate), $T_I < t <T_G$ (global), and $T_G<t$ (geomorphic).
+Between these ranges, there are three crossover regions where the scaling is not purely a power law.
+Because these crossover regions are relatively narrow, we can approximately characterize them with crossover times $T_L$, $T_I$, and $T_G$.
+Then the diffusion ranges can be divided into $0< t < T_L$ (local), $T_L < t < T_I$ (intermediate), $T_I < t < T_G$ (global), and $T_G < t$ (geomorphic).
 These crossover times are depicted as vertical lines in figure \ref{fig:var}.
 To understand the scale dependence of bedload diffusion expressed by equation \ref{eq:var}, we need to determine the exponents $\gamma$ of each range and express the crossover times $T_L$, $T_I$, and $T_G$ in terms of the model parameters $v$, $k_1$, $k_2$, and $\kappa$.
 
 % now we figure out what the exponents are 
 The diffusion exponents $\gamma$ in the local, intermediate, and global ranges can be determined from two limiting cases of equation (\ref{eq:var}): (1) $t\ll 1/\kappa$, and (2) $1/k_2 \rightarrow 0$ while $vk_2 = \text{const}$.
-Limit (1) corresponds to times so short that sediment burial has not had a chance to occur, while limit (2) corresponds to times so long that individual motions  appear as instantaneous steps (having mean step length $l=vk_2$) \citep[cf.][]{Einstein1937}.
-We evaluate these limits in appendix \ref{sec:appendixC} and conclude that the scaling within the local range is $2 \leq \gamma \leq 3$ depending on the initial conditions $\theta_i$. Within the intermediate range it is $\gamma=1$. Finally, within the global range it is $2 \leq \gamma \leq 3$, depending on the parameters $k_2$, $k_1$, and $\kappa$.
-To summarize, when the timescale parameters of the model satisfy $k_2\gg k_1 \gg \kappa$, it predicts local range superdiffusion, intermediate range normal diffusion, and global range superdiffusion.
+Limit (1) corresponds to times so short that a negligible amount of sediment burial has occurred, while limit (2) corresponds to times so long that individual motions  appear as instantaneous steps (having mean step length $l=vk_2$) \citep[cf.][]{Einstein1937}.
+We evaluate these limits in appendix \ref{sec:appendixC} and conclude the scaling exponent in the local range is $2 \leq \gamma \leq 3$ depending on the initial conditions $\theta_i$; $\gamma=1$ in the intermediate range; and $2 \leq \gamma \leq 3$ within the global range, depending on the parameters $k_2$, $k_1$, and $\kappa$.
+To summarize, when the timescale parameters satisfy $k_2\gg k_1 \gg \kappa$, the model predicts local range superdiffusion, intermediate range normal diffusion, and global range superdiffusion.
 
-% and we figure out the crossover times 
-% talk about where they come from and how your concepts of local,intermediate, and global have been revised away from those of nikora 
-The crossover times between local, intermediate, global, and geomorphic ranges that are depicted in figure \ref{fig:var} are defined by
+The crossover times between local, intermediate, global, and geomorphic ranges depicted in figure \ref{fig:var} are defined by
 \begin{alignat}{2}
 &T_L &&= \sqrt{\frac{1}{k_1}\frac{1}{k_2}}, \label{eq:TL}\\
 &T_I &&= \sqrt{\frac{1}{k_1}\frac{1}{\kappa}},\label{eq:TI}\\
 &T_G &&= \sqrt{\frac{1}{\kappa}\frac{k_1+k_2}{\kappa k_1}} \label{eq:TG}.
 \end{alignat}
-Each of these is a geometric mean of two fundamental timescales of the model.
-The crossover $T_L$ is a measure of the temporal length of smooth segments within bedload trajectories.
-A segment of a trajectory is said to be smooth if it has no sudden changes in velocity.
-According to \citet{Nikora2002}, if trajectories are smooth, we expect superdiffusion.
-Within our model, a trajectory can be expected to be smooth from $t=0$ for either a time $1/k_1$, if a grain is at rest, or for a time $1/k_2$, if the grain is in motion.
-Since $T_L$ is the geometric mean of these two possibilities, it seems reasonable that $T_L$ characterizes the termination of local range superdiffusion.
-Similarly, the crossover $T_I$ is the geometric mean of the average resting time $1/k_1$ and the average period required for sediment to become buried $1/\kappa$.
-The 
+Each of these is a geometric mixture of two fundamental timescales of the model.
+The crossover $T_L$ between local and intermediate ranges is a mixture of the mean times of a single rest and a single motion, while the crossover $T_I$ between intermediate and global ranges is a mixture of the mean time of a single rest and the mean time required for a resting grain to become buried.
+The crossover $T_G$ between global and geomorphic ranges is more difficult to understand. We came to equation (\ref{eq:TG}) by reasoning that the first grains to trap will be those which have almost always been at rest since $t=0$. 
+These will trap at $t\sim1/\kappa$, which is the first timescale in equation (\ref{eq:TG}). The last grains to trap will be those which are likely to be in motion at relatively large times, since this means they have not been in the resting state in which they are susceptible to burial.
+By analogy to the two-state mobile-immobile model of \citet{Ancey2006}, we reason that if grains have been in transport a relatively long time and has not been buried, the fraction of time they spend in motion will be $(1/k_2)/(1/k_1+1/k_2) = k_1/(k_1+k_2)$. For these grains, the trapping rate is effectively reduced to $\kappa k_1/(k_1+k_2)$, which is the second timescale in equation (\ref{eq:TG}).
+We have visually tested the crossover time expressions (\ref{eq:TL}-\ref{eq:TG}) for many parameter choices. As long as they satisfy $k_2\gg k_1 \gg \kappa$, these expressions provide an adequate characterization of the crossover locations between diffusion regimes.
+Equations (\ref{eq:TL}) and (\ref{eq:TI}) are especially trustworthy.
+However, by contriving large values of $k_2$, it is possible to drive $T_G$ to ever larger values, in effect making the crossover region between global and geomorphic ranges arbitrarily wide.
+Ultimately, we suggest these expressions be used with care and in consideration of the idealization being made in representing a crossover region of finite width by a single characteristic time. We suggest the width and characteristics of the crossover regions between the power-law ranges of bedload transport as an open research problem in need of clarification.
+
+We have extended earlier bedload diffusion models to describe four ranges of diffusion instead of one or two.
+Earlier models can be accessed through the two simplified limits used earlier to extract the scaling exponents $\gamma$.
+As discussed in appendix \ref{sec:appendixC}, limit (1) leads directly to the model developed by \citet{Lisle1998} to describe soil transport within a sheet flow, while limit (2) implies identical diffusion characteristics as the active layer formulation of bedload transport gradually undergoing burial developed by \citet{Wu2019}.
+Each of these subsequently limits to the original descriptions of \citet{Einstein1937} and his followers \citep[e.g.][]{Hubbell1964, Nakagawa1976, Yano1969,Shen1980}.
+\citet{Lisle1998} generalized the Einstein model, which is an infinite velocity diffusion model involving instantaneous steps, to include a finite velocity and duration of motion.
+Although \citet{Lisle1998} only mention this anecdotally, their generalization leads to two stages of diffusion, in constrast to the single range of \citet{Einstein1937} and followers \citep[e.g.][]{Yano1969, Nakagawa1976}.
+One is local range superdiffusion and the other is an intermediate range normal diffusion.
+This is shown in appendix \ref{sec:appendixC}.
+\citet{Wu2019} developed an active layer formulation of fluvial bedload transport where sediment grains can be transferred from the active layer (surface) to a substrate layer (burial) with a constant probability per unit time.
+They simplified the problem by considering permanent burial (as we have) and motion by instantaneous steps, deriving two stages of diffusion that we identify as an intermediate range normal diffusion and a global range superdiffusion.
+Our model extends these two works and links them into the formalism of multi-state CTRWs \citep[e.g.][]{Weiss1994} that was implicitly applied by \citet{Einstein1937}. Further developments may benefit from staying close to these unifying ideas from the physics literature.
+
+We identify two key implications of the model we've presented in this letter.
+First, this work is the first to confine the range over which normal diffusion of bedload is expected. We can infer from the classic flume tracer studies that normal diffusion is expected of bedload when the timescale of observation is neither sufficiently small to resolve individual motions nor sufficiently large to resolve the trapping of tracers by sediment burial \citep{Einstein1937, Einstein1942, Yano1969, Yano1969a, Nakagawa1976}. 
+We have quantified this observation. When the timescale under consideration satisfies $T_L<t<T_I$, with $T_L$ and $T_I$ given by equations (\ref{eq:TL}) and (\ref{eq:TI}), we expect normal bedload diffusion $\sigma_x^2 = D_dt$. This heuristic may be useful to discern when and if simple stochastic models of bedload transport may be relevant to environmental science considerations such as contaminant transport \citep[e.g][]{Malmon2005,Macklin2006} or aquatic habitat restoration \citep[e.g.][]{Gaeuman2017}.
+Second, the model links bedload transport understanding across scales. In practice, we might measure sediment diffusion within a channel on one timescale with intent to apply our knowledge at longer or shorter timescales. Often, the measurement timescale is limited by practical reasons. For example, we could determine $k_1$ and $k_2$ by measuring the virtual velocity and diffusivity of sediment tracers in the intermediate range \citep[e.g.][]{Hassan2017}. With an estimate of the trapping rate $\kappa$, equation \ref{eq:var} can predict diffusion characteristics on the global range $T_I<t<T_G$, which is more difficult to study experimentally.
 
 
-
-
-We can infer from the classic flume tracer studies that normal diffusion is expected of bedload when the timescale of observation is not small enough to resolve individual motions (i.e., $t\gg1/k_1$), nor is it large enough to resolve the loss of tracers due to sediment burial ($t\ll1/\kappa$) \citep{Einstein1937, Einstein1942, Yano1969, Nakagawa1976}.
-
-
-
-
-
-
-
-
-
-
-\citet{Nikora2002} originally associated the local range to the timescale "between two successive collisions with the bed", the intermediate range to the timescale of "tens or hundreds of collisions with the bed" or the time "between two successive rests" , and the global range as "consisting of many intermediate trajectories".
-Our interpretation of the ranges displayed in figure \ref{fig:var} differs from that of \citet{Nikora2002}.
-Our model does not explicitly include collisions. It includes only intervals of motion ($1/k_2$), intervals of rest ($1/k_1$), and intervals of rest until trapping by burial ($1/\kappa$).
-Similarly, but not quite identically to \citet{Nikora2002}, we associate local range superdiffusion to the 
-The local range thus terminates at $T_L$ given by equation (\ref{eq:TL}) which is a geometric measure of the duration over which trajectories are typically smooth.
-We deviate further from \citet{Nikora2002} with our concepts of the intermediate and global ranges of diffusion.
-
-
-
-
-\begin{comment}
-    Discuss your conclusions in order of most to least important.
-    
-Compare your results with those from other studies: Are they consistent? If not, discuss possible reasons for the difference.
-
-Mention any inconclusive results and explain them as best you can. You may suggest additional experiments needed to clarify your results.
-
-Briefly describe the limitations of your study to show reviewers and readers that you have considered your experiment’s weaknesses. 
-
-Discuss what your results may mean for researchers in the same field as you, researchers in other fields, and the general public. How could your findings be applied?
-
-State how your results extend the findings of previous studies.
-
-If your findings are preliminary, suggest future studies that need to be carried out.
-
-At the end of your Discussion and Conclusions sections, state your main conclusions once again.
-\end{comment}
-
-% then we discuss the links of the model to earlier works
-% it derives lisle, wu, and einstein
-% thus we provide a unifying framework for bedload diffusion theory which reframes earlier works in a language closer to that originally used by einstein.
-The model we have presented reduces directly to earlier diffusion models in the same simplified limits used to extract the scaling exponents $\gamma$.
-As discussed in Appendix \ref{sec:appendixC}, limit (1) leads directly to the model developed by \citet{Lisle1998} to describe soil transport within a sheet flow, while limit (2) implies identical diffusion as the active layer formulation of bedload transport gradually undergoing burial developed by \citet{Wu2019}.
-
-
-Their model generalizes the Einstein model, which is an infinite velocity diffusion model, to include a finite velocity and a statistical duration of motion.
-Although \citet{Lisle1998} only mention this anecdotally, their generalization of \citet{Einstein1937} leads to two stages of diffusion, one a local range superdiffusion and the other an intermediate range normal diffusion.
-Limit (2) derives diffusion characteristics identical to those of \citet{Wu2019}.
-This model was based on an active layer formulation where sediment grains can be transferred from the active layer to a substrate layer with a constant probability per unit time.
-
-% discuss the implications of the model
-To our knowledge, the model we have presented here is the first attempt to discern the scale dependence of bedload diffusion across local, intermediate, and global scales.
-We have derived three stages of diffusion and a late stage of no diffusion by making two generalizations to the \citet{Einstein1937} model.
-First, we have promoted Einstein's instantaneous steps (with infinite velocity) to motions having finite velocities and durations. Second, we have included the possibility that sediment resting on the surface can become buried by sediment deposited from upstream.
-
-
-This development gives us several key implications:
-First, The model confines the range over which normal diffusion of bedload is expected from below and above for the first time. When the timescale under consideration satisfies $T_L<t<T_I$, with $T_L$ and $T_I$ given by equations (\ref{eq:TL}) and (\ref{eq:TI}), we expect normal bedload diffusion $\sigma_x^2 = D_dt$. This heuristic may be useful to discern when and if simple stochastic models of bedload transport may be relevant to environmental science considerations such as contaminant transport \citep{Macklin2006} or aquatic habitat restoration \citep[e.g.][]{Gaeuman2017}.
-Second, the model is a tool to link information about bedload diffusion across scales. In practice, we might measure sediment diffusion within a channel on one timescale with intent to apply our knowledge at longer or shorter timescales. For example, one could infer $k_1$ and $k_2$ by measuring the virtual velocity and diffusivity of sediment tracers within a channel in the intermediate range $T_L<t<T_I$ \citep[e.g.][]{Hassan2017}. In conjunction with an estimate of the trapping rate $\kappa$, equation \ref{eq:var} permits prediction of diffusion characteristics on the global range $T_I<t<T_G$, which is more difficult to study experimentally.
-
-Finally, we highlight the limitations of the model we've presented and suggest some ideas for further research.
-First, bedload transport characteristics in real rivers are not spatially or temporally homogeneous.
-Channels morphology is known to strongly affect the transport characteristics of bedload tracers \citep[e.g.][]{Kasprak2014,Hassan2017}, and the effect of varying flows on the mobility of sediment grains in natural channels is a significant impediment for stochastic models in the Einstein paradigm \citep{Phillips2013,Bradley2012}.
-Since channel morphology also undergoes dynamic evolution, there is a perspective from which it's as if tracers are transporting within a random environment \citep[cf.][]{Solokev2012}.
-The mathematical framework we've drawn upon here, which began with the CTRW of \citet{Montroll1965} and was developed into the multistate random walk by \citet{Weiss1972, Weiss1994}, is an area of highly active research.
-To understand bedload diffusion, we should join this work.
-River science remains somewhat isolated from mainstream geophysics. 
-We should draw it closer.
-Quote from einstein.
-bam
-
-%> where local intermediate and global ranges exist
-%> thus we have shown how to connect measurements of bedload transport parameters across scales.
-%> have framed bedload diffusion on more physical terms
-
-% suggestions for future research 
-% > shortcomings are assumption of homogeneiety in flow and transport conditions
-% > permanent burial is significant shortcoming. although we identify geomorphic range as a possibility we do not confine its characteristics
-% > thus we need more flume experiments to resolve the full range of bedload transport 
-% > higher resolution field experiments may boost our knowledge of the effects of morphology and flow intermittency. smart rock studies are the future.
-% > we can develop more sophisticated diffusion models by borrowing more from the interdisciplinary literature. This work has shown how.
-
+Finally, we highlight some limitations of our model and suggest some ideas for future research.
+Perhaps the most obvious limitation is that we have considered burial to be a permanent condition, which led to no transport or diffusion in the geomorphic range of timescales.
+In actuality, sediment burial is a temporary process relating to the scour and fill of the sedimentary bed \citep[e.g.][]{Hassan1994,Wong2007,Voepel2013,Martin2014}, and there is a need to better quantify the timescales of this process.
+In particular, there have been no measurements so far of the sediment burial rate $\kappa$ (or $\chi$ in the notation of \citet{Wu2019}). In principle, this could be extracted from flume experiments by timing the duration that tracers can rest on the surface before they become buried.
+Furthermore, existing theoretical studies have attributed sediment resting periods to any resting sediment, whether buried or not \citep[e.g.][]{Voepel2013,Martin2014}.
+We argue this is a process-independent concept of sediment resting.
+This concept implies heavy-tailed sediment resting time distributions \citep[e.g.][]{Martin2012,Hassan2013, Olinde2015}.
+However, one can envision multiple trapping processes in coexistence within channels, such as sediment trapping by burial \citep[e.g.][]{Hassan1994,Haschenburger2013,Ferguson2002} and by stranding on top of bars \citep[e.g.][]{Ferguson2002,Bradley2017} and floodplains \citep[e.g.][]{Malmon2003}.
+We suggest it may be useful to treat sediment resting intervals of sediment exposed on the surface differently than resting intervals of trapped sediment.
+This opens up the possibility to include multiple trapping processes which may act simultaneously and on different timescales into fluvial sediment diffusion models.
+A second limitation we have already alluded to: this limitation is shared by all stochastic bedload transport models we are aware of.
+This is that the role of channel morphology and its evolution on statistical characteristics of sediment transport are experimentally well-known and appreciable \citep[e.g.][]{Pyrce2005,Kasprak2014, Hassan2017}, but this appears to us to have been essentially neglected in models.
+There is a need to better understand the statistical characteristics of bedload transport in a context of channel morphology.
+Presumably, this imparts spatial and temporal variations into these statistics, or it possibly renders them ill-defined, which would be an unfortunate state of affairs.
+This interrelationship between morphology and transport deserves ever more attention.
+The connections are apparently more intimate than some classical researchers realized, if the recent observations of stick-slip motions of bars are any indication \citep{Dhont2018}.
+Finally, with regard to these limitations we highlight that the random walk formalism from the physics literature we have used in this letter \citep{Weiss1994} has been carefully extended to conditions where mobility characteristics vary across space and time. This is called a random walk in a random environment and is a popular concept in biological transport \citep[e.g.][]{Codling2008}. Perhaps there are lessons in this literature for river geophysics. Can the morphologically active river channel be treated as a random environment while bedload grains move in random walks?
+More openness to interdisciplinary research might provide new traction on the problem of appropriately describing bedload transport from local to geomorphic scales.
 
 \section{Conclusion}
-We have drawn on random walk theory developed for condensed matter physics in order to describe the three stages of bedload diffusion first noted by \citet{Nikora2001a,Nikora2002}.
-By revisiting and generalizing the original bedload diffusion theory of \citet{Einstein1937}, we have put forth a model of bedload diffusion for bedload sediment undergoing burial.
-This derives four ranges of bedload diffusion across temporal scales and confines their scaling exponents.
-This implies a scale-dependent description of bedload diffusion which could be applied to environmental science problems.
-Given the ubiquity of anomalous transport across the sciences, we anticipate there are some other applications, perhaps in hydrology or contaminant transport, where such a mobile-immobile diffusion model with trapping from the immobile state might find application.
-We look forward to the exciting developments in Einstein's stochastic paradigm of river science which are sure to stem from this work.
+We have developed a random walk model between alternating mobile and immobile states with a possibility of trapping from the immobile state, and we have used it to describe the diffusion of bedload sediment transporting through a river channel as it gradually becomes buried.
+This ultimately extends the original diffusion model of \citet{Einstein1937}.
+To our knowledge, this model is the first analytical description of bedload diffusion across local, intermediate, global, and geomorphic timescales.
+Pushing the ideas of \citet{Nikora2002} somewhat further, we have suggested a geomorphic range of diffusion to describe the range at timescales larger than the global range that is not properly characterized by existing models of bedload diffusion that do not account for morphodynamic processes.
+Our model implies a possibility to use information from experiments conducted on one timescale to understand sediment diffusion phenomena and related problems such as channel morphology \citep[e.g.][]{Church2006, Hassan2017} and environmental issues \citep[e.g.][]{Macklin2006,Gaeuman2017} on other timescales.
+The next step from this work is to incorporate the bed scour process which re-exposes buried sediment into a bedload diffusion model.
+This will overcome the approximation of permanent burial. 
+The multi-state random walk formalism we used here should readily accommodate this extension \citep[e.g.][]{Weiss1994}.
+This extension would ultimately improve on our efforts and those of \citet{Wu2019} to better describe bedload diffusion across the global and geomorphic ranges.
+ while furthering the research trend of incorporating more physically-based ideas into the research paradigm of Einstein.
+
+
+ 
+
+
+
+
+ 
 
 
 \appendix

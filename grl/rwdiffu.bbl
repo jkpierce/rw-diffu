@@ -89,32 +89,6 @@ Arfken, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Balakrishnan%
-\ \BBA {} Chaturvedi%
-}{%
-Balakrishnan%
-\ \BBA {} Chaturvedi%
-}{%
-{\protect \APACyear {1988}}%
-}]{%
-Balakrishnan1988}
-\APACinsertmetastar {%
-Balakrishnan1988}%
-\begin{APACrefauthors}%
-Balakrishnan, V.%
-\BCBT {}\ \BBA {} Chaturvedi, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1988}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Persistent Diffusion on a Line}} {{Persistent Diffusion
-  on a Line}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physica A}{148}{}{581--596}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Barik%
 , Ghosh%
 \BCBL {}\ \BBA {} Ray%
@@ -143,37 +117,6 @@ Barik, D.%
   Experiment}{}{3}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.1088/1742-5468/2006/03/P03010} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Bena%
-}{%
-Bena%
-}{%
-{\protect \APACyear {2006}}%
-}]{%
-Bena2006}
-\APACinsertmetastar {%
-Bena2006}%
-\begin{APACrefauthors}%
-Bena, I.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2006}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Dichotomous Markov noise: Exact results for
-  out-of-equilibrium systems. A review}} {{Dichotomous Markov noise: Exact
-  results for out-of-equilibrium systems. A review}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{International Journal of Modern Physics
-  B}{20}{20}{2825--2888}.
-\newblock
-\begin{APACrefURL}
-  \url{http://arxiv.org/abs/cond-mat/0606116{\%}0Ahttp://dx.doi.org/10.1142/S0217979206034881}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1142/S0217979206034881} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -487,6 +430,63 @@ Einstein, H\BPBI A.%
 \APACjournalVolNumPages{Transactions of the A.S.C.E.}{106}{}{561--597}.
 \newblock
 \begin{APACrefDOI} \doi{10.1061/(ASCE)HY.1943-7900.0001248.} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ettema%
+\ \BBA {} Mutel%
+}{%
+Ettema%
+\ \BBA {} Mutel%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+Ettema2004}
+\APACinsertmetastar {%
+Ettema2004}%
+\begin{APACrefauthors}%
+Ettema, R.%
+\BCBT {}\ \BBA {} Mutel, C\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Hans Albert Einstein: Innovation and Compromise in
+  Formulating Sediment Transport by Rivers}} {{Hans Albert Einstein: Innovation
+  and Compromise in Formulating Sediment Transport by Rivers}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Hydraulic Engineering}{130}{6}{477--487}.
+\newblock
+\begin{APACrefDOI} \doi{10.1061/(ASCE)0733-9429(2004)130:6(477)}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fa%
+}{%
+Fa%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Fa2014}
+\APACinsertmetastar {%
+Fa2014}%
+\begin{APACrefauthors}%
+Fa, K\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Uncoupled continuous-time random walk model: Analytical
+  and numerical solutions}} {{Uncoupled continuous-time random walk model:
+  Analytical and numerical solutions}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physical Review E - Statistical, Nonlinear, and Soft
+  Matter Physics}{89}{5}{1--9}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.89.052141} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1450,6 +1450,36 @@ Olinde, L.%
 \APACjournalVolNumPages{Water Resources Research}{51}{}{7572--7589}.
 \newblock
 \begin{APACrefDOI} \doi{10.1002/2014WR016259} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Phillips%
+, Martin%
+\BCBL {}\ \BBA {} Jerolmack%
+}{%
+Phillips%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Phillips2013}
+\APACinsertmetastar {%
+Phillips2013}%
+\begin{APACrefauthors}%
+Phillips, C\BPBI B.%
+, Martin, R\BPBI L.%
+\BCBL {}\ \BBA {} Jerolmack, D\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Impulse framework for unsteady flows reveals
+  superdiffusive bed load transport}} {{Impulse framework for unsteady flows
+  reveals superdiffusive bed load transport}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{40}{7}{1328--1333}.
+\newblock
+\begin{APACrefDOI} \doi{10.1002/grl.50323} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

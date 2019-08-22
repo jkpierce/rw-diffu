@@ -1,36 +1,6 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-{Aar{\~{a}}o Reis}%
-\ \BBA {} {Di Caprio}%
-}{%
-{Aar{\~{a}}o Reis}%
-\ \BBA {} {Di Caprio}%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-AaraoReis2014}
-\APACinsertmetastar {%
-AaraoReis2014}%
-\begin{APACrefauthors}%
-{Aar{\~{a}}o Reis}, F\BPBI D.%
-\BCBT {}\ \BBA {} {Di Caprio}, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Crossover from anomalous to normal diffusion in porous
-  media}} {{Crossover from anomalous to normal diffusion in porous
-  media}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physical Review E - Statistical, Nonlinear, and Soft
-  Matter Physics}{89}{6}{1--10}.
-\newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevE.89.062126} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Ancey%
 , B{\"{o}}hm%
 , Jodeau%
@@ -463,33 +433,6 @@ Ettema, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Fa%
-}{%
-Fa%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-Fa2014}
-\APACinsertmetastar {%
-Fa2014}%
-\begin{APACrefauthors}%
-Fa, K\BPBI S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Uncoupled continuous-time random walk model: Analytical
-  and numerical solutions}} {{Uncoupled continuous-time random walk model:
-  Analytical and numerical solutions}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physical Review E - Statistical, Nonlinear, and Soft
-  Matter Physics}{89}{5}{1--9}.
-\newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevE.89.052141} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Fan%
 , Singh%
 , Guala%
@@ -553,58 +496,6 @@ Ferguson, R\BPBI I.%
 \APACjournalVolNumPages{Water Resources Research}{38}{8}{17--1--17--11}.
 \newblock
 \begin{APACrefDOI} \doi{10.1029/2001wr000637} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Flekk{\o}y%
-}{%
-Flekk{\o}y%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-Flekkøy2017}
-\APACinsertmetastar {%
-Flekkøy2017}%
-\begin{APACrefauthors}%
-Flekk{\o}y, E\BPBI G.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Minimal model for anomalous diffusion}} {{Minimal model
-  for anomalous diffusion}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Physical Review E}{95}{1}{1--6}.
-\newblock
-\begin{APACrefDOI} \doi{10.1103/PhysRevE.95.012139} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Frey%
-}{%
-Frey%
-}{%
-{\protect \APACyear {2014}}%
-}]{%
-Frey2014}
-\APACinsertmetastar {%
-Frey2014}%
-\begin{APACrefauthors}%
-Frey, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2014}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{Particle velocity and concentration profiles in bedload
-  experiments on a steep slope}} {{Particle velocity and concentration profiles
-  in bedload experiments on a steep slope}}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Earth Surface Processes and
-  Landforms}{39}{5}{646--655}.
-\newblock
-\begin{APACrefDOI} \doi{10.1002/esp.3517} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

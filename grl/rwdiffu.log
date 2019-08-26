@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.19)  23 AUG 2019 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.19)  25 AUG 2019 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,10 +551,7 @@ Underfull \vbox (badness 4316) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
-[12] [13] [14] (./rwdiffu.bbl
+[11] [12] [13] [14] (./rwdiffu.bbl
 Underfull \hbox (badness 3792) in paragraph at lines 17--35
 \OT1/cmr/m/n/10 i-ment trans-port ex-per-i-ments.  \OT1/cmr/m/it/10 Phys-i-cal 
 Re-view E - Sta-tis-ti-cal, Non-lin-ear, and 
@@ -627,7 +624,7 @@ Underfull \hbox (badness 2229) in paragraph at lines 366--379
 t as a prob-a-bil-ity prob-lem \OT1/cmr/m/n/10 (Un-pub-lished 
  []
 
-[15]
+
 Underfull \hbox (badness 10000) in paragraph at lines 425--445
 \OT1/cmr/m/n/10 a semimech-a-nis-tic episodic Langevin model for bed load trans
 -port: Emer-gence 
@@ -653,6 +650,9 @@ erm tracer stud-ies.
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
 Underfull \hbox (badness 7814) in paragraph at lines 522--541
 []\OT1/cmr/m/n/10 Gaeuman, D., Stew-art, R., Schmandt, B., & Pryor, C.  (2017).
   Ge-o-mor-phic re- 
@@ -753,9 +753,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 949--965
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
 Underfull \hbox (badness 10000) in paragraph at lines 977--997
 []\OT1/cmr/m/n/10 Macklin, M. G., Brewer, P. A., Hudson-Edwards, K. A., Bird, G
 ., Coulthard, T. J., 
@@ -769,6 +766,9 @@ it/10 The Jour-nal of Ge-ol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 111\OT1/cmr/m
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
 Underfull \hbox (badness 10000) in paragraph at lines 1043--1061
 \OT1/cmr/m/n/10 flu-ence of sed-i-ment stor-age on down-stream de-liv-ery of co
 n-tam-i-nated sed-i-ment. 
@@ -854,15 +854,15 @@ Underfull \hbox (badness 2359) in paragraph at lines 1404--1420
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
 Underfull \hbox (badness 3525) in paragraph at lines 1517--1533
 \OT1/cmr/m/n/10 ac-tions for anoma-lous dif-fu-sion: A case study.  \OT1/cmr/m/
 it/10 Jour-nal of Physics Con-densed 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
 Underfull \hbox (badness 7451) in paragraph at lines 1622--1640
 \OT1/cmr/m/n/10 L^^Sevy-flight dif-fu-sion model to pre-dict trans-genic pollen
  dis-per-sal.  \OT1/cmr/m/it/10 Jour-nal of 
@@ -964,10 +964,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 5078 strings out of 492982
- 67499 string characters out of 6134895
- 145951 words of memory out of 5000000
- 8525 multiletter control sequences out of 15000+600000
+ 5076 strings out of 492982
+ 67473 string characters out of 6134895
+ 143951 words of memory out of 5000000
+ 8523 multiletter control sequences out of 15000+600000
  13258 words of font info for 52 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  50i,21n,37p,1018b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -992,7 +992,7 @@ blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 tt9.pfb>
-Output written on rwdiffu.pdf (18 pages, 700164 bytes).
+Output written on rwdiffu.pdf (18 pages, 699930 bytes).
 PDF statistics:
  156 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.9)  26 AUG 2019 12:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.6.9)  30 AUG 2019 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -319,22 +319,27 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count122
 \@lastruleclass=\count123
 \@thisrulewidth=\dimen139
-) (./rwdiffu.aux)
+)
+
+LaTeX Warning: Unused global option(s):
+    [grl].
+
+(./rwdiffu.aux)
 \openout1 = `rwdiffu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
 \scratchdimen=\dimen140
@@ -384,7 +389,7 @@ Package trackchanges Warning: TrackChanges is not compatable with the
 (trackchanges)                Use the 'soul' package instead.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 29.
+LaTeX Info: Redefining \selectfont on input line 49.
 \c@maskedRefs=\count130
 
 (/usr/share/texlive/texmf-dist/tex/latex/apacite/english.apc
@@ -392,173 +397,2112 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (4.59892pt too wide) in paragraph at lines 40--41
+Overfull \hbox (11.98793pt too wide) in paragraph at lines 58--59
+[]\OT1/cmr/m/n/10 We de-velop a ran-dom walk model of ob-jects in in-ter-mit-te
+nt trans-port through an 
+ []
+
+
+Overfull \hbox (17.9323pt too wide) in paragraph at lines 60--61
 []\OT1/cmr/m/n/10 We ap-ply the model to sed-i-ment trans-port in rivers to cla
-r-ify the scale-dependence 
+r-ify the scale de-pen-dence 
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (11.73795pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 Sediment grains trans-port through gravel bed rivers in cy-cles
+ of mo-tion and rest. When 
+ []
+
+
+Overfull \hbox (13.23792pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 grains rest on the sur-face, ma-te-rial trans-ported from up-st
+ream can bury them. The sur- 
+ []
+
+
+Overfull \hbox (8.59904pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 face shields buried grains from the flow, so they can be im-mo-
+bile for long time pe-ri-ods. 
+ []
+
+
+Overfull \hbox (3.59904pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 These im-mo-bile pe-ri-ods can dom-i-nate sed-i-ment dif-fu-sio
+n char-ac-ter-is-tics. Al-though in- 
+ []
+
+
+Overfull \hbox (5.82129pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 ves-ti-ga-tors have rec-og-nized the im-pact of sed-i-ment buri
+al on dif-fu-sion, ex-ist-ing mod-els 
+ []
+
+
+Overfull \hbox (4.37683pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 do not usu-ally in-cor-po-rate it. In this study, we present a 
+ran-dom walk model in-cor-po- 
+ []
+
+
+Overfull \hbox (8.23793pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 rat-ing sed-i-ment burial and solve it an-a-lyt-i-cally. The mo
+del pre-dicts three sed-i-ment dif- 
+ []
+
+
+Overfull \hbox (10.51555pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 fu-sion ranges with dis-tinct scal-ing char-ac-ter-is-tics in e
+ach. We re-late the crossover times 
+ []
+
+
+Overfull \hbox (10.71014pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 di-vid-ing these ranges to mea-sur-able trans-port pa-ram-e-ter
+s and de-scribe each range from 
+ []
+
+
+Overfull \hbox (2.32123pt too wide) in paragraph at lines 64--74
+\OT1/cmr/m/n/10 un-der-ly-ing phys-i-cal pro-cesses. Our de-vel-op-ments pro-vi
+de new geo-phys-i-cal per-spec-tive 
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 56.
+(Font)              size <10.95> substituted on input line 76.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 56.
+(Font)              size <10.95> substituted on input line 76.
+
+
+Overfull \hbox (11.5989pt too wide) in paragraph at lines 78--88
+[]\OT1/cmr/m/n/10 Anomalous dif-fu-sion has been sub-jected to in-tense re-sear
+ch lately, as it emerges in 
+ []
+
+
+Overfull \hbox (11.57132pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 con-texts rang-ing from the trans-port of choles-terols through
+ lipid bi-lay-ers (Jeon, Monne, 
+ []
+
+
+Overfull \hbox (11.97412pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 Ja-vanainen, & Met-zler, 2012; Molina-Garcia et al.[], 2018), t
+o con-tam-i-nants through soils 
+ []
+
+
+Overfull \hbox (13.48795pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 (Berkowitz, Cor-tis, Dentz, & Scher, 2006; X. R. Yang & Wang, 2
+019), and pol-li-na-tor in- 
+ []
+
+
+Overfull \hbox (7.40451pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 sects through ecosys-tems (Reynolds & Rhodes, 2009; Val-laeys, 
+Tyson, Lane, Deleer-sni- 
+ []
+
+
+Overfull \hbox (18.32126pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 jder, & Han-ert, 2017). In this pa-per, we study anoma-lous dif
+-fu-sion in a river sci-ence con- 
+ []
+
+
+Overfull \hbox (2.54344pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 text, where it emerges from coarse bed-load sed-i-ment trans-po
+rt-ing through river chan- 
+ []
+
+
+Overfull \hbox (6.96016pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 nels (N. D. Bradley, 2017; Ganti, Meer-schaert, Foufoula-Georgi
+ou, Vipar-elli, & Parker, 
+ []
+
+
+Overfull \hbox (1.82129pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 2010; Mar-tin, Jerol-mack, & Schumer, 2012). Hans Al-bert Ein-s
+tein de-vel-oped the first 
+ []
+
+
+Overfull \hbox (6.96022pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 model of bed-load dif-fu-sion to de-scribe his com-pre-hen-sive
+ ex-per-i-ments vi-su-ally track-ing 
+ []
+
+
+Overfull \hbox (13.26582pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 painted grains through a flume (H. A. Ein-stein, 1937; Et-tema 
+& Mu-tel, 2004). Dif-fu-sion 
+ []
+
+
+Overfull \hbox (9.57127pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 is the spread-ing apart of grains as they trans-port down-strea
+m, and it is in-duced by dif- 
+ []
+
+
+Overfull \hbox (4.43234pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 fer-ences in the trans-port char-ac-ter-is-tics of one grain an
+d the next. Dif-fu-sion is usu-ally 
+ []
+
+
+Overfull \hbox (16.23688pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 quan-ti-fied by the time de-pen-dence of the po-si-tional vari-
+ance $\OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 
+)$ of a pop-u-la-tion. With 
+ []
+
+
+Overfull \hbox (15.07133pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 dif-fu-sion prob-lems (e.g., A. Ein-stein, 1905; Tay-lor, 1920)
+. How-ever, many trans-port phe- 
+ []
+
+
+Overfull \hbox (19.56444pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 2012). If $\OML/cmm/m/it/10 ^^M > \OT1/cmr/m/n/10 1$, it is sai
+d to be super-diffusive; while if $\OML/cmm/m/it/10 ^^M < \OT1/cmr/m/n/10 1$, i
+t is said to be sub-diffusive 
+ []
+
+
+Overfull \hbox (4.79356pt too wide) in paragraph at lines 78--88
+\OT1/cmr/m/n/10 (Met-zler & Klafter, 2000). Ein-stein orig-i-nally con-cluded t
+hat bed-load trans-port shows 
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
+Overfull \hbox (19.75183pt too wide) in paragraph at lines 89--96
+[]\OT1/cmr/m/n/10 After Ein-stein, Nikora, Haber-sack, Hu-ber, and McE-wan (200
+2); Nikora, Heald, Gor- 
+ []
+
+
+Overfull \hbox (0.23792pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 ing, and McE-wan (2001) rec-og-nized that coarse sed-i-ment mov
+-ing through river chan- 
+ []
+
+
+Overfull \hbox (1.87682pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 nels can show ei-ther anoma-lous or nor-mal dif-fu-sion de-pend
+-ing on the timescale of ob- 
+ []
+
+
+Overfull \hbox (10.82118pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 ser-va-tion. This is a sig-nif-i-cant is-sue since it im-plies 
+dif-fu-sion mod-els should be scale de- 
+ []
+
+
+Overfull \hbox (1.32126pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 pen-dent, and it ren-ders ex-per-i-men-tal data con-tin-gent on
+ their ob-ser-va-tion timescales. 
+ []
+
+
+Overfull \hbox (11.04353pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 Nikora et al. iden-ti-fied three ranges of dif-fu-sion from New
+-to-nian sim-u-la-tions and ex-per- 
+ []
+
+
+Overfull \hbox (14.07126pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 i-men-tal data and termed these ranges lo-cal, in-ter-me-di-ate
+, and global in or-der of in-creas- 
+ []
+
+
+Overfull \hbox (26.9867pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 ing timescale. They de-ter-mined that $\OML/cmm/m/it/10 ^^[[]$ 
+\OT1/cmr/m/n/10 scales with a dif-fer-ent power of time in each range, 
+ []
+
+
+Overfull \hbox (7.62683pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 and they con-cluded this scal-ing could be anoma-lous or nor-ma
+l. Re-cent stud-ies sup-port 
+ []
+
+
+Overfull \hbox (5.09908pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 the Nikora et al. con-clu-sion that bed-load dif-fu-sion is sca
+le de-pen-dent, but they do not 
+ []
+
+
+Overfull \hbox (13.54341pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 show con-sen-sus on the de-tails of their three range con-cept.
+ For ex-am-ple, var-i-ous nu-mer- 
+ []
+
+
+Overfull \hbox (5.1824pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 i-cal ap-proaches show two (e.g., Fan, Singh, Guala, Foufoula-G
+eorgiou, & Wu, 2016) or 
+ []
+
+
+Overfull \hbox (0.48796pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 three (e.g., Bia-lik, Nikora, & Rowi^^Snski, 2012; Zhang, Meer-
+schaert, & Pack-man, 2012) 
+ []
+
+
+Overfull \hbox (9.87679pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 ranges of dif-fu-sion; one set of flume ex-per-i-ments shows tw
+o ranges of sed-i-ment dif-fu-sion 
+ []
+
+
+Overfull \hbox (24.62692pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 (Mar-tin et al.[], 2012), and two field stud-ies show anoma-lou
+s dif-fu-sion (N. D. Bradley, 2017; 
+ []
+
+
+Overfull \hbox (9.40459pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 Phillips, Mar-tin, & Jerol-mack, 2013); but taken to-gether, th
+ese stud-ies leave us un-clear 
+ []
+
+
+Overfull \hbox (9.12686pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 on the ex-pected num-ber of dif-fu-sion ranges and the scal-ing
+ (su-per/normal/sub) of each 
+ []
+
+
+Overfull \hbox (0.43236pt too wide) in paragraph at lines 89--96
+\OT1/cmr/m/n/10 range. Up to now, no model has been de-vel-oped to de-rive thre
+e dif-fu-sion ranges from 
+ []
+
+
+Overfull \hbox (9.71011pt too wide) in paragraph at lines 97--105
+[]\OT1/cmr/m/n/10 In this study, we de-velop a model of bed-load dif-fu-sion th
+at de-scribes the lo-cal, in- 
+ []
+
+
+Overfull \hbox (17.04356pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 ter-me-di-ate, and global ranges of dif-fu-sion in-tro-duced by
+ Nikora et al. by gen-er-al-iz-ing the 
+ []
+
+
+Overfull \hbox (18.04355pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 orig-i-nal dif-fu-sion model of H. A. Ein-stein (1937). Ein-ste
+in was a gi-ant in river geo-physics 
+ []
+
+
+Overfull \hbox (0.32121pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 and fos-tered an en-tire paradigm of re-search lever-ag-ing and
+ gen-er-al-iz-ing his stochas-tic 
+ []
+
+
+Overfull \hbox (14.8908pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 meth-ods (e.g., Gor-don, Carmichael, & Isack-son, 1972; Hubbell
+ & Sayre, 1964; Nak-a-gawa 
+ []
+
+
+Overfull \hbox (9.34908pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 & Tsu-ji-moto, 1976; C. T. Yang & Sayre, 1971; Yano, 1969). His
+ orig-i-nal model's es-sen- 
+ []
+
+
+Overfull \hbox (3.62683pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 tial con-tent is that in-di-vid-ual grains move in in-stan-ta-n
+eous steps in-ter-rupted by du-ra- 
+ []
+
+
+Overfull \hbox (14.96013pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 tions of rest which lie on sta-tis-ti-cal dis-tri-bu-tions (Has
+-san, Church, & Schick, 1991). Ein- 
+ []
+
+
+Overfull \hbox (26.1823pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 stein's model can be viewed as a spe-cial case of the con-tin-u
+-ous time ran-dom walk (CTRW) 
+ []
+
+
+Overfull \hbox (16.09901pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 de-vel-oped by Mon-troll and Weiss (1965) in con-densed mat-ter
+ physics to de-scribe the dif- 
+ []
+
+
+Overfull \hbox (6.37677pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 fu-sion of charge car-ri-ers in solids. Our gen-er-al-iza-tion 
+of Ein-stein's model has two com- 
+ []
+
+
+Overfull \hbox (15.87688pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 po-nents. First, we in-clude the du-ra-tion and ve-loc-ity of m
+o-tions in place of in-stan-ta-neous 
+ []
+
+
+Overfull \hbox (6.23781pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 steps, and sec-ond, we add in the pro-cess of sed-i-ment burial
+, which has been as-so-ci-ated 
+ []
+
+
+Overfull \hbox (26.43233pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 hit, & Jerol-mack, 2014). To de-velop this gen-er-al-iza-tion, 
+we lever-age the multi state CTRW 
+ []
+
+
+Overfull \hbox (11.96014pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 de-vel-oped by Weiss (1976, 1994) that ex-tends the CTRW of Mon
+-troll and Weiss (1965). 
+ []
+
+
+Overfull \hbox (2.1267pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 Be-low, we de-velop the model in sec-tion 2[] and solve it in s
+ec-tion 3[]. Fi-nally, we dis-cuss 
+ []
+
+
+Overfull \hbox (9.43243pt too wide) in paragraph at lines 97--105
+\OT1/cmr/m/n/10 the pre-dic-tions of our model and its im-pli-ca-tions for scal
+e de-pen-dent bed-load trans-port 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-[4]
-Overfull \hbox (12.2032pt too wide) in paragraph at lines 169--172
-\OT1/cmr/m/n/10 The Laplace-transformed mo-ments of $\OML/cmm/m/it/10 x$ \OT1/c
-mr/m/n/10 are linked to deriva-tives of the double-transformed 
+Overfull \hbox (8.34897pt too wide) in paragraph at lines 109--116
+[]\OT1/cmr/m/n/10 Following Ein-stein, we de-scribe bed-load trans-port as a ra
+n-dom walk be-tween mo- 
  []
 
-<./figures/pdf-plot.png, id=30, 385.9218pt x 164.5347pt>
+
+Overfull \hbox (28.9324pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 bile and im-mo-bile states. How-ever, we care-fully dis-tin-gui
+sh two states of im-mo-bil-ity: grains 
+ []
+
+
+Overfull \hbox (4.46002pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 can be im-mo-bile on the sur-face, which we re-fer to as the ``
+rest-ing state'', or grains can 
+ []
+
+
+Overfull \hbox (3.23784pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 be im-mo-bile within the sub-surface, which we re-fer to as the
+ ``burial state''. To model 
+ []
+
+
+Overfull \hbox (1.15454pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 bed-load trans-port with both of these im-mo-bile states, we co
+n-struct a three-state ran- 
+ []
+
+
+Overfull \hbox (12.12732pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 dom walk where the states are mo-tion, rest, and burial, and we
+ la-bel these states as $\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 
+ []
+
+
+Overfull \hbox (18.09904pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 tions for the three state walk fol-lows Weiss (1994), and our i
+n-cor-po-ra-tion of the sed-i-ment 
+ []
+
+
+Overfull \hbox (0.29353pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 burial pro-cess is sim-i-lar to Schmidt, Sagu^^Ses, and Sokolov
+ (2007). In our model, times 
+ []
+
+
+Overfull \hbox (17.27739pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 po-nen-tial dis-tri-bu-tions, and mov-ing grains have a con-sta
+nt ve-loc-ity $\OML/cmm/m/it/10 v$\OT1/cmr/m/n/10 . Within the model, 
+ []
+
+
+Overfull \hbox (9.34909pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 we con-sider burial to be a rel-a-tively long last-ing con-di-t
+ion that has some prob-a-bil-ity to 
+ []
+
+
+Overfull \hbox (17.32117pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 oc-cur when grains rest-ing on the sur-face are cov-ered by tra
+ns-ported sed-i-ment. The prob- 
+ []
+
+
+Overfull \hbox (17.738pt too wide) in paragraph at lines 109--116
+\OT1/cmr/m/n/10 a-bil-ity of burial per unit time (burial rate) is con-sid-ered
+ con-stant, so the prob-a-bil-ity that 
+ []
+
+
+Overfull \hbox (23.76634pt too wide) in paragraph at lines 118--122
+[]\OT1/cmr/m/n/10 Our deriva-tion hinges on the con-cept of a so-journ in the s
+tate $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 (Weiss, 1994). When 
+ []
+
+
+Overfull \hbox (19.00934pt too wide) in paragraph at lines 118--122
+\OT1/cmr/m/n/10 a grain en-ters a state $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 at
+ some time $\OML/cmm/m/it/10 t[]$ \OT1/cmr/m/n/10 and po-si-tion $\OML/cmm/m/it
+/10 x[]$\OT1/cmr/m/n/10 , then leaves a state at some other 
+ []
+
+
+Overfull \hbox (0.53716pt too wide) in paragraph at lines 118--122
+\OT1/cmr/m/n/10 time $\OML/cmm/m/it/10 t[]$ \OT1/cmr/m/n/10 and po-si-tion $\OM
+L/cmm/m/it/10 x[]$\OT1/cmr/m/n/10 , we say that the grain has com-pleted a so-j
+ourn in the state $\OML/cmm/m/it/10 i$\OT1/cmr/m/n/10 . 
+ []
+
+
+Overfull \hbox (0.89215pt too wide) in paragraph at lines 118--122
+\OT1/cmr/m/n/10 and dis-place-ment $\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = \OML/c
+mm/m/it/10 x[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 x[]$ \OT1/cmr/m/n/10 is de
+-noted $\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/
+10 )\OML/cmm/m/it/10 :$ \OT1/cmr/m/n/10 Sim-i-larly, we con-sider in-com-plete 
+so- 
+ []
+
+
+Overfull \hbox (2.09268pt too wide) in paragraph at lines 118--122
+\OT1/cmr/m/n/10 journs. If a grain be-gins a so-journ in the state $\OML/cmm/m/
+it/10 i$ \OT1/cmr/m/n/10 at $(\OML/cmm/m/it/10 t[]; x[]\OT1/cmr/m/n/10 )$ and t
+he so-journ is still on- 
+ []
+
+
+Overfull \hbox (2.49904pt too wide) in paragraph at lines 118--122
+\OT1/cmr/m/n/10 going at $(\OML/cmm/m/it/10 x[]; t[]\OT1/cmr/m/n/10 )$, the joi
+nt prob-a-bil-ity den-sity to find the grain is $\OML/cmm/m/it/10 G[]\OT1/cmr/m
+/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$. We re-fer to 
+ []
+
+
+Overfull \hbox (29.97316pt too wide) in paragraph at lines 118--122
+\OML/cmm/m/it/10 g[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/n/1
+0 as the com-plete and in-com-plete prop-a-ga-tors, since they move prob-a-bil-
+ity through 
+ []
+
+
+Overfull \hbox (5.5607pt too wide) in paragraph at lines 123--129
+[]\OT1/cmr/m/n/10 Our tar-get is the prob-a-bil-ity dis-tri-bu-tion $\OML/cmm/m
+/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$ to find a grai
+n at $\OML/cmm/m/it/10 x; t$ \OT1/cmr/m/n/10 if we know 
+ []
+
+
+Overfull \hbox (0.6927pt too wide) in paragraph at lines 123--129
+\OML/cmm/m/it/10 ^^N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$. We d
+e-note the ini-tial prob-a-bil-i-ties to be at rest or in mo-tion as $\OML/cmm/
+m/it/10 ^^R[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 ^^R[]$\OT1/cmr/m/n/10 . No
+r- 
+ []
+
+
+Overfull \hbox (10.65463pt too wide) in paragraph at lines 123--129
+\OT1/cmr/m/n/10 duce and solve for a set of joint prob-a-bil-i-ties as-so-ci-at
+ed with tran-si-tions of a grain from 
+ []
+
+
+Overfull \hbox (7.48785pt too wide) in paragraph at lines 123--129
+\OT1/cmr/m/n/10 one state to an-other. Sec-ond, we use these quan-ti-ties to so
+lve for the prob-a-bil-i-ties that 
+ []
+
+
+Overfull \hbox (3.926pt too wide) in paragraph at lines 123--129
+\OT1/cmr/m/n/10 a grain is in state $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 hav-in
+g po-si-tion $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 at time $\OML/cmm/m/it/10 t$\
+OT1/cmr/m/n/10 . Af-ter-ward, we sum these lat-ter dis-tri- 
+ []
+
+
+Overfull \hbox (26.67607pt too wide) in paragraph at lines 123--129
+\OT1/cmr/m/n/10 bu-tions over all states $\OML/cmm/m/it/10 i$ \OT1/cmr/m/n/10 t
+o de-rive the joint dis-tri-bu-tion that a grain is in any state at $(\OML/cmm/
+m/it/10 x; t\OT1/cmr/m/n/10 )$.  
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (5.39061pt too wide) in paragraph at lines 131--140
+[]\OT1/cmr/m/n/10 Now we be-gin the first stage of the deriva-tion. Grains at r
+est may be trapped by 
+ []
+
+
+Overfull \hbox (2.21017pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 burial. For sim-plic-ity, we model burial as long last-ing enou
+gh to be ef-fec-tively per-ma- 
+ []
+
+
+Overfull \hbox (6.34895pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 nent (e.g., Wu et al.[], 2019), and we as-sume grains rest-ing 
+on the sur-face can be buried 
+ []
+
+
+Overfull \hbox (0.7772pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 with con-stant rate $\OML/cmm/m/it/10 ^^T$\OT1/cmr/m/n/10 . Equ
+iv-a-lently, we could say the mean time re-quired for a rest-ing 
+ []
+
+
+Overfull \hbox (14.2218pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 grain to be-come buried is $1\OML/cmm/m/it/10 =^^T$\OT1/cmr/m/n
+/10 . From this as-sump-tion, the prob-a-bil-ity that a grain is not 
+ []
+
+
+Overfull \hbox (7.98068pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 trapped af-ter a time $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 at r
+est obeys a sur-vival func-tion: $^^H[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \
+OML/cmm/m/it/10 e[]$ \OT1/cmr/m/n/10 ($\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/10 is f
+or ``free''). 
+ []
+
+
+Overfull \hbox (9.51569pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 Like-wise, the prob-a-bil-ity that it is trapped af-ter rest-in
+g for a time $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 is the com-ple-ment: 
+ []
+
+
+Overfull \hbox (3.33763pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = 1 \OMS/cmsy/m/n/10 
+^^@ \OT1/cmr/m/n/10 ^^H[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )$ ($\OML/cmm/m/it/
+10 T$ \OT1/cmr/m/n/10 is for ``trapped''). We in-tro-duce $\OML/cmm/m/it/10 ![]
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$, $\OML/cmm/m/it/10 ![]
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$, and $\OML/cmm/m/it/10
+ ![]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (5.03651pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 as the joint prob-a-bil-i-ties to find a grain at $(\OML/cmm/m/
+it/10 x; t\OT1/cmr/m/n/10 )$ hav-ing just com-pleted a so-journ. The 
+ []
+
+
+Overfull \hbox (4.72055pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 sub-script $[]$ de-notes the com-ple-tion of a rest so-journ du
+e to trap-ping by burial, while 
+ []
+
+
+Overfull \hbox (0.83514pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 F$ \OT1/cmr/m/n/10 de-notes the com-ple-tion 
+of a rest so-journ due to mo-tion. Sim-i-larly, the sub-script $2$ 
+ []
+
+
+Overfull \hbox (3.9601pt too wide) in paragraph at lines 131--140
+\OT1/cmr/m/n/10 de-notes the com-ple-tion of a mo-tion so-journ due to rest-ing
+. We link the $\OML/cmm/m/it/10 !$\OT1/cmr/m/n/10 's in in-te-gral 
+ []
+
+
+Overfull \hbox (12.519pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 The first equa-tion can be un-der-stood as fol-lows: $\OML/cmm/
+m/it/10 ![]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$ de-scribes 
+the prob-a-bil-ity that 
+ []
+
+
+Overfull \hbox (7.31421pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 a so-journ in the state $1$ ends due to trap-ping at $(\OML/cmm
+/m/it/10 x; t\OT1/cmr/m/n/10 )$. This quan-tity has two con-tri-bu- 
+ []
+
+
+Overfull \hbox (7.78639pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 tions. The first con-tri-bu-tion rep-re-sents the pos-si-bil-it
+y that the grain started at $(\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 ) = 
+ []
+
+
+Overfull \hbox (1.96759pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0)$ in the $\OML/cmm/m/it/
+10 i \OT1/cmr/m/n/10 = 1$ state (with prob-a-bil-ity $\OML/cmm/m/it/10 ^^R[]$\O
+T1/cmr/m/n/10 ), prop-a-gated a dis-tance $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 
+and a time $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 in 
+ []
+
+
+Overfull \hbox (12.59253pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 the $\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 1$ state (with prob-a
+-bil-ity den-sity $\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\O
+T1/cmr/m/n/10 )$), was trapped (with prob-a-bil-ity $^^H[](\OML/cmm/m/it/10 t\O
+T1/cmr/m/n/10 )$), 
+ []
+
+
+Overfull \hbox (15.48088pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 and is now at $(\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$. The se
+c-ond con-tri-bu-tion de-scribes the pos-si-bil-ity that the grain was 
+ []
+
+
+Overfull \hbox (2.95306pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 in a mo-tion so-journ which ended at $(\OML/cmm/m/it/10 x[]; t[
+]\OT1/cmr/m/n/10 )$ when it came to rest. From here, it prop-a- 
+ []
+
+
+Overfull \hbox (7.98206pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 trapped dur-ing this so-journ (with prob-a-bil-ity $^^H[](\OML/
+cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )$). The
+ rea-son-ing is closely anal- 
+ []
+
+
+Overfull \hbox (6.349pt too wide) in paragraph at lines 144--149
+\OT1/cmr/m/n/10 o-gous for equa-tions (2[]) and (3[]). Once the prop-a-ga-tors 
+are spec-i-fied, we can solve (1[]-3[]) 
+ []
+
+[5]
+Overfull \hbox (11.71013pt too wide) in paragraph at lines 151--152
+[]\OT1/cmr/m/n/10 The sec-ond stage of our deriva-tion in-volves the joint prob
+-a-bil-i-ties of be-ing in state 
+ []
+
+
+Overfull \hbox (24.16492pt too wide) in paragraph at lines 151--152
+\OT1/cmr/m/n/10 re-gard-less of whether a so-journ has just com-pleted. We de-n
+ote these by $\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cm
+r/m/n/10 )$ (trapped), 
+ []
+
+
+Overfull \hbox (26.55733pt too wide) in paragraph at lines 156--162
+\OT1/cmr/m/n/10 Equation (4[]) says that grains buried at any $(\OML/cmm/m/it/1
+0 x; t\OT1/cmr/m/n/10 )$ were trapped at $\OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 f
+rom any ear-lier times. 
+ []
+
+
+Overfull \hbox (12.54338pt too wide) in paragraph at lines 156--162
+\OT1/cmr/m/n/10 The rea-son-ing in (5[]-6[]) is the same as for (1[]-3[]) ex-ce
+pt we use the prop-a-ga-tors for in-com- 
+ []
+
+
+Overfull \hbox (13.76567pt too wide) in paragraph at lines 156--162
+\OT1/cmr/m/n/10 plete so-journs. Equa-tions (4[]-6[]) can be solved once the pr
+op-a-ga-tors are spec-i-fied and the 
+ []
+
+
+Overfull \hbox (6.0435pt too wide) in paragraph at lines 156--162
+\OML/cmm/m/it/10 !$\OT1/cmr/m/n/10 's are de-rived from (1[]-3[]). Fi-nally, we
+ form the to-tal prob-a-bil-ity den-sity for a grain to 
+ []
+
+
+Overfull \hbox (20.18231pt too wide) in paragraph at lines 169--174
+[]\OT1/cmr/m/n/10 We con-sider so-journs in the rest state to oc-cur for an ex-
+po-nen-tially dis-tributed time 
+ []
+
+
+Overfull \hbox (5.57121pt too wide) in paragraph at lines 169--174
+\OT1/cmr/m/n/10 mean du-ra-tion of a sin-gle rest. Since grains do not move in 
+the rest so-journ, the prob- 
+ []
+
+
+Overfull \hbox (19.29686pt too wide) in paragraph at lines 169--174
+\OT1/cmr/m/n/10 a-bil-ity den-sity that a grain is dis-placed by a dis-tance $\
+OML/cmm/m/it/10 x$ \OT1/cmr/m/n/10 in the rest so-journ in $\OML/cmm/m/it/10 ^^
+N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )$. Hence 
+ []
+
+
+Overfull \hbox (31.5561pt too wide) in paragraph at lines 174--180
+\OT1/cmr/m/n/10 Likewise, the in-com-plete prop-a-ga-tor for a rest so-journ is
+ $\OML/cmm/m/it/10 G[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 ) =
+ \OML/cmm/m/it/10 ^^N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )	[](\O
+ML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^N\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = 
+ []
+
+
+Overfull \hbox (15.51222pt too wide) in paragraph at lines 174--180
+\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )\OML
+/cmm/m/it/10 =k[]:$ \OT1/cmr/m/n/10 The mo-tion prop-a-ga-tors are rea-soned si
+m-i-larly. We con-sider mo-tions to have 
+ []
+
+
+Overfull \hbox (8.27272pt too wide) in paragraph at lines 174--180
+\OT1/cmr/m/n/10 a con-stant ve-loc-ity $\OML/cmm/m/it/10 v$ \OT1/cmr/m/n/10 and
+ ex-po-nen-tially dis-tributed du-ra-tions given by $\OML/cmm/m/it/10  []\OT1/c
+mr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 k[]e[]:$ 
+ []
+
+
+Overfull \hbox (8.73567pt too wide) in paragraph at lines 174--180
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 =k[]$ \OT1/cmr/m/n/10 is the mean du-ra-tion 
+of a sin-gle mo-tion. Since the ve-loc-ity of mo-tions is con-stant, 
+ []
+
+[6]
+Overfull \hbox (7.2101pt too wide) in paragraph at lines 183--188
+[]\OT1/cmr/m/n/10 Having de-fined the prop-a-ga-tors, we set out to solve (1[]-
+6[]) and un-der-stand the dif- 
+ []
+
+
+Overfull \hbox (0.23795pt too wide) in paragraph at lines 183--188
+\OT1/cmr/m/n/10 fu-sion ex-pressed by the trap-ping model. The con-vo-lu-tion s
+truc-ture of equa-tions (1[]-6[]) 
+ []
+
+
+Overfull \hbox (16.37677pt too wide) in paragraph at lines 183--188
+\OT1/cmr/m/n/10 presents a formidable prob-lem. Luck-ily, we have the de-vice o
+f Laplace trans-forms. These 
+ []
+
+
+Overfull \hbox (3.48788pt too wide) in paragraph at lines 183--188
+\OT1/cmr/m/n/10 project integro-differential equa-tions into an al-ter-nate spa
+ce in which con-vo-lu-tions are 
+ []
+
+
+Overfull \hbox (8.84912pt too wide) in paragraph at lines 183--188
+\OT1/cmr/m/n/10 un-rav-eled (e.g., Ar-fken, 1985). The dou-ble Laplace trans-fo
+rm of a joint prob-a-bil-ity dis- 
+ []
+
+
+Overfull \hbox (24.42546pt too wide) in paragraph at lines 188--191
+\OT1/cmr/m/n/10 The Laplace-transformed mo-ments of $\OML/cmm/m/it/10 x$ \OT1/c
+mr/m/n/10 are linked to deriva-tives of the dou-ble trans-formed 
+ []
+
+
+Overfull \hbox (5.51576pt too wide) in paragraph at lines 188--191
+\OT1/cmr/m/n/10 dis-tri-bu-tion (10[]) (cf., Berezhkovskii & Weiss, 2002). From
+ equa-tion (10[]) it's clear that  
+ []
+
+<./figures/pdf-plot.png, id=38, 385.9218pt x 164.5347pt>
 File: ./figures/pdf-plot.png Graphic file (type png)
 
 <use ./figures/pdf-plot.png>
-Package pdftex.def Info: ./figures/pdf-plot.png used on input line 177.
+Package pdftex.def Info: ./figures/pdf-plot.png used on input line 196.
 (pdftex.def)             Requested size: 397.48499pt x 169.4701pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 []\OT1/cmr/bx/n/9 Figure  1. \OT1/cmr/m/n/9 Joint dis-tri-bu-tions for a grain 
 to be at po-si-tion $\OML/cmm/m/it/9 x$ \OT1/cmr/m/n/9 at time $\OML/cmm/m/it/9
  t$ \OT1/cmr/m/n/9 are dis-played for the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 solid lines are the an-a-lyt-i-cal dis-tri-bu-tion in equa-tion 
 (12[]), while the points are sim-u-la-tion re-sults
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 to show math-e-mat-i-cal cor-rect-ness. Col-ors per-tain to dif-
 fer-ent times. Units are un-spec-i-fied, since
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 180--180
+Underfull \hbox (badness 2229) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 our aim is to demon-strate the gen-eral char-ac-ter-is-tics of $
 \OML/cmm/m/it/9 p\OT1/cmr/m/n/9 (\OML/cmm/m/it/9 x; t\OT1/cmr/m/n/9 )$. Panel (
 a) shows the case $\OML/cmm/m/it/9 ^^T \OT1/cmr/m/n/9 = 0$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 -- the ab-sence of burial. In this case, the joint dis-tri-bu-ti
 on tends to-ward Gaus-sian at large times
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\OT1/cmr/m/n/9 (e.g. H. A. Ein-stein, 1937; Lisle et al.[], 1998). Panel (b) sh
-ows the case when grains have rate
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\OT1/cmr/m/n/9 (e.g., H. A. Ein-stein, 1937; Lisle et al.[], 1998). Panel (b) s
+hows the case when grains have rate
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 180--180
+Underfull \hbox (badness 1694) in paragraph at lines 199--199
 \OML/cmm/m/it/9 ^^T \OT1/cmr/m/n/9 = 0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 01$ to be
 -come buried while rest-ing. Be-cause of burial, the joint dis-tri-bu-tion tend
 s to-ward
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 a more uni-form dis-tri-bu-tion than Gaus-sian. This shows a re-
 dis-tri-bu-tion of prob-a-bil-ity to smaller
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 \OT1/cmr/m/n/9 val-ues of $\OML/cmm/m/it/9 x$ \OT1/cmr/m/n/9 due to the burial 
-pro-cess (cf. Wu et al.[], 2019). The re-dis-tri-bu-tion is en-coded math-e-
+pro-cess (cf., Wu et al.[], 2019). The re-dis-tri-bu-tion is en-coded math-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--180
-\OT1/cmr/m/n/9 mat-i-cally by the Mar-cum Q-function terms in equa-tion (12[]).
- A sim-i-lar ten-dency is seen in field
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
+\OT1/cmr/m/n/9 e-mat-i-cally by the Mar-cum Q-function terms in equa-tion (12[]
+). A sim-i-lar ten-dency is seen in field
  []
 
-[5]
+
+Overfull \hbox (6.26561pt too wide) in paragraph at lines 191--202
+\OT1/cmr/m/n/10 The op-er-a-tor $\OMS/cmsy/m/n/10 h^^Ni$ \OT1/cmr/m/n/10 de-not
+es the en-sem-ble av-er-age (e.g., Kit-tel, 1958). This means we can 
+ []
+
+
+Overfull \hbox (7.78784pt too wide) in paragraph at lines 191--202
+\OT1/cmr/m/n/10 where $\OMS/cmsy/m/n/10 L[]$ \OT1/cmr/m/n/10 de-notes the in-ve
+rse Laplace trans-form (e.g., Ar-fken, 1985). This is a pow-er- 
+ []
+
+
+Overfull \hbox (14.04346pt too wide) in paragraph at lines 191--202
+\OT1/cmr/m/n/10 ful tool, since we can use it to de-rive the po-si-tional vari-
+ance with-out in-te-grat-ing the dis- 
+ []
+
+
+Overfull \hbox (22.56778pt too wide) in paragraph at lines 204--205
+[]\OT1/cmr/m/n/10 Using the prop-a-ga-tors (8[]-9[]) and this trans-form cal-cu
+-lus, the joint dis-tri-bu-tion $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 x; t\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (4.26572pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 is de-rived in ap-pendix A[], while the mo-ments $\OMS/cmsy/m/n
+/10 h\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 i$ \OT1/cmr/m/n/10 and $\OMS/cmsy/m/n/1
+0 h\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 i$ \OT1/cmr/m/n/10 and ul-ti-mately the
+ vari-ance 
+ []
+
+
+Overfull \hbox (3.37965pt too wide) in paragraph at lines 204--205
+\OT1/cmr/m/n/10 of po-si-tion $\OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (\OML/cmm/
+m/it/10 t\OT1/cmr/m/n/10 )$ are de-rived in ap-pendix B[]. With the short-hand 
+no-ta-tions $\OML/cmm/m/it/10 ^^X \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 k[]x=v$\OT
+1/cmr/m/n/10 , 
+ []
+
+
+Overfull \hbox (9.82524pt too wide) in paragraph at lines 209--212
+$\OMS/cmsy/m/n/10 H$ \OT1/cmr/m/n/10 is the Heav-i-side step func-tion and we u
+se the con-ven-tion $\OMS/cmsy/m/n/10 H\OT1/cmr/m/n/10 (0) = 1$. The $\OMS/cmsy
+/m/n/10 I[]$ \OT1/cmr/m/n/10 are mod- 
+ []
+
+
+Overfull \hbox (7.13911pt too wide) in paragraph at lines 209--212
+\OT1/cmr/m/n/10 i-fied Bessel func-tions of the first kind, and the $\OMS/cmsy/
+m/n/10 P[]$ \OT1/cmr/m/n/10 are gen-er-al-ized Mar-cum Q-functions 
+ []
+
+
+Overfull \hbox (3.46017pt too wide) in paragraph at lines 209--212
+\OT1/cmr/m/n/10 Bessel func-tions are com-mon in one-dimensional dif-fu-sion pr
+ob-lems (e.g., Daly & Por- 
+ []
+
+[7]
+Overfull \hbox (7.93233pt too wide) in paragraph at lines 213--218
+[]\OT1/cmr/m/n/10 The Mar-cum Q-functions are con-vo-lu-tions be-tween mod-i-fi
+ed Bessel func-tions and 
+ []
+
+
+Overfull \hbox (5.37682pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 de-cay-ing ex-po-nen-tials. They were orig-i-nally de-vised in 
+re-la-tion to radar de-tec-tion the- 
+ []
+
+
+Overfull \hbox (12.87685pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 ory (Mar-cum, 1960). Con-cep-tu-ally, the Q-functions emerge in
+ our con-text from the sed- 
+ []
+
+
+Overfull \hbox (3.76569pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 i-ment burial pro-cess. Ac-cord-ing to our as-sump-tions, rest-
+ing grains can be-come buried 
+ []
+
+
+Overfull \hbox (17.48805pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 in some in-ter-val of time with an ex-po-nen-tial prob-a-bil-it
+y. Mean-while, the prob-a-bil-ity that 
+ []
+
+
+Overfull \hbox (12.48793pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 grains are rest-ing fol-lows a mod-i-fied Bessel dis-tri-bu-tio
+n (e.g., H. A. Ein-stein, 1937; Lisle 
+ []
+
+
+Overfull \hbox (1.68234pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 et al.[], 1998). As a re-sult, the prob-a-bil-ity that sed-i-me
+nt is rest-ing and be-comes buried 
+ []
+
+
+Overfull \hbox (7.48792pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 in-volves the con-vo-lu-tion struc-ture of the Mar-cum Q-functi
+ons. Con-sis-tent with this in- 
+ []
+
+
+Overfull \hbox (8.59906pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 ter-pre-ta-tion, terms in-volv-ing these con-vo-lu-tions van-is
+h when the burial rate is taken to 
+ []
+
+
+Overfull \hbox (9.54353pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 by a di-rect method based on eval-u-at-ing the cu-mu-la-tive tr
+an-si-tion prob-a-bil-i-ties be-tween 
+ []
+
+
+Overfull \hbox (25.27966pt too wide) in paragraph at lines 213--218
+\OT1/cmr/m/n/10 states on a small timestep (cf., Barik, Ghosh, & Ray, 2006). A 
+link to the sim-u-la-tion code, 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./figures/pdf-plot.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
+ [8 <./figures/pdf-plot.png>]
+Overfull \hbox (13.15456pt too wide) in paragraph at lines 222--224
+[]\OT1/cmr/m/n/10 The first two mo-ments and the po-si-tional vari-ance are de-
+rived in ap-pendix B[]. The 
+ []
+
+
+Overfull \hbox (16.23582pt too wide) in paragraph at lines 227--231
+\OT1/cmr/m/n/10 di-men-sions of in-verse time. The $\OML/cmm/m/it/10 A[]$\OT1/c
+mr/m/n/10 , $\OML/cmm/m/it/10 B[]$\OT1/cmr/m/n/10 , and $\OML/cmm/m/it/10 C[]$ 
+\OT1/cmr/m/n/10 are poly-no-mi-als avail-able in ta-ble 1[]. The 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
 []\OT1/cmr/bx/n/9 Table 1. \OT1/cmr/m/n/9 Poly-no-mi-als and tran-scen-den-tal 
 func-tions used in the ex-pres-sions of the mean (13[]),
  []
 
-[7] <./figures/diffusion.png, id=46, 378.6948pt x 228.855pt>
-File: ./figures/diffusion.png Graphic file (type png)
 
-<use ./figures/diffusion.png>
-Package pdftex.def Info: ./figures/diffusion.png used on input line 249.
-(pdftex.def)             Requested size: 397.48499pt x 240.21404pt.
-
-Underfull \hbox (badness 6348) in paragraph at lines 250--250
-\OT1/cmr/m/n/9 ($\OMS/cmsy/m/n/9 ^^X \OT1/cmr/m/n/9 5$mm) grav-els (cf. La-je-u
-nesse et al.[], 2010; Mar-tin et al.[], 2012). The timescale of burial is set
+Overfull \hbox (7.576pt too wide) in paragraph at lines 231--256
+$\OML/cmm/m/it/10 A; B;$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 C$ \OT1/cmr/m/n/
+10 are tran-scen-den-tal func-tions avail-able in ta-ble 1[]. This equa-tion re
+p-re-sents 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (9.60797pt too wide) in paragraph at lines 257--265
+[]\OT1/cmr/m/n/10 The po-si-tional vari-ance is plot-ted in fig-ure 2[] for con
+-di-tions $\OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 = 1$ and $\OML/cmm/m/it/10 k[
+] \OMS/cmsy/m/n/10 ^^] \OML/cmm/m/it/10 k[] \OMS/cmsy/m/n/10 ^^] 
+ []
+
+
+Overfull \hbox (3.3883pt too wide) in paragraph at lines 257--265
+\OML/cmm/m/it/10 ^^T$\OT1/cmr/m/n/10 . We in-ter-pret ``$\OMS/cmsy/m/n/10 ^^]$\
+OT1/cmr/m/n/10 '' to mean ``of at least an or-der of mag-ni-tude greater''. The
+se con- 
+ []
+
+
+Overfull \hbox (4.07132pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 di-tions mean that all grains are ini-tially at rest (cf., Wu e
+t al.[], 2019), mo-tion in-ter-vals 
+ []
+
+
+Overfull \hbox (12.93234pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 are typ-i-cally much shorter than rests (cf., H. A. Ein-stein, 
+1937), and sed-i-ment burial re- 
+ []
+
+
+Overfull \hbox (13.07117pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 quires a much longer time than typ-i-cal rests. We con-cen-trat
+e on these con-di-tions in this 
+ []
+
+
+Overfull \hbox (16.15457pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 pa-per as they are most rel-e-vant to bed-load dif-fu-sion in g
+ravel-bed rivers, where sed-i-ment 
+ []
+
+
+Overfull \hbox (9.0157pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 trans-port is typ-i-cally rar-efied and in-ter-mit-tent, and th
+e burial pro-cess is rel-a-tively slow 
+ []
+
+
+Overfull \hbox (20.73795pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 com-pared to sur-face rest-ing times (e.g., Fer-gu-son & Hoey, 
+2002; Has-san & Church, 1994). 
+ []
+
+
+Overfull \hbox (10.82121pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 Fig-ure 2[] demon-strates that un-der these con-di-tions the va
+ri-ance (15[]) shows three ranges 
+ []
+
+
+Overfull \hbox (4.22885pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 of bed-load dif-fu-sion each hav-ing ap-prox-i-mate power law s
+cal-ing ($\OML/cmm/m/it/10 ^^[[] \OMS/cmsy/m/n/10 / \OML/cmm/m/it/10 t[]$\OT1/c
+mr/m/n/10 ), fol-lowed by 
+ []
+
+
+Overfull \hbox (4.68103pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 a fourth range with no dif-fu-sion ($\OML/cmm/m/it/10 ^^[[] \OT
+1/cmr/m/n/10 = []$). We as-so-ciate the first three ranges with 
+ []
+
+
+Overfull \hbox (1.738pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 the lo-cal, in-ter-me-di-ate, and global ranges pro-posed by Ni
+kora et al.[] (2002, 2001), and 
+ []
+
+
+Overfull \hbox (15.23796pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 iden-tify the fourth range as re-sult-ing from the even-tual bu
+rial of all sed-i-ment grains. We 
+ []
+
+
+Overfull \hbox (17.84906pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 sug-gest to call the fourth range ge-o-mor-phic, since any fur-
+ther trans-port in this range can 
+ []
+
+
+Overfull \hbox (10.21016pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 oc-cur only if scour ex-poses buried grains to the flow (cf., M
+ar-tin et al.[], 2014; Nak-a-gawa 
+ []
+
+
+Overfull \hbox (13.5713pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 & Tsu-ji-moto, 1980; Voe-pel, Schumer, & Has-san, 2013). Us-ing
+ this ter-mi-nol-ogy, we sum- 
+ []
+
+
+Overfull \hbox (10.93242pt too wide) in paragraph at lines 257--265
+\OT1/cmr/m/n/10 scal-ing ranges: lo-cal, in-ter-me-di-ate, and global, and ge-o
+-mor-phic. We em-pha-size only the 
+ []
+
+[9] <./figures/diffusion.png, id=53, 378.6948pt x 228.855pt>
+File: ./figures/diffusion.png Graphic file (type png)
+
+<use ./figures/diffusion.png>
+Package pdftex.def Info: ./figures/diffusion.png used on input line 269.
+(pdftex.def)             Requested size: 397.48499pt x 240.21404pt.
+
+Underfull \hbox (badness 2671) in paragraph at lines 270--270
+\OT1/cmr/m/n/9 ($\OMS/cmsy/m/n/9 ^^X \OT1/cmr/m/n/9 5$mm) grav-els (cf., La-je-
+unesse et al.[], 2010; Mar-tin et al.[], 2012). The timescale of burial is set
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 \OT1/cmr/m/n/9 there are four dis-tinct scal-ing ranges of $\OML/cmm/m/it/9 ^^[
 []$\OT1/cmr/m/n/9 : lo-cal, in-ter-me-di-ate, global, and ge-o-mor-phic. Within
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 \OT1/cmr/m/n/9 be-tween these ranges, de-noted on the fig-ure by ver-ti-cal lin
 es. Crossover times $\OML/cmm/m/it/9 T[]$\OT1/cmr/m/n/9 , $\OML/cmm/m/it/9 T[]$
 \OT1/cmr/m/n/9 , and $\OML/cmm/m/it/9 T[]$ \OT1/cmr/m/n/9 are
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--250
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 \OT1/cmr/m/n/9 in-di-cated at the bot-tom of the plot. They are given in equa-t
 ions (16[]-18[]) in terms of the model's
  []
 
 
-Underfull \vbox (badness 4316) has occurred while \output is active []
+Overfull \hbox (7.65439pt too wide) in paragraph at lines 274--283
+[]\OT1/cmr/m/n/10 The model we've pre-sented in-volves four pa-ram-e-ters. Thes
+e are the char-ac-ter-is-tic 
+ []
 
- [8 <./figures/diffusion.png>] [9]
+
+Overfull \hbox (33.28426pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 ve-loc-ity $\OML/cmm/m/it/10 v$ \OT1/cmr/m/n/10 of mov-ing sed-
+i-ment and three key timescales: $1\OML/cmm/m/it/10 =k[]$\OT1/cmr/m/n/10 , $1\O
+ML/cmm/m/it/10 =k[]$\OT1/cmr/m/n/10 , and $1\OML/cmm/m/it/10 =^^T$\OT1/cmr/m/n/
+10 . The timescales 
+ []
+
+
+Overfull \hbox (7.07129pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 rep-re-sent the mean du-ra-tion of mo-tion, the mean du-ra-tion
+ of rest, and the mean du-ra- 
+ []
+
+
+Overfull \hbox (5.30402pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 mately char-ac-ter-ize the dif-fu-sion in each scal-ing range. 
+The ex-po-nents $\OML/cmm/m/it/10 ^^M$ \OT1/cmr/m/n/10 in each range 
+ []
+
+
+Overfull \hbox (12.84898pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 re-sult from com-pe-ti-tion be-tween dif-fer-ent terms in equa-
+tion (15[]). Be-tween these ranges, 
+ []
+
+
+Overfull \hbox (3.40436pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 there are crossover re-gions where the scal-ing is not a sim-pl
+e power law. Be-cause these 
+ []
+
+
+Overfull \hbox (41.84897pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 crossover re-gions are rel-a-tively nar-row, we can ap-prox-i-m
+ately char-ac-ter-ize them with crossover 
+ []
+
+
+Overfull \hbox (7.2933pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 Fig-ure 2[] de-picts these crossover times as ver-ti-cal lines.
+ To un-der-stand the scale de-pen- 
+ []
+
+
+Overfull \hbox (10.59895pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 dence ex-pressed by the bed-load vari-ance in equa-tion (15[]),
+ we need to de-ter-mine the ex- 
+ []
+
+
+Overfull \hbox (13.30219pt too wide) in paragraph at lines 274--283
+\OT1/cmr/m/n/10 po-nents $\OML/cmm/m/it/10 ^^M$ \OT1/cmr/m/n/10 of each range a
+nd re-late the crossover times $\OML/cmm/m/it/10 T[]$\OT1/cmr/m/n/10 , $\OML/cm
+m/m/it/10 T[]$\OT1/cmr/m/n/10 , and $\OML/cmm/m/it/10 T[]$ \OT1/cmr/m/n/10 be-t
+ween dif-fu-sion 
+ []
+
+[10]
+Overfull \hbox (20.94298pt too wide) in paragraph at lines 285--299
+[]\OT1/cmr/m/n/10 We de-ter-mine the dif-fu-sion ex-po-nents $\OML/cmm/m/it/10 
+^^M$ \OT1/cmr/m/n/10 in the lo-cal, in-ter-me-di-ate, and global ranges 
+ []
+
+
+Overfull \hbox (17.76573pt too wide) in paragraph at lines 285--299
+[]$\OT1/cmr/m/n/10 . Limit (1) cor-re-sponds to times so short a neg-li-gi-ble 
+amount of sed-i-ment burial has 
+ []
+
+
+Overfull \hbox (2.29347pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 oc-curred, while limit (2) cor-re-sponds to times so long a mo-
+tion in-ter-val ap-pears as an 
+ []
+
+
+Overfull \hbox (0.6054pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 pure, mean-ing one of the $\OML/cmm/m/it/10 ^^R[]$ \OT1/cmr/m/n
+/10 is zero, the lo-cal ex-po-nent is $\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 = 3
+$. When grains start in 
+ []
+
+
+Overfull \hbox (17.32773pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 a mix-ture of mo-tion and rest states, mean-ing nei-ther $\OML/
+cmm/m/it/10 ^^R[]$ \OT1/cmr/m/n/10 is zero, the lo-cal ex-po-nent is $\OML/cmm/
+m/it/10 ^^M \OT1/cmr/m/n/10 = 
+ []
+
+
+Overfull \hbox (5.1095pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 2$. In-ter-me-di-ate range dif-fu-sion al-ways has ex-po-nent $
+\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 = 1$, agree-ing with clas-sic flume 
+ []
+
+
+Overfull \hbox (8.29355pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 ex-per-i-ments (e.g., H. A. Ein-stein, 1937; Nak-a-gawa & Tsu-j
+i-moto, 1976; Yano, Tsuchiya, 
+ []
+
+
+Overfull \hbox (9.75499pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 on the ra-tio $\OML/cmm/m/it/10 k[]=^^T$\OT1/cmr/m/n/10 . In th
+e ex-treme case $\OML/cmm/m/it/10 k[]=^^T \OMS/cmsy/m/n/10 ^^Y \OT1/cmr/m/n/10 
+0$, we find nor-mal dif-fu-sion $\OML/cmm/m/it/10 ^^[[] \OMS/cmsy/m/n/10 / \OML
+/cmm/m/it/10 t$\OT1/cmr/m/n/10 . How- 
+ []
+
+
+Overfull \hbox (15.08969pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 ra-tios $\OML/cmm/m/it/10 ^^T=k[]$\OT1/cmr/m/n/10 , the global 
+ex-po-nent lies be-tween these ex-tremes. For ex-am-ple, when $\OML/cmm/m/it/10
+ k[]=^^T \OMS/cmsy/m/n/10 ^^Y 
+ []
+
+
+Overfull \hbox (3.67834pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 (15[]) im-plies lo-cal range super-diffusion with ex-po-nent de
+-pend-ing on the $\OML/cmm/m/it/10 ^^R[]$\OT1/cmr/m/n/10 , in-ter-me-di- 
+ []
+
+
+Overfull \hbox (5.93243pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 ate range nor-mal dif-fu-sion with no de-pen-dence on model pa-
+ram-e-ters, and global range 
+ []
+
+
+Overfull \hbox (11.0251pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 super-diffusion with ex-po-nent de-pend-ing on the ra-tio $\OML
+/cmm/m/it/10 k[]=^^T$\OT1/cmr/m/n/10 . Fi-nally, the model sup-ports 
+ []
+
+
+Overfull \hbox (5.27623pt too wide) in paragraph at lines 285--299
+\OT1/cmr/m/n/10 a ge-o-mor-phic range of no dif-fu-sion ($\OML/cmm/m/it/10 ^^M 
+\OT1/cmr/m/n/10 = 0$) as-so-ci-ated with the even-tual and long term 
+ []
+
+[11 <./figures/diffusion.png>]
+Overfull \hbox (6.18222pt too wide) in paragraph at lines 300--303
+[]\OT1/cmr/m/n/10 Each of the three crossover times re-lates to a phys-i-cal pr
+o-cess af-fect-ing a pop-u-la- 
+ []
+
+
+Overfull \hbox (9.79347pt too wide) in paragraph at lines 300--303
+\OT1/cmr/m/n/10 tion of grains. Ex-change be-tween mo-tion and rest states in-d
+uces the lo-cal/intermediate 
+ []
+
+
+Overfull \hbox (1.23785pt too wide) in paragraph at lines 300--303
+\OT1/cmr/m/n/10 crossover, the on-set of sed-i-ment burial in-duces the in-ter-
+me-di-ate/global crossover, and 
+ []
+
+
+Overfull \hbox (3.68236pt too wide) in paragraph at lines 300--303
+\OT1/cmr/m/n/10 the com-ple-tion of sed-i-ment burial in-duces the global/geomo
+rphic crossover. Each pro- 
+ []
+
+
+Overfull \hbox (8.29333pt too wide) in paragraph at lines 300--303
+\OT1/cmr/m/n/10 cess ad-mits two char-ac-ter-is-tic times, and we for-mu-late t
+he crossover times heuris-ti-cally 
+ []
+
+
+Overfull \hbox (1.84436pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 Figure 2[] de-picts these re-la-tion-ships as dashed ver-ti-cal
+ lines. The times $1\OML/cmm/m/it/10 =k[]$ \OT1/cmr/m/n/10 and $1\OML/cmm/m/it/
+10 =k[]$ 
+ []
+
+
+Overfull \hbox (16.94153pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 char-ac-ter-ize ex-changes be-tween mo-tion and rest, while $1\
+OML/cmm/m/it/10 =k[]$ \OT1/cmr/m/n/10 and $1\OML/cmm/m/it/10 =^^T$ \OT1/cmr/m/n
+/10 char-ac-ter-ize the on- 
+ []
+
+
+Overfull \hbox (15.07133pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 set of burial orig-i-nat-ing from grains buried in their first 
+rest-ing so-journs. Equa-tions (16[]) 
+ []
+
+
+Overfull \hbox (4.62679pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 and (17[]) mix these paired times. The com-ple-tion of sed-i-me
+nt burial and its char-ac-ter- 
+ []
+
+
+Overfull \hbox (10.15454pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 is-tic timescales orig-i-nate from the last grains to bury. In 
+one ex-treme, all grains rest on 
+ []
+
+
+Overfull \hbox (25.4718pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 the sur-face, mean-ing the last grains bury around $1\OML/cmm/m
+/it/10 =^^T$\OT1/cmr/m/n/10 ; while in an-other, a frac-tion of grains 
+ []
+
+
+Overfull \hbox (0.9603pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 re-mains in mo-tion for a long time evad-ing burial. By anal-og
+y to the mobile-immobile 
+ []
+
+
+Overfull \hbox (7.81447pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 model of An-cey, B^^?ohm, Jodeau, and Frey (2006), we rea-son t
+hat a frac-tion $\OML/cmm/m/it/10 k[]=\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k[] \OT
+1/cmr/m/n/10 + \OML/cmm/m/it/10 k[]\OT1/cmr/m/n/10 )$ 
+ []
+
+
+Overfull \hbox (2.82135pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 of the free pop-u-la-tion will be in mo-tion and evad-ing buria
+l at long timescales, and for 
+ []
+
+
+Overfull \hbox (0.10376pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 this frac-tion we pro-pose an ef-fec-tive trap-ping rate $\OML/
+cmm/m/it/10 ^^Tk[]=\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 k[] \OT1/cmr/m/n/10 + \OML
+/cmm/m/it/10 k[]\OT1/cmr/m/n/10 )$. Equa-tion (18[]) mixes 
+ []
+
+
+Overfull \hbox (3.6939pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 the re-cip-ro-cal of this ef-fec-tive rate with $1\OML/cmm/m/it
+/10 =^^T$\OT1/cmr/m/n/10 . We tested for-mu-las (16[]-18[]) for many pa- 
+ []
+
+
+Overfull \hbox (11.40446pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 ram-e-ter choices and con-clude they ad-e-quately rep-re-sent t
+he crossover lo-ca-tions be-tween 
+ []
+
+
+Overfull \hbox (8.2379pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 gion be-tween lo-cal and in-ter-me-di-ate ranges, mean-ing equa
+-tion (16[]) loses rep-re-sen-ta-tive 
+ []
+
+
+Overfull \hbox (19.73552pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 power; while set-ting rel-a-tively very large val-ues of $\OML/
+cmm/m/it/10 k[]$ \OT1/cmr/m/n/10 widens the crossover re-gion be-tween 
+ []
+
+
+Overfull \hbox (5.7657pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 global and ge-o-mor-phic ranges, mean-ing equa-tion (18[]) lose
+s rep-re-sen-ta-tive power. Ul-ti- 
+ []
+
+
+Overfull \hbox (1.82112pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 mately, we em-pha-size the rep-re-sen-ta-tion of fi-nite width 
+crossover re-gions by crossover 
+ []
+
+
+Overfull \hbox (3.54338pt too wide) in paragraph at lines 307--319
+\OT1/cmr/m/n/10 times is an ide-al-iza-tion, so we pro-pose equa-tions (16[]-18
+[]) as heuris-tics. These re-la-tions 
+ []
+
+[12]
+Overfull \hbox (4.23788pt too wide) in paragraph at lines 320--327
+[]\OT1/cmr/m/n/10 Our four range bed-load dif-fu-sion model re-duces to ear-lie
+r works through the two 
+ []
+
+
+Overfull \hbox (0.13745pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 sim-pli-fied lim-its pre-vi-ously lever-aged to ex-tract the sc
+al-ing ex-po-nents $\OML/cmm/m/it/10 ^^M$ \OT1/cmr/m/n/10 and ex-plored 
+ []
+
+
+Overfull \hbox (8.37685pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 in ap-pendix C[]. Limit (1) im-plies the model de-vel-oped by L
+isle et al.[] (1998) to de-scribe 
+ []
+
+
+Overfull \hbox (11.23792pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 soil trans-port within a sheet flow, while limit (2) im-plies t
+he model de-vel-oped by Wu et 
+ []
+
+
+Overfull \hbox (4.68236pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 al.[] (2019) to de-scribe bed-load trans-port with burial. Ei-t
+her of these cases fur-ther sim- 
+ []
+
+
+Overfull \hbox (15.79344pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 pli-fies to the clas-sic re-sults of H. A. Ein-stein (1937) and
+ his early fol-low-ers (e.g., Hubbell 
+ []
+
+
+Overfull \hbox (0.32133pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 & Sayre, 1964; Nak-a-gawa & Tsu-ji-moto, 1976; Yano, 1969) that
+ pre-dict a sin-gle range 
+ []
+
+
+Overfull \hbox (11.18242pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 of nor-mal dif-fu-sion. Lisle et al.[] (1998) gen-er-al-ized th
+e Ein-stein model to in-clude a fi-nite 
+ []
+
+
+Overfull \hbox (0.96019pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 ve-loc-ity and du-ra-tion of mo-tion in place of in-stan-ta-neo
+us steps, and they de-rived two 
+ []
+
+
+Overfull \hbox (2.09909pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 ranges of dif-fu-sion -- super-diffusive and nor-mal. Wu et al.
+[] (2019) de-vel-oped an ac-tive 
+ []
+
+
+Overfull \hbox (14.51573pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 layer for-mu-la-tion of bed-load trans-port where grains are tr
+ans-ferred from the ac-tive layer 
+ []
+
+
+Overfull \hbox (10.84903pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 (sur-face) to the sub-strate layer (burial) at a con-stant rate
+. They sim-pli-fied the prob-lem 
+ []
+
+
+Overfull \hbox (11.7935pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 by in-ter-pret-ing mo-tions as in-stan-ta-neous steps, and they
+ de-rived two ranges of dif-fu-sion 
+ []
+
+
+Overfull \hbox (25.90463pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 -- nor-mal and super-diffusive. Our model ul-ti-mately ex-tends
+ these two works and re-frames 
+ []
+
+
+Overfull \hbox (40.15463pt too wide) in paragraph at lines 320--327
+\OT1/cmr/m/n/10 them in the for-mal-ism of CTRWs (e.g., Weiss, 1994) that was i
+m-plic-itly ap-plied by H. A. Ein- 
+ []
+
+
+Overfull \hbox (2.32124pt too wide) in paragraph at lines 328--335
+[]\OT1/cmr/m/n/10 We of-fer sev-eral im-pli-ca-tions of our model for bed-load 
+dif-fu-sion stud-ies in gravel 
+ []
+
+
+Overfull \hbox (12.43236pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 bed streams. First, our model con-fines the valid range of scal
+e in-de-pen-dent mod-els such 
+ []
+
+
+Overfull \hbox (1.59906pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 as the advection-diffusion equa-tion (e.g., D. N. Bradley, Tuck
+er, & Ben-son, 2010) and 
+ []
+
+
+Overfull \hbox (8.90462pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 the Ein-stein model (e.g., Mar-tin et al.[], 2012) for prac-ti-
+cal ap-pli-ca-tions such as con-tam- 
+ []
+
+
+Overfull \hbox (14.34914pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 i-nant trans-port (e.g Mack-lin et al.[], 2006; Mal-mon, Re-nea
+u, Dunne, Katz-man, & Drakos, 
+ []
+
+
+Overfull \hbox (24.9742pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 2005) and aquatic habi-tat restora-tion (e.g., Gaeu-man, Stew-a
+rt, Schmandt, & Pryor, 2017). 
+ []
+
+
+Overfull \hbox (13.27728pt too wide) in paragraph at lines 328--335
+\OML/cmm/m/it/10 T[]$ \OT1/cmr/m/n/10 given by equa-tions (16[]) and (17[]), we
+ ex-pect nor-mal bed-load dif-fu-sion $\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 =
+ \OML/cmm/m/it/10 D[]t$\OT1/cmr/m/n/10 . Sec- 
+ []
+
+
+Overfull \hbox (21.21017pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 ond, the model links bed-load trans-port un-der-stand-ing acros
+s scales. In prac-tice, we might 
+ []
+
+
+Overfull \hbox (5.1268pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 mea-sure sed-i-ment dif-fu-sion within a chan-nel on one timesc
+ale with in-tent to ap-ply our 
+ []
+
+
+Overfull \hbox (15.62685pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 knowl-edge at smaller or larger timescales; usu-ally, ex-per-i-
+men-tal lim-i-ta-tions con-strain the 
+ []
+
+
+Overfull \hbox (3.8166pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 mea-sure-ment timescale. For ex-am-ple, we could de-ter-mine $\
+OML/cmm/m/it/10 k[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 k[]$ \OT1/cmr/m/n/10
+ by mea-sur-ing the 
+ []
+
+
+Overfull \hbox (33.3491pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 vir-tual ve-loc-ity and dif-fu-siv-ity of sed-i-ment trac-ers i
+n the in-ter-me-di-ate range (e.g., H. A. Ein- 
+ []
+
+
+Overfull \hbox (4.738pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 stein, 1937; Nak-a-gawa & Tsu-ji-moto, 1976; Yano et al.[], 196
+9). With an es-ti-mate of the 
+ []
+
+
+Overfull \hbox (13.09808pt too wide) in paragraph at lines 328--335
+\OT1/cmr/m/n/10 trap-ping rate $\OML/cmm/m/it/10 ^^T$\OT1/cmr/m/n/10 , equa-tio
+n (15[]) pro-vides dif-fu-sion char-ac-ter-is-tics of the global range $\OML/cm
+m/m/it/10 T[] < 
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10]
-[11] [12] [13] (./rwdiffu.bbl
+ [13]
+Overfull \hbox (19.76563pt too wide) in paragraph at lines 336--348
+[]\OT1/cmr/m/n/10 To de-scribe the scale de-pen-dence of bed-load dif-fu-sion, 
+we ex-tended the orig-i-nal Ein- 
+ []
+
+
+Overfull \hbox (10.18234pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 stein model by build-ing up ideas from con-densed mat-ter physi
+cs. Along the way, we in- 
+ []
+
+
+Overfull \hbox (3.6546pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 cor-po-rated two sim-pli-fy-ing as-sump-tions that de-serve fur
+-ther re-search at-ten-tion. First, 
+ []
+
+
+Overfull \hbox (0.43233pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 we treated sed-i-ment burial as a quasi per-ma-nent con-di-tion
+; and sec-ond, we im-plic-itly 
+ []
+
+
+Overfull \hbox (10.71016pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 as-sumed burial is the only pro-cess trap-ping grains in river 
+chan-nels. In ac-tu-al-ity, burial 
+ []
+
+
+Overfull \hbox (27.2102pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 is a tem-po-rary con-di-tion linked to scour and fill of the se
+d-i-men-tary bed (Has-san & Church, 
+ []
+
+
+Overfull \hbox (19.68237pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 1994; Mar-tin et al.[], 2014; Voe-pel et al.[], 2013), and fiel
+d ex-per-i-ments show other pro-cesses 
+ []
+
+
+Overfull \hbox (1.48795pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 trap-ping sed-i-ment. For ex-am-ple, grains can be-come strande
+d on bars (N. D. Bradley, 
+ []
+
+
+Overfull \hbox (3.87679pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 2017; Fer-gu-son & Hoey, 2002) and em-bed-ded in sta-bi-liz-ing
+ struc-tures such as steps or 
+ []
+
+
+Overfull \hbox (1.65454pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 clus-ters (e.g. Church, Has-san, & Wol-cott, 1998; Has-san et a
+l.[], 2008). In prin-ci-ple, the 
+ []
+
+
+Overfull \hbox (21.09898pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 multi state CTRW frame-work we de-vel-oped here can de-scribe b
+ed-load dif-fu-sion with mul- 
+ []
+
+
+Overfull \hbox (5.84908pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 ti-ple trap-ping pro-cesses by sim-ply adding more states, and 
+it can han-dle im-per-ma-nent 
+ []
+
+
+Overfull \hbox (13.21017pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 so-journs in these states by spec-i-fy-ing prop-a-ga-tors for t
+hem. Un-for-tu-nately, we cur-rently 
+ []
+
+
+Overfull \hbox (6.93237pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 lack the ex-per-i-men-tal knowl-edge to spec-ify these prop-a-g
+a-tors, since trap-ping rates and 
+ []
+
+
+Overfull \hbox (6.71022pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 du-ra-tions are poorly un-der-stood in as-so-ci-a-tion with par
+-tic-u-lar pro-cesses. For ex-am-ple, 
+ []
+
+
+Overfull \hbox (7.51567pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 re-cent ex-per-i-ments have at-tributed rest-ing times to any i
+m-mo-bile sed-i-ment, and this is 
+ []
+
+
+Overfull \hbox (0.15465pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 known to im-ply heavy-tailed sed-i-ment rest-ing time dis-tri-b
+u-tions (e.g., N. D. Bradley, 
+ []
+
+
+Overfull \hbox (13.68237pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 2017; Olinde & John-son, 2015). How-ever, very few stud-ies hav
+e re-solved im-mo-bile times 
+ []
+
+
+Overfull \hbox (12.82132pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 of sed-i-ment while iden-ti-fy-ing their un-der-ly-ing mech-a-n
+ism (e.g., Mar-tin et al.[], 2014). We 
+ []
+
+
+Overfull \hbox (5.01573pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 pro-pose ex-per-i-ments to de-ter-mine the rates and du-ra-tion
+s of spe-cific bed-load trap-ping 
+ []
+
+
+Overfull \hbox (26.68236pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 pro-cesses as im-por-tant top-ics for fur-ther study. A first s
+tep might be to mea-sure the burial 
+ []
+
+
+Overfull \hbox (3.66609pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 rate $\OML/cmm/m/it/10 ^^T$ \OT1/cmr/m/n/10 we ap-plied in this
+ pa-per; in prin-ci-ple, this could be dis-cerned by tim-ing the pe- 
+ []
+
+
+Overfull \hbox (18.29347pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 riod re-quired for tagged sur-face grains to be-come buried in 
+flume ex-per-i-ments. Once bet- 
+ []
+
+
+Overfull \hbox (8.79346pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 ter un-der-stand-ing of the rates and du-ra-tions of sed-i-ment
+ trap-ping pro-cesses is in place, 
+ []
+
+
+Overfull \hbox (18.07123pt too wide) in paragraph at lines 336--348
+\OT1/cmr/m/n/10 gen-er-al-iza-tions built from the frame-work we've pre-sented 
+in this pa-per should bet-ter pre- 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (6.23795pt too wide) in paragraph at lines 352--358
+[]\OT1/cmr/m/n/10 We de-vel-oped a ran-dom walk model with al-ter-nat-ing mo-bi
+le and im-mo-bile states 
+ []
+
+
+Overfull \hbox (0.54346pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 and a pos-si-bil-ity of trap-ping from the im-mo-bile state, an
+d we used it to de-scribe sed- 
+ []
+
+
+Overfull \hbox (20.79353pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 i-ment trans-port-ing through a river chan-nel as it grad-u-all
+y be-comes buried. To our knowl- 
+ []
+
+
+Overfull \hbox (2.57124pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 edge, this is the first an-a-lyt-i-cal de-scrip-tion of bed-loa
+d dif-fu-sion across the lo-cal, in-ter- 
+ []
+
+
+Overfull \hbox (9.15465pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 me-di-ate, and global timescales in-tro-duced by Nikora et al.[
+] (2001). Push-ing the ideas of 
+ []
+
+
+Overfull \hbox (3.04347pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 Nikora et al. some-what fur-ther, we pro-posed a ge-o-mor-phic 
+range to de-scribe dif-fu-sion 
+ []
+
+
+Overfull \hbox (23.07121pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 char-ac-ter-is-tics at timescales larger than the global range.
+ At base level, our model demon- 
+ []
+
+
+Overfull \hbox (6.15462pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 strates the re-quired com-po-nents for three bed-load dif-fu-si
+on ranges: (1) the du-ra-tion of 
+ []
+
+
+Overfull \hbox (8.5713pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 sed-i-ment mo-tions, (2) mobile-immobile switch-ing, and (3) a 
+sed-i-ment trap-ping pro-cess. 
+ []
+
+
+Overfull \hbox (5.46004pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 A next step is to in-cor-po-rate the bed scour pro-cess that re
+-exposes buried sed-i-ment to 
+ []
+
+
+Overfull \hbox (17.90463pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 bet-ter un-der-stand the global and ge-o-mor-phic ranges. Ul-ti
+-mately, we em-pha-size the multi 
+ []
+
+
+Overfull \hbox (7.29353pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 state ran-dom walk for-mal-ism used in this pa-per im-plic-itly
+ un-der-lies most ex-ist-ing bed- 
+ []
+
+
+Overfull \hbox (15.93242pt too wide) in paragraph at lines 352--358
+\OT1/cmr/m/n/10 load dif-fu-sion mod-els, and we be-lieve it will read-ily ac-c
+om-mo-date ef-forts to in-clude more 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Overfull \hbox (25.94734pt too wide) in paragraph at lines 389--394
+\OT1/cmr/m/n/10 vides the dis-tri-bu-tion $\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )$. We in-vert the trans-form over $\OML/cm
+m/m/it/10 ^^Q$ \OT1/cmr/m/n/10 first. Us-ing the re-sults 15.103 
+ []
+
+
+Overfull \hbox (1.32147pt too wide) in paragraph at lines 389--394
+\OT1/cmr/m/n/10 (trans-form of ex-po-nen-tial), 15.123 (trans-form of deriva-ti
+ve), and 15.141 (trans-form of 
+ []
+
+
+Overfull \hbox (9.14777pt too wide) in paragraph at lines 395--397
+\OT1/cmr/m/n/10 Inverting the re-main-ing trans-form over $\OML/cmm/m/it/10 s$\
+OT1/cmr/m/n/10 , ap-ply-ing re-sults 15.152 (sub-sti-tu-tion), 15.164 
+ []
+
+
+Overfull \hbox (13.33534pt too wide) in paragraph at lines 395--397
+\OT1/cmr/m/n/10 (trans-la-tion), and 15.175 (trans-form of $\OML/cmm/m/it/10 te
+[]$\OT1/cmr/m/n/10 ) from Ar-fken (1985), and defin-ing the short- 
+ []
+
+[16]
+Overfull \hbox (24.54369pt too wide) in paragraph at lines 401--403
+\OT1/cmr/m/n/10 Using en-tries 2.2.2.1, 2.2.2.8, and 1.1.1.13 from Prud-nikov, 
+Brychkov, and Marichev (1992) 
+ []
+
+
+Overfull \hbox (22.35446pt too wide) in paragraph at lines 401--403
+\OT1/cmr/m/n/10 in con-junc-tion with the def-i-ni-tion of the Mar-cum Q-functi
+on $\OMS/cmsy/m/n/10 P[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; t\OT1/cmr/m/n/10 )
+$ (e.g., Temme, 1996), 
+ []
+
+
+Overfull \hbox (21.87683pt too wide) in paragraph at lines 401--403
+\OT1/cmr/m/n/10 and in-sert-ing the Heav-i-side func-tions to ac-count for the 
+fact that grains can nei-ther travel 
+ []
+
+
+Overfull \hbox (12.36055pt too wide) in paragraph at lines 401--403
+\OT1/cmr/m/n/10 back-wards nor at speeds ex-ceed-ing $\OML/cmm/m/it/10 v$\OT1/c
+mr/m/n/10 , we fi-nally ar-rive at equa-tion (12[]) for the joint dis- 
+ []
+
+
+Overfull \hbox (9.61983pt too wide) in paragraph at lines 406--407
+[]\OT1/cmr/m/n/10 We com-pute the first two mo-ments of po-si-tion $\OML/cmm/m/
+it/10 x$ \OT1/cmr/m/n/10 and ul-ti-mately its vari-ance us-ing 
+ []
+
+
+Overfull \hbox (7.01575pt too wide) in paragraph at lines 406--407
+\OT1/cmr/m/n/10 equa-tion (11[]). The first two deriva-tives of the dou-ble Lap
+lace trans-formed dis-tri-bu-tion 
+ []
+
+
+Overfull \hbox (10.14531pt too wide) in paragraph at lines 408--410
+\OT1/cmr/m/n/10 Evaluating these at $\OML/cmm/m/it/10 ^^Q \OT1/cmr/m/n/10 = 0$ 
+and ap-ply-ing equa-tion (11[]) pro-vides the Laplace trans-formed 
+ []
+
+
+Overfull \hbox (6.4324pt too wide) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 nom-i-na-tors. These equa-tions can be in-verted us-ing the pro
+p-er-ties 15.164 (trans-la-tion), 
+ []
+
+
+Overfull \hbox (10.59924pt too wide) in paragraph at lines 411--415
+\OT1/cmr/m/n/10 15.11.1 (in-te-gra-tion), and 15.123 (dif-fer-en-ti-a-tion) fro
+m Ar-fken (1985) af-ter ex-pan-sion in 
+ []
+
+[17]
+Overfull \hbox (5.32121pt too wide) in paragraph at lines 442--446
+\OT1/cmr/m/n/10 This re-sult en-codes two ranges of dif-fu-sion and can also be
+ de-rived from the gov-ern-ing 
+ []
+
+
+Overfull \hbox (25.02379pt too wide) in paragraph at lines 442--446
+\OT1/cmr/m/n/10 equa-tions of the Lisle et al.[] (1998) model. Ex-pand-ing for 
+small $\OML/cmm/m/it/10 t$ \OT1/cmr/m/n/10 pro-vides $\OML/cmm/m/it/10 ^^[[]\OT
+1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 v[]k[]t[]=
+\OT1/cmr/m/n/10 3$ 
+ []
+
+
+Overfull \hbox (7.43117pt too wide) in paragraph at lines 442--446
+\OT1/cmr/m/n/10 -- lo-cal range super-diffusion. Ex-pand-ing for large $\OML/cm
+m/m/it/10 t$ \OT1/cmr/m/n/10 pro-vides $\OML/cmm/m/it/10 ^^[[]\OT1/cmr/m/n/10 (
+\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = 2\OML/cmm/m/it/10 v[]k[]k[]t=k[]$ \OT1/cm
+r/m/n/10 -- in- 
+ []
+
+
+Overfull \hbox (16.7658pt too wide) in paragraph at lines 447--450
+[]\OT1/cmr/m/n/10 We fur-ther in-ves-ti-gate limit (1) for ar-bi-trary ini-tial
+ con-di-tions. By ap-ply-ing Taube- 
+ []
+
+
+Overfull \hbox (8.70282pt too wide) in paragraph at lines 447--450
+\OT1/cmr/m/n/10 rian the-o-rems, we as-sert the $\OML/cmm/m/it/10 t \OMS/cmsy/m
+/n/10 ! \OT1/cmr/m/n/10 0$ vari-ance is de-ter-mined by the $\OML/cmm/m/it/10 s
+ \OMS/cmsy/m/n/10 ! 1$ \OT1/cmr/m/n/10 lim-its of (B.3[]) 
+ []
+
+
+Overfull \hbox (22.07132pt too wide) in paragraph at lines 447--450
+\OT1/cmr/m/n/10 and (B.4[]) (e.g., Weeks & Swin-ney, 1998; Weiss, 1994). Ex-pan
+d-ing these equa-tions in pow- 
+ []
+
+
+Overfull \hbox (1.34904pt too wide) in paragraph at lines 452--454
+\OT1/cmr/m/n/10 This equa-tion high-lights the ef-fect of ini-tial con-di-tions
+ on the dif-fu-sion char-ac-ter-is-tics 
+ []
+
+
+Overfull \hbox (24.18242pt too wide) in paragraph at lines 454--457
+\OT1/cmr/m/n/10 We have taken only lead-ing or-der terms for any op-tion of $\O
+ML/cmm/m/it/10 ^^R[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/10 ^^R[]$\OT1/cmr/m/n/
+10 . Equa-tion (C.6[]) shows 
+ []
+
+
+Overfull \hbox (1.85956pt too wide) in paragraph at lines 454--457
+\OT1/cmr/m/n/10 lo-cal range ex-po-nent $\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 =
+ 2$ when ini-tial con-di-tions are mixed (both are non-zero) and 
+ []
+
+[18]
+Overfull \hbox (24.71025pt too wide) in paragraph at lines 464--469
+\OT1/cmr/m/n/10 This is math-e-mat-i-cally iden-ti-cal to the key re-sult of Wu
+ et al.[] (2019). Ex-pand-ing for small 
+ []
+
+
+Overfull \hbox (13.02939pt too wide) in paragraph at lines 464--469
+\OT1/cmr/m/n/10 pro-vides $\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 = (2\OML/cmm/
+m/it/10 D[]^^T \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 )\OML/cmm/
+m/it/10 =^^T[]$ \OT1/cmr/m/n/10 -- a con-stant vari-ance in the ge-o-mor-phic r
+ange. The global 
+ []
+
+
+Overfull \hbox (5.46pt too wide) in paragraph at lines 464--469
+\OT1/cmr/m/n/10 range is char-ac-ter-ized by com-pe-ti-tion be-tween terms in e
+qua-tion (C.9[]), and shows $2 \OMS/cmsy/m/n/10 ^^T 
+ []
+
+
+Overfull \hbox (5.98pt too wide) in paragraph at lines 464--469
+\OML/cmm/m/it/10 ^^M \OMS/cmsy/m/n/10 ^^T \OT1/cmr/m/n/10 3$ de-pend-ing on the
+ ra-tio $\OML/cmm/m/it/10 k[]=^^T$ \OT1/cmr/m/n/10 (cf., Wu et al.[], 2019). Fi
+-nally, both equa-tions (C.3[]) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
+\OT1/cmr/m/n/10 J. Pierce ac-knowl-edges help-ful ex-changes with Ed-uardo Daly
+ and Pe-ter H^^?anggi 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
+\OT1/cmr/m/n/10 dur-ing the early stages of this work. He would like to thank M
+elinda Saun-ders and 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
+\OT1/cmr/m/n/10 Leonardo Gol-ubovic for their care-ful guid-ance in math-e-mat-
+ics through the years. M. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--473
+\OT1/cmr/m/n/10 Has-san is sup-ported by an NSERC Dis-cov-ery grant. The Python
+ sim-u-la-tion code is 
+ []
+
+(./rwdiffu.bbl
 Underfull \hbox (badness 3792) in paragraph at lines 17--35
 \OT1/cmr/m/n/10 i-ment trans-port ex-per-i-ments.  \OT1/cmr/m/it/10 Phys-i-cal 
 Re-view E - Sta-tis-ti-cal, Non-lin-ear, and 
  []
 
-[14]
+
 Underfull \hbox (badness 3930) in paragraph at lines 74--91
 []\OT1/cmr/m/n/10 Barik, D., Ghosh, P. K., & Ray, D. S.  (2006).  Langevin dy-n
 am-ics with di-choto- 
  []
 
-
+[19]
 Underfull \hbox (badness 2680) in paragraph at lines 105--120
 []\OT1/cmr/m/n/10 Berezhkovskii, A. M., & Weiss, G. H.  (2002).  De-tailed de-s
 crip-tion of a two-state 
@@ -583,389 +2527,382 @@ Underfull \hbox (badness 3108) in paragraph at lines 166--182
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 194--209
+Underfull \hbox (badness 10000) in paragraph at lines 196--214
+[]\OT1/cmr/m/n/10 Bradley, D. N., Tucker, G. E., & Ben-son, D. A.  (2010).  Fra
+c-tional dis-per- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--214
+\OT1/cmr/m/n/10 sion in a sand bed river.  \OT1/cmr/m/it/10 Jour-nal of Geo-phy
+s-i-cal Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 115\OT1/cmr/m/n/10 , F00A09
+. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--214
+\OT1/cmr/m/n/10 Re-trieved from $\OT1/cmtt/m/n/10 http :// doi [] .wiley [] .co
+m / 10 [] .1029 / 2009JF001268$   \OT1/cmr/m/n/10 doi: 
+ []
+
+
+Underfull \hbox (badness 1845) in paragraph at lines 226--241
 []\OT1/cmr/m/n/10 Bradley, N. D.  (2017).  Di-rect Ob-ser-va-tion of Heavy-Tail
 ed Stor-age Times of Bed 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--209
+Underfull \hbox (badness 10000) in paragraph at lines 226--241
 \OT1/cmr/m/n/10 Load Tracer Par-ti-cles Caus-ing Anoma-lous Su-perdif-fu-sion. 
  \OT1/cmr/m/it/10 Geo-phys-i-cal Re- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--241
-\OT1/cmr/m/n/10 Chan-nels.  \OT1/cmr/m/it/10 An-nual Re-view of Earth and Plan-
-e-tary Sci-ences\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 34\OT1/cmr/m/n/10 (1), 325--
-354. 
+Underfull \hbox (badness 10000) in paragraph at lines 255--272
+[]\OT1/cmr/m/n/10 Church, M., Has-san, M. a. M. M. A., & Wol-cott, J. F. J.  (1
+998).  Sta-bi-liz- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--241
-\OT1/cmr/m/n/10 Re-trieved from $\OT1/cmtt/m/n/10 http :// www [] .annualreview
-s [] .org / doi / 10 [] .1146 / annurev [] 
+Underfull \hbox (badness 10000) in paragraph at lines 255--272
+\OT1/cmr/m/n/10 ing self-organized struc-tures in gravel-bed stream chan-nels: 
+Field and ex- 
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 315--330
-\OT1/cmr/m/n/10 Cre-ated by Bar Mi-gra-tion or Sed-i-ment Waves?  \OT1/cmr/m/it
-/10 Geo-phys-i-cal Re-search Let-ters\OT1/cmr/m/n/10 , 
+Underfull \hbox (badness 10000) in paragraph at lines 255--272
+\OT1/cmr/m/n/10 per-i-men-tal ob-ser-va-tions.  \OT1/cmr/m/it/10 Wa-ter Re-sour
+ces Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 34\OT1/cmr/m/n/10 (11), 3169.  
+doi: 
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 366--379
+Underfull \hbox (badness 2229) in paragraph at lines 338--351
 []\OT1/cmr/m/n/10 Einstein, H. A.  (1937).  \OT1/cmr/m/it/10 Bed-load trans-por
 t as a prob-a-bil-ity prob-lem \OT1/cmr/m/n/10 (Un-pub-lished 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--445
+Underfull \hbox (badness 10000) in paragraph at lines 397--417
 \OT1/cmr/m/n/10 a semimech-a-nis-tic episodic Langevin model for bed load trans
 -port: Emer-gence 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--445
+Underfull \hbox (badness 10000) in paragraph at lines 397--417
 \OT1/cmr/m/n/10 of nor-mal and anoma-lous ad-vec-tion and dif-fu-sion regimes. 
  \OT1/cmr/m/it/10 Wa-ter Re-sources 
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 460--477
-\OT1/cmr/m/n/10 tracer peb-bles over dif-fer-ent timescales.  \OT1/cmr/m/it/10 
-Wa-ter Re-sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 38\OT1/cmr/m/n/10
- (5), 3-- 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--507
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 431--447
 \OT1/cmr/m/n/10 Generic mod-els and im-pli-ca-tions for in-ter-pret-ing short-t
 erm tracer stud-ies. 
  []
 
 
-Underfull \hbox (badness 7814) in paragraph at lines 522--541
+Underfull \hbox (badness 7814) in paragraph at lines 462--481
 []\OT1/cmr/m/n/10 Gaeuman, D., Stew-art, R., Schmandt, B., & Pryor, C.  (2017).
   Ge-o-mor-phic re- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 522--541
+Underfull \hbox (badness 10000) in paragraph at lines 462--481
 \OT1/cmr/m/n/10 sponse to gravel aug-men-ta-tion and high-flow dam re-lease in 
 the Trin-ity River, 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--579
+Underfull \hbox (badness 10000) in paragraph at lines 497--519
 []\OT1/cmr/m/n/10 Ganti, V., Meer-schaert, M. M., Foufoula-Georgiou, E., Vipar-
-elli, E., & Parker, 
+elli, E., & Parker, G. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--579
-\OT1/cmr/m/n/10 G.  (2010).  Nor-mal and anoma-lous dif-fu-sion of gravel trace
-r par-ti-cles in 
+Underfull \hbox (badness 10000) in paragraph at lines 497--519
+\OT1/cmr/m/n/10 (2010).  Nor-mal and anoma-lous dif-fu-sion of gravel tracer pa
+r-ti-cles in rivers. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--579
-\OT1/cmr/m/n/10 rivers.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i-cal Re-search:
- Earth Sur-face\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 115\OT1/cmr/m/n/10 (F2), n/a-
-- 
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 557--579
-\OT1/cmr/m/n/10 n/a.  Re-trieved from $\OT1/cmtt/m/n/10 http :// doi [] .wiley 
-[] .com / 10 [] .1029 / 2008JF001222$   \OT1/cmr/m/n/10 doi: 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15]
-Underfull \hbox (badness 10000) in paragraph at lines 646--663
-[]\OT1/cmr/m/n/10 Haschenburger, J. K.  (2013).  Trac-ing river grav-els: In-si
-ghts into dis-per-sion 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 646--663
-\OT1/cmr/m/n/10 from a long-term field ex-per-i-ment.  \OT1/cmr/m/it/10 Ge-o-mo
-r-phol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 200\OT1/cmr/m/n/10 , 121--131.  Re
-- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 646--663
-\OT1/cmr/m/n/10 trieved from $\OT1/cmtt/m/n/10 http :// dx [] .doi [] .org / 10
- [] .1016 / j [] .geomorph [] .2013 [] .03 [] .033$   \OT1/cmr/m/n/10 doi: 
- []
-
-
-Underfull \hbox (badness 1194) in paragraph at lines 709--724
+Underfull \hbox (badness 1194) in paragraph at lines 588--603
 []\OT1/cmr/m/n/10 Hassan, M. A., & Church, M.  (1994).  Ver-ti-cal mix-ing of c
 oarse par-ti-cles in gravel 
  []
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 709--724
+Underfull \hbox (badness 1314) in paragraph at lines 588--603
 \OT1/cmr/m/n/10 bed rivers: A kine-matic model.  \OT1/cmr/m/it/10 Wa-ter Re-sou
 rces Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 30\OT1/cmr/m/n/10 (4), 1173--1
 185. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 738--754
+Underfull \hbox (badness 10000) in paragraph at lines 617--633
 \OT1/cmr/m/n/10 par-ti-cles in gravel bed streams.  \OT1/cmr/m/it/10 Wa-ter Re-
 sources Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 27\OT1/cmr/m/n/10 (4), 503-
 -511. 
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 770--789
-\OT1/cmr/m/n/10 place-ment char-ac-ter-is-tics of coarse flu-vial bed sed-i-men
-t.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i- 
+Underfull \hbox (badness 10000) in paragraph at lines 645--669
+[]\OT1/cmr/m/n/10 Hassan, M. A., Smith, B. J., Hogan, D. L., Luzi, D. S., Zim-m
+er-mann, A. E., & 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--883
-\OT1/cmr/m/n/10 The re-la-tion-ship be-tween par-ti-cle travel dis-tance and ch
-an-nel mor-phol-ogy : 
+Underfull \hbox (badness 1052) in paragraph at lines 645--669
+\OT1/cmr/m/n/10 Eaton, B. C.  (2008).  Sed-i-ment stor-age and trans-port in co
+arse bed streams: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--883
-\OT1/cmr/m/n/10 Re-sults from phys-i-cal mod-els of braided rivers.  \OT1/cmr/m
-/it/10 Jour-nal of Geo-phys-i-cal Re- 
+Underfull \hbox (badness 10000) in paragraph at lines 645--669
+\OT1/cmr/m/n/10 scale con-sid-er-a-tions.  In H. Haber-sack & H. Pie-gay (Eds.[
+]), \OT1/cmr/m/it/10 Gravel-bed rivers 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 949--965
+Underfull \hbox (badness 10000) in paragraph at lines 645--669
+\OT1/cmr/m/it/10 8: From pro-cess un-der-stand-ing to river restora-tion \OT1/c
+mr/m/n/10 (Vol.[] 11, pp.[] 473--496). 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 793--809
 []\OT1/cmr/m/n/10 Lisle, I. G., Rose, C. W., Hog-a-rth, W. L., Hair-sine, P. B.
 , Sander, G. C., & Par- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 977--997
+Underfull \hbox (badness 10000) in paragraph at lines 821--841
 []\OT1/cmr/m/n/10 Macklin, M. G., Brewer, P. A., Hudson-Edwards, K. A., Bird, G
 ., Coulthard, T. J., 
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 1011--1027
+Underfull \hbox (badness 3758) in paragraph at lines 855--871
 \OT1/cmr/m/n/10 Tra-jec-to-ries through Al-lu-vial Val-ley Floors.  \OT1/cmr/m/
 it/10 The Jour-nal of Ge-ol-ogy\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 111\OT1/cmr/m
 /n/10 (5), 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1061
+Underfull \hbox (badness 10000) in paragraph at lines 887--905
 \OT1/cmr/m/n/10 flu-ence of sed-i-ment stor-age on down-stream de-liv-ery of co
 n-tam-i-nated sed-i-ment. 
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 1073--1084
+Underfull \hbox (badness 1331) in paragraph at lines 917--928
 []\OT1/cmr/m/n/10 Marcum, J.  (1960).  A sta-tis-ti-cal the-ory of tar-get de-t
 ec-tion by pulse radar.  \OT1/cmr/m/it/10 IRE 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1098--1115
+Underfull \hbox (badness 10000) in paragraph at lines 942--959
 []\OT1/cmr/m/n/10 Martin, R. L., Jerol-mack, D. J., & Schumer, R.  (2012).  The
  phys-i-cal ba-sis for 
  []
 
 
-Underfull \hbox (badness 7256) in paragraph at lines 1098--1115
+Underfull \hbox (badness 7256) in paragraph at lines 942--959
 \OT1/cmr/m/n/10 anoma-lous dif-fu-sion in bed load trans-port.  \OT1/cmr/m/it/1
 0 Jour-nal of Geo-phys-i-cal Re-search: 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1206
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1050
 []\OT1/cmr/m/n/10 Molina-Garcia, D., Sandev, T., Saf-dari, H., Pagnini, G., Che
 chkin, A., & Met-zler, R. 
  []
 
 
-Underfull \hbox (badness 5490) in paragraph at lines 1186--1206
+Underfull \hbox (badness 5490) in paragraph at lines 1030--1050
 \OT1/cmr/m/n/10 (2018).  Crossover from anoma-lous to nor-mal dif-fu-sion: Trun
 -cated power-law 
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 1186--1206
+Underfull \hbox (badness 1242) in paragraph at lines 1030--1050
 \OT1/cmr/m/n/10 noise cor-re-la-tions and ap-pli-ca-tions to dy-nam-ics in lipi
 d bi-lay-ers.  \OT1/cmr/m/it/10 New Jour-nal 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1246--1265
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+Underfull \hbox (badness 10000) in paragraph at lines 1090--1109
 \OT1/cmr/m/it/10 by stochas-tic meth-ods: Sec-ond in-ter-na-tional iahr sym-po-
 sium on stochas-tic 
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 1306--1326
+Underfull \hbox (badness 1735) in paragraph at lines 1150--1170
 []\OT1/cmr/m/n/10 Nikora, V., Haber-sack, H., Hu-ber, T., & McE-wan, I.  (2002)
 .  On bed par-ti-cle dif- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1326
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1170
 \OT1/cmr/m/n/10 fu-sion in gravel bed flows un-der weak bed load trans-port.  \
 OT1/cmr/m/it/10 Wa-ter Re-sources 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1326
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1170
 \OT1/cmr/m/it/10 Re-search\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 38\OT1/cmr/m/n/10 
 (6), 1--9.  Re-trieved from $\OT1/cmtt/m/n/10 http :// doi [] .wiley [] .com / 
 10 [] .1029 / 
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 1373--1390
+Underfull \hbox (badness 1173) in paragraph at lines 1217--1234
 []\OT1/cmr/m/n/10 Olinde, L., & John-son, J. P. L.  (2015).  Us-ing RFID and ac
 celerometer-embedded 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1373--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1234
 \OT1/cmr/m/n/10 trac-ers to mea-sure prob-a-bil-i-ties of bed load trans-port, 
 step lengths, and rest 
  []
 
 
-Underfull \hbox (badness 2359) in paragraph at lines 1404--1420
+Underfull \hbox (badness 2359) in paragraph at lines 1248--1264
 []\OT1/cmr/m/n/10 Phillips, C. B., Mar-tin, R. L., & Jerol-mack, D. J.  (2013).
   Im-pulse frame-work for 
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 1517--1533
+Underfull \hbox (badness 3525) in paragraph at lines 1332--1348
 \OT1/cmr/m/n/10 ac-tions for anoma-lous dif-fu-sion: A case study.  \OT1/cmr/m/
 it/10 Jour-nal of Physics Con-densed 
  []
 
 
-Underfull \hbox (badness 7451) in paragraph at lines 1622--1640
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \hbox (badness 7451) in paragraph at lines 1437--1455
 \OT1/cmr/m/n/10 L^^Sevy-flight dif-fu-sion model to pre-dict trans-genic pollen
  dis-per-sal.  \OT1/cmr/m/it/10 Jour-nal of 
  []
 
 
-Underfull \hbox (badness 4752) in paragraph at lines 1654--1672
+Underfull \hbox (badness 4752) in paragraph at lines 1469--1487
 []\OT1/cmr/m/n/10 Voepel, H., Schumer, R., & Has-san, M. A.  (2013).  Sed-i-men
 t res-i-dence time dis- 
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 1654--1672
+Underfull \hbox (badness 1163) in paragraph at lines 1469--1487
 \OT1/cmr/m/it/10 of Geo-phys-i-cal Re-search: Earth Sur-face\OT1/cmr/m/n/10 , \
 OT1/cmr/m/it/10 118\OT1/cmr/m/n/10 (4), 2557--2567.  doi: $10 [] .1002 / jgrf [
 ] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]
-Underfull \hbox (badness 4608) in paragraph at lines 1686--1702
+Underfull \hbox (badness 4608) in paragraph at lines 1501--1517
 \OT1/cmr/m/n/10 asym-met-ric ran-dom walks.  \OT1/cmr/m/it/10 Phys-i-cal Re-vie
 w E - Sta-tis-ti-cal Physics, Plas-mas, 
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 1686--1702
+Underfull \hbox (badness 2080) in paragraph at lines 1501--1517
 \OT1/cmr/m/it/10 Flu-ids, and Re-lated In-ter-dis-ci-plinary Top-ics\OT1/cmr/m/
 n/10 , \OT1/cmr/m/it/10 57\OT1/cmr/m/n/10 (5), 4915--4920.  doi: $10 [] .1103 /
  
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 1739--1750
+Underfull \hbox (badness 1490) in paragraph at lines 1554--1565
 []\OT1/cmr/m/n/10 Weiss, G. H.  (1994).  \OT1/cmr/m/it/10 As-pects and ap-pli-c
 a-tions of the ran-dom walk\OT1/cmr/m/n/10 .  Am-s-ter-dam: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1782
+Underfull \hbox (badness 10000) in paragraph at lines 1577--1597
 []\OT1/cmr/m/n/10 Wu, Z., Foufoula-Georgiou, E., Parker, G., Singh, A., Fu, X.,
  & Wang, G.  (2019). 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1782
-\OT1/cmr/m/n/10 An-a-lyt-i-cal So-lu-tion for Anoma-lous Dif-fu-sion of Bed-loa
-d Trac-ers Grad-u-ally 
+Underfull \hbox (badness 10000) in paragraph at lines 1577--1597
+\OT1/cmr/m/n/10 An-a-lyt-i-cal so-lu-tion for anoma-lous dif-fu-sion of bed-loa
+d trac-ers grad-u-ally un-der- 
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 1762--1782
-\OT1/cmr/m/n/10 Un-der-go-ing Burial.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i-
-cal Re-search: Earth Sur-face\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 124\OT1/cmr/m/n
-/10 (1), 
+Underfull \hbox (badness 2600) in paragraph at lines 1577--1597
+\OT1/cmr/m/n/10 go-ing burial.  \OT1/cmr/m/it/10 Jour-nal of Geo-phys-i-cal Re-
+search: Earth Sur-face\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 124\OT1/cmr/m/n/10 (1)
+, 21--37. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1842
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1657
 []\OT1/cmr/m/n/10 Yang, X. R., & Wang, Y.  (2019).  Ubiq-uity of anoma-lous tra
 ns-port in porous 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1842
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1657
 \OT1/cmr/m/n/10 me-dia: Nu-mer-i-cal ev-i-dence, con-tin-u-ous time ran-dom wal
 k mod-elling, 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1842
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1657
 \OT1/cmr/m/n/10 and hy-dro-dy-namic in-ter-pre-ta-tion.  \OT1/cmr/m/it/10 Sci-e
 n-tific Re-ports\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 9\OT1/cmr/m/n/10 (1), 1--11.
   Re- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1822--1842
+Underfull \hbox (badness 10000) in paragraph at lines 1637--1657
 \OT1/cmr/m/n/10 trieved from $\OT1/cmtt/m/n/10 http :// dx [] .doi [] .org / 10
  [] .1038 / s41598 [] -019 [] -39363 [] -3$   \OT1/cmr/m/n/10 doi: 
  []
 
 
-Underfull \hbox (badness 1845) in paragraph at lines 1882--1896
+Underfull \hbox (badness 1845) in paragraph at lines 1697--1711
 []\OT1/cmr/m/n/10 Yano, K., Tsuchiya, Y., & Michiue, M.  (1969).  Stud-ies on t
 he Sand Trans-port in 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1882--1896
+Underfull \hbox (badness 10000) in paragraph at lines 1697--1711
 \OT1/cmr/m/n/10 Streams with Trac-ers.  \OT1/cmr/m/it/10 Bull. Disas. Prev. Res
 . Inst. Ky-oto Univ.\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 18\OT1/cmr/m/n/10 (Part 
 3, 
  []
 
-) [18] (./rwdiffu.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24])
+[25] (./rwdiffu.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 5117 strings out of 493029
- 67967 string characters out of 6136235
- 147700 words of memory out of 5000000
- 8534 multiletter control sequences out of 15000+600000
- 13258 words of font info for 52 fonts, out of 8000000 for 9000
+ 5126 strings out of 493029
+ 67925 string characters out of 6136235
+ 147488 words of memory out of 5000000
+ 8542 multiletter control sequences out of 15000+600000
+ 13558 words of font info for 53 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 50i,21n,37p,1030b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,21n,37p,1031b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texli
@@ -979,18 +2916,19 @@ s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt9.pfb>
-Output written on rwdiffu.pdf (18 pages, 710311 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb
+>
+Output written on rwdiffu.pdf (25 pages, 719480 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 183 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
